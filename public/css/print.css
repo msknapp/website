@@ -1,5 +1,31 @@
-aside nav .topheader .navigation {
+aside {
     display: none;
-    width: 0px;
-    height: 0px;
+}
+
+.rightcolumn {
+    display: none;
+}
+
+div.navigationrow {
+    display: none;
+}
+
+div.breadcrumbs {
+    display: none;
+}
+
+main {
+    font-size: 12px;
+}
+
+footer {
+    display: none;
+}
+
+hr.footerline {
+    display: none;
+}
+
+a {
+    text-decoration: none;
 }
