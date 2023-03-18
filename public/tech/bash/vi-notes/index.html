@@ -8,84 +8,174 @@
     <meta name="keywords" content="golang resume">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+
     <link rel="stylesheet" media="print" href="/css/print.css" />
 </head>
 
 <body>
-    <h1 class="topheader">Vi Notes</h1>
-    <div class="navigation">
-        <nav>
-            <a href="/">Home</a>
-            
-            <a href="/tech/">Software Engineering</a>
-            
-            <a href="/algorithms/">Algorithms</a>
-            
-            <a href="/principles/">Principles</a>
-            
-            <a href="/applications/">Applications</a>
-            
-            <a href="/cheat-sheets/">Cheat Sheets</a>
-            
-            <a href="/open-source/">Open Source</a>
-            
-            <a href="/architecture/">Architecture</a>
-            
-            <a href="/blog/">Blog</a>
-            
+    <div class="navigationrow">
+        <h2 class="sections">Sections</h2>
+        <nav class="headernav">
+            <ul>
+                <li class="headernav ">
+                    <a class="headernav " href="/"><img src="/icons/house.png"
+                            width="20px" /></a>
+                </li>
+                
+                <li class="headernav currentsection">
+                    <a class="headernav currentsection"
+                        href="/tech/" title="Notes about software engineering.">
+                        Software Engineering</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/algorithms/" title="Software algorithms.">
+                        Algorithms</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/principles/" title="my description.">
+                        Principles</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/applications/" title="browser applications.">
+                        Applications</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                        Cheat Sheets</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/open-source/" title="Notes on some awesome open source projects.">
+                        Open Source</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/architecture/" title="Software architecture">
+                        Architecture</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/blog/" title="A blog on software engineering.">
+                        Blog</a>
+                </li>
+            </ul>
         </nav>
     </div>
     <div class="body">
         <aside>
+            <h2 class="sidebar">Pages</h2>
+            <ul class="sidebar">
+                <li class="sidebar"><a class="sidebar" href="/tech/golang/" title="">
+                        Golang</a></li>
+                <li class="sidebar"><a class="sidebar" href="/tech/java/" title="java programming language.">
+                        Java</a></li>
+                <li class="sidebar"><a class="sidebar" href="/tech/bash/" title="">
+                        Bash</a></li>
+                <li class="sidebar"><a class="sidebar" href="/tech/javascript-language/" title="javascript programming">
+                        Javascript Language</a></li>
+                <li class="sidebar"><a class="sidebar" href="/tech/languages/" title="my description.">
+                        Software Languages</a></li>
+            </ul>
         </aside>
-        
-<article>
-    <main>
-        <p>vimtutor summary (of what I think is important):</p>
-<p>&lsquo;a&rsquo; will go into insert mode, but one character after the curser, it&rsquo;s great for appending to the end of a line.
-&lsquo;o&rsquo; will go into insert mode, but it automatically inserts a new line beneath the cursor, and moves the cursor there.
-&rsquo;d$' will delete to the end of the line
-&lsquo;dw&rsquo; will delete to the end of the current word.
-&lsquo;0&rsquo; will move the cursor to the start of the current line.
-&lsquo;$&rsquo; will move the cursor to the end of the current line.
-&lsquo;u&rsquo; will undo the last operation.
-&lsquo;ctrl+r&rsquo; will redo.
-&lsquo;p&rsquo; will paste what you recently deleted or yanked.
-&lsquo;v&rsquo; is for visual mode, it lets you highlight things for future actions.
-&lsquo;y&rsquo; is for &ldquo;yanking&rdquo; (copying) text.
-&lsquo;yw&rsquo; will yank one word.  likewise, you can combine it with counts and motions.
-&lsquo;yy&rsquo; will copy the current line.
-&lsquo;dd&rsquo; will delete the current line (you can paste it later with p, so this is effectively a &lsquo;cut&rsquo; operation).
-&lsquo;/&rsquo; lets you search
-&lsquo;?&rsquo; lets you search in reverse.
-&lsquo;gg&rsquo; moves to the start of the file.
-&lsquo;G&rsquo; moves to the end of the file.
-&lsquo;dG&rsquo; deletes everything from the cursor to the end of the file.
-&lsquo;dgg&rsquo; deletes everything from the start of the file to the cursor.
-&lsquo;ctrl+g&rsquo; will show you the current line number, and percent through the file.
-&lsquo;A&rsquo; appends at the end of the line.  Useful since I frequently do this.
-&lsquo;I&rsquo; inserts at the start of the line.</p>
-<p>&ldquo;:set nu&rdquo; shows line numbers
-&ldquo;:set nonu&rdquo; hides line numbers
-&ldquo;:split <!-- raw HTML omitted -->&rdquo; splits the editor into two windows, and shows the other file in one of them.
-&ldquo;ctrl-w ctrl-w&rdquo; will switch between open windows. You can even have more than two.</p>
-<p>&ldquo;Motions&rdquo;
-&ldquo;0&rdquo; start of line
-&ldquo;$&rdquo; end of line
-&ldquo;w&rdquo; a &lsquo;word&rsquo;, moves to the start of a future word.
-&ldquo;e&rdquo; an &lsquo;end&rsquo;, moves to the end of a future word.
-&ldquo;b&rdquo; backwards one word, moves to the start of a word.
-&ldquo;G&rdquo; end of the file.
-&ldquo;gg&rdquo; start of the file.</p>
-<p>foo bar zop vop fee figh fo fum I smell the breath of an english man.</p>
-<p>Less important shortcuts:
-&lsquo;x&rsquo; will delete the character under the cursor, without being in any mode.
-easily worked around by using the delete character instead.
-&lsquo;r&rsquo; will let you replace the single character under the cursor, without being in any mode.
-easily worked around by using &lsquo;i&rsquo; to insert text.
-&lsquo;c&rsquo; let&rsquo;s you &ldquo;change&rdquo; things, it takes a motion.  It spares you from typing one extra key.</p>
-<p>===============</p>
-<p>Indent a bunch of lines:</p>
+        <div class="rightcolumn">
+            <div class="rightcontent">
+                <div class="metaarrows">
+                    <a class="metaprevious" href="/principles/segregation/" title="Interface Segregation Principle"><img
+                            src="/icons/left-arrow-white.png" width="26px" /></a>
+                    <a class="metaup" href="/tech/bash/" title="Bash"><img
+                            src="/icons/up-arrow-white.png" width="26px" /></a>
+                    <a class="metanext" href="/principles/liskov/" title="Liskov Substitution Principle"><img
+                            src="/icons/right-arrow-white.png" width="26px" /></a>
+                </div>
+                <hr class="meta">
+                <p class="toc">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#review-of-vi-commands">Review of vi Commands</a>
+      <ul>
+        <li><a href="#special-commands">Special Commands</a></li>
+        <li><a href="#motions">Motions</a></li>
+      </ul>
+    </li>
+    <li><a href="#less-important-shortcuts">Less Important Shortcuts</a></li>
+    <li><a href="#indent-a-bunch-of-lines">Indent a Bunch of Lines</a></li>
+    <li><a href="#append-to-a-bunch-of-lines">Append to a Bunch of Lines</a></li>
+    <li><a href="#copy-a-line">Copy a Line</a></li>
+    <li><a href="#cut-a-line">Cut a Line</a></li>
+  </ul>
+</nav>
+            </div>
+        </div>
+        <div class="middlecolumn">
+            <div class="breadcrumbs">
+                <h2 class="breadcrumbs">BreadCrumbs</h2>
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael&#39;s Home Page</a></li>
+                    <li class="breadcrumbs"><a href="/tech/" class="breadcrumbs">/Software Engineering</a></li>
+                    <li class="breadcrumbs"><a href="/tech/bash/" class="breadcrumbs">/Bash</a></li>
+                </ul>
+            </div>
+            <article>
+                <main>
+                    <h1 class="title">Vi Notes</h1>
+<h1 id="review-of-vi-commands">Review of vi Commands</h1>
+<ul>
+<li>&lsquo;a&rsquo; will go into insert mode, but one character after the curser, it&rsquo;s great for appending to the end of a line.</li>
+<li>&lsquo;o&rsquo; will go into insert mode, but it automatically inserts a new line beneath the cursor, and moves the cursor there.</li>
+<li>&rsquo;d$&rsquo; will delete to the end of the line</li>
+<li>&lsquo;dw&rsquo; will delete to the end of the current word.</li>
+<li>&lsquo;0&rsquo; will move the cursor to the start of the current line.</li>
+<li>&lsquo;$&rsquo; will move the cursor to the end of the current line.</li>
+<li>&lsquo;u&rsquo; will undo the last operation.</li>
+<li>&lsquo;ctrl+r&rsquo; will redo.</li>
+<li>&lsquo;p&rsquo; will paste what you recently deleted or yanked.</li>
+<li>&lsquo;v&rsquo; is for visual mode, it lets you highlight things for future actions.</li>
+<li>&lsquo;y&rsquo; is for &ldquo;yanking&rdquo; (copying) text.</li>
+<li>&lsquo;yw&rsquo; will yank one word.  likewise, you can combine it with counts and motions.</li>
+<li>&lsquo;yy&rsquo; will copy the current line.</li>
+<li>&lsquo;dd&rsquo; will delete the current line (you can paste it later with p, so this is effectively a &lsquo;cut&rsquo; operation).</li>
+<li>&lsquo;/&rsquo; lets you search</li>
+<li>&lsquo;?&rsquo; lets you search in reverse.</li>
+<li>&lsquo;gg&rsquo; moves to the start of the file.</li>
+<li>&lsquo;G&rsquo; moves to the end of the file.</li>
+<li>&lsquo;dG&rsquo; deletes everything from the cursor to the end of the file.</li>
+<li>&lsquo;dgg&rsquo; deletes everything from the start of the file to the cursor.</li>
+<li>&lsquo;ctrl+g&rsquo; will show you the current line number, and percent through the file.</li>
+<li>&lsquo;A&rsquo; appends at the end of the line.  Useful since I frequently do this.</li>
+<li>&lsquo;I&rsquo; inserts at the start of the line.</li>
+</ul>
+<h2 id="special-commands">Special Commands</h2>
+<ul>
+<li>&ldquo;:set nu&rdquo; shows line numbers</li>
+<li>&ldquo;:set nonu&rdquo; hides line numbers</li>
+<li>&ldquo;:split <!-- raw HTML omitted -->&rdquo; splits the editor into two windows, and shows the other file in one of them.</li>
+<li>&ldquo;ctrl-w ctrl-w&rdquo; will switch between open windows. You can even have more than two.</li>
+</ul>
+<h2 id="motions">Motions</h2>
+<ul>
+<li>&ldquo;0&rdquo; start of line</li>
+<li>&ldquo;$&rdquo; end of line</li>
+<li>&ldquo;w&rdquo; a &lsquo;word&rsquo;, moves to the start of a future word.</li>
+<li>&ldquo;e&rdquo; an &rsquo;end&rsquo;, moves to the end of a future word.</li>
+<li>&ldquo;b&rdquo; backwards one word, moves to the start of a word.</li>
+<li>&ldquo;G&rdquo; end of the file.</li>
+<li>&ldquo;gg&rdquo; start of the file.</li>
+</ul>
+<h1 id="less-important-shortcuts">Less Important Shortcuts</h1>
+<ul>
+<li>&lsquo;x&rsquo; will delete the character under the cursor, without being in any mode. easily worked around by using the delete character instead.</li>
+<li>&lsquo;r&rsquo; will let you replace the single character under the cursor, without being in any mode. easily worked around by using &lsquo;i&rsquo; to insert text.</li>
+<li>&lsquo;c&rsquo; let&rsquo;s you &ldquo;change&rdquo; things, it takes a motion.  It spares you from typing one extra key.</li>
+</ul>
+<h1 id="indent-a-bunch-of-lines">Indent a Bunch of Lines</h1>
 <ol>
 <li>Go to the first line</li>
 <li>ctrl+v</li>
@@ -94,11 +184,7 @@ easily worked around by using &lsquo;i&rsquo; to insert text.
 <li>type in your prefix</li>
 <li>hit escape</li>
 </ol>
-<p>foo bar
-zop snafu
-lawjtel fjiej</p>
-<p>===========================
-append to a bunch of lines:</p>
+<h1 id="append-to-a-bunch-of-lines">Append to a Bunch of Lines</h1>
 <ol>
 <li>Go to the first line</li>
 <li>ctrl + v &ndash;&gt; it&rsquo;s important to use &lsquo;ctrl&rsquo; here, not just &lsquo;v&rsquo;!</li>
@@ -108,20 +194,14 @@ append to a bunch of lines:</p>
 <li>type the suffix</li>
 <li>hit escape</li>
 </ol>
-<p>ajlek sfjoei swoei OMFG!!!
-jaotiej jaoite fjeaoie OMFG!!!
-iwq OMFG!!!
-ejrf joeijt OMFG!!!</p>
-<p>==============================
-copy a line:</p>
+<h1 id="copy-a-line">Copy a Line</h1>
 <ol>
 <li>go to the line</li>
 <li>type &lsquo;yy&rsquo; (yank yank)</li>
 <li>go where you want to insert it</li>
 <li>type p</li>
 </ol>
-<p>==============================
-cut a line:</p>
+<h1 id="cut-a-line">Cut a Line</h1>
 <ol>
 <li>go to the line</li>
 <li>type &lsquo;dd&rsquo; (delete delete, it actually copies the line into memory)</li>
@@ -129,9 +209,24 @@ cut a line:</p>
 <li>type p</li>
 </ol>
 
-    </main>
-</article>
 
+                </main>
+            </article>
+            <hr class="footerline">
+            <footer>
+                <a class="footerprevious" href="/principles/segregation/" title="Interface Segregation Principle">
+                    <img src="/icons/left-arrow-black.png" class="footerarrow" /><span class="footerlinktext">
+                        previous</span></a>
+                <div class="footermiddle">
+                    <div class="lastmod">Last Modified: <time datetime="2023-03-14 00:00:00 &#43;0000 UTC">
+                            March 14, 2023</time></div>
+                    <b>&#169; 2023 Michael Knapp</b>
+                </div>
+                <a class="footernext" href="/principles/liskov/" title="Liskov Substitution Principle">
+                    <span class="footerlinktext">next </span>
+                    <img src="/icons/right-arrow-black.png" class="footerarrow" /></a>
+            </footer>
+        </div>
     </div>
 </body>
 

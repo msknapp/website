@@ -2,8 +2,8 @@
 title: "Vi Notes"
 draft: false
 weight: 6
-description: my description.
-summary: a useful page.
+description: vim
+summary: Quick notes about using vim.
 lastmod: 2023-03-14
 date: 2023-03-14
 tags: []
@@ -53,12 +53,12 @@ keywords: []
 * "G" end of the file.
 * "gg" start of the file.
 
-# Less important shortcuts
+# Less Important Shortcuts
 * 'x' will delete the character under the cursor, without being in any mode. easily worked around by using the delete character instead.
 * 'r' will let you replace the single character under the cursor, without being in any mode. easily worked around by using 'i' to insert text.
 * 'c' let's you "change" things, it takes a motion.  It spares you from typing one extra key.
 
-# Indent a bunch of lines
+# Indent a Bunch of Lines
 
 1. Go to the first line
 2. ctrl+v
@@ -67,7 +67,7 @@ keywords: []
 5. type in your prefix
 6. hit escape 
 
-# Append to a bunch of lines
+# Append to a Bunch of Lines
 
 1. Go to the first line
 2. ctrl + v --> it's important to use 'ctrl' here, not just 'v'!

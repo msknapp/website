@@ -4,31 +4,25 @@
     <title>Golang on Michael Knapp&#39;s Home Page</title>
     <link>/tech/golang/</link>
     <description>Recent content in Golang on Michael Knapp&#39;s Home Page</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/tech/golang/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>2023 Michael Knapp</copyright>
+    <lastBuildDate>Sat, 18 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tech/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Golang Concurrency</title>
       <link>/tech/golang/go-concurrency/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>/tech/golang/go-concurrency/</guid>
-      <description>Summary Notes  use &amp;ldquo;go&amp;rdquo; keyword to make a function run in parallel. When main completes, it will not wait for other goroutines to finish, the program stops. channels allow communication between goroutines. make(chan [, capacity]) Also just declaring a channel makes it.  make(chan ) by default, it is bi-directional, and blocking. Sending to a channel will suspend the current goroutine until something reads from the channel. these are also called &amp;ldquo;unbuffered&amp;rdquo; or &amp;ldquo;synchronous&amp;rdquo; channels.</description>
+      <description>How to write concurrent golang programs.</description>
     </item>
     
     <item>
       <title>VSCode Shortcuts</title>
       <link>/tech/golang/vscode-shortcuts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>/tech/golang/vscode-shortcuts/</guid>
-      <description>Fatal Hotkeys Do not press:
-  ctrl+alt+f10 - caused the screen to go blank and was unrecoverable.
-  super+l - locks the screen.
-  ctrl+q - closes vscode
-  ctrl+w - closes the current editor tab
-  alt f4 - closes the current vscode window.
-  command pallette: f1, or ctrl+shift+p
-  view shortcut keys: ctrl + k then s
-  delete line: ctrl+shift+k</description>
+      <description>Keyboard hotkeys for VSCode that are useful for golang programming.</description>
     </item>
     
   </channel>

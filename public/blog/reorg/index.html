@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body>
+    <div class="navigationrow">
+        <h2 class="sections">Sections</h2>
+        <nav class="headernav">
+            <ul>
+                <li class="headernav ">
+                    <a class="headernav " href="/"><img src="/icons/house.png"
+                            width="20px" /></a>
+                </li>
+                
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/tech/" title="Notes about software engineering.">
+                        Software Engineering</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/algorithms/" title="Software algorithms.">
+                        Algorithms</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/principles/" title="my description.">
+                        Principles</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/applications/" title="browser applications.">
+                        Applications</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                        Cheat Sheets</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/open-source/" title="Notes on some awesome open source projects.">
+                        Open Source</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/architecture/" title="Software architecture">
+                        Architecture</a>
+                </li>
+                <li class="headernav currentsection">
+                    <a class="headernav currentsection"
+                        href="/blog/" title="A blog on software engineering.">
+                        Blog</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="body">
+        <aside>
+            <h2 class="sidebar">Pages</h2>
+            <ul class="sidebar">
+                <li class="sidebar"><a class="sidebar" href="/blog/authorization/" title="Common pitfalls people make when adding authorization to their apps.">
+                        Authorization Architecture Mistakes</a></li>
+                <li class="sidebar"><a class="sidebar" href="/blog/reorg/" title="">
+                        Is It Time To Reorg</a></li>
+            </ul>
+        </aside>
+        <div class="rightcolumn">
+            <div class="rightcontent">
+                <div class="metaarrows">
+                    <a class="metaprevious" href="/tech/java/classpath/" title="Classpath"><img
+                            src="/icons/left-arrow-white.png" width="26px" /></a>
+                    <a class="metaup" href="/blog/" title="Blog"><img
+                            src="/icons/up-arrow-white.png" width="26px" /></a>
+                    <a class="metanext" href="/principles/twelve-factor/" title="Twelve Factor Apps"><img
+                            src="/icons/right-arrow-white.png" width="26px" /></a>
+                </div>
+                <hr class="meta">
+                <p class="toc">Table of Contents:</p><nav id="TableOfContents"></nav>
+            </div>
+        </div>
+        <div class="middlecolumn">
+            <div class="breadcrumbs">
+                <h2 class="breadcrumbs">BreadCrumbs</h2>
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael&#39;s Home Page</a></li>
+                    <li class="breadcrumbs"><a href="/blog/" class="breadcrumbs">/Blog</a></li>
+                </ul>
+            </div>
+            <article>
+                <main>
+                    <h1 class="title">Is It Time To Reorg</h1>
+<p>Larger organizations tend to be split into smaller teams.  Most agile
+teams are around five engineers in size.  Often times the scope of their
+work is blurry, and they end up duplicating work.</p>
+<p>When you find that teams are often producing competing solutions to a
+common problem, that is when you know it is time for a re-org.  It should
+improve efficiency by having engineers be more specialized in one function
+area, and to focus on optimizing that feature.</p>
+<p>Teams do not need to be aligned to one piece of technology.  For example,
+you do not need to say team A writes all the CICD pipelines, team B only
+deals with the database, team C writes the API, and team D writes the UI.
+It is safe to have cross-functional teams, where the members have diverse
+specialties.</p>
+<p>You want the organization to be structured so that you minimize the
+interfaces between services, and minimize the amount of necessary
+collaboration between them.  Collaboration will always be necessary, but
+if less of it is needed then teams can be more productive.</p>
+
+
+                </main>
+            </article>
+            <hr class="footerline">
+            <footer>
+                <a class="footerprevious" href="/tech/java/classpath/" title="Classpath">
+                    <img src="/icons/left-arrow-black.png" class="footerarrow" /><span class="footerlinktext">
+                        previous</span></a>
+                <div class="footermiddle">
+                    <div class="lastmod">Last Modified: <time datetime="2023-03-17 00:00:00 &#43;0000 UTC">
+                            March 17, 2023</time></div>
+                    <b>&#169; 2023 Michael Knapp</b>
+                </div>
+                <a class="footernext" href="/principles/twelve-factor/" title="Twelve Factor Apps">
+                    <span class="footerlinktext">next </span>
+                    <img src="/icons/right-arrow-black.png" class="footerarrow" /></a>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -8,40 +8,111 @@
     <meta name="keywords" content="golang resume">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+
     <link rel="stylesheet" media="print" href="/css/print.css" />
 </head>
 
 <body>
-    <h1 class="topheader">Classpath</h1>
-    <div class="navigation">
-        <nav>
-            <a href="/">Home</a>
-            
-            <a href="/tech/">Software Engineering</a>
-            
-            <a href="/algorithms/">Algorithms</a>
-            
-            <a href="/principles/">Principles</a>
-            
-            <a href="/applications/">Applications</a>
-            
-            <a href="/cheat-sheets/">Cheat Sheets</a>
-            
-            <a href="/open-source/">Open Source</a>
-            
-            <a href="/architecture/">Architecture</a>
-            
-            <a href="/blog/">Blog</a>
-            
+    <div class="navigationrow">
+        <h2 class="sections">Sections</h2>
+        <nav class="headernav">
+            <ul>
+                <li class="headernav ">
+                    <a class="headernav " href="/"><img src="/icons/house.png"
+                            width="20px" /></a>
+                </li>
+                
+                <li class="headernav currentsection">
+                    <a class="headernav currentsection"
+                        href="/tech/" title="Notes about software engineering.">
+                        Software Engineering</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/algorithms/" title="Software algorithms.">
+                        Algorithms</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/principles/" title="my description.">
+                        Principles</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/applications/" title="browser applications.">
+                        Applications</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                        Cheat Sheets</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/open-source/" title="Notes on some awesome open source projects.">
+                        Open Source</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/architecture/" title="Software architecture">
+                        Architecture</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/blog/" title="A blog on software engineering.">
+                        Blog</a>
+                </li>
+            </ul>
         </nav>
     </div>
     <div class="body">
         <aside>
+            <h2 class="sidebar">Pages</h2>
+            <ul class="sidebar">
+                <li class="sidebar"><a class="sidebar" href="/tech/golang/" title="">
+                        Golang</a></li>
+                <li class="sidebar"><a class="sidebar" href="/tech/java/" title="java programming language.">
+                        Java</a></li>
+                <li class="sidebar"><a class="sidebar" href="/tech/bash/" title="">
+                        Bash</a></li>
+                <li class="sidebar"><a class="sidebar" href="/tech/javascript-language/" title="javascript programming">
+                        Javascript Language</a></li>
+                <li class="sidebar"><a class="sidebar" href="/tech/languages/" title="my description.">
+                        Software Languages</a></li>
+            </ul>
         </aside>
-        
-<article>
-    <main>
-        <p>Seeing the contents of a jar file:</p>
+        <div class="rightcolumn">
+            <div class="rightcontent">
+                <div class="metaarrows">
+                    <a class="metaprevious" href="/tech/java/maven/" title="Maven"><img
+                            src="/icons/left-arrow-white.png" width="26px" /></a>
+                    <a class="metaup" href="/tech/java/" title="Java"><img
+                            src="/icons/up-arrow-white.png" width="26px" /></a>
+                    <a class="metanext" href="/blog/reorg/" title="Is It Time To Reorg"><img
+                            src="/icons/right-arrow-white.png" width="26px" /></a>
+                </div>
+                <hr class="meta">
+                <p class="toc">Table of Contents:</p><nav id="TableOfContents"></nav>
+            </div>
+        </div>
+        <div class="middlecolumn">
+            <div class="breadcrumbs">
+                <h2 class="breadcrumbs">BreadCrumbs</h2>
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael&#39;s Home Page</a></li>
+                    <li class="breadcrumbs"><a href="/tech/" class="breadcrumbs">/Software Engineering</a></li>
+                    <li class="breadcrumbs"><a href="/tech/java/" class="breadcrumbs">/Java</a></li>
+                </ul>
+            </div>
+            <article>
+                <main>
+                    <h1 class="title">Classpath</h1>
+<p>Seeing the contents of a jar file:</p>
 <p>jar tf &lt;my.jar&gt; | less</p>
 <p>Extracting a jar file:</p>
 <p>jar xf &lt;my.jar&gt;</p>
@@ -58,7 +129,7 @@ $ find . -name &lsquo;*.jar&rsquo; -type f -exec jar tf {} | grep <!-- raw HTML 
         sort &lt; /tmp/classes_unordered.txt &gt; /tmp/maven_index.txt
 }
 </code></pre>
-<p>Now you can use &lsquo;less&rsquo; to search the index file for your class.  This can be used to answer the question &ldquo;what jar has the class I&rsquo;m seeing?&rdquo;</p>
+<p>Now you can use &rsquo;less&rsquo; to search the index file for your class.  This can be used to answer the question &ldquo;what jar has the class I&rsquo;m seeing?&rdquo;</p>
 <p>Seeing dependencies with maven:</p>
 <p>mvn dependency:tree | less
 mvn dependency:resolve | less</p>
@@ -66,9 +137,24 @@ mvn dependency:resolve | less</p>
 <p>Viewing Source Files:
 Unfortunately &lsquo;jar&rsquo; and &lsquo;jad&rsquo; are not very versatile.  &ldquo;jar xf &lt;my.jar&gt; &lt;/path/to/My.class&gt;&rdquo; can be used to extract a single class, but it cannot go to standard output, it must be written to a file in the corresponding sub directory.  jad cannot read from standard input, only from a file.  jad can be piped to standard output though.  You will have to go to each file one at a time, extract what you want to see, decompile it, and then review its source code.</p>
 
-    </main>
-</article>
 
+                </main>
+            </article>
+            <hr class="footerline">
+            <footer>
+                <a class="footerprevious" href="/tech/java/maven/" title="Maven">
+                    <img src="/icons/left-arrow-black.png" class="footerarrow" /><span class="footerlinktext">
+                        previous</span></a>
+                <div class="footermiddle">
+                    <div class="lastmod">Last Modified: <time datetime="2023-03-14 00:00:00 &#43;0000 UTC">
+                            March 14, 2023</time></div>
+                    <b>&#169; 2023 Michael Knapp</b>
+                </div>
+                <a class="footernext" href="/blog/reorg/" title="Is It Time To Reorg">
+                    <span class="footerlinktext">next </span>
+                    <img src="/icons/right-arrow-black.png" class="footerarrow" /></a>
+            </footer>
+        </div>
     </div>
 </body>
 

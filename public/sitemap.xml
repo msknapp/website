@@ -2,68 +2,118 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/tech/bash/</loc>
+    <loc>/tech/golang/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/bash/review-bash/</loc>
+    <loc>/blog/authorization/</loc>
+    <lastmod>2023-03-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/data/cassandra/</loc>
+    <loc>/cheat-sheets/python-cheatsheet/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tech/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/algorithms/</loc>
-  </url><url>
-    <loc>/tech/data/</loc>
+    <loc>/principles/kiss/</loc>
   </url><url>
     <loc>/tech/golang/go-concurrency/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/algorithms/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tech/java/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/principles/</loc>
-  </url><url>
-    <loc>/tech/data/problems-with-nifi/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tech/bash/sudo/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/principles/defensive/</loc>
   </url><url>
     <loc>/applications/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tech/bash/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tech/bash/ubuntu-shortcuts/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tech/golang/vscode-shortcuts/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tech/bash/cut/</loc>
   </url><url>
-    <loc>/tech/golang/</loc>
+    <loc>/principles/single-responsibility/</loc>
   </url><url>
-    <loc>/tech/bash/ubuntu-shortcuts/</loc>
-  </url><url>
-    <loc>/tech/golang/vscode-shortcuts/</loc>
-  </url><url>
-    <loc>/tech/data/zookeeper/</loc>
+    <loc>/principles/open-closed/</loc>
+    <lastmod>2023-03-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/cheat-sheets/</loc>
-  </url><url>
-    <loc>/tech/java/</loc>
-  </url><url>
-    <loc>/open-source/</loc>
-  </url><url>
-    <loc>/architecture/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tech/javascript-language/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/bash/vi-notes/</loc>
-  </url><url>
-    <loc>/blog/</loc>
+    <loc>/open-source/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tech/languages/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/principles/liskov/</loc>
+  </url><url>
+    <loc>/architecture/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tech/bash/vi-notes/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/principles/segregation/</loc>
+  </url><url>
+    <loc>/blog/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/principles/dependency-inversion/</loc>
+  </url><url>
+    <loc>/principles/testing/</loc>
   </url><url>
     <loc>/resume/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/transcribe-scanned-documents/</loc>
+    <loc>/principles/twelve-factor/</loc>
+  </url><url>
+    <loc>/blog/reorg/</loc>
+    <lastmod>2023-03-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tech/java/classpath/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/languages/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tech/java/maven/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/cheat-sheets/python-cheatsheet/</loc>
+    <loc>/tags/python/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/resume/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/software/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url>
 </urlset>

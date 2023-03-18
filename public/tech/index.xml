@@ -4,39 +4,25 @@
     <title>Software Engineering on Michael Knapp&#39;s Home Page</title>
     <link>/tech/</link>
     <description>Recent content in Software Engineering on Michael Knapp&#39;s Home Page</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/tech/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>2023 Michael Knapp</copyright>
+    <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Javascript Language</title>
       <link>/tech/javascript-language/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>/tech/javascript-language/</guid>
-      <description>output with console.log() semicolons are recommended but optional. comment syntax is normal // or /* */ Uses { } for code blocks. has &amp;ldquo;number&amp;rdquo; types, does not separate integers from floats.
-So &amp;ldquo;//&amp;rdquo; is not integer division (Python), it is a comment. has &amp;ldquo;boolean&amp;rdquo; and &amp;ldquo;string&amp;rdquo;. No byte or rune type exists. has arrays. &amp;ldquo;object&amp;rdquo; is their catch-all dictionary and class type. double or single quotes can be used to define strings.</description>
+      <description>Notes about the javascript programming language.</description>
     </item>
     
     <item>
       <title>Software Languages</title>
       <link>/tech/languages/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>/tech/languages/</guid>
-      <description>This attempts to document languages not as how they work individually, but instead as how they deviate from a standard core programming language. It starts with the most common language features and functionality, and then shows how certain languages differ.
-We should consider the following languagese: C, C++, java, javascript, python, typescript, golang, bash, Ruby, Rust
-Operators  almost all languages have very similar operators. comparison: &amp;lt;, &amp;gt;, &amp;lt;=, &amp;gt;=, ==, !</description>
-    </item>
-    
-    <item>
-      <title>Transcribe Scanned Documents</title>
-      <link>/tech/transcribe-scanned-documents/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tech/transcribe-scanned-documents/</guid>
-      <description>On Ubuntu, ImageMagick should be installed out of the box. Unfortunately it&amp;rsquo;s policy does not allow you to read PDFs by default.
-First switch to sudo:
-$ sudo su - Take a backup of the policy before editing it: cp /etc/ImageMagick-6/policy.xml /etc/ImageMagick-6/policy.xml.backup
-edit the policy xml: $ /etc/ImageMagick-6/policy.xml
-You should find a line like this: Replace it with this: You also need tesseract to be installed: $ apt-get install -y tesseract-ocr</description>
+      <description>A comparison of programming language syntaxes and features.</description>
     </item>
     
   </channel>

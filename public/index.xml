@@ -4,67 +4,79 @@
     <title>Michael&#39;s Home Page on Michael Knapp&#39;s Home Page</title>
     <link>/</link>
     <description>Recent content in Michael&#39;s Home Page on Michael Knapp&#39;s Home Page</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>2023 Michael Knapp</copyright>
+    <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Bash Review</title>
-      <link>/tech/bash/review-bash/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Authorization Architecture Mistakes</title>
+      <link>/blog/authorization/</link>
+      <pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tech/bash/review-bash/</guid>
-      <description>Review Questions:
-What do these tell you: $$ $? : $* $@ $# (( )) $( ) ${parameter} [ ] [[ ]] . source
-What is the difference between [ ], [[ ]], ( ), and (( )) ? How do you get the last column using gawk? How do you make variables you set ALWAYS carry through to sub-shells? and undo that? How do you make the &amp;lsquo;&amp;gt;&amp;rsquo; operator NEVER overwrite existing files?</description>
+      <guid>/blog/authorization/</guid>
+      <description>Common pitfalls people make when adding authorization to their apps.</description>
     </item>
     
     <item>
-      <title>Cassandra</title>
-      <link>/tech/data/cassandra/</link>
+      <title>Python CheatSheet</title>
+      <link>/cheat-sheets/python-cheatsheet/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/cheat-sheets/python-cheatsheet/</guid>
+      <description>Cheat sheet for programming in Python.</description>
+    </item>
+    
+    <item>
+      <title>KISS</title>
+      <link>/principles/kiss/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tech/data/cassandra/</guid>
-      <description>start cassandra: $ cassandra -f the -f means print logs to the foreground.
-type &amp;lsquo;cqlsh&amp;rsquo; to open the cassandra shell. $ cqlsh
-in the shell:
- HELP HELP DESCRIBE CLUSTER; DESCRIBE KEYSPACES; SHOW VERSION;
- no need for user, password, etc.
-the book is wrong about commit_log_directory, that is not a yaml property.
-uses port 9160</description>
+      <guid>/principles/kiss/</guid>
+      <description>How to keep your code simple.</description>
     </item>
     
     <item>
       <title>Golang Concurrency</title>
       <link>/tech/golang/go-concurrency/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>/tech/golang/go-concurrency/</guid>
-      <description>Summary Notes  use &amp;ldquo;go&amp;rdquo; keyword to make a function run in parallel. When main completes, it will not wait for other goroutines to finish, the program stops. channels allow communication between goroutines. make(chan [, capacity]) Also just declaring a channel makes it.  make(chan ) by default, it is bi-directional, and blocking. Sending to a channel will suspend the current goroutine until something reads from the channel. these are also called &amp;ldquo;unbuffered&amp;rdquo; or &amp;ldquo;synchronous&amp;rdquo; channels.</description>
-    </item>
-    
-    <item>
-      <title>Problems With NiFi</title>
-      <link>/tech/data/problems-with-nifi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tech/data/problems-with-nifi/</guid>
-      <description>It has a limited degree of fault tolerance. Flow files are written to one disk, they are not replicated. If that one disk crashes, the flow file is gone permanently. We work around this by using EBS (which replicates within an AZ automatically), but we shouldn&amp;rsquo;t have to. You can also work around this by leveraging kafka. While NiFi is fault tolerant (to a small degree), it is not highly available.</description>
+      <description>How to write concurrent golang programs.</description>
     </item>
     
     <item>
       <title>Sudo</title>
       <link>/tech/bash/sudo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>/tech/bash/sudo/</guid>
-      <description>instead of editing /etc/sudoers, it&amp;rsquo;s better to add a file in /etc/sudoers.d
-if they want sudo access with a password add:
-ALL=(ALL) ALL
-if you want access without any password prompts:
-ALL=(ALL) NOPASSWD: ALL
-if you want everybody to have sudo access with their own password prompt:
-ALL ALL=(ALL) ALL
-if you want everybody to have sudo access without password prompts:
-ALL ALL=(ALL) NOPASSWD: ALL
-The file should be read only to the user and group: chmod 440 /etc/sudoers.</description>
+      <description>How to setup passwordless sudo.</description>
+    </item>
+    
+    <item>
+      <title>Defensive Programming</title>
+      <link>/principles/defensive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/principles/defensive/</guid>
+      <description>Making your code defensive.</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu Shortcuts</title>
+      <link>/tech/bash/ubuntu-shortcuts/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/tech/bash/ubuntu-shortcuts/</guid>
+      <description>Shortcuts for moving around in Ubuntu</description>
+    </item>
+    
+    <item>
+      <title>VSCode Shortcuts</title>
+      <link>/tech/golang/vscode-shortcuts/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/tech/golang/vscode-shortcuts/</guid>
+      <description>Keyboard hotkeys for VSCode that are useful for golang programming.</description>
     </item>
     
     <item>
@@ -73,147 +85,133 @@ The file should be read only to the user and group: chmod 440 /etc/sudoers.</des
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tech/bash/cut/</guid>
-      <description>Assuming you just want to select a column: use awk if you want consecutive delimiters (like spaces) to count as one. If you have text with multiple spaces between values, awk is your friend. use cut if there is only one delimiter (like a comma or pipe).
-in cut, fields start from 1. you can have a space between the option and its argument. use -f for fields.
-Example:
-alpha,Charlie,85393 beta,Megan,98523 alpha,Billy,43652 omega,Zach,63425 helios,Shaq,82352 zed,Shaniah,153523 faraday,Nicole,89623 helios,Ken,62632 omega,Adam,98765 beta,Sean,62436 alpha,Roger,56147 alpha,Frank,89813 omega,Daniel,120151 beta,Jack,100101</description>
+      <description>How to use the cut command line program.</description>
     </item>
     
     <item>
-      <title>Ubuntu Shortcuts</title>
-      <link>/tech/bash/ubuntu-shortcuts/</link>
+      <title>Single Responsibility Principle</title>
+      <link>/principles/single-responsibility/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tech/bash/ubuntu-shortcuts/</guid>
-      <description>Shortcuts for moving around in ubuntu:
-Requiring the least memorization:
-  easiest and fastest thing to remember:
- hold down the window button, it shows you many useful shortcuts    switch through applications running on your desktop: alt+tab
-  switch tabs within terminal, or web browser: ctrl+page up/page down, or use alt+  access the window menu for an application: alt+space
-  access application specific menus: alt+F10, or alt + an underlined letter in the menu.</description>
+      <guid>/principles/single-responsibility/</guid>
+      <description>The importance of single responsibility.</description>
     </item>
     
     <item>
-      <title>VSCode Shortcuts</title>
-      <link>/tech/golang/vscode-shortcuts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Open Closed Principle</title>
+      <link>/principles/open-closed/</link>
+      <pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tech/golang/vscode-shortcuts/</guid>
-      <description>Fatal Hotkeys Do not press:
-  ctrl+alt+f10 - caused the screen to go blank and was unrecoverable.
-  super+l - locks the screen.
-  ctrl+q - closes vscode
-  ctrl+w - closes the current editor tab
-  alt f4 - closes the current vscode window.
-  command pallette: f1, or ctrl+shift+p
-  view shortcut keys: ctrl + k then s
-  delete line: ctrl+shift+k</description>
-    </item>
-    
-    <item>
-      <title>ZooKeeper</title>
-      <link>/tech/data/zookeeper/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tech/data/zookeeper/</guid>
-      <description>Start zookeeper: $ cd /share/usr/zookeeper/bin $ ./server.sh start
-See if it&amp;rsquo;s running: $ jps michael@michael-GA-890GPA-UD3H /share/usr/zookeeper/bin $ jps 14753 QuorumPeerMain 14773 Jps
-The &amp;ldquo;QuorumPeerMain&amp;rdquo; is zookeeper.
-It writes logs to /share/usr/zookeeper/bin/zookeeper.out The zk config is in /share/usr/zookeeper/conf/zoo.cfg
-The zoo.cfg file specifies a directory for zookeeper to use: dataDir=/share/var/zookeeper
-so we are writing to /share/var/zookeeper
-The default port it listens to is 2181</description>
+      <guid>/principles/open-closed/</guid>
+      <description>Open for extensions, closed for contributions.</description>
     </item>
     
     <item>
       <title>Javascript Language</title>
       <link>/tech/javascript-language/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>/tech/javascript-language/</guid>
-      <description>output with console.log() semicolons are recommended but optional. comment syntax is normal // or /* */ Uses { } for code blocks. has &amp;ldquo;number&amp;rdquo; types, does not separate integers from floats.
-So &amp;ldquo;//&amp;rdquo; is not integer division (Python), it is a comment. has &amp;ldquo;boolean&amp;rdquo; and &amp;ldquo;string&amp;rdquo;. No byte or rune type exists. has arrays. &amp;ldquo;object&amp;rdquo; is their catch-all dictionary and class type. double or single quotes can be used to define strings.</description>
-    </item>
-    
-    <item>
-      <title>Vi Notes</title>
-      <link>/tech/bash/vi-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tech/bash/vi-notes/</guid>
-      <description>vimtutor summary (of what I think is important):
-&amp;lsquo;a&amp;rsquo; will go into insert mode, but one character after the curser, it&amp;rsquo;s great for appending to the end of a line. &amp;lsquo;o&amp;rsquo; will go into insert mode, but it automatically inserts a new line beneath the cursor, and moves the cursor there. &amp;rsquo;d$&#39; will delete to the end of the line &amp;lsquo;dw&amp;rsquo; will delete to the end of the current word. &amp;lsquo;0&amp;rsquo; will move the cursor to the start of the current line.</description>
+      <description>Notes about the javascript programming language.</description>
     </item>
     
     <item>
       <title>Software Languages</title>
       <link>/tech/languages/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>/tech/languages/</guid>
-      <description>This attempts to document languages not as how they work individually, but instead as how they deviate from a standard core programming language. It starts with the most common language features and functionality, and then shows how certain languages differ.
-We should consider the following languagese: C, C++, java, javascript, python, typescript, golang, bash, Ruby, Rust
-Operators  almost all languages have very similar operators. comparison: &amp;lt;, &amp;gt;, &amp;lt;=, &amp;gt;=, ==, !</description>
+      <description>A comparison of programming language syntaxes and features.</description>
+    </item>
+    
+    <item>
+      <title>Liskov Substitution Principle</title>
+      <link>/principles/liskov/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/principles/liskov/</guid>
+      <description>How to make your code polymorphous.</description>
+    </item>
+    
+    <item>
+      <title>Vi Notes</title>
+      <link>/tech/bash/vi-notes/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/tech/bash/vi-notes/</guid>
+      <description>Quick notes about using vim.</description>
+    </item>
+    
+    <item>
+      <title>Interface Segregation Principle</title>
+      <link>/principles/segregation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/principles/segregation/</guid>
+      <description>The importance of interfaces</description>
+    </item>
+    
+    <item>
+      <title>Dependency Inversion Principle</title>
+      <link>/principles/dependency-inversion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/principles/dependency-inversion/</guid>
+      <description>The dependency inversion principle.</description>
+    </item>
+    
+    <item>
+      <title>Software Testing</title>
+      <link>/principles/testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/principles/testing/</guid>
+      <description>The importance of software testing.</description>
     </item>
     
     <item>
       <title>Resume</title>
       <link>/resume/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>/resume/</guid>
-      <description>Professional Experience Capital One  March 2015 – October 2016
-October 2016 – present
-Lead Software Engineer  Lead a team of software engineers developing the Enterprise Realtime Machine Learning Model Service. Coached and mentored peers as needed. Designed software system architectures to be highly available, fault tolerant, secure, performant, scalable, loosely coupled, and maintainable. Developed docker images, helm charts, Argo applications, Kubernetes operators, and APIs. Supported end user troubleshooting, and was on-call to recover services in any incident.</description>
+      <description>My Job Resume.</description>
     </item>
     
     <item>
-      <title>Transcribe Scanned Documents</title>
-      <link>/tech/transcribe-scanned-documents/</link>
+      <title>Twelve Factor Apps</title>
+      <link>/principles/twelve-factor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tech/transcribe-scanned-documents/</guid>
-      <description>On Ubuntu, ImageMagick should be installed out of the box. Unfortunately it&amp;rsquo;s policy does not allow you to read PDFs by default.
-First switch to sudo:
-$ sudo su - Take a backup of the policy before editing it: cp /etc/ImageMagick-6/policy.xml /etc/ImageMagick-6/policy.xml.backup
-edit the policy xml: $ /etc/ImageMagick-6/policy.xml
-You should find a line like this: Replace it with this: You also need tesseract to be installed: $ apt-get install -y tesseract-ocr</description>
+      <guid>/principles/twelve-factor/</guid>
+      <description>Architecture principles for 12-factor apps</description>
+    </item>
+    
+    <item>
+      <title>Is It Time To Reorg</title>
+      <link>/blog/reorg/</link>
+      <pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/reorg/</guid>
+      <description>Is it time for your team to re-organize?</description>
     </item>
     
     <item>
       <title>Classpath</title>
       <link>/tech/java/classpath/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>/tech/java/classpath/</guid>
-      <description>Seeing the contents of a jar file:
-jar tf &amp;lt;my.jar&amp;gt; | less
-Extracting a jar file:
-jar xf &amp;lt;my.jar&amp;gt;
-I recommend copying/moving it to a tmp directory first so when you extract it, the files are not inter-mixed with others you wanted.
-Finding what jars have a certain class:
-$ cd ~/.m2/repository $ find . -name &amp;lsquo;*.jar&amp;rsquo; -type f -exec jar tf {} | grep ;
-Files will have forward slashes in them like a directory, not like package names.</description>
+      <description>a useful page.</description>
     </item>
     
     <item>
       <title>Maven</title>
       <link>/tech/java/maven/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>/tech/java/maven/</guid>
-      <description>A basic maven pom template:
-4.0.0&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;Making the jar shaded:
-&amp;lt;plugin&amp;gt; &amp;lt;groupId&amp;gt;org.apache.maven.plugins&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;maven-shade-plugin&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;2.4.3&amp;lt;/version&amp;gt; &amp;lt;executions&amp;gt; &amp;lt;execution&amp;gt; &amp;lt;phase&amp;gt;package&amp;lt;/phase&amp;gt; &amp;lt;goals&amp;gt; &amp;lt;goal&amp;gt;shade&amp;lt;/goal&amp;gt; &amp;lt;/goals&amp;gt; &amp;lt;configuration&amp;gt; &amp;lt;artifactSet&amp;gt; &amp;lt;!-- There is also an excludes --&amp;gt; &amp;lt;includes&amp;gt; &amp;lt;!-- You can use an asterisk in place of the artifact id. --&amp;gt; &amp;lt;include&amp;gt;groupid:artifactId[[:type]:classifier]&amp;lt;/include&amp;gt; &amp;lt;/includes&amp;gt; &amp;lt;/artifactSet&amp;gt; &amp;lt;transformers&amp;gt; &amp;lt;!-- for an executable jar --&amp;gt; &amp;lt;transformer implementation=&amp;quot;org.apache.maven.plugins.shade.resource.ManifestResourceTransformer&amp;quot;&amp;gt; &amp;lt;mainClass&amp;gt;com.foo.bar.Main&amp;lt;/mainClass&amp;gt; &amp;lt;/transformer&amp;gt; &amp;lt;/transformers&amp;gt; &amp;lt;!-- To resolve the conflict where signed jars prevent this from running. --&amp;gt; &amp;lt;filters&amp;gt; &amp;lt;filter&amp;gt; &amp;lt;artifact&amp;gt;*:*&amp;lt;/artifact&amp;gt; &amp;lt;excludes&amp;gt; &amp;lt;exclude&amp;gt;META-INF/*.</description>
-    </item>
-    
-    <item>
-      <title>Python CheatSheet</title>
-      <link>/cheat-sheets/python-cheatsheet/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/cheat-sheets/python-cheatsheet/</guid>
-      <description>Python  there is no switch statement. bools are capitalized True/False to iterate over numbers: for i in range(n): read one line from standard input: input() write one line to standard output: print(...) write without a newline: print(..., end=&amp;quot;&amp;quot;) functions and fields use snake_case classes should be capitalized. the null type is None / is floating point division, // is integer division. collections have no size or length method, use len(.</description>
+      <description>a useful page.</description>
     </item>
     
   </channel>

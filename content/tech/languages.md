@@ -1,8 +1,8 @@
 ---
 title: "Software Languages"
-weight: 7
+weight: 5
 description: my description.
-summary: a useful page.
+summary: A comparison of programming language syntaxes and features.
 lastmod: 2023-03-14
 date: 2023-03-14
 tags: []

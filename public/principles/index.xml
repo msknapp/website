@@ -4,6 +4,89 @@
     <title>Principles on Michael Knapp&#39;s Home Page</title>
     <link>/principles/</link>
     <description>Recent content in Principles on Michael Knapp&#39;s Home Page</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/principles/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>2023 Michael Knapp</copyright>
+    <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/principles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>KISS</title>
+      <link>/principles/kiss/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/principles/kiss/</guid>
+      <description>How to keep your code simple.</description>
+    </item>
+    
+    <item>
+      <title>Defensive Programming</title>
+      <link>/principles/defensive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/principles/defensive/</guid>
+      <description>Making your code defensive.</description>
+    </item>
+    
+    <item>
+      <title>Single Responsibility Principle</title>
+      <link>/principles/single-responsibility/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/principles/single-responsibility/</guid>
+      <description>The importance of single responsibility.</description>
+    </item>
+    
+    <item>
+      <title>Open Closed Principle</title>
+      <link>/principles/open-closed/</link>
+      <pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/principles/open-closed/</guid>
+      <description>Open for extensions, closed for contributions.</description>
+    </item>
+    
+    <item>
+      <title>Liskov Substitution Principle</title>
+      <link>/principles/liskov/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/principles/liskov/</guid>
+      <description>How to make your code polymorphous.</description>
+    </item>
+    
+    <item>
+      <title>Interface Segregation Principle</title>
+      <link>/principles/segregation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/principles/segregation/</guid>
+      <description>The importance of interfaces</description>
+    </item>
+    
+    <item>
+      <title>Dependency Inversion Principle</title>
+      <link>/principles/dependency-inversion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/principles/dependency-inversion/</guid>
+      <description>The dependency inversion principle.</description>
+    </item>
+    
+    <item>
+      <title>Software Testing</title>
+      <link>/principles/testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/principles/testing/</guid>
+      <description>The importance of software testing.</description>
+    </item>
+    
+    <item>
+      <title>Twelve Factor Apps</title>
+      <link>/principles/twelve-factor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/principles/twelve-factor/</guid>
+      <description>Architecture principles for 12-factor apps</description>
+    </item>
+    
   </channel>
 </rss>

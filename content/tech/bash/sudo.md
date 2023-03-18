@@ -2,8 +2,8 @@
 title: "Sudo"
 weight: 2
 draft: false
-description: my description.
-summary: a useful page.
+description: passwordless sudo
+summary: How to setup passwordless sudo.
 lastmod: 2023-03-14
 date: 2023-03-14
 tags: []

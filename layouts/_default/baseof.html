@@ -8,6 +8,12 @@
     <meta name="keywords" content="{{ .Site.Params.Keywords }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+
     <link rel="stylesheet" media="print" href="/css/print.css" />
 </head>
 
@@ -26,76 +32,104 @@
                         href="{{ $x.Permalink }}" title="{{ $x.Description }}">
                         {{ $x.Title }}</a>
                 </li>
-                {{ end }}
+                {{- end }}
             </ul>
         </nav>
     </div>
     <div class="body">
-        {{ if not .IsHome }}
+        {{- if not .IsHome }}
         <aside>
             <h2 class="sidebar">Pages</h2>
             <ul class="sidebar">
-                {{ range .FirstSection.Pages }}
+                {{- range .FirstSection.Pages }}
                 <li class="sidebar"><a class="sidebar" href="{{ .Permalink }}" title="{{ .Description }}">
                         {{ .Title }}</a></li>
                 {{- end }}
             </ul>
         </aside>
-        {{ else }}
-        <img class="profilepicture" src="images/profile-2022.jpg" width="360px" />
-        {{ end }}
+        {{- else }}
+        <div></div>
+        <!-- <img class="profilepicture" src="images/profile-2022.jpg" width="360px" /> -->
+        {{- end }}
+        {{- if not .IsHome }}
+        <div class="rightcolumn">
+            <div class="rightcontent">
+                <div class="metaarrows">
+                    {{- if .Prev }}
+                    <a class="metaprevious" href="{{ .Prev.Permalink }}" title="{{ .Prev.Title }}"><img
+                            src="/icons/left-arrow-white.png" width="26px" /></a>
+                    {{- else }}
+                    {{- if .PrevInSection }}
+                    <a class="metaprevious" href="{{ .PrevInSection.Permalink }}"
+                        title="{{ .PrevInSection.Title }}"><img src="/icons/left-arrow-white.png" width="26px" /></a>
+                    {{- end }}
+                    {{- end }}
+                    {{- if .Parent }}
+                    <a class="metaup" href="{{ .Parent.Permalink }}" title="{{ .Parent.Title }}"><img
+                            src="/icons/up-arrow-white.png" width="26px" /></a>
+                    {{- end }}
+                    {{- if .Next }}
+                    <a class="metanext" href="{{ .Next.Permalink }}" title="{{ .Next.Title }}"><img
+                            src="/icons/right-arrow-white.png" width="26px" /></a>
+                    {{- else }}
+                    {{- if .NextInSection }}
+                    <a class="metanext" href="{{ .NextInSection.Permalink }}" title="{{ .NextInSection.Title }}"><img
+                            src="/icons/right-arrow-white.png" width="26px" /></a>
+                    {{- end }}
+                    {{- end }}
+                </div>
+                {{- if and .IsPage .TableOfContents }}
+                <hr class="meta">
+                <p class="toc">Table of Contents:</p>
+                {{- .TableOfContents }}
+                {{- end }}
+            </div>
+        </div>
+        {{- else }}
+        <div></div>
+        {{- end }}
         <div class="middlecolumn">
             <div class="breadcrumbs">
                 <h2 class="breadcrumbs">BreadCrumbs</h2>
                 <ul class="breadcrumbs">
-                    {{ range .Ancestors.Reverse }}
+                    {{- range .Ancestors.Reverse }}
                     <li class="breadcrumbs"><a href="{{ .Permalink }}" class="breadcrumbs">/{{ .Title }}</a></li>
-                    {{ end }}
+                    {{- end }}
                 </ul>
             </div>
             <article>
                 <main>
                     <h1 class="title">{{ .Params.title }}</h1>
-                    {{ block "main" . }}
+                    {{- block "main" . }}
                     Default content.
-                    {{ end }}
+                    {{- end }}
                 </main>
             </article>
-            {{ if .Prev }}
-            <a class="previous" href="{{ .Prev.Permalink }}" title="{{ .Prev.Title }}">
-                <img src="/icons/left-arrow-black.png" width="26px" /></a>
-            {{ end }}
-            {{ if .Next }}
-            <a class="next" href="{{ .Next.Permalink }}" title="{{ .Next.Title }}">
-                <img src="/icons/right-arrow-black.png" width="26px" /></a>
-            {{ end }}
+            <hr class="footerline">
+            <footer>
+                {{- if .Prev }}
+                <a class="footerprevious" href="{{ .Prev.Permalink }}" title="{{ .Prev.Title }}">
+                    <img src="/icons/left-arrow-black.png" class="footerarrow" /><span class="footerlinktext">
+                        previous</span></a>
+                {{- else }}
+                <div></div>
+                {{- end }}
+                <div class="footermiddle">
+                    {{- if .Lastmod }}
+                    <div class="lastmod">Last Modified: <time datetime="{{ .Lastmod }}">
+                            {{ .Lastmod.Format "January 2, 2006" }}</time></div>
+                    {{- end }}
+                    <b>&#169; {{ .Site.Copyright }}</b>
+                </div>
+                {{- if .Next }}
+                <a class="footernext" href="{{ .Next.Permalink }}" title="{{ .Next.Title }}">
+                    <span class="footerlinktext">next </span>
+                    <img src="/icons/right-arrow-black.png" class="footerarrow" /></a>
+                {{- else }}
+                <div></div>
+                {{- end }}
+            </footer>
         </div>
-        {{ if not .IsHome }}
-        <div class="rightcolumn">
-            {{ if .IsPage }}
-            <p class="toc">Table of Contents:</p>
-            {{ .TableOfContents }}
-            {{- end }}
-            {{ if .Prev }}
-            <a class="previous" href="{{ .Prev.Permalink }}" title="{{ .Prev.Title }}"><img
-                    src="/icons/left-arrow-white.png" width="26px" /></a>
-            {{ end }}
-            {{ if .Parent }}
-            <a class="up" href="{{ .Parent.Permalink }}" title="{{ .Parent.Title }}"><img
-                    src="/icons/up-arrow-white.png" width="26px" /></a>
-            {{ end }}
-            {{ if .Next }}
-            <a class="next" href="{{ .Next.Permalink }}" title="{{ .Next.Title }}"><img
-                    src="/icons/right-arrow-white.png" width="26px" /></a>
-            {{ end }}
-            <hr color="black">
-            <div class="lastmod">Last Modified:<br><time datetime="{{ .Lastmod }}">
-                    {{ .Lastmod.Format "January 2, 2006" }}</time></div>
-        </div>
-        {{ end }}
-    </div>
-    <div class="footer">
-        <footer><b>&#169; {{ .Site.Copyright }}</b></footer>
     </div>
 </body>
 

@@ -16,7 +16,7 @@ keywords: []
 # Professional Experience
 
 ## Capital One
-October 2016 – present
+October 2016 – March 2023
 
 ### Lead Software Engineer
 * Lead a team of software engineers developing the Enterprise Realtime Machine Learning Model Service.
@@ -31,7 +31,7 @@ October 2016 – present
 * Worked in a strictly regulated environment.
 * Worked extensively with: AWS, Kubernetes, Docker, Helm, Argo, Golang, Bash, Python, Java, NewRelic,
   DataDog, Splunk, Istio, git, Seldon, Jenkins, PagerDuty, Lambda, DynamoDB, NiFi, and JIRA.
-            
+
 ## WaveStrike, LLC
 March 2015 - October 2016
 
@@ -74,19 +74,19 @@ July 2009 - April 2011
 
 # Professional Development
 
-* Cloudera Hadoop Core Training (2011)
-* Spring Core (2012)
-* Intertech Hibernate Training (2013)
-* Cloudera Introduction to Data Science: Building Recommendation Engines (2013)
-* Oracle's Mysql 5.6 Developer Training (2014)
+* DevOps World 2018
+* Uber Conference (July 2016)
+* NGINX Advanced (2015)
+* NGINX Fundamentals (2015)
+* Real-Time Analytics With Apache Kafka (by edureka! 2015)
+* Introduction to Data Science by Washington State University (free online training, 2014)
 * Enterprise Integration with Spring (2014)
 * Mongo for Java Developers (free online training, 2014)
-* Introduction to Data Science by Washington State University (free online training, 2014)
-* Real-Time Analytics With Apache Kafka (by edureka! 2015)
-* NGINX Fundamentals (2015)
-* NGINX Advanced (2015)
-* Uber Conference (July 2016)
-* DevOps World 2018
+* Oracle's Mysql 5.6 Developer Training (2014)
+* Cloudera Introduction to Data Science: Building Recommendation Engines (2013)
+* Intertech Hibernate Training (2013)
+* Spring Core (2012)
+* Cloudera Hadoop Core Training (2011)
             
 # Conference Presentations
 

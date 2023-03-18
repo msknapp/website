@@ -1,6 +1,8 @@
 ---
 title: Java
-weight: 4
+weight: 2
+summary: Notes about the java programming language.
+description: java programming language.
 ---
 
 This is the java section.

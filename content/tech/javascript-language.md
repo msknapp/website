@@ -1,9 +1,9 @@
 ---
 title: "Javascript Language"
 draft: false
-weight: 6
-description: my description.
-summary: a useful page.
+weight: 4
+description: javascript programming
+summary: Notes about the javascript programming language.
 lastmod: 2023-03-14
 date: 2023-03-14
 tags: []
@@ -12,17 +12,17 @@ series: []
 keywords: []
 ---
 
-* output with console.log()
+* output with `console.log()`
 * semicolons are recommended but optional.
-* comment syntax is normal // or /*  */
-* Uses { } for code blocks.
+* comment syntax is normal `//` or `/*  */`
+* Uses `{ }` for code blocks.
 * has "number" types, does not separate integers from floats.  
   So "//" is not integer division (Python), it is a comment.
 * has "boolean" and "string".  No byte or rune type exists.
 * has arrays.  "object" is their catch-all dictionary and class type.
 * double or single quotes can be used to define strings.
 * uses "=" for definition, never ":=" (golang, c?)
-* uses standard if (...) {...} else if (...) {...} else {...} format.
+* uses standard `if (...) {...} else if (...) {...} else {...}` format.
 * Has a switch statement, cases need a break statement or consecutive blocks run, 
   format: switch (...) { case 0: ...; break; case 1: ...; break; default: ...; }
   switch checks types too, like ===, so the type must also match.
@@ -39,7 +39,7 @@ keywords: []
 * use ?? for defaulting vars.  Example, if x is undefined, y = x ?? "z"; will make y = "z"
   it's called nullish coalescing.  Works for null and undefined.  Empty strings, and zeros 
   might still get used.
-* You can use "?." to avoid NPEs.  a?.b?.c
+* You can use "?." to avoid NPEs.  `a?.b?.c`
 * javascript is flexible with args to functions.  You could call a function with 
   more or less args than expected.
 * variable names can have "$" and "_".  Can't start with digit.

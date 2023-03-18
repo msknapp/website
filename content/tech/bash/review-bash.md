@@ -1,9 +1,9 @@
 ---
 title: "Bash Review"
-draft: false
+draft: true
 weight: 1
-description: my description.
-summary: a useful page.
+description: bash scripting
+summary: Quick notes about bash scripting.
 lastmod: 2023-03-14
 date: 2023-03-14
 tags: []
@@ -14,19 +14,21 @@ keywords: []
 Review Questions:
 
 What do these tell you:
-	$$
-	$?
-	:
-	$*
-	$@
-	$#
-	((  ))
-	$(  )
-	${parameter}
-	[  ]
-	[[  ]]
-	.
-	source
+```	
+$$
+$?
+:
+$*
+$@
+$#
+((  ))
+$(  )
+${parameter}
+[  ]
+[[  ]]
+.
+source
+```
 
 What is the difference between [ ], [[ ]], ( ), and (( )) ?
 How do you get the last column using gawk?

@@ -2,6 +2,8 @@
 title: "Cut"
 draft: false
 weight: 3
+summary: How to use the cut command line program.
+description: cut command
 ---
 
 * Assuming you just want to select a column: use awk 

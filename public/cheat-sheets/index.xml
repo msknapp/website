@@ -4,14 +4,16 @@
     <title>Cheat Sheets on Michael Knapp&#39;s Home Page</title>
     <link>/cheat-sheets/</link>
     <description>Recent content in Cheat Sheets on Michael Knapp&#39;s Home Page</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/cheat-sheets/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>2023 Michael Knapp</copyright>
+    <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/cheat-sheets/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python CheatSheet</title>
       <link>/cheat-sheets/python-cheatsheet/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>/cheat-sheets/python-cheatsheet/</guid>
-      <description>Python  there is no switch statement. bools are capitalized True/False to iterate over numbers: for i in range(n): read one line from standard input: input() write one line to standard output: print(...) write without a newline: print(..., end=&amp;quot;&amp;quot;) functions and fields use snake_case classes should be capitalized. the null type is None / is floating point division, // is integer division. collections have no size or length method, use len(.</description>
+      <description>Cheat sheet for programming in Python.</description>
     </item>
     
   </channel>

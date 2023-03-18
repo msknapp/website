@@ -8,40 +8,111 @@
     <meta name="keywords" content="golang resume">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+
     <link rel="stylesheet" media="print" href="/css/print.css" />
 </head>
 
 <body>
-    <h1 class="topheader">Ubuntu Shortcuts</h1>
-    <div class="navigation">
-        <nav>
-            <a href="/">Home</a>
-            
-            <a href="/tech/">Software Engineering</a>
-            
-            <a href="/algorithms/">Algorithms</a>
-            
-            <a href="/principles/">Principles</a>
-            
-            <a href="/applications/">Applications</a>
-            
-            <a href="/cheat-sheets/">Cheat Sheets</a>
-            
-            <a href="/open-source/">Open Source</a>
-            
-            <a href="/architecture/">Architecture</a>
-            
-            <a href="/blog/">Blog</a>
-            
+    <div class="navigationrow">
+        <h2 class="sections">Sections</h2>
+        <nav class="headernav">
+            <ul>
+                <li class="headernav ">
+                    <a class="headernav " href="/"><img src="/icons/house.png"
+                            width="20px" /></a>
+                </li>
+                
+                <li class="headernav currentsection">
+                    <a class="headernav currentsection"
+                        href="/tech/" title="Notes about software engineering.">
+                        Software Engineering</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/algorithms/" title="Software algorithms.">
+                        Algorithms</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/principles/" title="my description.">
+                        Principles</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/applications/" title="browser applications.">
+                        Applications</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                        Cheat Sheets</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/open-source/" title="Notes on some awesome open source projects.">
+                        Open Source</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/architecture/" title="Software architecture">
+                        Architecture</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/blog/" title="A blog on software engineering.">
+                        Blog</a>
+                </li>
+            </ul>
         </nav>
     </div>
     <div class="body">
         <aside>
+            <h2 class="sidebar">Pages</h2>
+            <ul class="sidebar">
+                <li class="sidebar"><a class="sidebar" href="/tech/golang/" title="">
+                        Golang</a></li>
+                <li class="sidebar"><a class="sidebar" href="/tech/java/" title="java programming language.">
+                        Java</a></li>
+                <li class="sidebar"><a class="sidebar" href="/tech/bash/" title="">
+                        Bash</a></li>
+                <li class="sidebar"><a class="sidebar" href="/tech/javascript-language/" title="javascript programming">
+                        Javascript Language</a></li>
+                <li class="sidebar"><a class="sidebar" href="/tech/languages/" title="my description.">
+                        Software Languages</a></li>
+            </ul>
         </aside>
-        
-<article>
-    <main>
-        <p>Shortcuts for moving around in ubuntu:</p>
+        <div class="rightcolumn">
+            <div class="rightcontent">
+                <div class="metaarrows">
+                    <a class="metaprevious" href="/tech/golang/vscode-shortcuts/" title="VSCode Shortcuts"><img
+                            src="/icons/left-arrow-white.png" width="26px" /></a>
+                    <a class="metaup" href="/tech/bash/" title="Bash"><img
+                            src="/icons/up-arrow-white.png" width="26px" /></a>
+                    <a class="metanext" href="/principles/defensive/" title="Defensive Programming"><img
+                            src="/icons/right-arrow-white.png" width="26px" /></a>
+                </div>
+                <hr class="meta">
+                <p class="toc">Table of Contents:</p><nav id="TableOfContents"></nav>
+            </div>
+        </div>
+        <div class="middlecolumn">
+            <div class="breadcrumbs">
+                <h2 class="breadcrumbs">BreadCrumbs</h2>
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael&#39;s Home Page</a></li>
+                    <li class="breadcrumbs"><a href="/tech/" class="breadcrumbs">/Software Engineering</a></li>
+                    <li class="breadcrumbs"><a href="/tech/bash/" class="breadcrumbs">/Bash</a></li>
+                </ul>
+            </div>
+            <article>
+                <main>
+                    <h1 class="title">Ubuntu Shortcuts</h1>
+<p>Shortcuts for moving around in ubuntu:</p>
 <p>Requiring the least memorization:</p>
 <ul>
 <li>
@@ -51,16 +122,16 @@
 </ul>
 </li>
 <li>
-<p>switch through applications running on your desktop: alt+tab</p>
+<p>switch through applications running on your desktop: <code>alt+tab</code></p>
 </li>
 <li>
-<p>switch tabs within terminal, or web browser: ctrl+page up/page down, or use alt+<!-- raw HTML omitted --></p>
+<p>switch tabs within terminal, or web browser: ctrl+page up/page down, or use <code>alt+&lt;tab number&gt;</code></p>
 </li>
 <li>
-<p>access the window menu for an application: alt+space</p>
+<p>access the window menu for an application: <code>alt+space</code></p>
 </li>
 <li>
-<p>access application specific menus: alt+F10, or alt + an underlined letter in the menu.</p>
+<p>access application specific menus: <code>alt+F10</code>, or alt + an underlined letter in the menu.</p>
 </li>
 <li>
 <p>launch a new application: press window button.</p>
@@ -68,9 +139,9 @@
 <li>
 <p>resize a window:</p>
 <ul>
-<li>when it is not maximized, type: alt+space, then r</li>
+<li>when it is not maximized, type: <code>alt+space, then r</code></li>
 <li>use arrows to resize, then press enter</li>
-<li>a faster way is to use alt+f8</li>
+<li>a faster way is to use <code>alt+f8</code></li>
 <li>if using the mouse, you can hold down alt and the middle mouse wheel to easily resize it.</li>
 <li>another really fast and easy method is ctrl+window+arrow keys.
 that is great because it can quickly consume half of the screen on right or left.</li>
@@ -78,7 +149,7 @@ that is great because it can quickly consume half of the screen on right or left
 </ul>
 </li>
 <li>
-<p>maximize or un-maximize a window: alt+space, then x</p>
+<p>maximize or un-maximize a window: <code>alt+space, then x</code></p>
 </li>
 <li>
 <p>minimize a window: alt+space, then n</p>
@@ -94,43 +165,42 @@ that is great because it can quickly consume half of the screen on right or left
 <ul>
 <li>alt+F10</li>
 <li>For some apps: hold alt, the menus show with letters underlined to open them.</li>
-<li></li>
 </ul>
 </li>
 <li>
-<p>open a new tab in terminal: ctrl+shift+t</p>
+<p>open a new tab in terminal: <code>ctrl+shift+t</code></p>
 </li>
 <li>
-<p>open a new tab in browser: ctrl+t</p>
+<p>open a new tab in browser: <code>ctrl+t</code></p>
 </li>
 <li>
-<p>quit current application: ctrl+q</p>
+<p>quit current application: <code>ctrl+q</code></p>
 </li>
 <li>
-<p>cursor to start of line: ctrl+a</p>
+<p>cursor to start of line: <code>ctrl+a</code></p>
 </li>
 <li>
-<p>cursor to end of line: ctrl+e</p>
+<p>cursor to end of line: <code>ctrl+e</code></p>
 </li>
 <li>
-<p>log out of terminal: ctrl+d</p>
+<p>log out of terminal: <code>ctrl+d</code></p>
 </li>
 <li>
-<p>delete this line: ctrl+u</p>
+<p>delete this line: <code>ctrl+u</code></p>
 </li>
 <li>
-<p>move forward one word: ctrl+right, or alt+f</p>
+<p>move forward one word: <code>ctrl+right</code>, or <code>alt+f</code></p>
 </li>
 <li>
-<p>move backward one word: ctrl+left, or alt+b</p>
+<p>move backward one word: <code>ctrl+left</code>, or <code>alt+b</code></p>
 </li>
 <li>
 <p>copying text from a browser:</p>
 <ul>
 <li>click F7 to turn on caret browsing</li>
-<li>use ctrl+f to find your text, then hit escape</li>
+<li>use <code>ctrl+f</code> to find your text, then hit escape</li>
 <li>hold down shift and move cursor to highlight it all</li>
-<li>ctrl+c</li>
+<li><code>ctrl+c</code></li>
 </ul>
 </li>
 <li>
@@ -138,9 +208,24 @@ that is great because it can quickly consume half of the screen on right or left
 </li>
 </ul>
 
-    </main>
-</article>
 
+                </main>
+            </article>
+            <hr class="footerline">
+            <footer>
+                <a class="footerprevious" href="/tech/golang/vscode-shortcuts/" title="VSCode Shortcuts">
+                    <img src="/icons/left-arrow-black.png" class="footerarrow" /><span class="footerlinktext">
+                        previous</span></a>
+                <div class="footermiddle">
+                    <div class="lastmod">Last Modified: <time datetime="2023-03-14 00:00:00 &#43;0000 UTC">
+                            March 14, 2023</time></div>
+                    <b>&#169; 2023 Michael Knapp</b>
+                </div>
+                <a class="footernext" href="/principles/defensive/" title="Defensive Programming">
+                    <span class="footerlinktext">next </span>
+                    <img src="/icons/right-arrow-black.png" class="footerarrow" /></a>
+            </footer>
+        </div>
     </div>
 </body>
 

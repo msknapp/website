@@ -8,40 +8,106 @@
     <meta name="keywords" content="golang resume">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+
     <link rel="stylesheet" media="print" href="/css/print.css" />
 </head>
 
 <body>
-    <h1 class="topheader">Python CheatSheet</h1>
-    <div class="navigation">
-        <nav>
-            <a href="/">Home</a>
-            
-            <a href="/tech/">Software Engineering</a>
-            
-            <a href="/algorithms/">Algorithms</a>
-            
-            <a href="/principles/">Principles</a>
-            
-            <a href="/applications/">Applications</a>
-            
-            <a href="/cheat-sheets/">Cheat Sheets</a>
-            
-            <a href="/open-source/">Open Source</a>
-            
-            <a href="/architecture/">Architecture</a>
-            
-            <a href="/blog/">Blog</a>
-            
+    <div class="navigationrow">
+        <h2 class="sections">Sections</h2>
+        <nav class="headernav">
+            <ul>
+                <li class="headernav ">
+                    <a class="headernav " href="/"><img src="/icons/house.png"
+                            width="20px" /></a>
+                </li>
+                
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/tech/" title="Notes about software engineering.">
+                        Software Engineering</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/algorithms/" title="Software algorithms.">
+                        Algorithms</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/principles/" title="my description.">
+                        Principles</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/applications/" title="browser applications.">
+                        Applications</a>
+                </li>
+                <li class="headernav currentsection">
+                    <a class="headernav currentsection"
+                        href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                        Cheat Sheets</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/open-source/" title="Notes on some awesome open source projects.">
+                        Open Source</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/architecture/" title="Software architecture">
+                        Architecture</a>
+                </li>
+                <li class="headernav">
+                    <a class="headernav"
+                        href="/blog/" title="A blog on software engineering.">
+                        Blog</a>
+                </li>
+            </ul>
         </nav>
     </div>
     <div class="body">
         <aside>
+            <h2 class="sidebar">Pages</h2>
+            <ul class="sidebar">
+                <li class="sidebar"><a class="sidebar" href="/cheat-sheets/python-cheatsheet/" title="Cheat sheet for programming in Python">
+                        Python CheatSheet</a></li>
+            </ul>
         </aside>
-        
-<article>
-    <main>
-        <h1 id="python">Python</h1>
+        <div class="rightcolumn">
+            <div class="rightcontent">
+                <div class="metaarrows">
+                    <a class="metaprevious" href="/principles/kiss/" title="KISS"><img
+                            src="/icons/left-arrow-white.png" width="26px" /></a>
+                    <a class="metaup" href="/cheat-sheets/" title="Cheat Sheets"><img
+                            src="/icons/up-arrow-white.png" width="26px" /></a>
+                    <a class="metanext" href="/blog/authorization/" title="Authorization Architecture Mistakes"><img
+                            src="/icons/right-arrow-white.png" width="26px" /></a>
+                </div>
+                <hr class="meta">
+                <p class="toc">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#python">Python</a></li>
+  </ul>
+</nav>
+            </div>
+        </div>
+        <div class="middlecolumn">
+            <div class="breadcrumbs">
+                <h2 class="breadcrumbs">BreadCrumbs</h2>
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael&#39;s Home Page</a></li>
+                    <li class="breadcrumbs"><a href="/cheat-sheets/" class="breadcrumbs">/Cheat Sheets</a></li>
+                </ul>
+            </div>
+            <article>
+                <main>
+                    <h1 class="title">Python CheatSheet</h1>
+<h1 id="python">Python</h1>
 <ul>
 <li>there is no switch statement.</li>
 <li>bools are capitalized True/False</li>
@@ -59,9 +125,24 @@
 <li>there is no private field, they just prefix it with an underscore.</li>
 </ul>
 
-    </main>
-</article>
 
+                </main>
+            </article>
+            <hr class="footerline">
+            <footer>
+                <a class="footerprevious" href="/principles/kiss/" title="KISS">
+                    <img src="/icons/left-arrow-black.png" class="footerarrow" /><span class="footerlinktext">
+                        previous</span></a>
+                <div class="footermiddle">
+                    <div class="lastmod">Last Modified: <time datetime="2023-03-14 00:00:00 &#43;0000 UTC">
+                            March 14, 2023</time></div>
+                    <b>&#169; 2023 Michael Knapp</b>
+                </div>
+                <a class="footernext" href="/blog/authorization/" title="Authorization Architecture Mistakes">
+                    <span class="footerlinktext">next </span>
+                    <img src="/icons/right-arrow-black.png" class="footerarrow" /></a>
+            </footer>
+        </div>
     </div>
 </body>
 
