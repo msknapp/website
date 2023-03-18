@@ -1,0 +1,10 @@
+title = "Michael Knapp's Home Page"
+copyright = "2023 Michael Knapp"
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 1
+[params]
+  description = "Portfolio site for Michael Knapp"
+  keywords = "golang resume"

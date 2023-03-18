@@ -1,0 +1,12 @@
+{{ define "main" }}
+{{ .Content }}
+<h1 class="subpages">SubPages</h1>
+<ul class="listpages">
+    {{ range .Pages }}
+    <li class="listpages"><a href="{{ .Permalink }}" class="listpages">
+            <span class="pagetitle">{{ .Title }}:</span>
+            {{ .Summary }}</a>
+    </li>
+    {{ end }}
+</ul>
+{{ end }}

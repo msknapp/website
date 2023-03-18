@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body>
+    <h1 class="topheader">Transcribe Scanned Documents</h1>
+    <div class="navigation">
+        <nav>
+            <a href="/">Home</a>
+            
+            <a href="/tech/">Software Engineering</a>
+            
+            <a href="/algorithms/">Algorithms</a>
+            
+            <a href="/principles/">Principles</a>
+            
+            <a href="/applications/">Applications</a>
+            
+            <a href="/cheat-sheets/">Cheat Sheets</a>
+            
+            <a href="/open-source/">Open Source</a>
+            
+            <a href="/architecture/">Architecture</a>
+            
+            <a href="/blog/">Blog</a>
+            
+        </nav>
+    </div>
+    <div class="body">
+        <aside>
+            <a href="/tech/bash/">Bash</a>
+            <a href="/tech/data/">Data</a>
+            <a href="/tech/golang/">Golang</a>
+            <a href="/tech/java/">Java</a>
+        </aside>
+        
+<article>
+    <main>
+        <p>On Ubuntu, ImageMagick should be installed out of the box.
+Unfortunately it&rsquo;s policy does not allow you to read PDFs by default.</p>
+<p>First switch to sudo:</p>
+<pre tabindex="0"><code>$ sudo su -
+</code></pre><p>Take a backup of the policy before editing it:
+cp /etc/ImageMagick-6/policy.xml /etc/ImageMagick-6/policy.xml.backup</p>
+<p>edit the policy xml:
+$ /etc/ImageMagick-6/policy.xml</p>
+<p>You should find a line like this:
+<!-- raw HTML omitted --></p>
+<p>Replace it with this:
+<!-- raw HTML omitted --></p>
+<p>You also need tesseract to be installed:
+$ apt-get install -y tesseract-ocr</p>
+<p>You can exit sudo to return to your own user.</p>
+<p>Now there are two steps to convert your scanned PDFs:</p>
+<p>$ convert -density 300 file.pdf -depth 8 file.tiff<br>
+$ tesseract file.tiff output</p>
+<p>You can replace the file names.  &lsquo;output&rsquo; is a single text file.</p>
+
+    </main>
+</article>
+
+    </div>
+</body>
+
+</html>

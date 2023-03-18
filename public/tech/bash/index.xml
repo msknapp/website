@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bash on Michael Knapp&#39;s Home Page</title>
+    <link>/tech/bash/</link>
+    <description>Recent content in Bash on Michael Knapp&#39;s Home Page</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/tech/bash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bash Review</title>
+      <link>/tech/bash/review-bash/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tech/bash/review-bash/</guid>
+      <description>Review Questions:
+What do these tell you: $$ $? : $* $@ $# (( )) $( ) ${parameter} [ ] [[ ]] . source
+What is the difference between [ ], [[ ]], ( ), and (( )) ? How do you get the last column using gawk? How do you make variables you set ALWAYS carry through to sub-shells? and undo that? How do you make the &amp;lsquo;&amp;gt;&amp;rsquo; operator NEVER overwrite existing files?</description>
+    </item>
+    
+    <item>
+      <title>Sudo</title>
+      <link>/tech/bash/sudo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tech/bash/sudo/</guid>
+      <description>instead of editing /etc/sudoers, it&amp;rsquo;s better to add a file in /etc/sudoers.d
+if they want sudo access with a password add:
+ALL=(ALL) ALL
+if you want access without any password prompts:
+ALL=(ALL) NOPASSWD: ALL
+if you want everybody to have sudo access with their own password prompt:
+ALL ALL=(ALL) ALL
+if you want everybody to have sudo access without password prompts:
+ALL ALL=(ALL) NOPASSWD: ALL
+The file should be read only to the user and group: chmod 440 /etc/sudoers.</description>
+    </item>
+    
+    <item>
+      <title>Cut</title>
+      <link>/tech/bash/cut/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tech/bash/cut/</guid>
+      <description>Assuming you just want to select a column: use awk if you want consecutive delimiters (like spaces) to count as one. If you have text with multiple spaces between values, awk is your friend. use cut if there is only one delimiter (like a comma or pipe).
+in cut, fields start from 1. you can have a space between the option and its argument. use -f for fields.
+Example:
+alpha,Charlie,85393 beta,Megan,98523 alpha,Billy,43652 omega,Zach,63425 helios,Shaq,82352 zed,Shaniah,153523 faraday,Nicole,89623 helios,Ken,62632 omega,Adam,98765 beta,Sean,62436 alpha,Roger,56147 alpha,Frank,89813 omega,Daniel,120151 beta,Jack,100101</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu Shortcuts</title>
+      <link>/tech/bash/ubuntu-shortcuts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tech/bash/ubuntu-shortcuts/</guid>
+      <description>Shortcuts for moving around in ubuntu:
+Requiring the least memorization:
+  easiest and fastest thing to remember:
+ hold down the window button, it shows you many useful shortcuts    switch through applications running on your desktop: alt+tab
+  switch tabs within terminal, or web browser: ctrl+page up/page down, or use alt+  access the window menu for an application: alt+space
+  access application specific menus: alt+F10, or alt + an underlined letter in the menu.</description>
+    </item>
+    
+    <item>
+      <title>Vi Notes</title>
+      <link>/tech/bash/vi-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tech/bash/vi-notes/</guid>
+      <description>vimtutor summary (of what I think is important):
+&amp;lsquo;a&amp;rsquo; will go into insert mode, but one character after the curser, it&amp;rsquo;s great for appending to the end of a line. &amp;lsquo;o&amp;rsquo; will go into insert mode, but it automatically inserts a new line beneath the cursor, and moves the cursor there. &amp;rsquo;d$&#39; will delete to the end of the line &amp;lsquo;dw&amp;rsquo; will delete to the end of the current word. &amp;lsquo;0&amp;rsquo; will move the cursor to the start of the current line.</description>
+    </item>
+    
+  </channel>
+</rss>

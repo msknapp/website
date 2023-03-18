@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp's HomePage</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/site.css">
+    <script src="javascript/addtwo.js"></script>
+</head>
+
+<body>
+    <div class="headerdiv">
+        <header>
+            <h1>Michael Knapp's HomePage</h1>
+            <ul class="headernav">
+                <li class="headernav"><a class="headernav" href="resume.html">Resume</a></li>
+            </ul>
+        </header>
+    </div>
+    <div class="main">
+        <nav>
+            <h1>Problems</h1>
+            <ul>
+                <li class="nav"><a class="nav" href="">Add Two Numbers</a></li>
+            </ul>
+        </nav>
+
+        <section id="main">
+            <h1>Add Two Numbers</h1>
+            <p>This problem has an array of integers, and the script will tell you the index of two numbers that add up
+                to a
+                target.</p>
+            <form autocomplete="on">
+                <label for="array">Array:</label>
+                <input type="text" id="inputarray" name="input" value="4, 9, 3, 2, 18"><br>
+                <label for="target" name="target">Target:</label>
+                <input name="target" id="inputtarget" type="text" value="7"><br>
+                <input type="button" onclick="add_two()" value="Run">
+            </form>
+            Indexes: <span id="output"></span>
+        </section>
+    </div>
+    <footer>
+        Copyright 2023 Michael Knapp
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body>
+    <h1 class="topheader">Cassandra</h1>
+    <div class="navigation">
+        <nav>
+            <a href="/">Home</a>
+            
+            <a href="/tech/">Software Engineering</a>
+            
+            <a href="/algorithms/">Algorithms</a>
+            
+            <a href="/principles/">Principles</a>
+            
+            <a href="/applications/">Applications</a>
+            
+            <a href="/cheat-sheets/">Cheat Sheets</a>
+            
+            <a href="/open-source/">Open Source</a>
+            
+            <a href="/architecture/">Architecture</a>
+            
+            <a href="/blog/">Blog</a>
+            
+        </nav>
+    </div>
+    <div class="body">
+        <aside>
+        </aside>
+        
+<article>
+    <main>
+        <p>start cassandra:
+$ cassandra -f
+the -f means print logs to the foreground.</p>
+<p>type &lsquo;cqlsh&rsquo; to open the cassandra shell.
+$ cqlsh</p>
+<p>in the shell:</p>
+<blockquote>
+<p>HELP
+HELP <!-- raw HTML omitted -->
+DESCRIBE CLUSTER;
+DESCRIBE KEYSPACES;
+SHOW VERSION;</p>
+</blockquote>
+<p>no need for user, password, etc.</p>
+<p>the book is wrong about commit_log_directory, that is not a yaml property.</p>
+<p>uses port 9160</p>
+
+    </main>
+</article>
+
+    </div>
+</body>
+
+</html>

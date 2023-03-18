@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body>
+    <h1 class="topheader">Sudo</h1>
+    <div class="navigation">
+        <nav>
+            <a href="/">Home</a>
+            
+            <a href="/tech/">Software Engineering</a>
+            
+            <a href="/algorithms/">Algorithms</a>
+            
+            <a href="/principles/">Principles</a>
+            
+            <a href="/applications/">Applications</a>
+            
+            <a href="/cheat-sheets/">Cheat Sheets</a>
+            
+            <a href="/open-source/">Open Source</a>
+            
+            <a href="/architecture/">Architecture</a>
+            
+            <a href="/blog/">Blog</a>
+            
+        </nav>
+    </div>
+    <div class="body">
+        <aside>
+        </aside>
+        
+<article>
+    <main>
+        <p>instead of editing /etc/sudoers, it&rsquo;s better to add a file in
+/etc/sudoers.d</p>
+<p>if they want sudo access with a password add:</p>
+<p><!-- raw HTML omitted --> ALL=(ALL) ALL</p>
+<p>if you want access without any password prompts:</p>
+<p><!-- raw HTML omitted --> ALL=(ALL) NOPASSWD: ALL</p>
+<p>if you want everybody to have sudo access with their own password prompt:</p>
+<p>ALL  ALL=(ALL) ALL</p>
+<p>if you want everybody to have sudo access without password prompts:</p>
+<p>ALL  ALL=(ALL) NOPASSWD: ALL</p>
+<p>The file should be read only to the user and group:
+chmod 440 /etc/sudoers.d/<!-- raw HTML omitted --></p>
+<p>on some linux distributions it should be 400 (no group reads).</p>
+
+    </main>
+</article>
+
+    </div>
+</body>
+
+</html>

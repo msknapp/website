@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body>
+    <h1 class="topheader">Vi Notes</h1>
+    <div class="navigation">
+        <nav>
+            <a href="/">Home</a>
+            
+            <a href="/tech/">Software Engineering</a>
+            
+            <a href="/algorithms/">Algorithms</a>
+            
+            <a href="/principles/">Principles</a>
+            
+            <a href="/applications/">Applications</a>
+            
+            <a href="/cheat-sheets/">Cheat Sheets</a>
+            
+            <a href="/open-source/">Open Source</a>
+            
+            <a href="/architecture/">Architecture</a>
+            
+            <a href="/blog/">Blog</a>
+            
+        </nav>
+    </div>
+    <div class="body">
+        <aside>
+        </aside>
+        
+<article>
+    <main>
+        <p>vimtutor summary (of what I think is important):</p>
+<p>&lsquo;a&rsquo; will go into insert mode, but one character after the curser, it&rsquo;s great for appending to the end of a line.
+&lsquo;o&rsquo; will go into insert mode, but it automatically inserts a new line beneath the cursor, and moves the cursor there.
+&rsquo;d$' will delete to the end of the line
+&lsquo;dw&rsquo; will delete to the end of the current word.
+&lsquo;0&rsquo; will move the cursor to the start of the current line.
+&lsquo;$&rsquo; will move the cursor to the end of the current line.
+&lsquo;u&rsquo; will undo the last operation.
+&lsquo;ctrl+r&rsquo; will redo.
+&lsquo;p&rsquo; will paste what you recently deleted or yanked.
+&lsquo;v&rsquo; is for visual mode, it lets you highlight things for future actions.
+&lsquo;y&rsquo; is for &ldquo;yanking&rdquo; (copying) text.
+&lsquo;yw&rsquo; will yank one word.  likewise, you can combine it with counts and motions.
+&lsquo;yy&rsquo; will copy the current line.
+&lsquo;dd&rsquo; will delete the current line (you can paste it later with p, so this is effectively a &lsquo;cut&rsquo; operation).
+&lsquo;/&rsquo; lets you search
+&lsquo;?&rsquo; lets you search in reverse.
+&lsquo;gg&rsquo; moves to the start of the file.
+&lsquo;G&rsquo; moves to the end of the file.
+&lsquo;dG&rsquo; deletes everything from the cursor to the end of the file.
+&lsquo;dgg&rsquo; deletes everything from the start of the file to the cursor.
+&lsquo;ctrl+g&rsquo; will show you the current line number, and percent through the file.
+&lsquo;A&rsquo; appends at the end of the line.  Useful since I frequently do this.
+&lsquo;I&rsquo; inserts at the start of the line.</p>
+<p>&ldquo;:set nu&rdquo; shows line numbers
+&ldquo;:set nonu&rdquo; hides line numbers
+&ldquo;:split <!-- raw HTML omitted -->&rdquo; splits the editor into two windows, and shows the other file in one of them.
+&ldquo;ctrl-w ctrl-w&rdquo; will switch between open windows. You can even have more than two.</p>
+<p>&ldquo;Motions&rdquo;
+&ldquo;0&rdquo; start of line
+&ldquo;$&rdquo; end of line
+&ldquo;w&rdquo; a &lsquo;word&rsquo;, moves to the start of a future word.
+&ldquo;e&rdquo; an &lsquo;end&rsquo;, moves to the end of a future word.
+&ldquo;b&rdquo; backwards one word, moves to the start of a word.
+&ldquo;G&rdquo; end of the file.
+&ldquo;gg&rdquo; start of the file.</p>
+<p>foo bar zop vop fee figh fo fum I smell the breath of an english man.</p>
+<p>Less important shortcuts:
+&lsquo;x&rsquo; will delete the character under the cursor, without being in any mode.
+easily worked around by using the delete character instead.
+&lsquo;r&rsquo; will let you replace the single character under the cursor, without being in any mode.
+easily worked around by using &lsquo;i&rsquo; to insert text.
+&lsquo;c&rsquo; let&rsquo;s you &ldquo;change&rdquo; things, it takes a motion.  It spares you from typing one extra key.</p>
+<p>===============</p>
+<p>Indent a bunch of lines:</p>
+<ol>
+<li>Go to the first line</li>
+<li>ctrl+v</li>
+<li>move up/down to the last/first line.</li>
+<li>type shift + &lsquo;i&rsquo;</li>
+<li>type in your prefix</li>
+<li>hit escape</li>
+</ol>
+<p>foo bar
+zop snafu
+lawjtel fjiej</p>
+<p>===========================
+append to a bunch of lines:</p>
+<ol>
+<li>Go to the first line</li>
+<li>ctrl + v &ndash;&gt; it&rsquo;s important to use &lsquo;ctrl&rsquo; here, not just &lsquo;v&rsquo;!</li>
+<li>move up/down to the last/first line</li>
+<li>type End or $ to extend selection to the end of the lines</li>
+<li>type shift + &lsquo;a&rsquo; to append</li>
+<li>type the suffix</li>
+<li>hit escape</li>
+</ol>
+<p>ajlek sfjoei swoei OMFG!!!
+jaotiej jaoite fjeaoie OMFG!!!
+iwq OMFG!!!
+ejrf joeijt OMFG!!!</p>
+<p>==============================
+copy a line:</p>
+<ol>
+<li>go to the line</li>
+<li>type &lsquo;yy&rsquo; (yank yank)</li>
+<li>go where you want to insert it</li>
+<li>type p</li>
+</ol>
+<p>==============================
+cut a line:</p>
+<ol>
+<li>go to the line</li>
+<li>type &lsquo;dd&rsquo; (delete delete, it actually copies the line into memory)</li>
+<li>go where you want to insert it</li>
+<li>type p</li>
+</ol>
+
+    </main>
+</article>
+
+    </div>
+</body>
+
+</html>

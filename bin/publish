@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# publishes the website to S3.
+
+aws s3 cp build "s3://msknapp.com"

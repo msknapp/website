@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body>
+    <h1 class="topheader">Problems With NiFi</h1>
+    <div class="navigation">
+        <nav>
+            <a href="/">Home</a>
+            
+            <a href="/tech/">Software Engineering</a>
+            
+            <a href="/algorithms/">Algorithms</a>
+            
+            <a href="/principles/">Principles</a>
+            
+            <a href="/applications/">Applications</a>
+            
+            <a href="/cheat-sheets/">Cheat Sheets</a>
+            
+            <a href="/open-source/">Open Source</a>
+            
+            <a href="/architecture/">Architecture</a>
+            
+            <a href="/blog/">Blog</a>
+            
+        </nav>
+    </div>
+    <div class="body">
+        <aside>
+        </aside>
+        
+<article>
+    <main>
+        <ol start="0">
+<li>It has a limited degree of fault tolerance.  Flow files are written to one disk, they are not replicated.
+If that one disk crashes, the flow file is gone permanently.  We work around this by using EBS (which replicates
+within an AZ automatically), but we shouldn&rsquo;t have to.  You can also work around this by leveraging kafka.</li>
+<li>While NiFi is fault tolerant (to a small degree), it is not highly available.  If one node in a cluster dies, the other nodes will not pick up its work.
+We have hacked our way around this by leveraging Kubernetes, but really it should have been highly available out of the box.</li>
+<li>There is one content repository per flow.  Really, you should get to pick and choose.  For any connection between processors, you should
+have the option to say &ldquo;this must only be stored in RAM&rdquo; or &ldquo;this can spill to disk&rdquo; or &ldquo;this must all be written to disk&rdquo;.  You should
+even get to choose a replication factor.<br>
+There should have been an option to change content repositories with each connection.
+This makes it much harder for us to stay compliant, because we may have sensitive data in RAM but not on disk.  If we use the volatile
+content repository, the entire flow must use that, and you risk running out of RAM.  If you have separate NiFi flows for this, you have just
+doubled the amount of maintenance you must perform.</li>
+<li>Since it relies heavily on the disk, it is reducing the processing speed.  Streaming systems could process the data faster.</li>
+<li>Configuration is a nightmare.  There are a million things to configure and they are not well documented.</li>
+<li>There is no native way to re-distribute flow files amongst the cluster.  One must rely upon kafka or http methods with an external load balancer.</li>
+<li>NARs are very heavy weight and redundant.  Every nar has its own set of dependencies.  If two nars have the same dependency, it is still
+represented twice in NiFi.  The structure for a nar is very complicated and if you get it wrong you can lose days trying to fix it.</li>
+<li>Very difficult to learn how to extend.</li>
+<li>Clustering on kubernetes is a hassle.</li>
+<li>The whole &ldquo;process group&rdquo; heirarchy, and how it relates to controllers is very confusing.  The way that controller groups you define in the root are not visible
+to child groups is super confusing to people.  I feel this was a big mistake on the NiFi developer&rsquo;s side.</li>
+<li>You often need to take an extra two or three steps In NIFI purely because a more direct translation of data is not supported out of the box.
+For example, to go from psv to parquet you must first translate the file to avro in between.</li>
+<li>Support for table style data is still limited.</li>
+</ol>
+<h1 id="the-advantages-it-has">The advantages it has</h1>
+<ul>
+<li>Start/stop sections of the flow at runtime
+<ul>
+<li>we are not supposed to leverage this because we have an &ldquo;immutable architecture&rdquo; policy in production.</li>
+</ul>
+</li>
+<li>Easily re-configure your flow at runtime, even add/remove whole sections
+<ul>
+<li>the &ldquo;immutable architecture&rdquo; prevents us from really leveraging this.</li>
+</ul>
+</li>
+<li>Visual representation of the flow.  This is still hard to reproduce without it.</li>
+<li>realtime metrics.  This is easily produced with JMX, graphana, and/or cloudwatch.  However,
+the metrics will not be shown visually next to a node/processor on a visual graph.</li>
+</ul>
+<p>Where NiFi really shines is with large (megabytes), semi-structured documents that don&rsquo;t require low latency processing.</p>
+
+    </main>
+</article>
+
+    </div>
+</body>
+
+</html>

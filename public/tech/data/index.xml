@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data on Michael Knapp&#39;s Home Page</title>
+    <link>/tech/data/</link>
+    <description>Recent content in Data on Michael Knapp&#39;s Home Page</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/tech/data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cassandra</title>
+      <link>/tech/data/cassandra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tech/data/cassandra/</guid>
+      <description>start cassandra: $ cassandra -f the -f means print logs to the foreground.
+type &amp;lsquo;cqlsh&amp;rsquo; to open the cassandra shell. $ cqlsh
+in the shell:
+ HELP HELP DESCRIBE CLUSTER; DESCRIBE KEYSPACES; SHOW VERSION;
+ no need for user, password, etc.
+the book is wrong about commit_log_directory, that is not a yaml property.
+uses port 9160</description>
+    </item>
+    
+    <item>
+      <title>Problems With NiFi</title>
+      <link>/tech/data/problems-with-nifi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tech/data/problems-with-nifi/</guid>
+      <description>It has a limited degree of fault tolerance. Flow files are written to one disk, they are not replicated. If that one disk crashes, the flow file is gone permanently. We work around this by using EBS (which replicates within an AZ automatically), but we shouldn&amp;rsquo;t have to. You can also work around this by leveraging kafka. While NiFi is fault tolerant (to a small degree), it is not highly available.</description>
+    </item>
+    
+    <item>
+      <title>ZooKeeper</title>
+      <link>/tech/data/zookeeper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tech/data/zookeeper/</guid>
+      <description>Start zookeeper: $ cd /share/usr/zookeeper/bin $ ./server.sh start
+See if it&amp;rsquo;s running: $ jps michael@michael-GA-890GPA-UD3H /share/usr/zookeeper/bin $ jps 14753 QuorumPeerMain 14773 Jps
+The &amp;ldquo;QuorumPeerMain&amp;rdquo; is zookeeper.
+It writes logs to /share/usr/zookeeper/bin/zookeeper.out The zk config is in /share/usr/zookeeper/conf/zoo.cfg
+The zoo.cfg file specifies a directory for zookeeper to use: dataDir=/share/var/zookeeper
+so we are writing to /share/var/zookeeper
+The default port it listens to is 2181</description>
+    </item>
+    
+  </channel>
+</rss>

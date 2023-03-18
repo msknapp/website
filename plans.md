@@ -1,9 +1,6 @@
 
-* update bashrc with ample shortcuts.
 * upload it to AWS S3
   * write a script to upload it
-* upload source to github
-* rename project.
 * add a side navigation menu.
 * setup lambdas, dynamo, gateway.
 * write a server for it, maybe.
@@ -11,7 +8,10 @@
 # Done
 * add resume page.
 * merge in resume work.
-
+* upload source to github
+* rename project.
+* update bashrc with ample shortcuts.
+* add help
 
 
 # Plan

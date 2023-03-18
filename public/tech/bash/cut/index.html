@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body>
+    <h1 class="topheader">Cut</h1>
+    <div class="navigation">
+        <nav>
+            <a href="/">Home</a>
+            
+            <a href="/tech/">Software Engineering</a>
+            
+            <a href="/algorithms/">Algorithms</a>
+            
+            <a href="/principles/">Principles</a>
+            
+            <a href="/applications/">Applications</a>
+            
+            <a href="/cheat-sheets/">Cheat Sheets</a>
+            
+            <a href="/open-source/">Open Source</a>
+            
+            <a href="/architecture/">Architecture</a>
+            
+            <a href="/blog/">Blog</a>
+            
+        </nav>
+    </div>
+    <div class="body">
+        <aside>
+        </aside>
+        
+<article>
+    <main>
+        <p>Assuming you just want to select a column:
+use awk if you want consecutive delimiters (like spaces) to count as one.  If you have text with multiple spaces between values, awk is your friend.
+use cut if there is only one delimiter (like a comma or pipe).</p>
+<p>in cut, fields start from 1.
+you can have a space between the option and its argument.
+use -f for fields.</p>
+<p>Example:</p>
+<p>alpha,Charlie,85393
+beta,Megan,98523
+alpha,Billy,43652
+omega,Zach,63425
+helios,Shaq,82352
+zed,Shaniah,153523
+faraday,Nicole,89623
+helios,Ken,62632
+omega,Adam,98765
+beta,Sean,62436
+alpha,Roger,56147
+alpha,Frank,89813
+omega,Daniel,120151
+beta,Jack,100101</p>
+<p>michael@michael-GA-890GPA-UD3H:/tmp$ cut -d &lsquo;,&rsquo; -f 2- x.csv
+Charlie,85393
+Megan,98523
+Billy,43652
+Zach,63425
+Shaq,82352
+Shaniah,153523
+Nicole,89623
+Ken,62632
+Adam,98765
+Sean,62436
+Roger,56147
+Frank,89813
+Daniel,120151
+Jack,100101</p>
+
+    </main>
+</article>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body>
+    <h1 class="topheader">ZooKeeper</h1>
+    <div class="navigation">
+        <nav>
+            <a href="/">Home</a>
+            
+            <a href="/tech/">Software Engineering</a>
+            
+            <a href="/algorithms/">Algorithms</a>
+            
+            <a href="/principles/">Principles</a>
+            
+            <a href="/applications/">Applications</a>
+            
+            <a href="/cheat-sheets/">Cheat Sheets</a>
+            
+            <a href="/open-source/">Open Source</a>
+            
+            <a href="/architecture/">Architecture</a>
+            
+            <a href="/blog/">Blog</a>
+            
+        </nav>
+    </div>
+    <div class="body">
+        <aside>
+        </aside>
+        
+<article>
+    <main>
+        <p>Start zookeeper:
+$ cd /share/usr/zookeeper/bin
+$ ./server.sh start</p>
+<p>See if it&rsquo;s running:
+$ jps
+michael@michael-GA-890GPA-UD3H /share/usr/zookeeper/bin $ jps
+14753 QuorumPeerMain
+14773 Jps</p>
+<p>The &ldquo;QuorumPeerMain&rdquo; is zookeeper.</p>
+<p>It writes logs to /share/usr/zookeeper/bin/zookeeper.out
+The zk config is in /share/usr/zookeeper/conf/zoo.cfg</p>
+<p>The zoo.cfg file specifies a directory for zookeeper to use:
+dataDir=/share/var/zookeeper</p>
+<p>so we are writing to /share/var/zookeeper</p>
+<p>The default port it listens to is 2181</p>
+
+    </main>
+</article>
+
+    </div>
+</body>
+
+</html>

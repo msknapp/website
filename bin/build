@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# builds the website.
+
+[ ! -d build ] || rm -rf build
+mkdir -p build
+
+cp -r css build
+cp -r javascript build
+cp -r certificates build
+cp -r images build
+cp *.html build

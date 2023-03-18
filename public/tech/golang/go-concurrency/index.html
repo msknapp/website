@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body>
+    <h1 class="topheader">Golang Concurrency</h1>
+    <div class="navigation">
+        <nav>
+            <a href="/">Home</a>
+            
+            <a href="/tech/">Software Engineering</a>
+            
+            <a href="/algorithms/">Algorithms</a>
+            
+            <a href="/principles/">Principles</a>
+            
+            <a href="/applications/">Applications</a>
+            
+            <a href="/cheat-sheets/">Cheat Sheets</a>
+            
+            <a href="/open-source/">Open Source</a>
+            
+            <a href="/architecture/">Architecture</a>
+            
+            <a href="/blog/">Blog</a>
+            
+        </nav>
+    </div>
+    <div class="body">
+        <aside>
+        </aside>
+        
+<article>
+    <main>
+        <h1 id="summary-notes">Summary Notes</h1>
+<ul>
+<li>use &ldquo;go&rdquo; keyword to make a function run in parallel.</li>
+<li>When main completes, it will not wait for other goroutines to finish,
+the program stops.</li>
+<li>channels allow communication between goroutines.  make(chan <!-- raw HTML omitted -->[, capacity])
+Also just declaring a channel makes it.
+<ul>
+<li>make(chan <!-- raw HTML omitted -->)</li>
+<li>by default, it is bi-directional, and blocking.  Sending to a channel will
+suspend the current goroutine until something reads from the channel.</li>
+<li>these are also called &ldquo;unbuffered&rdquo; or &ldquo;synchronous&rdquo; channels.</li>
+</ul>
+</li>
+<li>write to channel: ch &lt;- v</li>
+<li>read from channel: v &lt;- ch</li>
+<li>read but discard from channel: &lt;- ch</li>
+<li>deadlock is possible if all goroutines are asleep.  It can happen if the
+send and receive operations are not equal in number.</li>
+<li>Channels can be cast, even implicitly, to send-only or receive only channels:
+<ul>
+<li>send-only: chan&lt;- <!-- raw HTML omitted --></li>
+<li>read-only: &lt;-chan <!-- raw HTML omitted --></li>
+<li>read-only channels cannot be closed, only the write channels can be closed.</li>
+</ul>
+</li>
+<li>when a channel is closed, it can still be read from.</li>
+<li>unbuffered channels have nowhere to store their data.</li>
+<li>buffered channels will not block when written to, unless they are full.<br>
+They are made by giving a capacity to the make command:
+<ul>
+<li>make(chan <!-- raw HTML omitted -->, <!-- raw HTML omitted -->)</li>
+<li>example: make(chan int, 3)</li>
+</ul>
+</li>
+<li>for loops can read from channels: for x := range ch {&hellip;}</li>
+<li>the &ldquo;cap&rdquo; function can determine the capacity of a channel.  Likewise, &ldquo;len&rdquo;
+can determine how many items are waiting in it.</li>
+<li>they do not recommend using a channel as a queue data type, except when used
+with multiple goroutines.  Use a slice as a queue instead.</li>
+</ul>
+<h1 id="sync-package">Sync Package:</h1>
+<ul>
+<li>WaitGroup makes a routine pause until other coroutines have finished.
+<ul>
+<li>wg := new(sync.WaitGroup)
+wg.Add(2)</li>
+<li>in other goroutines, they call wg.Done() when they are finished.
+Typically using defer.</li>
+</ul>
+</li>
+</ul>
+
+    </main>
+</article>
+
+    </div>
+</body>
+
+</html>

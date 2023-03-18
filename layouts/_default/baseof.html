@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>{{ .Site.Title }}</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="{{ .Site.Params.Description }}">
+    <meta name="keywords" content="{{ .Site.Params.Keywords }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body>
+    <div class="navigationrow">
+        <h2 class="sections">Sections</h2>
+        <nav class="headernav">
+            <ul>
+                <li class="headernav {{ if .IsHome }}currentsection{{ end }}">
+                    <a class="headernav {{ if .IsHome }}currentsection{{ end }}" href="/"><img src="/icons/house.png"
+                            width="20px" /></a>
+                </li>
+                {{ range $x := .Site.Sections }}
+                <li class="headernav{{ if eq $x.Section $.CurrentSection.Section }} currentsection{{ end }}">
+                    <a class="headernav{{ if eq $x.Section $.CurrentSection.Section }} currentsection{{ end }}"
+                        href="{{ $x.Permalink }}" title="{{ $x.Description }}">
+                        {{ $x.Title }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </nav>
+    </div>
+    <div class="body">
+        {{ if not .IsHome }}
+        <aside>
+            <h2 class="sidebar">Pages</h2>
+            <ul class="sidebar">
+                {{ range .FirstSection.Pages }}
+                <li class="sidebar"><a class="sidebar" href="{{ .Permalink }}" title="{{ .Description }}">
+                        {{ .Title }}</a></li>
+                {{- end }}
+            </ul>
+        </aside>
+        {{ else }}
+        <img class="profilepicture" src="images/profile-2022.jpg" width="360px" />
+        {{ end }}
+        <div class="middlecolumn">
+            <div class="breadcrumbs">
+                <h2 class="breadcrumbs">BreadCrumbs</h2>
+                <ul class="breadcrumbs">
+                    {{ range .Ancestors.Reverse }}
+                    <li class="breadcrumbs"><a href="{{ .Permalink }}" class="breadcrumbs">/{{ .Title }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+            <article>
+                <main>
+                    <h1 class="title">{{ .Params.title }}</h1>
+                    {{ block "main" . }}
+                    Default content.
+                    {{ end }}
+                </main>
+            </article>
+            {{ if .Prev }}
+            <a class="previous" href="{{ .Prev.Permalink }}" title="{{ .Prev.Title }}">
+                <img src="/icons/left-arrow-black.png" width="26px" /></a>
+            {{ end }}
+            {{ if .Next }}
+            <a class="next" href="{{ .Next.Permalink }}" title="{{ .Next.Title }}">
+                <img src="/icons/right-arrow-black.png" width="26px" /></a>
+            {{ end }}
+        </div>
+        {{ if not .IsHome }}
+        <div class="rightcolumn">
+            {{ if .IsPage }}
+            <p class="toc">Table of Contents:</p>
+            {{ .TableOfContents }}
+            {{- end }}
+            {{ if .Prev }}
+            <a class="previous" href="{{ .Prev.Permalink }}" title="{{ .Prev.Title }}"><img
+                    src="/icons/left-arrow-white.png" width="26px" /></a>
+            {{ end }}
+            {{ if .Parent }}
+            <a class="up" href="{{ .Parent.Permalink }}" title="{{ .Parent.Title }}"><img
+                    src="/icons/up-arrow-white.png" width="26px" /></a>
+            {{ end }}
+            {{ if .Next }}
+            <a class="next" href="{{ .Next.Permalink }}" title="{{ .Next.Title }}"><img
+                    src="/icons/right-arrow-white.png" width="26px" /></a>
+            {{ end }}
+            <hr color="black">
+            <div class="lastmod">Last Modified:<br><time datetime="{{ .Lastmod }}">
+                    {{ .Lastmod.Format "January 2, 2006" }}</time></div>
+        </div>
+        {{ end }}
+    </div>
+    <div class="footer">
+        <footer><b>&#169; {{ .Site.Copyright }}</b></footer>
+    </div>
+</body>
+
+</html>
