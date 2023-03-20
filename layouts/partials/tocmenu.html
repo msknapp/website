@@ -1,0 +1,33 @@
+<div class="rightcolumn">
+    <div class="rightcontent">
+        <div class="metaarrows">
+            {{- if .Prev }}
+            <a class="metaprevious" href="{{ .Prev.Permalink }}" title="{{ .Prev.Title }}"><img
+                    src="/icons/left-arrow-white.png" width="26px" /></a>
+            {{- else }}
+            {{- if .PrevInSection }}
+            <a class="metaprevious" href="{{ .PrevInSection.Permalink }}" title="{{ .PrevInSection.Title }}"><img
+                    src="/icons/left-arrow-white.png" width="26px" /></a>
+            {{- end }}
+            {{- end }}
+            {{- if .Parent }}
+            <a class="metaup" href="{{ .Parent.Permalink }}" title="{{ .Parent.Title }}"><img
+                    src="/icons/up-arrow-white.png" width="26px" /></a>
+            {{- end }}
+            {{- if .Next }}
+            <a class="metanext" href="{{ .Next.Permalink }}" title="{{ .Next.Title }}"><img
+                    src="/icons/right-arrow-white.png" width="26px" /></a>
+            {{- else }}
+            {{- if .NextInSection }}
+            <a class="metanext" href="{{ .NextInSection.Permalink }}" title="{{ .NextInSection.Title }}"><img
+                    src="/icons/right-arrow-white.png" width="26px" /></a>
+            {{- end }}
+            {{- end }}
+        </div>
+        {{- if and .IsPage .TableOfContents }}
+        <hr class="meta">
+        <p class="toc">Table of Contents:</p>
+        {{- .TableOfContents }}
+        {{- end }}
+    </div>
+</div>

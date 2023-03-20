@@ -1,5 +1,6 @@
 ---
 title: Open Source
+draft: true
 weight: 5
 description: Notes on some awesome open source projects.
 summary: Notes on some awesome open source projects.

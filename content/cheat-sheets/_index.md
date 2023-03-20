@@ -11,4 +11,6 @@ series: []
 keywords: []
 ---
 
-A collection of cheat sheets.
+Let's face it, software engineering requires knowledge of a ton of different topics, software, and libraries.  There is no way we can remember it all.  So we take good notes and create cheat 
+sheets to help us remember how to do things later.  This section contains some useful cheat 
+sheets for a variety of programming topics.

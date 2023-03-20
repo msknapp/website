@@ -1,0 +1,18 @@
+<div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav {{ if .IsHome }}currentsection{{ end }}">
+                <a class="sitenav {{ if .IsHome }}currentsection{{ end }}" href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            {{ range $x := .Site.Sections }}
+            <li class="sitenav{{ if eq $x.Section $.CurrentSection.Section }} currentsection{{ end }}">
+                <a class="sitenav{{ if eq $x.Section $.CurrentSection.Section }} currentsection{{ end }}"
+                    href="{{ $x.Permalink }}" title="{{ $x.Description }}">
+                    {{ $x.Title }}</a>
+            </li>
+            {{- end }}
+        </ul>
+    </nav>
+</div>

@@ -1,0 +1,24 @@
+<hr class="footerline">
+<footer>
+    {{- if .Prev }}
+    <a class="footerprevious" href="{{ .Prev.Permalink }}" title="{{ .Prev.Title }}">
+        <img src="/icons/left-arrow-black.png" class="footerarrow" /><span class="footerlinktext">
+            previous</span></a>
+    {{- else }}
+    <div></div>
+    {{- end }}
+    <div class="footermiddle">
+        {{- if .Lastmod }}
+        <div class="lastmod">Last Modified: <time datetime="{{ .Lastmod }}">
+                {{ .Lastmod.Format "January 2, 2006" }}</time></div>
+        {{- end }}
+        <b>&#169; {{ .Site.Copyright }}</b>
+    </div>
+    {{- if .Next }}
+    <a class="footernext" href="{{ .Next.Permalink }}" title="{{ .Next.Title }}">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/right-arrow-black.png" class="footerarrow" /></a>
+    {{- else }}
+    <div></div>
+    {{- end }}
+</footer>

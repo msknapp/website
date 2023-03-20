@@ -14,9 +14,9 @@ keywords:
 - resume
 ---
 
-Welcome to Mike Knapp's home page, where you can find notes on software engineering topics.
+Welcome to Michael "Mike" Knapp's home page, where you can find notes on software engineering topics.
 
 # About Me
 
-I am a software engineer with 13 years experience.  I obsess too much, and am always 
-studying things.
+I am a software engineer with 13 years experience.  I'm always studying new tech topics and 
+learning new skills.  Learn more in the [About Me](/about-me) page.

@@ -1,0 +1,11 @@
+<aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        {{- range .FirstSection.Pages }}
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="{{ .Permalink }}" title="{{ .Description }}">
+                {{ .Title }}</a>
+        </li>
+        {{- end }}
+    </ul>
+</aside>
