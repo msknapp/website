@@ -203,3 +203,8 @@ fight against cancer.
 
 I make monthly charitable donations to the Cancer Research Society, the BCRF, 
 and the Sierra Club.  I also donate Platelets at the Red Cross every four weeks.
+
+# References
+
+If needed, I can provide ample job references.  My past co-workers should be able to tell 
+you that I was a highly productive individual contributor, and that I always helped them.
