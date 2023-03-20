@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/tech/" title="Notes about software engineering.">
+                    Software Engineering</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/applications/" title="browser applications.">
+                    Applications</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="Software architecture">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/algorithms/bubble/" title="">
+                Bubble Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/algorithms/insertion/" title="">
+                Insertion Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/algorithms/selection/" title="">
+                Selection Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/algorithms/quick/" title="">
+                Quick Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/algorithms/merge/" title="">
+                Merge Sort</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+    <div class="rightcontent">
+        <div class="metaarrows">
+            <a class="metaprevious" href="/principles/open-closed/" title="Open Closed Principle"><img
+                    src="/icons/left-arrow-white.png" width="26px" /></a>
+            <a class="metaup" href="/algorithms/" title="Algorithms"><img
+                    src="/icons/up-arrow-white.png" width="26px" /></a>
+            <a class="metanext" href="/principles/single-responsibility/" title="Single Responsibility Principle"><img
+                    src="/icons/right-arrow-white.png" width="26px" /></a>
+        </div>
+        <hr class="meta">
+        <p class="toc">Table of Contents:</p><nav id="TableOfContents"></nav>
+    </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/algorithms/" class="breadcrumbs">/Algorithms</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Quick Sort</h1>
+<p>The quick sort runs faster because it is efficient, and it runs in-place (unlike the merge sort).</p>
+<p><img src="/images/quick-sort.png" alt="quick-sort"></p>
+<p>It works by:</p>
+<ul>
+<li>choosing a value to be the &ldquo;pivot&rdquo; point.</li>
+<li>In the remaining array, it swaps values between left and right cursors until
+<ul>
+<li>all values up to and including the left cursor are less than the pivot.</li>
+<li>all values on or after the right cursor are greater than or equal to the pivot.</li>
+</ul>
+</li>
+<li>Then the pivot is swapped into the middle, trading places with the right pivot.</li>
+<li>The process gets repeated on the sub-arrays to the right and left of the pivot.</li>
+</ul>
+<p>The quick sort is:</p>
+<ul>
+<li>not stable, equal values may be swapped.  This can be worked around by adjusting your
+comparison logic.</li>
+<li>in-place, it uses no significant amount of extra memory.</li>
+<li>Efficient, having O(n * log(n)) performance.</li>
+<li>possible to parallelize.  At step 3 in the diagram, separate coroutines or threads
+could be created if the sub-arrays are still quite large.</li>
+<li>works with non-numerical types, it uses a comparator.</li>
+</ul>
+<p>The quick sort algorithm was made to handle sorting large arrays, but in practice, the
+merge sort algorithm tends to be used for larger arrays instead.</p>
+<p>Since the quick sort uses recursion, it is possible to have a stack overflow in your program,
+unless the program is written to work around recursion.</p>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="/principles/open-closed/" title="Open Closed Principle">
+        <img src="/icons/left-arrow-black.png" class="footerarrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-19 00:00:00 &#43;0000 UTC">
+                March 19, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/principles/single-responsibility/" title="Single Responsibility Principle">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/right-arrow-black.png" class="footerarrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

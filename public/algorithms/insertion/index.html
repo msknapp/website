@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/tech/" title="Notes about software engineering.">
+                    Software Engineering</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/applications/" title="browser applications.">
+                    Applications</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="Software architecture">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/algorithms/bubble/" title="">
+                Bubble Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/algorithms/insertion/" title="">
+                Insertion Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/algorithms/selection/" title="">
+                Selection Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/algorithms/quick/" title="">
+                Quick Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/algorithms/merge/" title="">
+                Merge Sort</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+    <div class="rightcontent">
+        <div class="metaarrows">
+            <a class="metaprevious" href="/tech/golang/go-concurrency/" title="Golang Concurrency"><img
+                    src="/icons/left-arrow-white.png" width="26px" /></a>
+            <a class="metaup" href="/algorithms/" title="Algorithms"><img
+                    src="/icons/up-arrow-white.png" width="26px" /></a>
+            <a class="metanext" href="/principles/kiss/" title="KISS"><img
+                    src="/icons/right-arrow-white.png" width="26px" /></a>
+        </div>
+        <hr class="meta">
+        <p class="toc">Table of Contents:</p><nav id="TableOfContents"></nav>
+    </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/algorithms/" class="breadcrumbs">/Algorithms</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Insertion Sort</h1>
+<p>The insertion sort is still relatively intuitive.</p>
+<p><img src="/images/insertion-sort.png" alt="insertion-sort"></p>
+<p>It works by:</p>
+<ul>
+<li>maintaining a sorted section on the left side of the array.</li>
+<li>a cursor iterates from left to right.</li>
+<li>In each iteration, an element is added to the sorted left
+side of the array.</li>
+<li>it works by repeatedly swapping the element with the
+preceding element until it is in order.</li>
+</ul>
+<p>The insertion sort is:</p>
+<ul>
+<li>stable, equal elements maintain their relative order.</li>
+<li>in-place, it uses no significant extra memory to run.</li>
+<li>inefficient, having O(n^2) performance.</li>
+<li>not possible to run in parallel.</li>
+<li>works with non-numerical types, it uses a comparator.</li>
+</ul>
+<p>For datasets that are already mostly sorted, the insertion
+sort can actually be more efficient on average than other
+algorithms.</p>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="/tech/golang/go-concurrency/" title="Golang Concurrency">
+        <img src="/icons/left-arrow-black.png" class="footerarrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-19 00:00:00 &#43;0000 UTC">
+                March 19, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/principles/kiss/" title="KISS">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/right-arrow-black.png" class="footerarrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

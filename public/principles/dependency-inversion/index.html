@@ -13,128 +13,142 @@
     <link rel="stylesheet" href="/css/listnav.css" />
     <link rel="stylesheet" href="/css/breadcrumbs.css" />
     <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
 
     <link rel="stylesheet" media="print" href="/css/print.css" />
 </head>
 
-<body>
-    <div class="navigationrow">
-        <h2 class="sections">Sections</h2>
-        <nav class="headernav">
-            <ul>
-                <li class="headernav ">
-                    <a class="headernav " href="/"><img src="/icons/house.png"
-                            width="20px" /></a>
-                </li>
-                
-                <li class="headernav">
-                    <a class="headernav"
-                        href="/tech/" title="Notes about software engineering.">
-                        Software Engineering</a>
-                </li>
-                <li class="headernav">
-                    <a class="headernav"
-                        href="/algorithms/" title="Software algorithms.">
-                        Algorithms</a>
-                </li>
-                <li class="headernav currentsection">
-                    <a class="headernav currentsection"
-                        href="/principles/" title="my description.">
-                        Principles</a>
-                </li>
-                <li class="headernav">
-                    <a class="headernav"
-                        href="/applications/" title="browser applications.">
-                        Applications</a>
-                </li>
-                <li class="headernav">
-                    <a class="headernav"
-                        href="/cheat-sheets/" title="Software engineering cheat sheets.">
-                        Cheat Sheets</a>
-                </li>
-                <li class="headernav">
-                    <a class="headernav"
-                        href="/open-source/" title="Notes on some awesome open source projects.">
-                        Open Source</a>
-                </li>
-                <li class="headernav">
-                    <a class="headernav"
-                        href="/architecture/" title="Software architecture">
-                        Architecture</a>
-                </li>
-                <li class="headernav">
-                    <a class="headernav"
-                        href="/blog/" title="A blog on software engineering.">
-                        Blog</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <div class="body">
-        <aside>
-            <h2 class="sidebar">Pages</h2>
-            <ul class="sidebar">
-                <li class="sidebar"><a class="sidebar" href="/principles/kiss/" title="How to keep your code simple">
-                        KISS</a></li>
-                <li class="sidebar"><a class="sidebar" href="/principles/defensive/" title="Making your code defensive.">
-                        Defensive Programming</a></li>
-                <li class="sidebar"><a class="sidebar" href="/principles/single-responsibility/" title="The importance of single responsibility.">
-                        Single Responsibility Principle</a></li>
-                <li class="sidebar"><a class="sidebar" href="/principles/open-closed/" title="">
-                        Open Closed Principle</a></li>
-                <li class="sidebar"><a class="sidebar" href="/principles/liskov/" title="Explaining the Liskov Substitution Principle">
-                        Liskov Substitution Principle</a></li>
-                <li class="sidebar"><a class="sidebar" href="/principles/segregation/" title="explaining the interface segregation principle">
-                        Interface Segregation Principle</a></li>
-                <li class="sidebar"><a class="sidebar" href="/principles/dependency-inversion/" title="The dependency inversion principle.">
-                        Dependency Inversion Principle</a></li>
-                <li class="sidebar"><a class="sidebar" href="/principles/testing/" title="The importance of software testing.">
-                        Software Testing</a></li>
-                <li class="sidebar"><a class="sidebar" href="/principles/twelve-factor/" title="">
-                        Twelve Factor Apps</a></li>
-            </ul>
-        </aside>
-        <div class="rightcolumn">
-            <div class="rightcontent">
-                <div class="metaarrows">
-                    <a class="metaprevious" href="/principles/testing/" title="Software Testing"><img
-                            src="/icons/left-arrow-white.png" width="26px" /></a>
-                    <a class="metaup" href="/principles/" title="Principles"><img
-                            src="/icons/up-arrow-white.png" width="26px" /></a>
-                    <a class="metanext" href="/principles/segregation/" title="Interface Segregation Principle"><img
-                            src="/icons/right-arrow-white.png" width="26px" /></a>
-                </div>
-                <hr class="meta">
-                <p class="toc">Table of Contents:</p><nav id="TableOfContents"></nav>
-            </div>
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/tech/" title="Notes about software engineering.">
+                    Software Engineering</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/applications/" title="browser applications.">
+                    Applications</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="Software architecture">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/principles/kiss/" title="How to keep your code simple">
+                KISS</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/principles/defensive/" title="Making your code defensive.">
+                Defensive Programming</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/principles/single-responsibility/" title="The importance of single responsibility.">
+                Single Responsibility Principle</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/principles/open-closed/" title="">
+                Open Closed Principle</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/principles/liskov/" title="Explaining the Liskov Substitution Principle">
+                Liskov Substitution Principle</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/principles/segregation/" title="explaining the interface segregation principle">
+                Interface Segregation Principle</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/principles/dependency-inversion/" title="The dependency inversion principle.">
+                Dependency Inversion Principle</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/principles/testing/" title="The importance of software testing.">
+                Software Testing</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/principles/quality/" title="assessing code quality">
+                Judging Quality</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/principles/twelve-factor/" title="">
+                Twelve Factor Apps</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+    <div class="rightcontent">
+        <div class="metaarrows">
+            <a class="metaprevious" href="/principles/testing/" title="Software Testing"><img
+                    src="/icons/left-arrow-white.png" width="26px" /></a>
+            <a class="metaup" href="/principles/" title="Principles"><img
+                    src="/icons/up-arrow-white.png" width="26px" /></a>
+            <a class="metanext" href="/principles/segregation/" title="Interface Segregation Principle"><img
+                    src="/icons/right-arrow-white.png" width="26px" /></a>
         </div>
-        <div class="middlecolumn">
-            <div class="breadcrumbs">
-                <h2 class="breadcrumbs">BreadCrumbs</h2>
-                <ul class="breadcrumbs">
-                    <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael&#39;s Home Page</a></li>
-                    <li class="breadcrumbs"><a href="/principles/" class="breadcrumbs">/Principles</a></li>
-                </ul>
-            </div>
+        <hr class="meta">
+        <p class="toc">Table of Contents:</p><nav id="TableOfContents"></nav>
+    </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/principles/" class="breadcrumbs">/Principles</a></li>
+    </ul>
+</div>
             <article>
                 <main>
                     <h1 class="title">Dependency Inversion Principle</h1>
 
 
                 </main>
-            </article>
-            <hr class="footerline">
-            <footer>
-                <a class="footerprevious" href="/principles/testing/" title="Software Testing">
-                    <img src="/icons/left-arrow-black.png" class="footerarrow" /><span class="footerlinktext">
-                        previous</span></a>
-                <div class="footermiddle">
-                    <b>&#169; 2023 Michael Knapp</b>
-                </div>
-                <a class="footernext" href="/principles/segregation/" title="Interface Segregation Principle">
-                    <span class="footerlinktext">next </span>
-                    <img src="/icons/right-arrow-black.png" class="footerarrow" /></a>
-            </footer>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="/principles/testing/" title="Software Testing">
+        <img src="/icons/left-arrow-black.png" class="footerarrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/principles/segregation/" title="Interface Segregation Principle">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/right-arrow-black.png" class="footerarrow" /></a>
+</footer>
         </div>
     </div>
 </body>

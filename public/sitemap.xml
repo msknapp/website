@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/algorithms/bubble/</loc>
+    <lastmod>2023-03-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/tech/golang/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
@@ -15,6 +18,9 @@
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/principles/kiss/</loc>
+  </url><url>
+    <loc>/algorithms/insertion/</loc>
+    <lastmod>2023-03-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tech/golang/go-concurrency/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
@@ -33,6 +39,9 @@
   </url><url>
     <loc>/principles/defensive/</loc>
   </url><url>
+    <loc>/algorithms/selection/</loc>
+    <lastmod>2023-03-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/applications/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
@@ -49,6 +58,9 @@
   </url><url>
     <loc>/principles/single-responsibility/</loc>
   </url><url>
+    <loc>/algorithms/quick/</loc>
+    <lastmod>2023-03-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/principles/open-closed/</loc>
     <lastmod>2023-03-17T00:00:00+00:00</lastmod>
   </url><url>
@@ -58,8 +70,8 @@
     <loc>/tech/javascript-language/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/open-source/</loc>
-    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
+    <loc>/algorithms/merge/</loc>
+    <lastmod>2023-03-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tech/languages/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
@@ -81,10 +93,16 @@
   </url><url>
     <loc>/principles/testing/</loc>
   </url><url>
+    <loc>/principles/quality/</loc>
+    <lastmod>2023-03-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/resume/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/principles/twelve-factor/</loc>
+  </url><url>
+    <loc>/about-me/</loc>
+    <lastmod>2023-03-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/reorg/</loc>
     <lastmod>2023-03-17T00:00:00+00:00</lastmod>

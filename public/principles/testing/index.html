@@ -13,128 +13,196 @@
     <link rel="stylesheet" href="/css/listnav.css" />
     <link rel="stylesheet" href="/css/breadcrumbs.css" />
     <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
 
     <link rel="stylesheet" media="print" href="/css/print.css" />
 </head>
 
-<body>
-    <div class="navigationrow">
-        <h2 class="sections">Sections</h2>
-        <nav class="headernav">
-            <ul>
-                <li class="headernav ">
-                    <a class="headernav " href="/"><img src="/icons/house.png"
-                            width="20px" /></a>
-                </li>
-                
-                <li class="headernav">
-                    <a class="headernav"
-                        href="/tech/" title="Notes about software engineering.">
-                        Software Engineering</a>
-                </li>
-                <li class="headernav">
-                    <a class="headernav"
-                        href="/algorithms/" title="Software algorithms.">
-                        Algorithms</a>
-                </li>
-                <li class="headernav currentsection">
-                    <a class="headernav currentsection"
-                        href="/principles/" title="my description.">
-                        Principles</a>
-                </li>
-                <li class="headernav">
-                    <a class="headernav"
-                        href="/applications/" title="browser applications.">
-                        Applications</a>
-                </li>
-                <li class="headernav">
-                    <a class="headernav"
-                        href="/cheat-sheets/" title="Software engineering cheat sheets.">
-                        Cheat Sheets</a>
-                </li>
-                <li class="headernav">
-                    <a class="headernav"
-                        href="/open-source/" title="Notes on some awesome open source projects.">
-                        Open Source</a>
-                </li>
-                <li class="headernav">
-                    <a class="headernav"
-                        href="/architecture/" title="Software architecture">
-                        Architecture</a>
-                </li>
-                <li class="headernav">
-                    <a class="headernav"
-                        href="/blog/" title="A blog on software engineering.">
-                        Blog</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <div class="body">
-        <aside>
-            <h2 class="sidebar">Pages</h2>
-            <ul class="sidebar">
-                <li class="sidebar"><a class="sidebar" href="/principles/kiss/" title="How to keep your code simple">
-                        KISS</a></li>
-                <li class="sidebar"><a class="sidebar" href="/principles/defensive/" title="Making your code defensive.">
-                        Defensive Programming</a></li>
-                <li class="sidebar"><a class="sidebar" href="/principles/single-responsibility/" title="The importance of single responsibility.">
-                        Single Responsibility Principle</a></li>
-                <li class="sidebar"><a class="sidebar" href="/principles/open-closed/" title="">
-                        Open Closed Principle</a></li>
-                <li class="sidebar"><a class="sidebar" href="/principles/liskov/" title="Explaining the Liskov Substitution Principle">
-                        Liskov Substitution Principle</a></li>
-                <li class="sidebar"><a class="sidebar" href="/principles/segregation/" title="explaining the interface segregation principle">
-                        Interface Segregation Principle</a></li>
-                <li class="sidebar"><a class="sidebar" href="/principles/dependency-inversion/" title="The dependency inversion principle.">
-                        Dependency Inversion Principle</a></li>
-                <li class="sidebar"><a class="sidebar" href="/principles/testing/" title="The importance of software testing.">
-                        Software Testing</a></li>
-                <li class="sidebar"><a class="sidebar" href="/principles/twelve-factor/" title="">
-                        Twelve Factor Apps</a></li>
-            </ul>
-        </aside>
-        <div class="rightcolumn">
-            <div class="rightcontent">
-                <div class="metaarrows">
-                    <a class="metaprevious" href="/resume/" title="Resume"><img
-                            src="/icons/left-arrow-white.png" width="26px" /></a>
-                    <a class="metaup" href="/principles/" title="Principles"><img
-                            src="/icons/up-arrow-white.png" width="26px" /></a>
-                    <a class="metanext" href="/principles/dependency-inversion/" title="Dependency Inversion Principle"><img
-                            src="/icons/right-arrow-white.png" width="26px" /></a>
-                </div>
-                <hr class="meta">
-                <p class="toc">Table of Contents:</p><nav id="TableOfContents"></nav>
-            </div>
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/tech/" title="Notes about software engineering.">
+                    Software Engineering</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/applications/" title="browser applications.">
+                    Applications</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="Software architecture">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/principles/kiss/" title="How to keep your code simple">
+                KISS</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/principles/defensive/" title="Making your code defensive.">
+                Defensive Programming</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/principles/single-responsibility/" title="The importance of single responsibility.">
+                Single Responsibility Principle</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/principles/open-closed/" title="">
+                Open Closed Principle</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/principles/liskov/" title="Explaining the Liskov Substitution Principle">
+                Liskov Substitution Principle</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/principles/segregation/" title="explaining the interface segregation principle">
+                Interface Segregation Principle</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/principles/dependency-inversion/" title="The dependency inversion principle.">
+                Dependency Inversion Principle</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/principles/testing/" title="The importance of software testing.">
+                Software Testing</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/principles/quality/" title="assessing code quality">
+                Judging Quality</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu" href="/principles/twelve-factor/" title="">
+                Twelve Factor Apps</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+    <div class="rightcontent">
+        <div class="metaarrows">
+            <a class="metaprevious" href="/principles/quality/" title="Judging Quality"><img
+                    src="/icons/left-arrow-white.png" width="26px" /></a>
+            <a class="metaup" href="/principles/" title="Principles"><img
+                    src="/icons/up-arrow-white.png" width="26px" /></a>
+            <a class="metanext" href="/principles/dependency-inversion/" title="Dependency Inversion Principle"><img
+                    src="/icons/right-arrow-white.png" width="26px" /></a>
         </div>
-        <div class="middlecolumn">
-            <div class="breadcrumbs">
-                <h2 class="breadcrumbs">BreadCrumbs</h2>
-                <ul class="breadcrumbs">
-                    <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael&#39;s Home Page</a></li>
-                    <li class="breadcrumbs"><a href="/principles/" class="breadcrumbs">/Principles</a></li>
-                </ul>
-            </div>
+        <hr class="meta">
+        <p class="toc">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#unit-tests">Unit Tests</a></li>
+    <li><a href="#integration-tests">Integration Tests</a></li>
+    <li><a href="#system-tests">System Tests</a></li>
+    <li><a href="#performance-tests">Performance Tests</a></li>
+    <li><a href="#user-acceptance-tests">User Acceptance Tests</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/principles/" class="breadcrumbs">/Principles</a></li>
+    </ul>
+</div>
             <article>
                 <main>
                     <h1 class="title">Software Testing</h1>
+<p>When it comes to having safe code, I&rsquo;m going to make this assertion:</p>
+<pre tabindex="0"><code>Code testing is by far the most important and effective means of producing robust code.
+</code></pre><p>It is more important than using defensive patterns like builders, factories, etc.  It
+is more important than having documented code, loosely coupled code, logging, metrics,
+and even alerts.  Professional software engineers need to place a heavy priority on
+getting tests automated.</p>
+<p>There are several types of testing for software</p>
+<h1 id="unit-tests">Unit Tests</h1>
+<p>These are by far the easiest tests to write, they go in your code, and usually their
+scope is kept limited.  They typically just test one class, function, or method (in line with the
+single responsibility principle).  Sometimes they may test the combined behavior of
+a collection of classes, or even the highest level service in the application.</p>
+<p>Unit tests should be possible to run from any developers machine or from CICD servers
+without needing to start external services like a database, server, or infrastructure.</p>
+<h1 id="integration-tests">Integration Tests</h1>
+<p>An integration test runs at a higher level, and covers more things.  It starts to pull in
+external services.  For example, integration tests may involve running your code with a
+real database, or with real infrastructure.  It might involve running a Kafka server,
+Apache, or creating infrastructure.  It might involve running docker containers or
+virtual machines.</p>
+<p>Integration tests start to cover configuration as well as the code.  However, integration
+tests do not go so far as to run in a real runtime environment, nor to cover everything.</p>
+<p>Integration tests might not be easily run from any person&rsquo;s machine, or from CICD.  Your
+team should consider it important though, to have them run routinely, either by a
+cron schedule or after a deployment.</p>
+<h1 id="system-tests">System Tests</h1>
+<p>These are the highest level tests, they run in a real cluster or runtime environment,
+with real databases and everything.  They could also be called end-to-end testing.
+The goal here is to cover every aspect of the system, and to simulate interacting
+with it the way a real user would.  It is critical to maintain system tests and
+to automate running them either by a schedule or post release.</p>
+<p>System tests are still primarily concerned with functionality, does the system behave
+as expected.</p>
+<h1 id="performance-tests">Performance Tests</h1>
+<p>These could also be called stress tests.  They typically run in a non-prod environment and
+work by making many requests to the service in parallel, for an extended period of time.
+Metrics are gathered as it runs, for things like response time, throughput, and the
+count of failures.  JMeter is the typical test software.</p>
+<h1 id="user-acceptance-tests">User Acceptance Tests</h1>
+<p>These tests differ from the previous ones in a few ways:</p>
+<ul>
+<li>they are often written by product owners instead of engineers.</li>
+<li>The emphasis is more on if the system meets the product requirements, over how it behaves.</li>
+<li>It evaluates if the service really is something the users can utilize.</li>
+</ul>
+<p>These tend to not be automated, and are usually just run manually after major milestones.</p>
 
 
                 </main>
-            </article>
-            <hr class="footerline">
-            <footer>
-                <a class="footerprevious" href="/resume/" title="Resume">
-                    <img src="/icons/left-arrow-black.png" class="footerarrow" /><span class="footerlinktext">
-                        previous</span></a>
-                <div class="footermiddle">
-                    <b>&#169; 2023 Michael Knapp</b>
-                </div>
-                <a class="footernext" href="/principles/dependency-inversion/" title="Dependency Inversion Principle">
-                    <span class="footerlinktext">next </span>
-                    <img src="/icons/right-arrow-black.png" class="footerarrow" /></a>
-            </footer>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="/principles/quality/" title="Judging Quality">
+        <img src="/icons/left-arrow-black.png" class="footerarrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/principles/dependency-inversion/" title="Dependency Inversion Principle">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/right-arrow-black.png" class="footerarrow" /></a>
+</footer>
         </div>
     </div>
 </body>

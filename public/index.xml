@@ -8,6 +8,15 @@
     <copyright>2023 Michael Knapp</copyright>
     <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Bubble Sort</title>
+      <link>/algorithms/bubble/</link>
+      <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/algorithms/bubble/</guid>
+      <description>How the bubble sort works</description>
+    </item>
+    
+    <item>
       <title>Authorization Architecture Mistakes</title>
       <link>/blog/authorization/</link>
       <pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate>
@@ -35,6 +44,15 @@
     </item>
     
     <item>
+      <title>Insertion Sort</title>
+      <link>/algorithms/insertion/</link>
+      <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/algorithms/insertion/</guid>
+      <description>How the insertion sort works</description>
+    </item>
+    
+    <item>
       <title>Golang Concurrency</title>
       <link>/tech/golang/go-concurrency/</link>
       <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
@@ -59,6 +77,15 @@
       
       <guid>/principles/defensive/</guid>
       <description>Making your code defensive.</description>
+    </item>
+    
+    <item>
+      <title>Selection Sort</title>
+      <link>/algorithms/selection/</link>
+      <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/algorithms/selection/</guid>
+      <description>How the selection sort works</description>
     </item>
     
     <item>
@@ -98,6 +125,15 @@
     </item>
     
     <item>
+      <title>Quick Sort</title>
+      <link>/algorithms/quick/</link>
+      <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/algorithms/quick/</guid>
+      <description>How the quick sort works</description>
+    </item>
+    
+    <item>
       <title>Open Closed Principle</title>
       <link>/principles/open-closed/</link>
       <pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate>
@@ -113,6 +149,15 @@
       
       <guid>/tech/javascript-language/</guid>
       <description>Notes about the javascript programming language.</description>
+    </item>
+    
+    <item>
+      <title>Merge Sort</title>
+      <link>/algorithms/merge/</link>
+      <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/algorithms/merge/</guid>
+      <description>How the merge sort works</description>
     </item>
     
     <item>
@@ -170,6 +215,15 @@
     </item>
     
     <item>
+      <title>Judging Quality</title>
+      <link>/principles/quality/</link>
+      <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/principles/quality/</guid>
+      <description>Assessing code quality.</description>
+    </item>
+    
+    <item>
       <title>Resume</title>
       <link>/resume/</link>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
@@ -185,6 +239,15 @@
       
       <guid>/principles/twelve-factor/</guid>
       <description>Architecture principles for 12-factor apps</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>/about-me/</link>
+      <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/about-me/</guid>
+      <description>My employee personality</description>
     </item>
     
     <item>

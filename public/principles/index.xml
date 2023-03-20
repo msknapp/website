@@ -80,6 +80,15 @@
     </item>
     
     <item>
+      <title>Judging Quality</title>
+      <link>/principles/quality/</link>
+      <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/principles/quality/</guid>
+      <description>Assessing code quality.</description>
+    </item>
+    
+    <item>
       <title>Twelve Factor Apps</title>
       <link>/principles/twelve-factor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
