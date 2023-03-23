@@ -10,6 +10,7 @@ tags: []
 categories: []
 series: []
 keywords: []
+draft: true
 ---
 
 This section contains a variety of in-browser applications.

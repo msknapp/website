@@ -12,6 +12,8 @@ series: []
 keywords:
 - software
 - resume
+nextlink: /tech/
+prevlink: /about-me/
 ---
 
 Welcome to Michael "Mike" Knapp's home page, where you can find notes on software engineering topics.

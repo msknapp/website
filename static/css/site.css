@@ -33,7 +33,7 @@ html {
 .middlecolumn {
     padding: 16px;
     border-radius: 12px;
-    margin: 0 6px;
+    margin: 0 12px 12px 12px;
     width: 62%;
     background-color: var(--body);
     order: 2;

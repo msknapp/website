@@ -9,6 +9,8 @@ tags: []
 categories: []
 series: []
 keywords: []
+prevlink: /architecture/
+nextlink: helm-or-operator/
 ---
 
 A software engineering blog.

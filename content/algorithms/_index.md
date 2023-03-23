@@ -9,6 +9,8 @@ tags: []
 categories: []
 series: []
 keywords: []
+nextlink: /principles/
+prevlink: /tech/
 ---
 
 This section details some of the most useful algorithms and data structures.

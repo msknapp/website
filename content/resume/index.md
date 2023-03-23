@@ -11,6 +11,8 @@ tags: []
 categories: []
 series: []
 keywords: []
+nextlink: /about-me/
+prevlink: /blog/reorg/
 ---
 
 # Professional Experience

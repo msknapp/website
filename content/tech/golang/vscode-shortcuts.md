@@ -10,6 +10,7 @@ tags: []
 categories: []
 series: []
 keywords: []
+nextlink: /tech/java
 ---
 
 

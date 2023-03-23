@@ -4,6 +4,8 @@ draft: false
 weight: 99
 summary: My employee personality
 lastmod: 2023-03-20
+prevlink: /resume/
+nextlink: /
 ---
 
 Hi, I'm Michael Knapp, a professional software engineer with over 13 years of experience. 

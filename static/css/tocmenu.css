@@ -9,7 +9,7 @@
     order: 3;
     flex-grow: 1;
     flex-basis: 16;
-    margin: 0 0 0 6px;
+    margin: 0;
 }
 
 div.rightcontent {

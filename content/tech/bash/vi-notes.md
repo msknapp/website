@@ -10,6 +10,7 @@ tags: []
 categories: []
 series: []
 keywords: []
+nextlink: /tech/javascript-language/
 ---
 
 # Review of vi Commands

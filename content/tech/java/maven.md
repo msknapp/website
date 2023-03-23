@@ -9,6 +9,7 @@ tags: []
 categories: []
 series: []
 keywords: []
+nextlink: /tech/bash/
 ---
 
 A basic maven pom template:

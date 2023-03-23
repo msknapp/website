@@ -1,11 +1,17 @@
 <hr class="footerline">
 <footer>
-    {{- if .Prev }}
-    <a class="footerprevious" href="{{ .Prev.Permalink }}" title="{{ .Prev.Title }}">
+    {{- if .Params.prevlink }}
+    <a class="footerprevious" href="{{ .Params.prevlink }}">
+        <img src="/icons/left-arrow-black.png" class="footerarrow" /><span class="footerlinktext">
+            previous</span></a>
+    {{- else }}
+    {{- if .NextInSection }}
+    <a class="footerprevious" href="{{ .NextInSection.Permalink }}" title="{{ .NextInSection.Title }}">
         <img src="/icons/left-arrow-black.png" class="footerarrow" /><span class="footerlinktext">
             previous</span></a>
     {{- else }}
     <div></div>
+    {{- end }}
     {{- end }}
     <div class="footermiddle">
         {{- if .Lastmod }}
@@ -14,11 +20,18 @@
         {{- end }}
         <b>&#169; {{ .Site.Copyright }}</b>
     </div>
-    {{- if .Next }}
-    <a class="footernext" href="{{ .Next.Permalink }}" title="{{ .Next.Title }}">
+    {{- if .Params.nextlink }}
+    <a class="footernext" href="{{ .Params.nextlink }}">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/right-arrow-black.png" class="footerarrow" /></a>
+
+    {{- else }}
+    {{- if .PrevInSection }}
+    <a class="footernext" href="{{ .PrevInSection.Permalink }}" title="{{ .PrevInSection.Title }}">
         <span class="footerlinktext">next </span>
         <img src="/icons/right-arrow-black.png" class="footerarrow" /></a>
     {{- else }}
     <div></div>
+    {{- end }}
     {{- end }}
 </footer>

@@ -9,6 +9,7 @@ tags: []
 categories: []
 series: []
 keywords: []
+nextlink: python-cheatsheet/
 ---
 
 Let's face it, software engineering requires knowledge of a ton of different topics, software, and libraries.  There is no way we can remember it all.  So we take good notes and create cheat 

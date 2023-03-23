@@ -9,6 +9,8 @@ tags: []
 categories: []
 series: []
 keywords: []
+prevlink: /tech/
+nextlink: kiss/
 ---
 
 Writing software applications can be very challenging.  Following certain software principles can help a ton.

@@ -9,6 +9,7 @@ tags: []
 categories: []
 series: []
 keywords: []
+prevlink: ..
 ---
 
 Seeing the contents of a jar file:
