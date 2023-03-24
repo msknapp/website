@@ -1,9 +1,10 @@
 ---
-title: KISS
+title: KISS and YAGNI
 description: How to keep your code simple
-summary: How to keep your code simple.
+summary: Prefer to keep your code as simple as possible.
 weight: 1
 draft: false
+prevlink: ..
 ---
 
 Most people know that KISS stands for "keep it simple stupid", but might not think about applying this 

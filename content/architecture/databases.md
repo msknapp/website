@@ -1,9 +1,10 @@
 ---
 title: Data Storage
 draft: false
-weight: 13
+weight: 3
 lastmod: 2023-03-23
 summary: You should choose the right data storage system depending on the system requirements.
+prevlink: ..
 ---
 
 Earlier we said that to have a scaleable system, you should prefer to have

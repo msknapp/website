@@ -2,7 +2,7 @@
 title: Software Testing
 draft: false
 weight: 8
-summary: The importance of software testing.
+summary: Your software should have ample automated tests across the board.
 description: The importance of software testing.
 ---
 

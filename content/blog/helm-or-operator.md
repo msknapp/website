@@ -4,6 +4,7 @@ summary: Which one should I use?
 weight: 1
 draft: false
 lastmod: 2023-03-22
+prevlink: ..
 ---
 
 If you are trying to customize your own Kubernetes cluster, you may eventually be 

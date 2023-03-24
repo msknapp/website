@@ -1,5 +1,5 @@
 ---
-title: "Javascript Language"
+title: "Javascript"
 draft: false
 weight: 4
 description: javascript programming

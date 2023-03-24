@@ -10,6 +10,7 @@ tags: []
 categories: []
 series: []
 keywords: []
+prevlink: ..
 ---
 instead of editing /etc/sudoers, it's better to add a file in 
 /etc/sudoers.d

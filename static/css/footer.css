@@ -21,6 +21,14 @@ a.footernext {
     font-size: 24px;
 }
 
+img.arrow {
+    width: 24px;
+}
+
+a.arrow {
+    text-decoration: none;
+}
+
 img.footerarrow {
     padding-top: 5px;
     width: 24px;

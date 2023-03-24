@@ -1,8 +1,8 @@
 ---
 title: Judging Quality
-summary: Assessing code quality.
+summary: You should routinely use automated tools to assess your code quality.
 weight: 9
-description: assessing code quality
+description: Assessing code quality.
 lastmod: 2023-03-18
 ---
 

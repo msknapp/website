@@ -9,6 +9,7 @@ tags: []
 categories: []
 series: []
 keywords: []
+nextlink: /blog/
 ---
 
 This attempts to document languages not as how they work individually, but instead as how they 

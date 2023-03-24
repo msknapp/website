@@ -17,9 +17,10 @@ div.rightcontent {
     padding: 6px;
 }
 
-p.toc {
+p.tocmenu {
     /* font-weight: bold; */
     color: white;
+    font-weight: bold;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -39,11 +40,11 @@ p.toc {
     color: white;
 }
 
-hr.meta {
+hr.tocmenu {
     border: 1px solid black;
 }
 
-.metaarrows {
+div.tocmenu.arrow {
     margin: auto;
     text-align: center;
 }

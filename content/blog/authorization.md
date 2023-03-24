@@ -2,7 +2,7 @@
 title: Authorization Architecture Mistakes
 draft: false
 lastmod: 2023-03-17
-weight: 1
+weight: 3
 description: Common pitfalls people make when adding authorization to their apps.
 summary: Common pitfalls people make when adding authorization to their apps.
 ---

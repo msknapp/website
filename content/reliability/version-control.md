@@ -4,6 +4,7 @@ draft: false
 weight: 1
 lastmod: 2023-03-22
 summary: Code and configuration should be tracked in a version control system.
+prevlink: ..
 ---
 
 The code in your environment should always be in some kind of version control.  Git is by 
@@ -75,3 +76,8 @@ the same CICD pipeline again, but with the previous tag.
 Your project artifacts (executables, jars, docker images, etc.) should be stored in a
 reliable repository.  Artifactory is distributed and replicated, making it highly
 available and reliable.
+
+If a Docker image uses an application version that does not match the image's version, then
+a label should be added to the image with the application version.  Ideally, the docker 
+image tag, the application version, and the github tag should all match, because that
+makes it much easier to perform root-cause-analysis after incidents occur.

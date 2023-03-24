@@ -1,24 +1,19 @@
 ---
 title: Architecture
-weight: 6
-description: Software architecture
-summary: Guidelines for architecting software systems.
+weight: 3
+description: robust software system design
+summary: How to architect software systems
 lastmod: 2023-03-14
 date: 2023-03-14
 tags: []
 categories: []
 series: []
 keywords: []
-nextlink: version-control/
-prevlink: /cheat-sheets/
+nextlink: databases/
+prevlink: /reliability/loose-ends/
 ---
 
-In this section, I discuss how to produce a robust system architecture.  The 
-sections below cover the vital aspects of reliable systems.
-
-One way to look at this section is to ask yourself, 
-`do I have a highly reliable and robust system?`
-If you encounter a section that your system doesn't cover, then *maybe* not.
-
-
-
+This section dives into how you should architect your software system.  Architecture is outside of the 
+application's code or process, and usually it is more concerned with logical services and how they 
+interact.  System architecture focuses on *what* software services will be in your system, and *how* they
+are connected and function.

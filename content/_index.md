@@ -12,7 +12,7 @@ series: []
 keywords:
 - software
 - resume
-nextlink: /tech/
+nextlink: /principles/
 prevlink: /about-me/
 ---
 

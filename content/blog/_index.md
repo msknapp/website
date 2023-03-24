@@ -1,6 +1,6 @@
 ---
 title: Blog
-weight: 7
+weight: 9
 description: A blog on software engineering.
 summary: Rants about software.
 lastmod: 2023-03-14
@@ -9,7 +9,7 @@ tags: []
 categories: []
 series: []
 keywords: []
-prevlink: /architecture/
+prevlink: /tech/languages/
 nextlink: helm-or-operator/
 ---
 

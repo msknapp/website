@@ -1,7 +1,7 @@
 ---
 title: Resume
 name: Michael Knapp
-weight: 9
+weight: 98
 kind: page
 description: Michael Knapp's resume.
 summary: My Job Resume.
@@ -12,7 +12,7 @@ categories: []
 series: []
 keywords: []
 nextlink: /about-me/
-prevlink: /blog/reorg/
+prevlink: /cheat-sheets/python/
 ---
 
 # Professional Experience

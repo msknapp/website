@@ -3,7 +3,8 @@ title: Is It Time To Reorg
 draft: false
 lastmod: 2023-03-17
 summary: Is it time for your team to re-organize?
-nextlink: /resume/
+nextlink: /cheat-sheets/
+weight: 5
 ---
 
 Larger organizations tend to be split into smaller teams.  Most agile 

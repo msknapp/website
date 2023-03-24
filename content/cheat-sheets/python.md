@@ -12,7 +12,7 @@ categories:
 - languages
 summary: Cheat sheet for programming in Python.
 description: Cheat sheet for programming in Python
-nextlink: /architecture/
+nextlink: /resume/
 prevlink: ..
 ---
 

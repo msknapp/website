@@ -1,9 +1,9 @@
 ---
 title: Defensive Programming
 description: Making your code defensive.
-summary: Making your code defensive.
+summary: Carefully consider the trade-offs of defensive programming patterns.
 draft: false
-weight: 2
+weight: 3
 ---
 
 Defensive programming is a design pattern where each component in software acts very defensive in nature.
@@ -11,6 +11,7 @@ For example:
 * Fields become private.
 * Classes are often made immutable.
 * Functions validate all of their inputs very strictly.
+* Code "fails fast" if a problem is encountered.
 
 It might also lead to adopting certain code patterns such as:
 * The Singleton.
@@ -26,7 +27,15 @@ I would like to argue, from my experience, that:
 An immutable class is one whose fields cannot be updated once it has been created.  They 
 tend to be far safer to use in code, because they basically cannot be corrupted.  Also they
 are naturally thread safe, multiple threads can refer to them because none of them can 
-alter the object.  Programs that use immutable objects tend to have fewer bugs.
+alter the object.  Programs that use immutable objects tend to have fewer bugs.  You 
+might even say they need less testing.
+
+Immutability adds so much safety to programs that some languages make everything immutable (Scala),
+or make it a challenge to let things be mutable (Rust).
+
+The downside of immutability is it tends to complicate some parts of the code, and it 
+often results in more objects being created and destroyed than necessary.  That means
+garbage cleanup needs to run more often, which can degrade the application's performance.
 
 # Fluent Pattern
 

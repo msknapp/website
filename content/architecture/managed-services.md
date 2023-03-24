@@ -1,6 +1,6 @@
 ---
-title: Levels of Management
-weight: 8
+title: Managed Services
+weight: 1
 draft: false
 lastmod: 2023-03-22
 summary: You should choose between serverless, managed, and custom solutions depending on your system's usage.

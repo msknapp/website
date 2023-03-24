@@ -1,9 +1,11 @@
 <aside>
     <h2 class="sectionmenu">Pages</h2>
     <ul class="sectionmenu">
+        {{ $currentPage := . }}
         {{- range .FirstSection.Pages }}
         <li class="sectionmenu">
-            <a class="sectionmenu" href="{{ .Permalink }}" title="{{ .Description }}">
+            <a class="sectionmenu{{- if hasPrefix $currentPage.Permalink .Permalink }} currentpage{{ end }}"
+                href="{{ .Permalink }}" title="{{ .Description }}">
                 {{ .Title }}</a>
         </li>
         {{- end }}

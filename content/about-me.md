@@ -2,11 +2,13 @@
 title: About Me
 draft: false
 weight: 99
-summary: My employee personality
+summary: Describes my work experience.
 lastmod: 2023-03-20
 prevlink: /resume/
 nextlink: /
 ---
+
+{{< identified-image src=/images/profile-2022.jpg alt="Michael Knapp's Profile Image" id=profileimage >}}
 
 Hi, I'm Michael Knapp, a professional software engineer with over 13 years of experience. 
 I specialize in backend API development, microservices, and Big Data.  I am a very hard 

@@ -1,6 +1,6 @@
 ---
 title: Algorithms
-weight: 2
+weight: 4
 description: Software algorithms.
 summary: Software algorithms that scale.
 lastmod: 2023-03-14
@@ -10,7 +10,7 @@ categories: []
 series: []
 keywords: []
 nextlink: /principles/
-prevlink: /tech/
+prevlink: /architecture/batch-processing/
 ---
 
 This section details some of the most useful algorithms and data structures.

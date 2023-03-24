@@ -2,9 +2,16 @@
 title: Interface Segregation Principle
 draft: false
 weight: 6
-summary: The importance of interfaces
+summary: Function arguments should be minimal interfaces.
 description: explaining the interface segregation principle
 ---
+
+The interfaces in your code should be minimal.  If needed, there can be a hierarchy of interfaces,
+each adding a few more methods.  Functions should declare argument types that use the most
+minimal and abstract interface possible for their needs.  The advantage here is that the 
+calling code has a lower burden to meet if it wants to use that function.
+
+# Software Component Cardinality
 
 Through my programming career, one trend in my code has become obvious: I keep splitting
 services and components up into smaller ones.  I have increasingly more very small things.

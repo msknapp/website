@@ -28,3 +28,9 @@ p>code {
 li>code {
     background-color: lightgray;
 }
+
+#profileimage {
+    width: 32%;
+    float: right;
+    margin: 12px;
+}

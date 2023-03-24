@@ -39,6 +39,10 @@ aside {
     margin-right: 0;
 }
 
+a.currentpage {
+    background-color: var(--hover);
+}
+
 @media (max-width: 1166px) {
     aside {
         display: none;

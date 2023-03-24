@@ -1,6 +1,6 @@
 ---
 title: Software Engineering
-weight: 1
+weight: 5
 keywords:
 - software
 summary: Notes about software engineering.
