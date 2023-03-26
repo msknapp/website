@@ -1,0 +1,13 @@
+{{- define "wasm-head" }}
+<script src="/javascript/wasm_exec.js"></script>
+<script src="/javascript/app.js"></script>
+{{- end }}
+
+{{- define "main" }}
+{{ .Content }}
+<div class="application" id="app-areas">
+    <textarea class="application" id="app-input"></textarea>
+    <textarea class="application" id="app-output"></textarea>
+</div>
+<button class="application" id="run" onclick="runConversion('{{.Params.inputLanguage}}')">Convert</button>
+{{- end }}

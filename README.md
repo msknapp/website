@@ -11,6 +11,8 @@
 * Setup the aws CLI.
   * `printenv | grep AWS`
   * If that prints the access and secret key, it is ready.
+* Clean:
+  * aws s3 rm --recursive 's3://msknapp.com/'
 * Publish:
   * aws s3 cp --recursive public/ 's3://msknapp.com/'
 * S3 URL:

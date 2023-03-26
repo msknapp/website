@@ -33,3 +33,28 @@ The bubble sort is:
 It is possible to adapt the bubble sort so that between each 
 iteration, it checks if the array is already sorted, and it could
 stop early.
+
+# Example In Java
+
+{{< gocode >}}
+<span class="golang-top-level-keyword">package</span>&nbsp;scratch;<br>
+<br>
+public&nbsp;class&nbsp;BubbleSort&nbsp;{<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;static&nbsp;void&nbsp;Sort(<span class="golang-variable-type">int</span>[]&nbsp;x)&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">for</span>&nbsp;(<span class="golang-variable-type">int</span>&nbsp;<span class="golang-variable">i</span>&nbsp;=&nbsp;0;&nbsp;i&nbsp;<&nbsp;x.length-1;&nbsp;i++)&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SortOnce(x);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;private&nbsp;static&nbsp;void&nbsp;SortOnce(<span class="golang-variable-type">int</span>[]&nbsp;x)&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">for</span>&nbsp;(<span class="golang-variable-type">int</span>&nbsp;<span class="golang-variable">i</span>&nbsp;=&nbsp;0;&nbsp;i&nbsp;<&nbsp;x.length&nbsp;-&nbsp;1;&nbsp;i++)&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;(x[i+1]&nbsp;<&nbsp;x[i])&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-variable-type">int</span>&nbsp;<span class="golang-variable">tmp</span>&nbsp;=&nbsp;x[i];<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x[i]&nbsp;=&nbsp;x[i+1];<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x[i+1]&nbsp;=&nbsp;tmp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}<br>
+{{< /gocode >}}

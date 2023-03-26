@@ -4,7 +4,6 @@ draft: false
 weight: 2
 lastmod: 2023-03-23
 summary: Microservices in the system should make few assumptions about peers, and have limited scopes.  They must be backwards compatible.
-nextlink: /algorithms/
 ---
 
 The linux motto is:

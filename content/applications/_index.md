@@ -1,6 +1,6 @@
 ---
 title: Applications
-weight: 3
+weight: 5
 kind: page
 description: browser applications.
 summary: A set of in browser software applications.
@@ -10,7 +10,8 @@ tags: []
 categories: []
 series: []
 keywords: []
-draft: true
+draft: false
+
 ---
 
 This section contains a variety of in-browser applications.

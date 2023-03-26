@@ -1,5 +1,6 @@
 ---
-title: Resume
+title: Michael Knapp
+linkTitle: Resume
 name: Michael Knapp
 weight: 98
 kind: page
@@ -17,10 +18,8 @@ prevlink: /cheat-sheets/python/
 
 # Professional Experience
 
-## Capital One
-October 2016 – March 2023
+{{< job companyid="capital-one" company="Capital One" jobdaterange="October 2016 – March 2023" jobtitle="Lead Software Engineer" >}}
 
-### Lead Software Engineer
 * Lead a team of software engineers developing the Enterprise Realtime Machine Learning Model Service.
   Coached and mentored peers as needed.
 * Designed software system architectures to be highly available, fault tolerant, secure, performant,
@@ -34,10 +33,8 @@ October 2016 – March 2023
 * Worked extensively with: AWS, Kubernetes, Docker, Helm, Argo, Golang, Bash, Python, Java, NewRelic,
   DataDog, Splunk, Istio, git, Seldon, Jenkins, PagerDuty, Lambda, DynamoDB, NiFi, and JIRA.
 
-## WaveStrike, LLC
-March 2015 - October 2016
+{{< job companyid="wavestrike-llc" company="WaveStrike, LLC" jobdaterange="March 2015 - October 2016" jobtitle="Software Engineer" >}}
 
-### Software Engineer
 * Developed Spark, Scalding, and Hadoop map/reduce algorithms (written in scala and java) to ingest
   and analyze a large distributed undirected graph.
 * Developed a DropWizard (Scala, Jetty, Jersey, Jackson, Yaml, Logback, Docker, Marathon, etc.) web
@@ -45,11 +42,9 @@ March 2015 - October 2016
 * Used git, maven, and Intellij daily.
 * Routinely wrote bash scripts and cron jobs.
 * Worked on an agile development cycle using JIRA.
-            
-## Chiron Technologies, Inc.
-April 2011 - March 2015
 
-### Software Engineer
+{{< job companyid="chiron-technologies-inc" company="Chiron Technologies, Inc." jobdaterange="April 2011 - March 2015" jobtitle="Software Engineer" >}}
+
 * Developed software to ingest, parse, persist, index, query, marshal, and retrieve community reports
   using Java, Solr, Accumulo, and many other technologies.
 * Developed restful web services to deliver reports, metadata, entities, and similar data to a web
@@ -58,10 +53,8 @@ April 2011 - March 2015
   model, abstract persistence services, spring aspects, and more.
 * Integrated code with JMS and a web based storage service similar to amazon's S3.
 
-## ProObject, Inc.
-July 2009 - April 2011
+{{< job companyid="proobject-inc" company="ProObject, Inc." jobdaterange="July 2009 - April 2011" jobtitle="Junior Software Engineer" >}}
 
-### Junior Software Engineer
 * Programmed applications in java to report on website metrics and usage.
 * Developed automated Java scripts to test web pages and identify problems
 * Provided Lifecycle support by providing bug fixes and program enhancements
@@ -129,3 +122,9 @@ July 2009 - April 2011
 * Code Versioning: Github Enterprise
 * Dependency Management: pipenv, conda, virtualenv, go modules, Maven
 * Other: Spring core and enterprise, Hibernate
+
+# Related Sites
+
+* [Github](https://github.com/msknapp)
+* [LinkedIn](https://www.linkedin.com/in/michael-knapp-7b86a447/)
+* [HackerRank Euler Competition](https://www.hackerrank.com/results/projecteuler/michaelscottkna1)

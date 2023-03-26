@@ -6,7 +6,7 @@
         <li class="sectionmenu">
             <a class="sectionmenu{{- if hasPrefix $currentPage.Permalink .Permalink }} currentpage{{ end }}"
                 href="{{ .Permalink }}" title="{{ .Description }}">
-                {{ .Title }}</a>
+                {{ .LinkTitle }}</a>
         </li>
         {{- end }}
     </ul>

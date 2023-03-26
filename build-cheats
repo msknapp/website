@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+for fl in $(ls cheat-content); do
+    ./golang-to-html -t < cheat-content/${fl} > content/cheat-sheets/${fl}
+done
