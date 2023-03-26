@@ -9,6 +9,9 @@ summary: Code needs to be peer reviewed as a requirement.
 There is a saying, that one can be "judge, jury, and executioner", which is obviously 
 a terrible idea.  Likewise, in software systems, you don't want a single engineer to 
 be able to commit a change, merge it to main, and then deploy it all by themselves.
+
+# Code Controls
+
 Your git repositories should be configured in a way that:
 * Engineers cannot push directly to main, they must create pull requests.
 * Pull requests can only be accepted and merged if a peer engineer has reviewed it 

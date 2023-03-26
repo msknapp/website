@@ -21,6 +21,8 @@ chance of bugs being present.
 As a principle, "Don't Repeat Yourself" (DRY) is self explanatory.  You should remove as
 much code duplication as you can.
 
+# Modularity
+
 If you find a block of code that is highly similar to others, except for one small aspect, 
 then make a new function for it.  Use function arguments to control the aspect that
 differentiated the code before.

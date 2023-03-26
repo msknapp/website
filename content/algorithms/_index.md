@@ -15,20 +15,3 @@ prevlink: /architecture/batch-processing/
 
 This section details some of the most useful algorithms and data structures.
 
-* binary search
-* heap tree
-* AVL tree
-* Red Black tree
-* sorts:
-  * selection
-  * insertion
-  * heap
-  * quick
-  * merge
-* greedy algorithms
-* backtracking
-* linked lists
-* queues
-* stacks
-* skip lists
-* trie

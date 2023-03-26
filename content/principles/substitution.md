@@ -3,7 +3,7 @@ title: Substitution
 draft: false
 weight: 6
 lastmod: 2023-03-24
-summary: Your code should be loosely coupled using abstractions, interfaces, and similar substitutability principles.
+summary: Your code should be loosely coupled using abstractions, interfaces, and similar substitution principles.
 ---
  
 This page covers the "L" and "D" parts of the often referenced "SOLID" programming principles.  These

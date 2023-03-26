@@ -1,4 +1,5 @@
 ---
+linkTitle: Tech
 title: Software Engineering
 weight: 6
 keywords:

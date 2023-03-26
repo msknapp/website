@@ -1,5 +1,6 @@
 ---
-title: Reliability
+title: Reliable Software Systems
+linkTitle: Reliability
 weight: 2
 description: robust software system design
 summary: Follow these guidelines to keep your software systems reliable.
@@ -11,6 +12,7 @@ series: []
 keywords: []
 nextlink: version-control/
 prevlink: /principles/quality/
+subPageHeader: Reliability Checklist
 ---
 
 Just writing applications is the tip of the iceberg.  If you want them to be robust,

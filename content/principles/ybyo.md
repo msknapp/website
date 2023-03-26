@@ -18,6 +18,8 @@ job.  So common devops themes like logging, metrics, alerts, and controls
 were not given a priority.  This made it even more difficult for support
 staff to troubleshoot issues.
 
+# Combining Roles
+
 This lead to the idea "you build it, you own it" (YBY0), which basically means the 
 developers are also the support staff.  That motivates the developers to make
 their software applications easier to inspect, troubleshoot, and monitor.
@@ -26,6 +28,8 @@ because they know that they are on the hook if it fails.  It also
 encourages them to conduct more thorough testing of their applications, 
 because they don't want to be paged in the middle of the night, on a weekend,
 to fix their services.
+
+# A Devops Mindset
 
 It is like saying that devops is not a job category or separate position, it 
 is a mindset that all engineers are expected to follow.  Following this 

@@ -20,6 +20,8 @@ For example:
 * I want my code to also support feature X (but nobody asked for it, nor needs it)
 * I want to add methods that make this code easy and convenient to use.
 
+# YAGNI
+
 This ties into another software motto, "You ain't gonna need it" (YAGNI).
 Sometimes, less is more.  Less code is more maintainable, understandable, and powerful.
 Less code is more nights spent sleeping, instead of being paged.

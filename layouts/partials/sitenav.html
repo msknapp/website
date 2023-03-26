@@ -10,7 +10,7 @@
             <li class="sitenav{{ if eq $x.Section $.CurrentSection.Section }} currentsection{{ end }}">
                 <a class="sitenav{{ if eq $x.Section $.CurrentSection.Section }} currentsection{{ end }}"
                     href="{{ $x.Permalink }}" title="{{ $x.Description }}">
-                    {{ $x.Title }}</a>
+                    {{ $x.LinkTitle }}</a>
             </li>
             {{- end }}
         </ul>

@@ -17,6 +17,8 @@ they could be consuming cluster resources, and blocking other applications from
 being scheduled on the node.  This could delay cluster maintenance or scaling of
 other services.
 
+# Slow Frameworks
+
 When dealing with languages like Java or Python, and frameworks like Spring, 
 Hibernate, and Anaconda, it is not unusual to have hundreds of dependencies, 
 and boot times measured in minutes.  These often create problems in clusters.

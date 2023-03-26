@@ -14,4 +14,4 @@ draft: false
 
 ---
 
-This section contains a variety of in-browser applications.
+This section contains a variety of in-browser applications.  They run in your browser using web-assembly (WASM) golang programs.

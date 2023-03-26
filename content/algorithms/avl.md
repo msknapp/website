@@ -6,6 +6,8 @@ lastmod: 2023-03-25
 summary: A binary search tree that stays balanced.
 ---
 
+AVL trees are binary search trees that automatically balance themselves.  This means they can guarantee
+O(log(n)) search times.  The most confusing part of AVL trees is the means by which they stay balanced.
 
 # Python Example
 

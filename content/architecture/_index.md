@@ -2,7 +2,7 @@
 title: Architecture
 weight: 3
 description: robust software system design
-summary: How to architect software systems
+summary: Architect your systems to scale.
 lastmod: 2023-03-14
 date: 2023-03-14
 tags: []

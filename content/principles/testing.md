@@ -17,7 +17,7 @@ is more important than having documented code, loosely coupled code, logging, me
 and even alerts.  Professional software engineers need to place a heavy priority on
 getting tests automated.
 
-There are several types of testing for software
+There are several types of testing for software, which are discussed below.
 
 # Unit Tests
 

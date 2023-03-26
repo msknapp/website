@@ -4,7 +4,7 @@ draft: false
 weight: 99
 lastmod: 2023-03-23
 summary: Things not previously covered.
-nextlink: /architecture/
+nextlink: /algorithms/
 ---
 
 * DNS

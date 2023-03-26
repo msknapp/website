@@ -1,5 +1,6 @@
 ---
-title: About Me
+title: About Michael Knapp
+linkTitle: About Me
 draft: false
 weight: 99
 summary: Describes my work experience.

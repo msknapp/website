@@ -15,13 +15,13 @@ that co-worker, and convincing team members that you are difficult to work with.
 
 It's important that, when you give feedback, you are not stating your own opinion.
 If it sounds like your own crazy bull-headed opinion, people will just think you are 
-stubborn.
+stubborn.  Measurable facts will be more convincing than subjective opinions.
 
 So you need to make sure that:
-* Your feedback can be tied to well established industry best practices and principles.
-* Your feedback can be tied to documented requirements from product owners, management, or team members.
-* Your concerns are measurable.
-* Your concerns are material.  Don't block a PR because a variable name is too terse.
+* Your feedback can be tied to well established industry best practices and **principles.**
+* Your feedback can be tied to **documented** requirements from product owners, management, or team members.
+* Your feedback and concerns are **measurable.**
+* Your concerns are **material.**  Don't block a PR because a variable name is too terse.
 
 # Measurable Checks
 
