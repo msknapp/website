@@ -29,6 +29,17 @@ a collection of classes, or even the highest level service in the application.
 Unit tests should be possible to run from any developers machine or from CICD servers
 without needing to start external services like a database, server, or infrastructure.
 
+# Benchmark Tests
+
+These are similar to unit tests in that they run on local machines.  They are usually 
+not run during CICD pipelines, they are just used by developers to guide performance
+improvements.
+
+Depending on the language, benchmark tests might be unreliable.  For instance, in java,
+the "just-in-time" compiler can make performance appear to be very slow at first, but
+much faster later.  So your benchmark test should run the function under evaluation
+many times before it draws any conclusions.
+
 # Integration Tests
 
 An integration test runs at a higher level, and covers more things.  It starts to pull in 

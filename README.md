@@ -29,21 +29,47 @@ In AWS, the site is made public by these settings.
 
 # Problems
 
-* next/previous should be available from sections, and start/end of sections.
 * left menu should show pages and sections within the current top section, you should
   be able to expand them to see sub-pages within.
-* Menus are not right.
-* should be able to print pages.
-* should be able to view from tablets or phones.
-* if in a section, the side menu should be for that section.
-  * current page should have its own color.
 * Needs tags, and related content. 
 * Needs a taxonomy.
 * Needs a search bar
-* Needs metadata shown on page.
 
-# Fixed
-* Needs back and forth buttons.  Also an up button.
-* menus should be lists.
-* need bread-crumbs to work.
-* Pages could have table of contents.
+# Plans
+
+* applications for:
+  * fibonacci
+  * large factorials
+  * permutations, combinations
+  * evaluating expressions on documents.
+* Graphical interactions with javascript and wasm.
+* documentation on:
+  * mastering the api server
+  * SQL
+  * Designing relational tables.
+  * Postgres
+  * grpc, protobuff
+  * Using Gin
+  * Cloud architecture.
+  * google cloud
+  * bash scripting
+  * Kubernetes
+  * golang concurrency (tidy the docs)
+  * golang gotchas.
+* add in react
+
+# Plans Before Starting Job
+
+* Practice GRPC and document it.
+* Learn React.
+* GCP architect certification.
+
+Lower priority:
+* Review gin
+* API best practices.
+* learn angular.
+* learn Rust
+
+# Code to html
+
+`code-to-html -l golang < /path/to/file | xclip -selection clipboard`

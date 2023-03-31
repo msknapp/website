@@ -4,7 +4,6 @@ weight: 20
 draft: false
 summary: Software developers should also be on the hook to support their applications.
 lastmod: 2023-03-24
-nextlink: /reliability/
 ---
 
 In the past, companies often hired one set of engineers to develop applications, 

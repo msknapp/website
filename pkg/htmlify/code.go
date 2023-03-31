@@ -71,8 +71,8 @@ func (c *Converter) CodeToHTML(text string) string {
 		if stopsMulti {
 			inComment = false
 		}
+		line = c.EscapeWhiteSpace(line)
 		if isComment {
-			line = c.EscapeWhiteSpace(line)
 			line = c.Commentify(line)
 			out.WriteString(line)
 			continue
@@ -87,9 +87,12 @@ func (c *Converter) CodeToHTML(text string) string {
 
 func GolangToHTML(text string) string {
 	wraps := []*WrapDefinition{
-		NewWrapDefinition("\\b(func|import|package)\\b", "golang-top-level-keyword"),
-		NewWrapDefinition("\\b(break|case|chan|const|continue|default|defer|else|for|go|goto|if|interface|map|range|return|select|struct|switch|type|var)\\b", "golang-control-keyword"),
-		NewWrapDefinition("\\b(string|int64|int63|int|bool|byte|float64|float32|float)\\b", "golang-variable-type"),
+		NewWrapDefinition("\\b(func|import|package)\\b", "golang-top-level-keyword", ""),
+		NewWrapDefinition("\\b(break|case|chan|const|continue|default|defer|else|for|go|goto|if|interface|map|range|return|select|struct|switch|type|var)\\b", "golang-control-keyword", ""),
+		NewWrapDefinition("\\b(string|int64|int63|int|bool|byte|float64|float32|float|any|interface\\{\\})\\b", "golang-variable-type", ""),
+		NewWrapDefinition("\\b(([a-z]+\\.)?\\w+)(\\()", "golang-function", "{{1}}$3"),
+		NewWrapDefinition("\\b(true|false|\\d+(\\.\\d+)?)\\b", "golang-primitive-value", "{{1}}"),
+		NewWrapDefinition("([{}()]+)", "golang-brace", "{{1}}"),
 	}
 	converter := NewConverter(wraps, false)
 	return converter.CodeToHTML(text)
@@ -97,9 +100,10 @@ func GolangToHTML(text string) string {
 
 func PythonToHTML(text string) string {
 	wraps := []*WrapDefinition{
-		NewWrapDefinition("\\b(def|import|class|from)\\b", "python-top-level-keyword"),
-		NewWrapDefinition("\\b(break|case|continue|default|else|elif|for|if|range|return|select|switch|type|var|in|while|self|None)\\b", "python-control-keyword"),
-		NewWrapDefinition("\\b(string|int|bool|float|List|Set|Dict)\\b", "python-variable-type"),
+		NewWrapDefinition("\\b(def|import|class|from)\\b", "python-top-level-keyword", ""),
+		NewWrapDefinition("\\b(break|case|continue|default|else|elif|for|if|range|return|select|switch|type|var|in|while|self|None)\\b", "python-control-keyword", ""),
+		NewWrapDefinition("\\b(string|int|bool|float|List|Set|Dict)\\b", "python-variable-type", ""),
+		NewWrapDefinition("\\b(\\w+)(\\()", "python-function", "{{1}}$2"),
 	}
 	converter := NewConverter(wraps, true)
 	return converter.CodeToHTML(text)
@@ -107,9 +111,10 @@ func PythonToHTML(text string) string {
 
 func JavaToHTML(text string) string {
 	wraps := []*WrapDefinition{
-		NewWrapDefinition("\\b(public|static|private|protected|import|package)\\b", "java-top-level-keyword"),
-		NewWrapDefinition("\\b(break|case|continue|default|else|for|if|interface|return|switch|type)\\b", "java-control-keyword"),
-		NewWrapDefinition("\\b(String|int|long|short|bool|byte|float|double)\\b", "java-variable-type"),
+		NewWrapDefinition("\\b(public|static|private|protected|import|package)\\b", "java-top-level-keyword", ""),
+		NewWrapDefinition("\\b(break|case|continue|default|else|for|if|interface|return|switch|type)\\b", "java-control-keyword", ""),
+		NewWrapDefinition("\\b(String|int|long|short|bool|byte|float|double)\\b", "java-variable-type", ""),
+		NewWrapDefinition("\\b(\\w+)(\\()", "golajavang-function", "{{1}}$2"),
 	}
 	converter := NewConverter(wraps, false)
 	return converter.CodeToHTML(text)

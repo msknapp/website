@@ -1,6 +1,6 @@
 ---
 title: Binary Search
-weight: 9
+weight: -1
 draft: false
 summary: How to use the binary search algorithm.
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Javascript"
 draft: false
-weight: 4
+weight: 6
 description: javascript programming
 summary: Notes about the javascript programming language.
 lastmod: 2023-03-14

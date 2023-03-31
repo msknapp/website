@@ -1,6 +1,6 @@
 ---
 title: Stack
-weight: 19
+weight: 8
 draft: false
 lastmod: 2023-03-25
 summary: Use a stack for LIFO operations.

@@ -134,3 +134,12 @@ div.golang-code {
     resize: vertical;
     overflow: scroll;
 }
+
+span.golang-brace {
+    font-weight: bold;
+    color: rgb(117, 0, 59);
+}
+
+span.golang-function {
+    color: rgb(39, 91, 187);
+}

@@ -12,6 +12,5 @@ There are many more algorithms not covered here yet:
 * Red Black Tree
 * Greedy algorithms
 * Backtracking
-* Linked Lists
 * Skip lists
 * Trie

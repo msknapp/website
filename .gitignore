@@ -5,3 +5,5 @@ temp/
 .vscode/
 
 public/
+coverage.out
+

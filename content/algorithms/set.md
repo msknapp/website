@@ -1,7 +1,7 @@
 ---
 title: Set
 draft: false
-weight: 14
+weight: 9
 lastmod: 2023-03-25
 summary: Use a set to quickly check for existence.
 ---

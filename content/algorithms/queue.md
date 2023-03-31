@@ -1,7 +1,7 @@
 ---
 title: Queue
 draft: false
-weight: 9
+weight: 7
 lastmod: 2023-03-25
 summary: Use queues for faster push and pop operations.
 ---

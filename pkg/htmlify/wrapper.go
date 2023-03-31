@@ -3,6 +3,7 @@ package htmlify
 import (
 	"fmt"
 	"regexp"
+	"strings"
 )
 
 type WrapDefinition struct {
@@ -10,9 +11,21 @@ type WrapDefinition struct {
 	ReplaceWith string
 }
 
-func NewWrapDefinition(exp, clazz string) *WrapDefinition {
+func createReplaceWith(clazz, replacePattern string) string {
+	open := fmt.Sprintf("<span class=\"%s\">$", clazz)
+	cls := "</span>"
+	out := strings.Replace(replacePattern, "{{", open, 1)
+	out = strings.Replace(out, "}}", cls, 1)
+	return out
+}
+
+func NewWrapDefinition(exp, clazz, replacePattern string) *WrapDefinition {
 	expr := regexp.MustCompile(exp)
-	rep := fmt.Sprintf("<span class=\"%s\">$1</span>", clazz)
+	if replacePattern == "" {
+		replacePattern = "{{1}}"
+	}
+	rep := createReplaceWith(clazz, replacePattern)
+
 	return &WrapDefinition{
 		Expression:  expr,
 		ReplaceWith: rep,

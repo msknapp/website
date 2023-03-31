@@ -4,6 +4,7 @@ linkTitle: Globals
 weight: 30
 draft: false
 lastmod: 2023-03-26
+summary: Global variables create problems, you should avoid using them.
 ---
 
 Global variables are associated with the current process.  If they are constants, 

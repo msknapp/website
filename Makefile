@@ -15,3 +15,17 @@ serve:
 .PHONY: cheats
 cheats:
 	./build-cheats
+
+test: vet
+	go test ./pkg/...
+
+coverage: vet
+	go test -coverprofile=coverage.out ./pkg/...
+	go tool cover -html=coverage.out
+
+vet:
+	go vet ./pkg/...
+
+code-to-html:
+	go build -o code-to-html ./cmd/code-to-html
+	[ -d ${HOME}/bin ] && mv code-to-html ${HOME}/bin

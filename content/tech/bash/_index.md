@@ -1,6 +1,6 @@
 ---
 title: Bash
-weight: 3
+weight: 5
 summary: Tips and tricks for bash programming.
 nextlink: sudo/
 prevlink: ..

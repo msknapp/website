@@ -43,6 +43,37 @@ The fluent pattern is not a defensive programming pattern, it is included here t
 similarities to others.  Fluent classes are written in a way that you can chain together 
 functions that set fields on the class.  The class is mutable.
 
+Here is an example of a class following the fluent pattern in golang:
+
+{{< gocode >}}
+<span class="golang-top-level-keyword">package</span>&nbsp;golang<br>
+<br>
+<span class="golang-top-level-keyword">import</span>&nbsp;"fmt"<br>
+<br>
+<span class="golang-control-keyword">type</span>&nbsp;MyFluentThing&nbsp;<span class="golang-control-keyword">struct</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Value&nbsp;<span class="golang-variable-type">int</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Text&nbsp;&nbsp;<span class="golang-variable-type">string</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-function">NewFluentThing</span><span class="golang-brace">()</span>&nbsp;*MyFluentThing&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;&MyFluentThing<span class="golang-brace">{}</span><br>
+<span class="golang-brace">}</span><br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-brace">(</span>t&nbsp;*MyFluentThing<span class="golang-brace">)</span>&nbsp;<span class="golang-function">WithValue</span><span class="golang-brace">(</span>v&nbsp;<span class="golang-variable-type">int</span><span class="golang-brace">)</span>&nbsp;*MyFluentThing&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;t.Value&nbsp;=&nbsp;v<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;t<br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-brace">(</span>t&nbsp;*MyFluentThing<span class="golang-brace">)</span>&nbsp;<span class="golang-function">WithText</span><span class="golang-brace">(</span>s&nbsp;<span class="golang-variable-type">string</span><span class="golang-brace">)</span>&nbsp;*MyFluentThing&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;t.Text&nbsp;=&nbsp;s<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;t<br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-function">Run</span><span class="golang-brace">()</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;:=&nbsp;<span class="golang-function">NewFluentThing</span><span class="golang-brace">()</span>.<span class="golang-function">WithText</span><span class="golang-brace">(</span>"foo"<span class="golang-brace">)</span>.<span class="golang-function">WithValue</span><span class="golang-brace">(</span><span class="golang-primitive-value">3</span><span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">fmt.Printf</span><span class="golang-brace">(</span>"%s,&nbsp;%d",&nbsp;x.Text,&nbsp;x.Value<span class="golang-brace">)</span><br>
+<span class="golang-brace">}</span><br>
+{{< /gocode >}}
+
 # Builder Pattern
 
 The builder pattern involves having one class that is mutable, and its purpose is to build 
@@ -63,6 +94,95 @@ In practice, builders may or may not be re-used.  The downsides of using builder
 * They must also be unit tested.
 * They create more objects, which can add strain to garbage collectors, and hence it 
   requires more memory and can slow down performance.
+
+Here is an example of the builder pattern in golang:
+
+{{< gocode >}}
+<span class="golang-top-level-keyword">package</span>&nbsp;golang<br>
+<br>
+<span class="golang-top-level-keyword">import</span>&nbsp;"errors"<br>
+<br>
+<span class="golang-control-keyword">type</span>&nbsp;Thing&nbsp;<span class="golang-control-keyword">struct</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;&nbsp;&nbsp;<span class="golang-variable-type">string</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;<span class="golang-variable-type">int</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;array&nbsp;&nbsp;[]<span class="golang-variable-type">float64</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-brace">(</span>t&nbsp;*Thing<span class="golang-brace">)</span>&nbsp;<span class="golang-function">Text</span><span class="golang-brace">()</span>&nbsp;<span class="golang-variable-type">string</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;t.text<br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-brace">(</span>t&nbsp;*Thing<span class="golang-brace">)</span>&nbsp;<span class="golang-function">Number</span><span class="golang-brace">()</span>&nbsp;<span class="golang-variable-type">int</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;t.number<br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-control-keyword">type</span>&nbsp;ThingBuilder&nbsp;<span class="golang-control-keyword">struct</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;&nbsp;&nbsp;<span class="golang-variable-type">string</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;<span class="golang-variable-type">int</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;array&nbsp;&nbsp;[]<span class="golang-variable-type">float64</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-function">StartSomething</span><span class="golang-brace">()</span>&nbsp;*ThingBuilder&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;&ThingBuilder<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array:&nbsp;<span class="golang-function">make</span><span class="golang-brace">(</span>[]<span class="golang-variable-type">float64</span>,&nbsp;<span class="golang-primitive-value">3</span><span class="golang-brace">)</span>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-brace">(</span>b&nbsp;*ThingBuilder<span class="golang-brace">)</span>&nbsp;<span class="golang-function">Text</span><span class="golang-brace">(</span>s&nbsp;<span class="golang-variable-type">string</span><span class="golang-brace">)</span>&nbsp;*ThingBuilder&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;b.text&nbsp;=&nbsp;s<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;b<br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-brace">(</span>b&nbsp;*ThingBuilder<span class="golang-brace">)</span>&nbsp;<span class="golang-function">Number</span><span class="golang-brace">(</span>x&nbsp;<span class="golang-variable-type">int</span><span class="golang-brace">)</span>&nbsp;*ThingBuilder&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;b.number&nbsp;=&nbsp;x<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;b<br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-brace">(</span>b&nbsp;*ThingBuilder<span class="golang-brace">)</span>&nbsp;<span class="golang-function">AddValue</span><span class="golang-brace">(</span>x&nbsp;<span class="golang-variable-type">float64</span><span class="golang-brace">)</span>&nbsp;*ThingBuilder&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;b.array&nbsp;=&nbsp;<span class="golang-function">append</span><span class="golang-brace">(</span>b.array,&nbsp;x<span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;b<br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-brace">(</span>b&nbsp;*ThingBuilder<span class="golang-brace">)</span>&nbsp;<span class="golang-function">Build</span><span class="golang-brace">()</span>&nbsp;<span class="golang-brace">(</span>*Thing,&nbsp;error<span class="golang-brace">)</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;b.text&nbsp;==&nbsp;""&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;nil,&nbsp;<span class="golang-function">errors.New</span><span class="golang-brace">(</span>"text&nbsp;is&nbsp;not&nbsp;set"<span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;b.number&nbsp;<&nbsp;<span class="golang-primitive-value">1</span>&nbsp;<span class="golang-brace">{</span><br>
+<span class="code-comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;example&nbsp;of&nbsp;setting&nbsp;a&nbsp;default.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.number&nbsp;=&nbsp;<span class="golang-primitive-value">1</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+<span class="code-comment">&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;defensive&nbsp;copies&nbsp;of&nbsp;slices.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;c&nbsp;:=&nbsp;<span class="golang-function">make</span><span class="golang-brace">(</span>[]<span class="golang-variable-type">float64</span>,&nbsp;<span class="golang-function">len</span><span class="golang-brace">(</span>b.array<span class="golang-brace">))</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">copy</span><span class="golang-brace">(</span>c,&nbsp;b.array<span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;&Thing<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text:&nbsp;&nbsp;&nbsp;b.text,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number:&nbsp;b.number,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array:&nbsp;&nbsp;c,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span>,&nbsp;nil<br>
+<span class="golang-brace">}</span><br>
+{{< /gocode >}}
+
+In the code above, we can see that "Thing" is immutable to any code outside its package.  This is 
+accomplished by making its fields have lowercase first characters, meaning they are package private.
+It exposes public methods to get its values, but not to mutate them.
+
+The builder has mutable fields, but once it has built the "Thing", any update to the builder 
+will not alter the instance.  The slice it holds for the "array" is cloned, which is called
+a defensive copy.  The build method can also validate inputs or assign defaults.  In the example,
+the validation is that the text is not empty, and the default is that the number will take
+the value 1 if it was not set.
+
+Calling code would use this to create the "Thing":
+
+```
+instance, err := golang.StartSomething().Text("foo").Number(8).AddValue(2.3).AddValue(8.4).Build()
+```
+
+In golang, the builder pattern is not needed nearly as often as it is in other languages, because
+Golang lets you pass structs by value.  When a struct is passed by value, all of its fields are
+copied to the function being called.  If the function changes something, it doesn't affect the
+value seen by higher functions.  So then the only reason you might use a builder is if the 
+struct has *many* fields in it.
 
 # Factory Pattern
 

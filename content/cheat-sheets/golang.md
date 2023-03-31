@@ -13,24 +13,31 @@ summary: cheat sheet for Golang.
 
 
 {{< /cheat >}}
-{{< cheat "New Map" >}}<span class="golang-variable">x</span>&nbsp;:=&nbsp;<span class="golang-control-keyword">map</span>[<span class="golang-variable-type">string</span>]<span class="golang-variable-type">int</span>{}<br>
+{{< cheat "New Map" >}}
+<span class="golang-variable">x</span>&nbsp;:=&nbsp;<span class="golang-control-keyword">map</span>[<span class="golang-variable-type">string</span>]<span class="golang-variable-type">int</span>{}<br>
 <span class="golang-variable">y</span>&nbsp;:=&nbsp;make(<span class="golang-control-keyword">map</span>[<span class="golang-variable-type">string</span>]<span class="golang-variable-type">int</span>,&nbsp;4)<br>
 <span class="golang-variable">z</span>&nbsp;:=&nbsp;<span class="golang-control-keyword">map</span>[<span class="golang-variable-type">string</span>]<span class="golang-variable-type">int</span>{<br>
 &nbsp;&nbsp;&nbsp;&nbsp;"one":&nbsp;1,<br>
 &nbsp;&nbsp;&nbsp;&nbsp;"two":&nbsp;2,<br>
 }<br>
-
-
 {{< /cheat >}}
 
-{{< cheat "Check Type" >}}
-
+{{< cheat "String to Stream" >}}
+s&nbsp;:=&nbsp;"foo"<br>
+buf&nbsp;:=&nbsp;bytes.NewBuffer([]<span&nbsp;class="golang-variable-type">byte</span>(s))
 {{< /cheat >}}
-{{< cheat "Sort a List" >}}
-
+{{< cheat "Split a string" >}}
+s&nbsp;:=&nbsp;"foo&nbsp;bar"<br>
+parts&nbsp;:=&nbsp;strings.Split(s,&nbsp;"&nbsp;")
 {{< /cheat >}}
-{{< cheat "Marshal to JSON" >}}
-
+{{< cheat "Read File to String" >}}
+<span&nbsp;class="golang-top-level-keyword">func</span>&nbsp;Ex()&nbsp;(<span&nbsp;class="golang-variable-type">string</span>,&nbsp;error)&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bts,&nbsp;e&nbsp;:=&nbsp;ioutil.ReadFile("/path/to/file.txt")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span&nbsp;class="golang-control-keyword">if</span>&nbsp;e&nbsp;!=&nbsp;nil&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span&nbsp;class="golang-control-keyword">return</span>&nbsp;"",&nbsp;e<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span&nbsp;class="golang-control-keyword">return</span>&nbsp;<span&nbsp;class="golang-variable-type">string</span>(bts),&nbsp;nil<br>
+}
 {{< /cheat >}}
 {{< cheat "Unmarshal JSON" >}}
 
