@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/golang/" title="">
+                Golang</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/golang-recipes/" title="">
+                Golang Recipes</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/golang-gotchas/" title="">
+                Golang Gotchas</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/java/" title="java programming language.">
+                Java</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/bash/" title="">
+                Bash</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/javascript-language/" title="javascript programming">
+                Javascript</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/languages/" title="my description.">
+                Software Languages</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/api/" title="">
+                API Development</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow"><a class="tocmenu arrow" href="" title="Data">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#brokers">Brokers</a></li>
+    <li><a href="#topics">Topics</a></li>
+    <li><a href="#partitions">Partitions</a></li>
+    <li><a href="#segments">Segments</a></li>
+    <li><a href="#durability">Durability</a></li>
+    <li><a href="#retention">Retention</a></li>
+    <li><a href="#records">Records</a></li>
+    <li><a href="#keys">Keys</a></li>
+    <li><a href="#producers">Producers</a>
+      <ul>
+        <li><a href="#acknowledgement">Acknowledgement</a></li>
+      </ul>
+    </li>
+    <li><a href="#consumers">Consumers</a>
+      <ul>
+        <li><a href="#consumer-groups">Consumer Groups</a></li>
+      </ul>
+    </li>
+    <li><a href="#replication">Replication</a></li>
+    <li><a href="#fault-tolerance">Fault Tolerance</a></li>
+    <li><a href="#scaling">Scaling</a></li>
+    <li><a href="#loose-coupling">Loose Coupling</a></li>
+    <li><a href="#distributed-consensus">Distributed Consensus</a></li>
+    <li><a href="#delivery-guarantees">Delivery Guarantees</a></li>
+    <li><a href="#patterns">Patterns</a></li>
+  </ul>
+</nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/tech/" class="breadcrumbs">/Tech</a></li>
+        <li class="breadcrumbs"><a href="" class="breadcrumbs">/Data</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Kafka</h1>
+<p>Kafka is a message queue.  It&rsquo;s designed to scale to higher volume and velocity of data, and it
+does this using replication.</p>
+<h1 id="brokers">Brokers</h1>
+<p>Kafka clusters contain brokers.  A &ldquo;Broker&rdquo; is a node running Kafka.
+There can be many brokers working together in a Kafka cluster.</p>
+<h1 id="topics">Topics</h1>
+<p>Streams are called &ldquo;topics&rdquo;.  A cluster can have many topics.  Topics are partitioned.</p>
+<h1 id="partitions">Partitions</h1>
+<ul>
+<li>Partitions are composed of segments, which is like a rolling file.
+It is durable and persistent, stored on disk.</li>
+<li>Records get assigned a partition key, which decides which partition they go to
+on the topic.</li>
+<li>Partitions are replicated by a factor, to other brokers.  This lets Kafka be fault
+tolerant.</li>
+<li>Partitions get allocated to brokers.
+<ul>
+<li>There is strict ordering on partitions.</li>
+<li>There is not strict ordering when reading from a topic.</li>
+</ul>
+</li>
+<li>re-balancing of partitions is not built in to Kafka, Confluent adds it.</li>
+<li>partitions are also called logs.  They must be written in sequence, and
+are immutable once written.  You cannot edit or remove past records.
+They can expire.</li>
+<li>Every partition has its own offset space.</li>
+</ul>
+<p>Choice of partition</p>
+<ul>
+<li>Producers can specify the partition</li>
+<li>it can by chosen by hashing the key and taking that mod the number of partitions.</li>
+<li>can just be round-robin.</li>
+<li>You can provide a custom partitioner.</li>
+</ul>
+<h1 id="segments">Segments</h1>
+<h1 id="durability">Durability</h1>
+<p>Events are written and stored on disk.</p>
+<h1 id="retention">Retention</h1>
+<p>Reading a message does not remove it.</p>
+<p>Retention is based on time.  1 week is default.  Each topic can have
+its own retention.  It will only purge entire segments at a time, and
+only if all of that segment has expired.</p>
+<p>Different policies can be set for Queue record deletion.  They can be
+deleted if they are over a certain age.</p>
+<h1 id="records">Records</h1>
+<p>Records have:</p>
+<ul>
+<li>headers</li>
+<li>key - can be anything serialized, like bytes or a string or integer.
+<ul>
+<li>keys do not need to be explicitly set, the broker can randomly assign one.</li>
+</ul>
+</li>
+<li>value</li>
+<li>timestamp - can be set by producer, or by broker.</li>
+</ul>
+<h1 id="keys">Keys</h1>
+<p>Messages can have the same key, that is allowed.  Then they would go to
+the same partition, and hence the order would be guaranteed.  So giving
+messages the same key is a means of guaranteeing the records are processed
+in order.  For example, choosing the customer ID as the key would guarantee
+that for each customer, their transactions are processed in order.</p>
+<h1 id="producers">Producers</h1>
+<ul>
+<li>Producers send events to Kafka.</li>
+<li>Events are produced and sent to the Queue.</li>
+</ul>
+<p>Producers and consumers need to know or declare an object type for
+the key and value, so that it can be marshalled correctly.</p>
+<p>There are many different SDKs for producers and consumers in different languages.</p>
+<h2 id="acknowledgement">Acknowledgement</h2>
+<ul>
+<li>Brokers can acknowledge receipt of events.
+There are three different ack policies.</li>
+<li>No acknowledgement.  Low latency but possibility of data loss.</li>
+<li>leader acknowledges.</li>
+<li>all ack, including followers.</li>
+</ul>
+<p>Ack means it is written on a disk now, not just memory.</p>
+<h1 id="consumers">Consumers</h1>
+<p>There can be many consumers.
+Consumers can subscribe to as many or as few topics as they want.
+Consumers poll.  Consumer poll by a timespan they choose, usually in milliseconds.
+Kafka keeps track of the &ldquo;offset&rdquo; that each consumer is at.</p>
+<p>Newer versions of Kafka allow consumers to read from followers.</p>
+<p>Frequently a consumer is also a producer, sending to a different topic.</p>
+<h2 id="consumer-groups">Consumer Groups</h2>
+<p>Consumers can be grouped, which means they will not be given duplicate records.</p>
+<p>Each consumer offset is tracked within the kafka cluster in its own topic.
+This means that consumers could crash and recover, and pick up where they
+left off.</p>
+<p>In a consumer group, records from a topic will be read by one of the
+consumers.</p>
+<h1 id="replication">Replication</h1>
+<p>Followers are trying to keep up with the leader by pulling from them.
+Leaders do not push records.  When a record is written, that can
+return before it is replicated.</p>
+<ul>
+<li>Each partition is replicated to other brokers.</li>
+<li>For each partition, one broker is the leader, others are followers.</li>
+<li>You can configure how many replicas there are for each topic.</li>
+</ul>
+<h1 id="fault-tolerance">Fault Tolerance</h1>
+<h1 id="scaling">Scaling</h1>
+<h1 id="loose-coupling">Loose Coupling</h1>
+<p>Enables loose coupling between producer and consumer.  They can scale
+separately, they can be updated separately.  If one is slow, it will
+have no impact on the others.</p>
+<h1 id="distributed-consensus">Distributed Consensus</h1>
+<ul>
+<li>Kafka uses ZooKeeper Ensembles to keep consensus on the state of things.
+<ul>
+<li>distributed consensus manager.</li>
+</ul>
+</li>
+<li>ZooKeeper is used to elect a new leader when a broker dies.</li>
+<li>KIP: kafka improvement proposals 500, wants to remove ZooKeeper.</li>
+</ul>
+<h1 id="delivery-guarantees">Delivery Guarantees</h1>
+<ul>
+<li>At most once.  Some are lost.</li>
+<li>At least once.  Duplicates sometimes occur.</li>
+<li>Exactly Once</li>
+</ul>
+<h1 id="patterns">Patterns</h1>
+<p>There are certain patterns or scenarios to be considered.</p>
+<ul>
+<li>Exactly once processing</li>
+<li>Replaying from past.</li>
+<li>Guaranteeing order of processing.</li>
+</ul>
+<p>How is Kafka Highly Available?</p>
+<ul>
+<li>Add more replicas to topics.</li>
+</ul>
+<p>Can you scale up kafka brokers at runtime?</p>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <div></div>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-26 00:00:00 &#43;0000 UTC">
+                March 26, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <div></div>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Golang Recipes on Michael Knapp&#39;s Home Page</title>
+    <link>/tech/golang-recipes/</link>
+    <description>Recent content in Golang Recipes on Michael Knapp&#39;s Home Page</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>2023 Michael Knapp</copyright>
+    <lastBuildDate>Fri, 31 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tech/golang-recipes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Very Basic Recipes</title>
+      <link>/tech/golang-recipes/basics/</link>
+      <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang-recipes/basics/</guid>
+      <description>Ternary, working with strings and streams, etc.</description>
+    </item>
+    <item>
+      <title>Working with Types</title>
+      <link>/tech/golang-recipes/types/</link>
+      <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang-recipes/types/</guid>
+      <description>Checking variables types and acting accordingly.</description>
+    </item>
+    <item>
+      <title>Sorting Slices</title>
+      <link>/tech/golang-recipes/sorting/</link>
+      <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang-recipes/sorting/</guid>
+      <description>How to sort a slice and do a binary search.</description>
+    </item>
+    <item>
+      <title>Working with Files</title>
+      <link>/tech/golang-recipes/files/</link>
+      <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang-recipes/files/</guid>
+      <description>Working with files.</description>
+    </item>
+    <item>
+      <title>Creating Unit Tests</title>
+      <link>/tech/golang-recipes/tests/</link>
+      <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang-recipes/tests/</guid>
+      <description>How to create unit tests by various forms.</description>
+    </item>
+    <item>
+      <title>Errors and Panics</title>
+      <link>/tech/golang-recipes/errors-and-panics/</link>
+      <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang-recipes/errors-and-panics/</guid>
+      <description>Working with errors, panics, and recovery.</description>
+    </item>
+    <item>
+      <title>Golang Collections</title>
+      <link>/tech/golang-recipes/collections/</link>
+      <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang-recipes/collections/</guid>
+      <description>Recipes for working with data collections.</description>
+    </item>
+    <item>
+      <title>Unfinished Recipes</title>
+      <link>/tech/golang-recipes/unfinished/</link>
+      <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang-recipes/unfinished/</guid>
+      <description>The loose ends, my todo list.</description>
+    </item>
+  </channel>
+</rss>

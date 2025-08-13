@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/kiss/" title="How to keep your code simple">
+                KISS and YAGNI</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/dry/" title="">
+                Don&#39;t Repeat Yourself</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/defensive/" title="Making your code defensive.">
+                Defensive Programming</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/principles/single-responsibility/" title="The importance of single responsibility.">
+                Single Responsibility Principle</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/open-closed/" title="">
+                Open Closed Principle</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/substitution/" title="">
+                Substitution</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/segregation/" title="explaining the interface segregation principle">
+                Interface Segregation Principle</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/testing/" title="The importance of software testing.">
+                Software Testing</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/configuration/" title="">
+                Configuration Levels</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/quality/" title="Assessing code quality.">
+                Judging Quality</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/stereotypes/" title="">
+                Class Stereotypes</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/ybyo/" title="">
+                You Build You Own</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/globals/" title="">
+                Globals</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/optimization/" title="">
+                Premature Optimization</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/reinvent/" title="">
+                Don&#39;t Reinvent the Wheel</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow"><a class="tocmenu arrow" href="/principles/defensive/"
+                                title="Defensive Programming">
+                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" /></a><a class="tocmenu arrow" href="/principles/" title="Software Development Principles">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                        <a class="tocmenu arrow" href="/principles/open-closed/"
+                                title="Open Closed Principle"><img src="/icons/arrow-right-circle-white.png"
+                                        class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#high-cohesion">High Cohesion</a></li>
+    <li><a href="#example">Example</a></li>
+  </ul>
+</nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/principles/" class="breadcrumbs">/Principles</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Single Responsibility Principle</h1>
+<p>The Unix motto is &ldquo;Do one thing, and do it very well.&rdquo;  This is quite similar to the
+single responsibility principle, which suggests that any single class
+should not be responsible for multiple things.  In other words, we want to keep the
+scope of a class small and simple.  So it is in line with the KISS principle.  The
+principle of cohesion is also relevant to this.</p>
+<h1 id="high-cohesion">High Cohesion</h1>
+<p>Code is cohesive when its functions are all closely related and aligned to a common purpose
+or objective.  It is similar to the single responsibility principle.  It helps you keep the
+scope of classes small, so they are rarely updated (in line with the open/closed principle),
+and far less likely to have bugs.  This pattern also means your team is less likely to
+have merge conflicts in your code.</p>
+<h1 id="example">Example</h1>
+<p>Let&rsquo;s say that an engineer wrote this class:
+<div class="golang-code">
+    
+<span class="golang-top-level-keyword">package</span>&nbsp;golang<br>
+<br>
+<span class="golang-top-level-keyword">import</span>&nbsp;<span class="golang-brace">(</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;"errors"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"fmt"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"os"<br>
+<span class="golang-brace">)</span><br>
+<br>
+<span class="golang-control-keyword">type</span>&nbsp;Service&nbsp;<span class="golang-control-keyword">struct</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;admin&nbsp;&nbsp;<span class="golang-variable-type">string</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;factor&nbsp;<span class="golang-variable-type">int</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;logTo&nbsp;&nbsp;<span class="golang-variable-type">string</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;units&nbsp;&nbsp;<span class="golang-variable-type">string</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-function">NewService</span><span class="golang-brace">(</span>admin&nbsp;<span class="golang-variable-type">string</span>,&nbsp;factor&nbsp;<span class="golang-variable-type">int</span>,&nbsp;logTo&nbsp;<span class="golang-variable-type">string</span>,&nbsp;units&nbsp;<span class="golang-variable-type">string</span><span class="golang-brace">)</span>&nbsp;*Service&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;&Service<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;admin:&nbsp;&nbsp;admin,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;factor:&nbsp;factor,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logTo:&nbsp;&nbsp;logTo,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-brace">(</span>s&nbsp;*Service<span class="golang-brace">)</span>&nbsp;<span class="golang-function">Execute</span><span class="golang-brace">(</span>user&nbsp;<span class="golang-variable-type">string</span>,&nbsp;input&nbsp;<span class="golang-variable-type">int</span><span class="golang-brace">)</span>&nbsp;<span class="golang-brace">(</span><span class="golang-variable-type">string</span>,&nbsp;error<span class="golang-brace">)</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;user&nbsp;!=&nbsp;s.admin&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;"",&nbsp;<span class="golang-function">errors.New</span><span class="golang-brace">(</span>"unauthorized"<span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;f,&nbsp;_&nbsp;:=&nbsp;<span class="golang-function">os.Open</span><span class="golang-brace">(</span>s.logTo<span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">f.WriteString</span><span class="golang-brace">(</span><span class="golang-function">fmt.Sprintf</span><span class="golang-brace">(</span>"executing&nbsp;%d",&nbsp;input<span class="golang-brace">))</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;v&nbsp;:=&nbsp;s.factor&nbsp;*&nbsp;input<br>
+&nbsp;&nbsp;&nbsp;&nbsp;out&nbsp;:=&nbsp;<span class="golang-function">fmt.Sprintf</span><span class="golang-brace">(</span>"The&nbsp;product&nbsp;is&nbsp;%d&nbsp;%s",&nbsp;v,&nbsp;s.units<span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;out,&nbsp;nil<br>
+<span class="golang-brace">}</span><br>
+
+</div></p>
+<p>Unfortunately, the code above has a single Service that is mixing <em>many</em> concerns or responsibilities:</p>
+<ul>
+<li>It has logic to decide if the request is authorized.</li>
+<li>It has logic to control how the request event was logged.</li>
+<li>It holds the logic for a computation.</li>
+<li>It has a built-in, hard coded template for the output text.</li>
+</ul>
+<p>Obviously, the code above is going to be very difficult to maintain:</p>
+<ul>
+<li>What if the administrator changes?  What if there are now multiple administrators?</li>
+<li>What if the authorization logic changes to use a different method?  Like maybe ldap groups
+or entitlements will be used instead.</li>
+<li>What if we want the log files to rotate?  Or be shipped to some external service?</li>
+<li>What if we want to use a big integer for the input and output?</li>
+<li>What if we want to reject the request if the input is less than one?</li>
+<li>What if we want to change the template for the output sentence?</li>
+</ul>
+<p>We can re-factor the above code to consider the the above problems, and follow the single responsibility
+principle.  The example below is shown in one file, but in reality they would be separate files, which
+lets separate developers work on them while reducing the risk of merge conflicts.</p>
+<div class="golang-code">
+    
+<span class="golang-top-level-keyword">package</span>&nbsp;golang<br>
+<br>
+<span class="golang-top-level-keyword">import</span>&nbsp;<span class="golang-brace">(</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;"errors"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"fmt"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"os"<br>
+<span class="golang-brace">)</span><br>
+<br>
+<span class="code-comment">//&nbsp;in&nbsp;file&nbsp;authorizer.go</span><br>
+<br>
+<span class="golang-control-keyword">type</span>&nbsp;Authorizer&nbsp;<span class="golang-control-keyword">interface</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">ConfirmAuthorized</span><span class="golang-brace">(</span>user&nbsp;<span class="golang-variable-type">string</span><span class="golang-brace">)</span>&nbsp;error<br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-control-keyword">type</span>&nbsp;authorizer&nbsp;<span class="golang-control-keyword">struct</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;admin&nbsp;<span class="golang-variable-type">string</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-function">NewAuthorizer</span><span class="golang-brace">(</span>admin&nbsp;<span class="golang-variable-type">string</span><span class="golang-brace">)</span>&nbsp;Authorizer&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;&authorizer<span class="golang-brace">{</span>admin<span class="golang-brace">}</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-brace">(</span>a&nbsp;*authorizer<span class="golang-brace">)</span>&nbsp;<span class="golang-function">ConfirmAuthorized</span><span class="golang-brace">(</span>user&nbsp;<span class="golang-variable-type">string</span><span class="golang-brace">)</span>&nbsp;error&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;user&nbsp;!=&nbsp;a.admin&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;<span class="golang-function">errors.New</span><span class="golang-brace">(</span>"unauthorized"<span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;nil<br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="code-comment">//&nbsp;in&nbsp;file&nbsp;calculation.go</span><br>
+<br>
+<span class="golang-control-keyword">type</span>&nbsp;Calculation&nbsp;<span class="golang-control-keyword">interface</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">Calculate</span><span class="golang-brace">(</span>input&nbsp;<span class="golang-variable-type">int</span><span class="golang-brace">)</span>&nbsp;<span class="golang-variable-type">int</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-control-keyword">type</span>&nbsp;Multiplier&nbsp;<span class="golang-control-keyword">struct</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;factor&nbsp;<span class="golang-variable-type">int</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-function">NewMultiplier</span><span class="golang-brace">(</span>x&nbsp;<span class="golang-variable-type">int</span><span class="golang-brace">)</span>&nbsp;Calculation&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;&Multiplier<span class="golang-brace">{</span>factor:&nbsp;x<span class="golang-brace">}</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-brace">(</span>m&nbsp;*Multiplier<span class="golang-brace">)</span>&nbsp;<span class="golang-function">Calculate</span><span class="golang-brace">(</span>input&nbsp;<span class="golang-variable-type">int</span><span class="golang-brace">)</span>&nbsp;<span class="golang-variable-type">int</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;m.factor&nbsp;*&nbsp;input<br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-control-keyword">type</span>&nbsp;Logger&nbsp;<span class="golang-control-keyword">interface</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">Log</span><span class="golang-brace">(</span>s&nbsp;<span class="golang-variable-type">string</span><span class="golang-brace">)</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-control-keyword">type</span>&nbsp;logger&nbsp;<span class="golang-control-keyword">struct</span>&nbsp;<span class="golang-brace">{</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-brace">(</span>l&nbsp;*logger<span class="golang-brace">)</span>&nbsp;<span class="golang-function">Log</span><span class="golang-brace">(</span>s&nbsp;<span class="golang-variable-type">string</span><span class="golang-brace">)</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">fmt.Fprint</span><span class="golang-brace">(</span>os.Stderr,&nbsp;s<span class="golang-brace">)</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-control-keyword">type</span>&nbsp;OutputFormatter&nbsp;<span class="golang-control-keyword">interface</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">Format</span><span class="golang-brace">(</span>value&nbsp;<span class="golang-variable-type">int</span><span class="golang-brace">)</span>&nbsp;<span class="golang-variable-type">string</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-control-keyword">type</span>&nbsp;outputFormatter&nbsp;<span class="golang-control-keyword">struct</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;theFormat&nbsp;<span class="golang-variable-type">string</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;units&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-variable-type">string</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-function">NewOutputFormatter</span><span class="golang-brace">(</span>template&nbsp;<span class="golang-variable-type">string</span>,&nbsp;units&nbsp;<span class="golang-variable-type">string</span><span class="golang-brace">)</span>&nbsp;OutputFormatter&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;template&nbsp;==&nbsp;""&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;template&nbsp;=&nbsp;"The&nbsp;product&nbsp;is&nbsp;%d&nbsp;%s"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;units&nbsp;==&nbsp;""&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;units&nbsp;=&nbsp;"units"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;&outputFormatter<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;theFormat:&nbsp;template,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;units:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;units,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-brace">(</span>f&nbsp;*outputFormatter<span class="golang-brace">)</span>&nbsp;<span class="golang-function">Format</span><span class="golang-brace">(</span>value&nbsp;<span class="golang-variable-type">int</span><span class="golang-brace">)</span>&nbsp;<span class="golang-variable-type">string</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;<span class="golang-function">fmt.Sprintf</span><span class="golang-brace">(</span>f.theFormat,&nbsp;value,&nbsp;f.units<span class="golang-brace">)</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-control-keyword">type</span>&nbsp;Service&nbsp;<span class="golang-control-keyword">struct</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;authorizer&nbsp;&nbsp;Authorizer<br>
+&nbsp;&nbsp;&nbsp;&nbsp;calculation&nbsp;Calculation<br>
+&nbsp;&nbsp;&nbsp;&nbsp;logger&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logger<br>
+&nbsp;&nbsp;&nbsp;&nbsp;formatter&nbsp;&nbsp;&nbsp;OutputFormatter<br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-function">NewService</span><span class="golang-brace">(</span>authorizer&nbsp;Authorizer,&nbsp;calculation&nbsp;Calculation,&nbsp;logger&nbsp;Logger,&nbsp;formatter&nbsp;OutputFormatter<span class="golang-brace">)</span>&nbsp;*Service&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;&Service<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;authorizer:&nbsp;&nbsp;authorizer,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calculation:&nbsp;calculation,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logger:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logger,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;formatter:&nbsp;&nbsp;&nbsp;formatter,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-brace">(</span>s&nbsp;*Service<span class="golang-brace">)</span>&nbsp;<span class="golang-function">Execute</span><span class="golang-brace">(</span>user&nbsp;<span class="golang-variable-type">string</span>,&nbsp;input&nbsp;<span class="golang-variable-type">int</span><span class="golang-brace">)</span>&nbsp;<span class="golang-brace">(</span><span class="golang-variable-type">string</span>,&nbsp;error<span class="golang-brace">)</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;e&nbsp;:=&nbsp;s.<span class="golang-function">authorizer.ConfirmAuthorized</span><span class="golang-brace">(</span>user<span class="golang-brace">)</span>;&nbsp;e&nbsp;!=&nbsp;nil&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;"",&nbsp;e<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;s.<span class="golang-function">logger.Log</span><span class="golang-brace">(</span><span class="golang-function">fmt.Sprintf</span><span class="golang-brace">(</span>"executing&nbsp;%d",&nbsp;input<span class="golang-brace">))</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;v&nbsp;:=&nbsp;s.<span class="golang-function">calculation.Calculate</span><span class="golang-brace">(</span>input<span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;out&nbsp;:=&nbsp;s.<span class="golang-function">formatter.Format</span><span class="golang-brace">(</span>v<span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;out,&nbsp;nil<br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-function">RunService</span><span class="golang-brace">()</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;auth&nbsp;:=&nbsp;<span class="golang-function">NewAuthorizer</span><span class="golang-brace">(</span>"pat"<span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;calc&nbsp;:=&nbsp;<span class="golang-function">NewMultiplier</span><span class="golang-brace">(</span><span class="golang-primitive-value">3</span><span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;log&nbsp;:=&nbsp;&logger<span class="golang-brace">{}</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;formatter&nbsp;:=&nbsp;<span class="golang-function">NewOutputFormatter</span><span class="golang-brace">(</span>"",&nbsp;"things"<span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;svc&nbsp;:=&nbsp;<span class="golang-function">NewService</span><span class="golang-brace">(</span>auth,&nbsp;calc,&nbsp;log,&nbsp;formatter<span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;out,&nbsp;_&nbsp;:=&nbsp;<span class="golang-function">svc.Execute</span><span class="golang-brace">(</span>"pat",&nbsp;<span class="golang-primitive-value">8</span><span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">fmt.Println</span><span class="golang-brace">(</span>out<span class="golang-brace">)</span><br>
+<span class="golang-brace">}</span><br>
+
+</div>
+<p>The re-factoring above might seem very verbose to new engineers, but it will be far easier to
+maintain in the long term.</p>
+<ul>
+<li>If we need to change the logic for authorizations, calculations, logging, or output formatting,
+the service class does not need to be altered itself.  That means it is more stable.  It is
+in line with the open/closed principle in the next section, because the service class does
+not need to be updated, but it can behave different ways by replacing the services it depends upon.</li>
+<li>If the structs are in separate files, it reduces the chances of merge conflicts.</li>
+<li>We can also write special implementations of the interfaces that wrap existing ones.</li>
+</ul>
+<p>Some people might say, why use an interface here?  There is only one implementation.  You might
+think it is over-complicating things and going against the KISS principle.  More often
+than you first expect, new implementations come around in the future.  It is better to
+de-couple the service from specific implementations, so that it does not need any updates
+when the implementation changes.  The interface segregation principle recommends this approach.</p>
+<p>Yes, you should frequently have interfaces defined with only one implementation.</p>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="/principles/defensive/" title="Defensive Programming">
+        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/principles/open-closed/" title="Open Closed Principle">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

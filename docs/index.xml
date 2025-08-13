@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <link>/</link>
+    <description>Recent content on Michael Knapp&#39;s Home Page</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>2023 Michael Knapp</copyright>
+    <lastBuildDate>Fri, 31 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Binary Search</title>
+      <link>/algorithms/binary-search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/algorithms/binary-search/</guid>
+      <description>How to use the binary search algorithm.</description>
+    </item>
+    <item>
+      <title>Checking for Nil</title>
+      <link>/tech/golang-gotchas/check-nil/</link>
+      <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang-gotchas/check-nil/</guid>
+      <description>Programmers get baffled when a variable is considered not nil and then promptly panics because it is nil.</description>
+    </item>
+    <item>
+      <title>Very Basic Recipes</title>
+      <link>/tech/golang-recipes/basics/</link>
+      <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang-recipes/basics/</guid>
+      <description>Ternary, working with strings and streams, etc.</description>
+    </item>
+    <item>
+      <title>Convert Golang to HTML</title>
+      <link>/applications/golang-to-html/</link>
+      <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/applications/golang-to-html/</guid>
+      <description>Converts golang to html</description>
+    </item>
+    <item>
+      <title>Golang</title>
+      <link>/cheat-sheets/golang/</link>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/cheat-sheets/golang/</guid>
+      <description>cheat sheet for Golang.</description>
+    </item>
+    <item>
+      <title>Helm Chart or Operator</title>
+      <link>/blog/helm-or-operator/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/blog/helm-or-operator/</guid>
+      <description>Which one should I use?</description>
+    </item>
+    <item>
+      <title>Managed Services</title>
+      <link>/architecture/managed-services/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/architecture/managed-services/</guid>
+      <description>You should choose between serverless, managed, and custom solutions depending on your system&amp;rsquo;s usage.</description>
+    </item>
+    <item>
+      <title>Version Control</title>
+      <link>/reliability/version-control/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/version-control/</guid>
+      <description>Code and configuration should be tracked in a version control system.</description>
+    </item>
+    <item>
+      <title>Bubble Sort</title>
+      <link>/algorithms/bubble/</link>
+      <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/algorithms/bubble/</guid>
+      <description>How the bubble sort works</description>
+    </item>
+    <item>
+      <title>KISS and YAGNI</title>
+      <link>/principles/kiss/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/principles/kiss/</guid>
+      <description>Prefer to keep your code as simple as possible.</description>
+    </item>
+    <item>
+      <title>Working with Types</title>
+      <link>/tech/golang-recipes/types/</link>
+      <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang-recipes/types/</guid>
+      <description>Checking variables types and acting accordingly.</description>
+    </item>
+    <item>
+      <title>Convert Python to HTML</title>
+      <link>/applications/python-to-html/</link>
+      <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/applications/python-to-html/</guid>
+      <description>Converts Python to html</description>
+    </item>
+    <item>
+      <title>Don&#39;t Repeat Yourself</title>
+      <link>/principles/dry/</link>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/principles/dry/</guid>
+      <description>Minimize the code duplication.</description>
+    </item>
+    <item>
+      <title>Loose Coupling</title>
+      <link>/architecture/loose-coupling/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/architecture/loose-coupling/</guid>
+      <description>Microservices in the system should make few assumptions about peers, and have limited scopes.  They must be backwards compatible.</description>
+    </item>
+    <item>
+      <title>Writing Effective Operators</title>
+      <link>/blog/operators/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/blog/operators/</guid>
+      <description>How to write Kubernetes Operators that work.</description>
+    </item>
+    <item>
+      <title>Code Quality</title>
+      <link>/reliability/code-quality/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/code-quality/</guid>
+      <description>Code should be automatically evaluated by certain quality metrics.</description>
+    </item>
+    <item>
+      <title>Insertion Sort</title>
+      <link>/algorithms/insertion/</link>
+      <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/algorithms/insertion/</guid>
+      <description>How the insertion sort works</description>
+    </item>
+    <item>
+      <title>Golang Concurrency</title>
+      <link>/tech/golang/go-concurrency/</link>
+      <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang/go-concurrency/</guid>
+      <description>How to write concurrent golang programs.</description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>/cheat-sheets/python/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/cheat-sheets/python/</guid>
+      <description>Cheat sheet for programming in Python.</description>
+    </item>
+    <item>
+      <title>Sudo</title>
+      <link>/tech/bash/sudo/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/bash/sudo/</guid>
+      <description>How to setup passwordless sudo.</description>
+    </item>
+    <item>
+      <title>Iterating Over Values</title>
+      <link>/tech/golang-gotchas/iterating-over-values/</link>
+      <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang-gotchas/iterating-over-values/</guid>
+      <description>Iterating over values can lead to surprising results.</description>
+    </item>
+    <item>
+      <title>Mutating Collections</title>
+      <link>/tech/golang-gotchas/mutating-collections/</link>
+      <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang-gotchas/mutating-collections/</guid>
+      <description>You might be surprised by the results of a function mutating a collection.</description>
+    </item>
+    <item>
+      <title>Sorting Slices</title>
+      <link>/tech/golang-recipes/sorting/</link>
+      <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang-recipes/sorting/</guid>
+      <description>How to sort a slice and do a binary search.</description>
+    </item>
+    <item>
+      <title>Convert Java to HTML</title>
+      <link>/applications/java-to-html/</link>
+      <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/applications/java-to-html/</guid>
+      <description>Converts Java to html</description>
+    </item>
+    <item>
+      <title>Java</title>
+      <link>/cheat-sheets/java/</link>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/cheat-sheets/java/</guid>
+      <description>cheat sheet for java.</description>
+    </item>
+    <item>
+      <title>Data Storage</title>
+      <link>/architecture/databases/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/architecture/databases/</guid>
+      <description>You should choose the right data storage system depending on the system requirements.</description>
+    </item>
+    <item>
+      <title>Separation of Duties</title>
+      <link>/reliability/separation-of-duties/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/separation-of-duties/</guid>
+      <description>Code needs to be peer reviewed as a requirement.</description>
+    </item>
+    <item>
+      <title>Selection Sort</title>
+      <link>/algorithms/selection/</link>
+      <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/algorithms/selection/</guid>
+      <description>How the selection sort works</description>
+    </item>
+    <item>
+      <title>Authorization Architecture Mistakes</title>
+      <link>/blog/authorization/</link>
+      <pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/blog/authorization/</guid>
+      <description>Common pitfalls people make when adding authorization to their apps.</description>
+    </item>
+    <item>
+      <title>Ubuntu Shortcuts</title>
+      <link>/tech/bash/ubuntu-shortcuts/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/bash/ubuntu-shortcuts/</guid>
+      <description>Shortcuts for moving around in Ubuntu</description>
+    </item>
+    <item>
+      <title>VSCode Shortcuts</title>
+      <link>/tech/golang/vscode-shortcuts/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang/vscode-shortcuts/</guid>
+      <description>Keyboard hotkeys for VSCode that are useful for golang programming.</description>
+    </item>
+    <item>
+      <title>Cut</title>
+      <link>/tech/bash/cut/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tech/bash/cut/</guid>
+      <description>How to use the cut command line program.</description>
+    </item>
+    <item>
+      <title>Defensive Programming</title>
+      <link>/principles/defensive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/principles/defensive/</guid>
+      <description>Carefully consider the trade-offs of defensive programming patterns.</description>
+    </item>
+    <item>
+      <title>Working with Files</title>
+      <link>/tech/golang-recipes/files/</link>
+      <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang-recipes/files/</guid>
+      <description>Working with files.</description>
+    </item>
+    <item>
+      <title>Bash</title>
+      <link>/cheat-sheets/bash/</link>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/cheat-sheets/bash/</guid>
+      <description>cheat sheet for Bash scripting.</description>
+    </item>
+    <item>
+      <title>Streaming</title>
+      <link>/architecture/streaming/</link>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/architecture/streaming/</guid>
+      <description>Add stream processing for async needs.</description>
+    </item>
+    <item>
+      <title>Configuration Management</title>
+      <link>/reliability/iac/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/iac/</guid>
+      <description>It should be possible to reliably re-create your infrastructure from code.</description>
+    </item>
+    <item>
+      <title>Quick Sort</title>
+      <link>/algorithms/quick/</link>
+      <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/algorithms/quick/</guid>
+      <description>How the quick sort works</description>
+    </item>
+    <item>
+      <title>Single Responsibility Principle</title>
+      <link>/principles/single-responsibility/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/principles/single-responsibility/</guid>
+      <description>Software components and classes should not be responsible for many concerns.</description>
+    </item>
+    <item>
+      <title>Creating Unit Tests</title>
+      <link>/tech/golang-recipes/tests/</link>
+      <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang-recipes/tests/</guid>
+      <description>How to create unit tests by various forms.</description>
+    </item>
+    <item>
+      <title>Batch Processing</title>
+      <link>/architecture/batch/</link>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/architecture/batch/</guid>
+      <description>Add batch processing for big data.</description>
+    </item>
+    <item>
+      <title>Go Templates</title>
+      <link>/cheat-sheets/go-templates/</link>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/cheat-sheets/go-templates/</guid>
+      <description>cheat sheet for writing Golang templates.</description>
+    </item>
+    <item>
+      <title>CICD</title>
+      <link>/reliability/cicd/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/cicd/</guid>
+      <description>You should have an automated way to build, test, and deploy your applications.</description>
+    </item>
+    <item>
+      <title>Merge Sort</title>
+      <link>/algorithms/merge/</link>
+      <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/algorithms/merge/</guid>
+      <description>How the merge sort works</description>
+    </item>
+    <item>
+      <title>Is It Time To Reorg</title>
+      <link>/blog/reorg/</link>
+      <pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/blog/reorg/</guid>
+      <description>Is it time for your team to re-organize?</description>
+    </item>
+    <item>
+      <title>Open Closed Principle</title>
+      <link>/principles/open-closed/</link>
+      <pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/principles/open-closed/</guid>
+      <description>Design software classes and components to be easily extended but rarely modified.</description>
+    </item>
+    <item>
+      <title>Applications</title>
+      <link>/applications/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/applications/</guid>
+      <description>A set of in browser software applications.</description>
+    </item>
+    <item>
+      <title>Linked List</title>
+      <link>/algorithms/linked-list/</link>
+      <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/algorithms/linked-list/</guid>
+      <description>Use a linked list for O(1) append, push, or pop operations.</description>
+    </item>
+    <item>
+      <title>Substitution</title>
+      <link>/principles/substitution/</link>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/principles/substitution/</guid>
+      <description>Your code should be loosely coupled using abstractions, interfaces, and similar substitution principles.</description>
+    </item>
+    <item>
+      <title>Testing</title>
+      <link>/reliability/testing/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/testing/</guid>
+      <description>There should be ample automated tests of your system that run routinely.</description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>/tech/javascript-language/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/javascript-language/</guid>
+      <description>Notes about the javascript programming language.</description>
+    </item>
+    <item>
+      <title>Vi Notes</title>
+      <link>/tech/bash/vi-notes/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/bash/vi-notes/</guid>
+      <description>Quick notes about using vim.</description>
+    </item>
+    <item>
+      <title>Interface Segregation Principle</title>
+      <link>/principles/segregation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/principles/segregation/</guid>
+      <description>Function arguments should be minimal interfaces.</description>
+    </item>
+    <item>
+      <title>Queue</title>
+      <link>/algorithms/queue/</link>
+      <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/algorithms/queue/</guid>
+      <description>Use queues for faster push and pop operations.</description>
+    </item>
+    <item>
+      <title>Environment Parity</title>
+      <link>/reliability/environment-parity/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/environment-parity/</guid>
+      <description>Your environments should be as similar as possible.</description>
+    </item>
+    <item>
+      <title>Software Languages</title>
+      <link>/tech/languages/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/languages/</guid>
+      <description>A comparison of programming language syntaxes and features.</description>
+    </item>
+    <item>
+      <title>Stack</title>
+      <link>/algorithms/stack/</link>
+      <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/algorithms/stack/</guid>
+      <description>Use a stack for LIFO operations.</description>
+    </item>
+    <item>
+      <title>Software Testing</title>
+      <link>/principles/testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/principles/testing/</guid>
+      <description>Your software should have ample automated tests across the board.</description>
+    </item>
+    <item>
+      <title>Errors and Panics</title>
+      <link>/tech/golang-recipes/errors-and-panics/</link>
+      <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang-recipes/errors-and-panics/</guid>
+      <description>Working with errors, panics, and recovery.</description>
+    </item>
+    <item>
+      <title>Set</title>
+      <link>/algorithms/set/</link>
+      <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/algorithms/set/</guid>
+      <description>Use a set to quickly check for existence.</description>
+    </item>
+    <item>
+      <title>Configuration Levels</title>
+      <link>/principles/configuration/</link>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/principles/configuration/</guid>
+      <description>You should have ample controls over your code from configuration using expressions, templates, and scripts.</description>
+    </item>
+    <item>
+      <title>Application States and Signals</title>
+      <link>/reliability/probes-and-signals/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/probes-and-signals/</guid>
+      <description>Your applications should expose health information and be able to gracefully shut down.</description>
+    </item>
+    <item>
+      <title>Judging Quality</title>
+      <link>/principles/quality/</link>
+      <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/principles/quality/</guid>
+      <description>You should routinely use automated tools to assess your code quality.</description>
+    </item>
+    <item>
+      <title>Golang Collections</title>
+      <link>/tech/golang-recipes/collections/</link>
+      <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang-recipes/collections/</guid>
+      <description>Recipes for working with data collections.</description>
+    </item>
+    <item>
+      <title>Boot and Shutdown Times</title>
+      <link>/reliability/boot-and-shutdown/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/boot-and-shutdown/</guid>
+      <description>Applications should boot and shutdown promptly for scaling purposes.</description>
+    </item>
+    <item>
+      <title>Heap Datastructure</title>
+      <link>/algorithms/heap/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/algorithms/heap/</guid>
+      <description>The heap structure explained.</description>
+    </item>
+    <item>
+      <title>Stateless</title>
+      <link>/reliability/stateless/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/stateless/</guid>
+      <description>Your applications should ideally be stateless.</description>
+    </item>
+    <item>
+      <title>Deployment Patterns</title>
+      <link>/reliability/deployment-patterns/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/deployment-patterns/</guid>
+      <description>You should be able to update your applications safely with zero down-time.</description>
+    </item>
+    <item>
+      <title>High Availability</title>
+      <link>/reliability/availability/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/availability/</guid>
+      <description>Your critical applications should be replicated across availability zones and regions.  They should automatically scale based on demand.</description>
+    </item>
+    <item>
+      <title>Load Balancing</title>
+      <link>/reliability/load-balancing/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/load-balancing/</guid>
+      <description>Traffic to your services should be balanced among your replicas.</description>
+    </item>
+    <item>
+      <title>Monitoring</title>
+      <link>/reliability/monitoring/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/monitoring/</guid>
+      <description>You should have ample means to investigate, troubleshoot, and observe your system.  You should be alerted if it is unhealthy.</description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>/reliability/security/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/security/</guid>
+      <description>Your system should follow industry best practices for security and implement defense in depth.</description>
+    </item>
+    <item>
+      <title>Class Stereotypes</title>
+      <link>/principles/stereotypes/</link>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/principles/stereotypes/</guid>
+      <description>Design your classes to follow effective patterns or stereotypes.</description>
+    </item>
+    <item>
+      <title>You Build You Own</title>
+      <link>/principles/ybyo/</link>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/principles/ybyo/</guid>
+      <description>Software developers should also be on the hook to support their applications.</description>
+    </item>
+    <item>
+      <title>AVL Tree</title>
+      <link>/algorithms/avl/</link>
+      <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/algorithms/avl/</guid>
+      <description>A binary search tree that stays balanced.</description>
+    </item>
+    <item>
+      <title>Radix</title>
+      <link>/algorithms/radix/</link>
+      <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/algorithms/radix/</guid>
+      <description>The radix tree</description>
+    </item>
+    <item>
+      <title>Avoid Globals</title>
+      <link>/principles/globals/</link>
+      <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/principles/globals/</guid>
+      <description>Global variables create problems, you should avoid using them.</description>
+    </item>
+    <item>
+      <title>Premature Optimization</title>
+      <link>/principles/optimization/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/principles/optimization/</guid>
+      <description>Avoid optimizing code before proving it is necessary.</description>
+    </item>
+    <item>
+      <title>Web Assembly (Go)</title>
+      <link>/tech/golang/wasm/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang/wasm/</guid>
+      <description>A brief summary of how to use web assembly with Golang.</description>
+    </item>
+    <item>
+      <title>Kafka</title>
+      <link>/tech/data/kafka/</link>
+      <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/data/kafka/</guid>
+      <description>How Kafka Works</description>
+    </item>
+    <item>
+      <title>Don&#39;t Reinvent the Wheel</title>
+      <link>/principles/reinvent/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/principles/reinvent/</guid>
+      <description>Avoid duplication of efforts by leveraging open source.</description>
+    </item>
+    <item>
+      <title>API Development</title>
+      <link>/tech/api/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/api/</guid>
+      <description>Writing effective and maintainable APIs.</description>
+    </item>
+    <item>
+      <title>Documentation</title>
+      <link>/reliability/documentation/</link>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/documentation/</guid>
+      <description>Thoroughly document your code and services for fellow engineers and end users.</description>
+    </item>
+    <item>
+      <title>Michael Knapp</title>
+      <link>/resume/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/resume/</guid>
+      <description>My Job Resume.</description>
+    </item>
+    <item>
+      <title>Unfinished Recipes</title>
+      <link>/tech/golang-recipes/unfinished/</link>
+      <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang-recipes/unfinished/</guid>
+      <description>The loose ends, my todo list.</description>
+    </item>
+    <item>
+      <title>More Algorithms</title>
+      <link>/algorithms/unfinished/</link>
+      <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/algorithms/unfinished/</guid>
+      <description>Algorithms to cover later.</description>
+    </item>
+    <item>
+      <title>Loose Ends</title>
+      <link>/architecture/loose-ends/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/architecture/loose-ends/</guid>
+      <description>Things not previously covered.</description>
+    </item>
+    <item>
+      <title>About Michael Knapp</title>
+      <link>/about-me/</link>
+      <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/about-me/</guid>
+      <description>Describes my work experience.</description>
+    </item>
+    <item>
+      <title>Classpath</title>
+      <link>/tech/java/classpath/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/java/classpath/</guid>
+      <description>a useful page.</description>
+    </item>
+    <item>
+      <title>Maven</title>
+      <link>/tech/java/maven/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/java/maven/</guid>
+      <description>a useful page.</description>
+    </item>
+  </channel>
+</rss>

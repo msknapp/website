@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/binary-search/" title="">
+                Binary Search</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/bubble/" title="">
+                Bubble Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/insertion/" title="">
+                Insertion Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/selection/" title="">
+                Selection Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/quick/" title="">
+                Quick Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/merge/" title="">
+                Merge Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/linked-list/" title="">
+                Linked List</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/queue/" title="">
+                Queue</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/stack/" title="">
+                Stack</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/set/" title="">
+                Set</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/heap/" title="">
+                Heap Datastructure</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/avl/" title="">
+                AVL Tree</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/algorithms/radix/" title="">
+                Radix</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/unfinished/" title="">
+                More Algorithms</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow"><a class="tocmenu arrow" href="/algorithms/avl/"
+                                title="AVL Tree">
+                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" /></a><a class="tocmenu arrow" href="/algorithms/" title="Algorithms">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                        <a class="tocmenu arrow" href="/algorithms/unfinished/"
+                                title="More Algorithms"><img src="/icons/arrow-right-circle-white.png"
+                                        class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents"></nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/algorithms/" class="breadcrumbs">/Algorithms</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Radix</h1>
+<div class="golang-code">
+    
+<br>
+def&nbsp;longest_common_base(x:&nbsp;str,&nbsp;y:&nbsp;str)&nbsp;->&nbsp;str:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;not&nbsp;x&nbsp;or&nbsp;not&nbsp;y:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;""<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-variable">i</span>&nbsp;=&nbsp;0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;while&nbsp;i&nbsp;<&nbsp;len(x)&nbsp;and&nbsp;i&nbsp;<&nbsp;len(y):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;x[i]&nbsp;!=&nbsp;y[i]:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;x[:i]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i&nbsp;+=&nbsp;1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;x[:i]<br>
+<br>
+<br>
+def&nbsp;one_prefixes_other(x:&nbsp;str,&nbsp;y:&nbsp;str)&nbsp;->&nbsp;<span class="golang-variable-type">bool</span>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;not&nbsp;x&nbsp;or&nbsp;not&nbsp;y:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;True<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;first_prefixes_second(x,&nbsp;y)&nbsp;or&nbsp;first_prefixes_second(y,&nbsp;x)<br>
+<br>
+def&nbsp;first_prefixes_second(x:&nbsp;str,&nbsp;y:&nbsp;str)&nbsp;->&nbsp;<span class="golang-variable-type">bool</span>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;not&nbsp;x:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;True<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;not&nbsp;y:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;False<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;len(y)&nbsp;<&nbsp;len(x):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;False<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;y[:len(x)]&nbsp;==&nbsp;x<br>
+<br>
+class&nbsp;Node:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;__init__(self,&nbsp;value:&nbsp;<span class="golang-variable">str</span>&nbsp;=&nbsp;"",&nbsp;leaf:&nbsp;<span class="golang-variable"><span class="golang-variable-type">bool</span></span>&nbsp;=&nbsp;True):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;not&nbsp;isinstance(value,&nbsp;str):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise&nbsp;"wrong&nbsp;value&nbsp;<span class="golang-control-keyword">type</span>"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.<span class="golang-variable">value</span>&nbsp;=&nbsp;value<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.<span class="golang-variable">leaf</span>&nbsp;=&nbsp;leaf<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.<span class="golang-variable">children</span>&nbsp;=&nbsp;{}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.<span class="golang-variable">size</span>&nbsp;=&nbsp;0<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;is_node(self)&nbsp;->&nbsp;<span class="golang-variable-type">bool</span>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;not&nbsp;self.leaf<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;insert_leaf_node_without_checking(self,&nbsp;new_node):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;self.leaf:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise&nbsp;"cannot&nbsp;insert&nbsp;into&nbsp;a&nbsp;leaf"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.children[new_node.value]&nbsp;=&nbsp;new_node<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;contains_leaf(self,&nbsp;s:&nbsp;str)&nbsp;->&nbsp;<span class="golang-variable-type">bool</span>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;s&nbsp;in&nbsp;self.children:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n:&nbsp;<span class="golang-variable">Node</span>&nbsp;=&nbsp;self.children[s]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;n.leaf<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">for</span>&nbsp;child_string&nbsp;in&nbsp;self.children:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;first_prefixes_second(child_string,&nbsp;s):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-variable">sub</span>&nbsp;=&nbsp;s[len(child_string):]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n:&nbsp;<span class="golang-variable">Node</span>&nbsp;=&nbsp;self.children[child_string]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;n.contains_leaf(sub)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;False<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;insert_and_check(self,&nbsp;new_string:&nbsp;str)&nbsp;->&nbsp;<span class="golang-variable-type">bool</span>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;<span class="golang-control-keyword">return</span>&nbsp;true&nbsp;<span class="golang-control-keyword">if</span>&nbsp;one&nbsp;word&nbsp;is&nbsp;found&nbsp;to&nbsp;be&nbsp;a&nbsp;prefix&nbsp;of&nbsp;another.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;self.leaf:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise&nbsp;"cannot&nbsp;insert&nbsp;into&nbsp;a&nbsp;leaf"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-variable">common_base</span>&nbsp;=&nbsp;""<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">for</span>&nbsp;child_string&nbsp;in&nbsp;self.children:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;first_prefixes_second(new_string,&nbsp;child_string):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;True<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-variable">child_node</span>&nbsp;=&nbsp;self.children[child_string]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;child_node.is_node():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;first_prefixes_second(child_string,&nbsp;new_string):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;This&nbsp;does&nbsp;not&nbsp;mean&nbsp;there&nbsp;is&nbsp;a&nbsp;dupicate,&nbsp;because&nbsp;it&nbsp;is&nbsp;a&nbsp;node.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-variable">sub</span>&nbsp;=&nbsp;new_string[len(child_string):]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;child_node.insert_and_check(sub)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">else</span>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;it&nbsp;is&nbsp;a&nbsp;leaf.&nbsp;&nbsp;Check&nbsp;<span class="golang-control-keyword">if</span>&nbsp;this&nbsp;leaf&nbsp;is&nbsp;a&nbsp;prefix&nbsp;of&nbsp;the&nbsp;new&nbsp;value<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;first_prefixes_second(child_string,&nbsp;new_string):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;True<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-variable">b</span>&nbsp;=&nbsp;longest_common_base(child_string,&nbsp;new_string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;len(b)&nbsp;>&nbsp;len(common_base):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-variable">common_base</span>&nbsp;=&nbsp;b<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;len(common_base)&nbsp;>&nbsp;0:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-variable">new_child</span>&nbsp;=&nbsp;Node(common_base,&nbsp;leaf=False)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-variable">to_del</span>&nbsp;=&nbsp;[]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">for</span>&nbsp;child_string&nbsp;in&nbsp;self.children:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;node:&nbsp;<span class="golang-variable">Node</span>&nbsp;=&nbsp;self.children[child_string]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;node.is_node():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">continue</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;first_prefixes_second(common_base,&nbsp;child_string):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to_del.append(child_string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;node.<span class="golang-variable">value</span>&nbsp;=&nbsp;node.value[len(common_base):]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new_child.insert_leaf_node_without_checking(node)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;don't&nbsp;forget&nbsp;to&nbsp;still&nbsp;insert&nbsp;the&nbsp;word&nbsp;that&nbsp;just&nbsp;arrived.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-variable">sub</span>&nbsp;=&nbsp;new_string[len(common_base):]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new_child.insert_leaf_node_without_checking(Node(sub,&nbsp;leaf=True))<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">for</span>&nbsp;s&nbsp;in&nbsp;to_del:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;del&nbsp;self.children[s]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.children[common_base]&nbsp;=&nbsp;new_child<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">else</span>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.children[new_string]&nbsp;=&nbsp;Node(new_string,&nbsp;leaf=True)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.size&nbsp;+=&nbsp;1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;False<br>
+<br>
+<br>
+<br>
+class&nbsp;Radix:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;__init__(self):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.<span class="golang-variable">head</span>&nbsp;=&nbsp;Node(<span class="golang-variable">value</span>&nbsp;=&nbsp;"",&nbsp;<span class="golang-variable">leaf</span>&nbsp;=&nbsp;False)<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;insert_and_check(self,&nbsp;v:&nbsp;str)&nbsp;->&nbsp;<span class="golang-variable-type">bool</span>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;<span class="golang-control-keyword">return</span>&nbsp;true&nbsp;<span class="golang-control-keyword">if</span>&nbsp;one&nbsp;word&nbsp;is&nbsp;found&nbsp;to&nbsp;be&nbsp;a&nbsp;prefix&nbsp;of&nbsp;another.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;self.head.insert_and_check(v)<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;size(self)&nbsp;->&nbsp;<span class="golang-variable-type">int</span>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;self.head.size<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;contains_leaf(self,&nbsp;s:&nbsp;str)&nbsp;->&nbsp;<span class="golang-variable-type">bool</span>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;self.head.contains_leaf(s)
+
+</div>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="/algorithms/avl/" title="AVL Tree">
+        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-25 00:00:00 &#43;0000 UTC">
+                March 25, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/algorithms/unfinished/" title="More Algorithms">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

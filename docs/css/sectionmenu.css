@@ -1,0 +1,50 @@
+h2.sectionmenu {
+    display: none;
+}
+
+ul.sectionmenu {
+    margin: 0;
+    padding: 0;
+    background-color: var(--sidemenu);
+}
+
+li.sectionmenu {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    border-bottom: 0;
+}
+
+a.sectionmenu {
+    text-decoration: none;
+    color: var(--linktext);
+    display: block;
+    padding: 8px;
+    font-size: 22px;
+}
+
+a.sectionmenu:hover {
+    background-color: var(--hover);
+}
+
+aside {
+    width: 16%;
+    border-radius: 0 12px 12px 0;
+    padding: 12px;
+    padding-left: 0px;
+    background-color: var(--bars);
+    order: 1;
+    flex-grow: 1;
+    flex-basis: 16;
+    margin-right: 0;
+}
+
+a.currentpage {
+    background-color: var(--hover);
+}
+
+@media (max-width: 1166px) {
+    aside {
+        display: none;
+    }
+}

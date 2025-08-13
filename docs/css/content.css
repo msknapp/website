@@ -1,0 +1,145 @@
+.title {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 36px;
+}
+
+main {
+    font-size: 22px;
+    line-height: 1.3;
+    color: var(--text);
+}
+
+pre {
+    margin: 8px;
+    background-color: beige;
+    border: 1px solid black;
+    padding: 6px;
+}
+
+/* pre often contains a code block, we cannot select
+code that is not in pre, so we must select code that is
+a descendent of other things. */
+p>code {
+    background-color: lightgray;
+}
+
+li>code {
+    background-color: lightgray;
+}
+
+#profileimage {
+    width: 32%;
+    float: right;
+    margin: 12px;
+}
+
+div.job {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+h2.job {
+    display: inline;
+    margin-bottom: 4px;
+}
+
+p.job-date-range {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+p.job {
+    margin-top: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+div.cheatblock {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.cheat {
+    border: 1px solid black;
+    margin: 6px;
+    max-width: 480px;
+    background-color: #ffe4a9;
+}
+
+h2.cheat {
+    background-color: rgb(172, 133, 7);
+    padding: 8px;
+    margin: 0;
+    border-bottom: 1px solid black;
+}
+
+p.cheat {
+    background-color: #ffe4a9;
+    padding: 12px;
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    max-width: 100%;
+}
+
+span.golang-control-keyword {
+    color: #0035af;
+    font-weight: 600;
+}
+
+span.golang-top-level-keyword {
+    color: #470592;
+    font-weight: 600;
+}
+
+span.golang-variable-type {
+    color: rgb(0, 116, 91);
+}
+
+span.golang-variable {
+    color: rgb(0, 108, 158);
+}
+
+span.golang-comment {
+    color: rgb(14, 48, 0);
+}
+
+div.golang-code {
+    background-color: bisque;
+    padding: 8px;
+    border: 1px solid black;
+    font-family: 'Courier New', monospace;
+}
+
+#app-areas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#app-input {
+    width: 48%;
+    height: 360px;
+    resize: vertical;
+    overflow: scroll;
+}
+
+#app-output {
+    width: 48%;
+    height: 360px;
+    resize: vertical;
+    overflow: scroll;
+}
+
+span.golang-brace {
+    font-weight: bold;
+    color: rgb(117, 0, 59);
+}
+
+span.golang-function {
+    color: rgb(39, 91, 187);
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/golang/" title="">
+                Golang</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/tech/golang-recipes/" title="">
+                Golang Recipes</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/golang-gotchas/" title="">
+                Golang Gotchas</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/java/" title="java programming language.">
+                Java</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/bash/" title="">
+                Bash</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/javascript-language/" title="javascript programming">
+                Javascript</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/languages/" title="my description.">
+                Software Languages</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/api/" title="">
+                API Development</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow"><a class="tocmenu arrow" href="/tech/golang-recipes/types/"
+                                title="Working with Types">
+                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" /></a><a class="tocmenu arrow" href="/tech/golang-recipes/" title="Golang Recipes">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                        <a class="tocmenu arrow" href="/tech/golang-recipes/files/"
+                                title="Working with Files"><img src="/icons/arrow-right-circle-white.png"
+                                        class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#sort-a-slice">Sort a Slice</a></li>
+  </ul>
+</nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/tech/" class="breadcrumbs">/Tech</a></li>
+        <li class="breadcrumbs"><a href="/tech/golang-recipes/" class="breadcrumbs">/Golang Recipes</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Sorting Slices</h1>
+<h1 id="sort-a-slice">Sort a Slice</h1>
+<div class="golang-code">
+    
+<span class="golang-top-level-keyword">package</span>&nbsp;golang<br>
+<br>
+<span class="golang-top-level-keyword">import</span>&nbsp;"sort"<br>
+<br>
+<span class="golang-control-keyword">type</span>&nbsp;Person&nbsp;<span class="golang-control-keyword">struct</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;<span class="golang-variable-type">string</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Age&nbsp;&nbsp;<span class="golang-variable-type">int</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-function">New</span><span class="golang-brace">(</span>name&nbsp;<span class="golang-variable-type">string</span>,&nbsp;age&nbsp;<span class="golang-variable-type">int</span><span class="golang-brace">)</span>&nbsp;*Person&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;&Person<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name:&nbsp;name,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Age:&nbsp;&nbsp;age,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-function">SortPeople</span><span class="golang-brace">(</span>people&nbsp;[]*Person<span class="golang-brace">)</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">sort.Slice</span><span class="golang-brace">(</span>people,&nbsp;<span class="golang-top-level-keyword">func</span><span class="golang-brace">(</span>i,&nbsp;j&nbsp;<span class="golang-variable-type">int</span><span class="golang-brace">)</span>&nbsp;<span class="golang-variable-type">bool</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;people[i].Name&nbsp;==&nbsp;people[i].Name&nbsp;<span class="golang-brace">{</span><br>
+<span class="code-comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;This&nbsp;is&nbsp;descending&nbsp;order&nbsp;by&nbsp;age.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;people[i].Age&nbsp;>&nbsp;people[j].Age<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+<span class="code-comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;ascending&nbsp;order&nbsp;by&nbsp;name</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;people[i].Name&nbsp;<&nbsp;people[j].Name<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">})</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-function">Run</span><span class="golang-brace">()</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;people&nbsp;:=&nbsp;[]*Person<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">New</span><span class="golang-brace">(</span>"bob",&nbsp;<span class="golang-primitive-value">30</span><span class="golang-brace">)</span>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">New</span><span class="golang-brace">(</span>"jane",&nbsp;<span class="golang-primitive-value">24</span><span class="golang-brace">)</span>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">New</span><span class="golang-brace">(</span>"bob",&nbsp;<span class="golang-primitive-value">17</span><span class="golang-brace">)</span>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">New</span><span class="golang-brace">(</span>"jane",&nbsp;<span class="golang-primitive-value">46</span><span class="golang-brace">)</span>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">SortPeople</span><span class="golang-brace">(</span>people<span class="golang-brace">)</span><br>
+<span class="golang-brace">}</span><br>
+
+</div>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="/tech/golang-recipes/types/" title="Working with Types">
+        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-31 00:00:00 &#43;0000 UTC">
+                March 31, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/tech/golang-recipes/files/" title="Working with Files">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

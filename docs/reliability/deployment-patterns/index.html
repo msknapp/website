@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/version-control/" title="">
+                Version Control</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/code-quality/" title="">
+                Code Quality</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/separation-of-duties/" title="">
+                Separation of Duties</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/iac/" title="">
+                Configuration Management</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/cicd/" title="">
+                CICD</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/testing/" title="">
+                Testing</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/environment-parity/" title="">
+                Environment Parity</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/probes-and-signals/" title="">
+                Application States and Signals</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/boot-and-shutdown/" title="">
+                Boot and Shutdown Times</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/stateless/" title="">
+                Stateless</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/reliability/deployment-patterns/" title="">
+                Deployment Patterns</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/availability/" title="">
+                High Availability</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/load-balancing/" title="">
+                Load Balancing</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/monitoring/" title="">
+                Monitoring</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/security/" title="">
+                Security</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/documentation/" title="">
+                Documentation</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow"><a class="tocmenu arrow" href="/reliability/stateless/"
+                                title="Stateless">
+                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" /></a><a class="tocmenu arrow" href="/reliability/" title="Reliable Software Systems">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                        <a class="tocmenu arrow" href="/reliability/availability/"
+                                title="High Availability"><img src="/icons/arrow-right-circle-white.png"
+                                        class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#big-bang-deployments">Big Bang Deployments</a></li>
+    <li><a href="#rolling-updates">Rolling Updates</a></li>
+    <li><a href="#blue-green-deployments">Blue Green Deployments</a></li>
+    <li><a href="#canary-deployments">Canary Deployments</a>
+      <ul>
+        <li><a href="#low-traffic">Low Traffic</a></li>
+      </ul>
+    </li>
+    <li><a href="#ab-testing">A/B Testing</a></li>
+  </ul>
+</nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/reliability/" class="breadcrumbs">/Reliability</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Deployment Patterns</h1>
+<p>For mission critical systems, the largest risks are generally encountered during deployments
+of new software.  Updating your applications can be accomplished by several methods.</p>
+<h1 id="big-bang-deployments">Big Bang Deployments</h1>
+<p>Basically, the older service is stopped all at once, and then the new service is started
+all at once.  This is the most primitive and risky deployment pattern.  There <em>will</em>
+be downtime, a period where requests from users cannot be processeed.  If you have a
+mission critical service, this deployment pattern is not an option.</p>
+<h1 id="rolling-updates">Rolling Updates</h1>
+<p>In this pattern, one replica of the new service is started.  When it is healthy and
+ready for processing requests, then one replica of the old service is stopped.  This
+repeats until only the new service is running.  You can configure how many replicas
+may be stopped at once.  The pattern ensures that there is no downtime during the deployment.</p>
+<p>In Kubernetes, this is managed using Pod Disruption Budgets (PDBs), which can state that,
+for example, at most two replicas can be down at once, or at least three must be
+available at all times.  Using PDBs can greatly reduce the risk of having your
+application be overloaded during a deployment.</p>
+<p>The problem with rolling updates is there is usually little to no testing or
+monitoring in the process.  The health checks on containers usually just return
+a 200 status code without actually checking anything.  The application could
+be failing every single request except health checks, and the rolling update
+would continue.</p>
+<p>The rollout can happen very fast, like in a matter of a few seconds.  However,
+recognizing a failure and choosing to roll back could take much longer, in the
+order of minutes or hours.  At that point, there could have already been so
+many failures that a severe incident has occurred, substantial money has been
+lost, and the company&rsquo;s reputation has been tarnished.</p>
+<h1 id="blue-green-deployments">Blue Green Deployments</h1>
+<p>In this strategy, the new version of the service is brought up completely, then tested,
+then traffic is shifted entirely to the new service before the old one is torn down.
+Traffic is usually shifted all at once by altering what a domain name points to.
+It is less efficient than other methods, because for a period of time, there are
+two running versions of the application.  These take up twice the resources in the
+cluster.</p>
+<p>In some environments, there are limits on the total number of nodes, replicas,
+virtual machines, pods, etc.  A blue green deployment might run into these limits,
+and at that point it would fail.  So there is an added risk involved with this
+strategy.</p>
+<p>Some applications are stateful in nature, and the total number of replicas is
+assumed to be constant.  Apache NiFi or Kafka are examples like this.  For these
+applications, a rolling update might not be possible, but a blue-green deployment
+is manageable.</p>
+<p>Its major benefit is that it is simple to perform, test, and roll back if necessary.
+You can even pause to do more extensive tests of the new service.  For this reason
+it is safer than a rolling update.</p>
+<h1 id="canary-deployments">Canary Deployments</h1>
+<p>The canary deployment pattern is the safest and most complicated of the options.
+A new version of the service is started.  A service mesh is utilized to gradually
+shift web traffic to the newer version.  Typically a small amount of traffic
+is started with, like 1%, and the increments grow much faster.  There is a
+period of time between each increment, of about a few minutes.</p>
+<p>While the deployment is in progress, metrics are being monitored of each service.
+For example, the number of failed requests, or the number of requests that are slow
+to respond might be monitored.  If the metric goes out of the acceptable range,
+the canary deployment automatically rolls back.  So for example, if 1% of the
+http requests sent to the new version are failing, it might automatically shift
+all traffic back to the original stable version.</p>
+<p>The wait period between increments is so that metrics can be monitored over time.
+Some problems don&rsquo;t arise until an application has been running for a while under
+load.</p>
+<p>An example schedule might be 1%, 5%, 10%, 25%, 50%, 90%, and then 100%, with five
+minutes between each interval.</p>
+<p>Canary rollout traffic shifting is usually not done manually, but instead by some
+automated orchestrator like Argo Rollouts.  It integrates with a service mesh
+like Istio or LinkerD, and a metrics service like Prometheus, NewRelic, or
+DataDog.</p>
+<p>One of the challenges of canary rollouts is setting up the metrics that need
+to be monitored.  The applications need to export these somewhere.</p>
+<h2 id="low-traffic">Low Traffic</h2>
+<p>If a web application receives a low amount of traffic, canary rollouts generally
+won&rsquo;t do you any good.  For a canary rollout to detect a problem, it needs
+metrics related to failed or passing requests.  You could generate artificial
+traffic to the service, but that may not accurately represent real requests.</p>
+<p>So my advice is for applications with low traffic to use one of the simpler
+deployment methods, and leverage system tests to confirm it once it&rsquo;s done.</p>
+<h1 id="ab-testing">A/B Testing</h1>
+<p>At first glance, people might confuse A/B testing with Canary rollouts.  A/B
+testing <em>also</em> involves sending some traffic to a new application version, and
+some to the older one.</p>
+<p>Here are the differences:</p>
+<ul>
+<li>
+<p>A/B testing tends to be more concerned with the UI for users, and if the changes
+are acceptable to the users.</p>
+</li>
+<li>
+<p>A/B testing tends to run for longer periods of time, because what you are waiting
+for is to see if the end user dislikes the changes.  For example, a UI change
+might be shown to a small subset of users for a few days before it is fully
+utilized or rolled back.</p>
+</li>
+<li>
+<p>The users in A/B testing get a consistent experience, they either always get
+the behavior of A, or of B.  That is unlike canary rollouts, which may not
+have sticky sessions, and where consecutive requests by the same user could
+be handled by different versions of the application.</p>
+</li>
+<li>
+<p>rollback plans</p>
+</li>
+</ul>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="/reliability/stateless/" title="Stateless">
+        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-22 00:00:00 &#43;0000 UTC">
+                March 22, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/reliability/availability/" title="High Availability">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

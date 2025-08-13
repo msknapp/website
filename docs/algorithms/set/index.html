@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/binary-search/" title="">
+                Binary Search</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/bubble/" title="">
+                Bubble Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/insertion/" title="">
+                Insertion Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/selection/" title="">
+                Selection Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/quick/" title="">
+                Quick Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/merge/" title="">
+                Merge Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/linked-list/" title="">
+                Linked List</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/queue/" title="">
+                Queue</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/stack/" title="">
+                Stack</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/algorithms/set/" title="">
+                Set</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/heap/" title="">
+                Heap Datastructure</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/avl/" title="">
+                AVL Tree</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/radix/" title="">
+                Radix</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/unfinished/" title="">
+                More Algorithms</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow"><a class="tocmenu arrow" href="/algorithms/stack/"
+                                title="Stack">
+                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" /></a><a class="tocmenu arrow" href="/algorithms/" title="Algorithms">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                        <a class="tocmenu arrow" href="/algorithms/heap/"
+                                title="Heap Datastructure"><img src="/icons/arrow-right-circle-white.png"
+                                        class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents"></nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/algorithms/" class="breadcrumbs">/Algorithms</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Set</h1>
+<div class="golang-code">
+    
+<span class="golang-top-level-keyword">package</span>&nbsp;collections<br>
+<br>
+<span class="golang-control-keyword">type</span>&nbsp;Set[T&nbsp;comparable]&nbsp;<span class="golang-control-keyword">struct</span>&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;data&nbsp;<span class="golang-control-keyword">map</span>[T]<span class="golang-control-keyword">struct</span>{}<br>
+}<br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;NewSet[T&nbsp;comparable]()&nbsp;*Set[T]&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;&Set[T]{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data:&nbsp;make(<span class="golang-control-keyword">map</span>[T]<span class="golang-control-keyword">struct</span>{},&nbsp;2),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}<br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;(s&nbsp;*Set[T])&nbsp;Add(x&nbsp;T)&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;s.data[x]&nbsp;=&nbsp;<span class="golang-control-keyword">struct</span>{}{}<br>
+}<br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;(s&nbsp;*Set[T])&nbsp;Has(x&nbsp;T)&nbsp;<span class="golang-variable-type">bool</span>&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_,&nbsp;<span class="golang-variable">ex</span>&nbsp;:=&nbsp;s.data[x]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;ex<br>
+}<br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;(s&nbsp;*Set[T])&nbsp;Size()&nbsp;<span class="golang-variable-type">int</span>&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;len(s.data)<br>
+}<br>
+
+</div>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="/algorithms/stack/" title="Stack">
+        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-25 00:00:00 &#43;0000 UTC">
+                March 25, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/algorithms/heap/" title="Heap Datastructure">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

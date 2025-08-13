@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/golang/" title="">
+                Golang</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/tech/golang-recipes/" title="">
+                Golang Recipes</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/golang-gotchas/" title="">
+                Golang Gotchas</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/java/" title="java programming language.">
+                Java</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/bash/" title="">
+                Bash</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/javascript-language/" title="javascript programming">
+                Javascript</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/languages/" title="my description.">
+                Software Languages</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/api/" title="">
+                API Development</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow"><a class="tocmenu arrow" href="/tech/golang-recipes/tests/"
+                                title="Creating Unit Tests">
+                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" /></a><a class="tocmenu arrow" href="/tech/golang-recipes/" title="Golang Recipes">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                        <a class="tocmenu arrow" href="/tech/golang-recipes/collections/"
+                                title="Golang Collections"><img src="/icons/arrow-right-circle-white.png"
+                                        class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#ignore-errors">Ignore Errors</a></li>
+    <li><a href="#panic--or-dont">Panic!  Or Don&rsquo;t</a></li>
+  </ul>
+</nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/tech/" class="breadcrumbs">/Tech</a></li>
+        <li class="breadcrumbs"><a href="/tech/golang-recipes/" class="breadcrumbs">/Golang Recipes</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Errors and Panics</h1>
+<h1 id="ignore-errors">Ignore Errors</h1>
+<p>Many functions return an error as their second argument, and you may know that the
+error won&rsquo;t be encountered for some reason.  In that case, ignoring the error is nice,
+but the first return type might vary, so use a generic to ignore errors like this:</p>
+<div class="golang-code">
+    
+<span class="golang-top-level-keyword">package</span>&nbsp;main<br>
+<br>
+<span class="golang-top-level-keyword">import</span>&nbsp;<span class="golang-brace">(</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;"fmt"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"strconv"<br>
+<span class="golang-brace">)</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;IgnoreError[T&nbsp;<span class="golang-variable-type">any</span>]<span class="golang-brace">(</span>out&nbsp;T,&nbsp;_&nbsp;error<span class="golang-brace">)</span>&nbsp;T&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;out<br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-function">main</span><span class="golang-brace">()</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;i0&nbsp;:=&nbsp;<span class="golang-function">IgnoreError</span><span class="golang-brace">(</span><span class="golang-function">strconv.Atoi</span><span class="golang-brace">(</span>"<span class="golang-primitive-value">3</span>"<span class="golang-brace">))</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;i1&nbsp;:=&nbsp;<span class="golang-function">IgnoreError</span><span class="golang-brace">(</span><span class="golang-function">strconv.Atoi</span><span class="golang-brace">(</span>"M"<span class="golang-brace">))</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;b0&nbsp;:=&nbsp;<span class="golang-function">IgnoreError</span><span class="golang-brace">(</span><span class="golang-function">strconv.ParseBool</span><span class="golang-brace">(</span>"<span class="golang-primitive-value">true</span>"<span class="golang-brace">))</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;b1&nbsp;:=&nbsp;<span class="golang-function">IgnoreError</span><span class="golang-brace">(</span><span class="golang-function">strconv.ParseBool</span><span class="golang-brace">(</span>"banana"<span class="golang-brace">))</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">fmt.Printf</span><span class="golang-brace">(</span>"i0=%d,&nbsp;i1=%d,&nbsp;b0=%t,&nbsp;b1=%t\n",&nbsp;i0,&nbsp;i1,&nbsp;b0,&nbsp;b1<span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;_,&nbsp;e0&nbsp;:=&nbsp;<span class="golang-function">strconv.Atoi</span><span class="golang-brace">(</span>"M"<span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">fmt.Println</span><span class="golang-brace">(</span>e0.<span class="golang-function">Error</span><span class="golang-brace">())</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;_,&nbsp;e1&nbsp;:=&nbsp;<span class="golang-function">strconv.ParseBool</span><span class="golang-brace">(</span>"banana"<span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">fmt.Println</span><span class="golang-brace">(</span>e1.<span class="golang-function">Error</span><span class="golang-brace">())</span><br>
+<span class="golang-brace">}</span><br>
+
+</div>
+<p>When run, the above code prints:</p>
+<pre tabindex="0"><code>i0=3, i1=0, b0=true, b1=false
+strconv.Atoi: parsing &#34;M&#34;: invalid syntax
+strconv.ParseBool: parsing &#34;banana&#34;: invalid syntax
+</code></pre><h1 id="panic--or-dont">Panic!  Or Don&rsquo;t</h1>
+<p>The following example shows how to do all of the following:</p>
+<ul>
+<li>promote errors to panics</li>
+<li>ignore panics</li>
+<li>reduce panics to errors</li>
+</ul>
+<div class="golang-code">
+    
+<span class="golang-top-level-keyword">package</span>&nbsp;main<br>
+<br>
+<span class="golang-top-level-keyword">import</span>&nbsp;<span class="golang-brace">(</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;"fmt"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"strconv"<br>
+<span class="golang-brace">)</span><br>
+<br>
+<span class="code-comment">//&nbsp;PanicOnError&nbsp;returns&nbsp;the&nbsp;first&nbsp;input,&nbsp;or&nbsp;panics&nbsp;if&nbsp;the&nbsp;second&nbsp;argument&nbsp;is</span><br>
+<span class="code-comment">//&nbsp;a&nbsp;non-nil&nbsp;error.</span><br>
+<span class="golang-top-level-keyword">func</span>&nbsp;PanicOnError[T&nbsp;<span class="golang-variable-type">any</span>]<span class="golang-brace">(</span>out&nbsp;T,&nbsp;err&nbsp;error<span class="golang-brace">)</span>&nbsp;T&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;err&nbsp;!=&nbsp;nil&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">panic</span><span class="golang-brace">(</span>err<span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;out<br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="code-comment">//&nbsp;IgnorePanic&nbsp;runs&nbsp;the&nbsp;function&nbsp;given,&nbsp;and&nbsp;ignores&nbsp;any&nbsp;panic&nbsp;thrown.</span><br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-function">IgnorePanic</span><span class="golang-brace">(</span>whinyFunction&nbsp;<span class="golang-top-level-keyword">func</span><span class="golang-brace">())</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">defer</span>&nbsp;<span class="golang-top-level-keyword">func</span><span class="golang-brace">()</span>&nbsp;<span class="golang-brace">{</span>&nbsp;<span class="golang-function">recover</span><span class="golang-brace">()</span>&nbsp;<span class="golang-brace">}()</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">whinyFunction</span><span class="golang-brace">()</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-function">ErrorOnPanic</span><span class="golang-brace">(</span>whinyFunction&nbsp;<span class="golang-top-level-keyword">func</span><span class="golang-brace">())</span>&nbsp;<span class="golang-brace">(</span>err&nbsp;error<span class="golang-brace">)</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">defer</span>&nbsp;<span class="golang-top-level-keyword">func</span><span class="golang-brace">()</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p&nbsp;:=&nbsp;<span class="golang-function">recover</span><span class="golang-brace">()</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;p&nbsp;!=&nbsp;nil&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;err&nbsp;=&nbsp;<span class="golang-function">fmt.Errorf</span><span class="golang-brace">(</span>"%v",&nbsp;p<span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}()</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">whinyFunction</span><span class="golang-brace">()</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-function">main</span><span class="golang-brace">()</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">var</span>&nbsp;x,&nbsp;y&nbsp;<span class="golang-variable-type">int</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">IgnorePanic</span><span class="golang-brace">(</span><span class="golang-top-level-keyword">func</span><span class="golang-brace">()</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;=&nbsp;<span class="golang-function">PanicOnError</span><span class="golang-brace">(</span><span class="golang-function">strconv.Atoi</span><span class="golang-brace">(</span>"<span class="golang-primitive-value">3</span>"<span class="golang-brace">))</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y&nbsp;=&nbsp;<span class="golang-function">PanicOnError</span><span class="golang-brace">(</span><span class="golang-function">strconv.Atoi</span><span class="golang-brace">(</span>"M"<span class="golang-brace">))</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">})</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">fmt.Printf</span><span class="golang-brace">(</span>"x=%d,&nbsp;y=%d\n",&nbsp;x,&nbsp;y<span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;e0&nbsp;:=&nbsp;<span class="golang-function">ErrorOnPanic</span><span class="golang-brace">(</span><span class="golang-top-level-keyword">func</span><span class="golang-brace">()</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">PanicOnError</span><span class="golang-brace">(</span><span class="golang-function">strconv.Atoi</span><span class="golang-brace">(</span>"M"<span class="golang-brace">))</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">})</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">fmt.Printf</span><span class="golang-brace">(</span>e0.<span class="golang-function">Error</span><span class="golang-brace">())</span><br>
+<span class="golang-brace">}</span><br>
+
+</div>
+<p>When the above code runs, it prints:</p>
+<pre tabindex="0"><code>x=3, y=0
+strconv.Atoi: parsing &#34;M&#34;: invalid syntax
+</code></pre>
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="/tech/golang-recipes/tests/" title="Creating Unit Tests">
+        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-31 00:00:00 &#43;0000 UTC">
+                March 31, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/tech/golang-recipes/collections/" title="Golang Collections">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

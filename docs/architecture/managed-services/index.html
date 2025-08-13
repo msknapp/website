@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/architecture/managed-services/" title="">
+                Managed Services</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/architecture/loose-coupling/" title="">
+                Loose Coupling</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/architecture/databases/" title="">
+                Data Storage</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/architecture/streaming/" title="">
+                Streaming</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/architecture/batch/" title="">
+                Batch Processing</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/architecture/loose-ends/" title="">
+                Loose Ends</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow"><a class="tocmenu arrow" href="/architecture/" title="Architecture">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                        <a class="tocmenu arrow" href="/architecture/loose-coupling/"
+                                title="Loose Coupling"><img src="/icons/arrow-right-circle-white.png"
+                                        class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#serverless">Serverless</a></li>
+    <li><a href="#managed-services">Managed Services</a></li>
+    <li><a href="#custom-solutions">Custom Solutions</a></li>
+  </ul>
+</nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/architecture/" class="breadcrumbs">/Architecture</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Managed Services</h1>
+<p>A common design decision involves choosing between:</p>
+<ul>
+<li>Serverless options</li>
+<li>Managed services</li>
+<li>custom solutions</li>
+</ul>
+<p>Each could be the solution depending on the situation.</p>
+<h1 id="serverless">Serverless</h1>
+<p>Obviously, there <em>is</em> a server, but not one that your team sees or needs to
+manage directly.  You trust the cloud to perform maintenance on the real servers.
+The perfect example is AWS Lambda, you just give it a function, a brief program
+that defines what it should do when invoked.  Your team is not charged for the
+time it is not running.</p>
+<p>Serverless solutions require far less maintenance time than other options.
+They also tend to cost less.  They may be limited by run duration, for example,
+Lambda functions cannot run more than fifteen minutes (it was five).
+They tend to be the best option for services with lower traffic and short
+process times.</p>
+<h1 id="managed-services">Managed Services</h1>
+<p>A &ldquo;managed&rdquo; service is one that <em>does</em> have a server, and your team can see it,
+interact with it, etc.  Your team could be on the hook for any vulnerabilities in it,
+and some maintenance issues.  However, the vast majority of the maintenance
+for the service is managed by the cloud.  Amazon RDS is a good example, a database
+could easily be replicated, backed up, patched, and scaled by the cloud provider.</p>
+<p>Managed services require less maintenance than custom solutions.  They are much
+more expensive than serverless options, because you are being charged by the hour,
+even if the service is not doing anything.</p>
+<p>For many use cases, managed services will be adequate, but some will need
+a newer feature that is not possible with managed services.</p>
+<h1 id="custom-solutions">Custom Solutions</h1>
+<p>Essentially, this involves spinning up your own virtual machine (EC2 instance),
+and installing the software yourself exactly as needed.  This obviously
+requires the most work to setup and maintain.  It will be more expensive
+than serverless options.</p>
+<p>The cost of running the service will be less than managed services, unless
+you add the cost of engineering time/labor, then it would be more expensive.</p>
+<p>Making your own custom solution might be the answer if:</p>
+<ul>
+<li>You have high traffic levels.</li>
+<li>You have the engineering expertise to handle it.</li>
+<li>You need custom features and capabilities that are not available from
+serverless or managed solutions.</li>
+</ul>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <div></div>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-22 00:00:00 &#43;0000 UTC">
+                March 22, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/architecture/loose-coupling/" title="Loose Coupling">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reliable Software Systems on Michael Knapp&#39;s Home Page</title>
+    <link>/reliability/</link>
+    <description>Recent content in Reliable Software Systems on Michael Knapp&#39;s Home Page</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>2023 Michael Knapp</copyright>
+    <lastBuildDate>Fri, 24 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/reliability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Version Control</title>
+      <link>/reliability/version-control/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/version-control/</guid>
+      <description>Code and configuration should be tracked in a version control system.</description>
+    </item>
+    <item>
+      <title>Code Quality</title>
+      <link>/reliability/code-quality/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/code-quality/</guid>
+      <description>Code should be automatically evaluated by certain quality metrics.</description>
+    </item>
+    <item>
+      <title>Separation of Duties</title>
+      <link>/reliability/separation-of-duties/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/separation-of-duties/</guid>
+      <description>Code needs to be peer reviewed as a requirement.</description>
+    </item>
+    <item>
+      <title>Configuration Management</title>
+      <link>/reliability/iac/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/iac/</guid>
+      <description>It should be possible to reliably re-create your infrastructure from code.</description>
+    </item>
+    <item>
+      <title>CICD</title>
+      <link>/reliability/cicd/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/cicd/</guid>
+      <description>You should have an automated way to build, test, and deploy your applications.</description>
+    </item>
+    <item>
+      <title>Testing</title>
+      <link>/reliability/testing/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/testing/</guid>
+      <description>There should be ample automated tests of your system that run routinely.</description>
+    </item>
+    <item>
+      <title>Environment Parity</title>
+      <link>/reliability/environment-parity/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/environment-parity/</guid>
+      <description>Your environments should be as similar as possible.</description>
+    </item>
+    <item>
+      <title>Application States and Signals</title>
+      <link>/reliability/probes-and-signals/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/probes-and-signals/</guid>
+      <description>Your applications should expose health information and be able to gracefully shut down.</description>
+    </item>
+    <item>
+      <title>Boot and Shutdown Times</title>
+      <link>/reliability/boot-and-shutdown/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/boot-and-shutdown/</guid>
+      <description>Applications should boot and shutdown promptly for scaling purposes.</description>
+    </item>
+    <item>
+      <title>Stateless</title>
+      <link>/reliability/stateless/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/stateless/</guid>
+      <description>Your applications should ideally be stateless.</description>
+    </item>
+    <item>
+      <title>Deployment Patterns</title>
+      <link>/reliability/deployment-patterns/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/deployment-patterns/</guid>
+      <description>You should be able to update your applications safely with zero down-time.</description>
+    </item>
+    <item>
+      <title>High Availability</title>
+      <link>/reliability/availability/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/availability/</guid>
+      <description>Your critical applications should be replicated across availability zones and regions.  They should automatically scale based on demand.</description>
+    </item>
+    <item>
+      <title>Load Balancing</title>
+      <link>/reliability/load-balancing/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/load-balancing/</guid>
+      <description>Traffic to your services should be balanced among your replicas.</description>
+    </item>
+    <item>
+      <title>Monitoring</title>
+      <link>/reliability/monitoring/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/monitoring/</guid>
+      <description>You should have ample means to investigate, troubleshoot, and observe your system.  You should be alerted if it is unhealthy.</description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>/reliability/security/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/security/</guid>
+      <description>Your system should follow industry best practices for security and implement defense in depth.</description>
+    </item>
+    <item>
+      <title>Documentation</title>
+      <link>/reliability/documentation/</link>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/reliability/documentation/</guid>
+      <description>Thoroughly document your code and services for fellow engineers and end users.</description>
+    </item>
+  </channel>
+</rss>

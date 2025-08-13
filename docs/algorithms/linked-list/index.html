@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/binary-search/" title="">
+                Binary Search</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/bubble/" title="">
+                Bubble Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/insertion/" title="">
+                Insertion Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/selection/" title="">
+                Selection Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/quick/" title="">
+                Quick Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/merge/" title="">
+                Merge Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/algorithms/linked-list/" title="">
+                Linked List</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/queue/" title="">
+                Queue</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/stack/" title="">
+                Stack</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/set/" title="">
+                Set</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/heap/" title="">
+                Heap Datastructure</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/avl/" title="">
+                AVL Tree</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/radix/" title="">
+                Radix</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/unfinished/" title="">
+                More Algorithms</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow"><a class="tocmenu arrow" href="/algorithms/merge/"
+                                title="Merge Sort">
+                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" /></a><a class="tocmenu arrow" href="/algorithms/" title="Algorithms">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                        <a class="tocmenu arrow" href="/algorithms/queue/"
+                                title="Queue"><img src="/icons/arrow-right-circle-white.png"
+                                        class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#generic-golang-example">Generic Golang Example</a></li>
+  </ul>
+</nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/algorithms/" class="breadcrumbs">/Algorithms</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Linked List</h1>
+<p>A linked list is a collection where nodes form a chain.  Each node knows the next node in the linked
+list.  That is a singly linked list.  If each node knows its previous node as well, that is called
+a doubly-linked list, or a double-ended queue.  It&rsquo;s often called a Dequeue (pronounced &ldquo;Deck&rdquo;) for short.</p>
+<p>A linked list has pros and cons.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Inserts into the head or tail of the list are O(1), they happen almost immediately.</li>
+<li>Reads from the head or tail also happen immediately.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Iterating over a linked list can be slow.</li>
+<li>Searching for a single item in the list is O(n), even if the items are sorted.</li>
+</ul>
+<p>A linked list is often the base for a Stack or Queue collection.  Very often these are the most
+efficient collection type for scenarios like:</p>
+<ul>
+<li>binary tree searches:
+<ul>
+<li>a breadth first search of a binary tree uses a Queue.</li>
+<li>a depth first search of a binary tree uses a Stack.</li>
+</ul>
+</li>
+<li>backtracking algorithms.</li>
+</ul>
+<h1 id="generic-golang-example">Generic Golang Example</h1>
+<p>The following is a double-ended queue that supports generic value types in Golang.</p>
+<div class="golang-code">
+    
+<span class="golang-top-level-keyword">package</span>&nbsp;golang<br>
+<br>
+<span class="golang-control-keyword">type</span>&nbsp;node[T&nbsp;<span class="golang-variable-type">any</span>]&nbsp;<span class="golang-control-keyword">struct</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Value&nbsp;&nbsp;&nbsp;&nbsp;T<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Next&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*node[T]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Previous&nbsp;*node[T]<br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;newNode[T&nbsp;<span class="golang-variable-type">any</span>]<span class="golang-brace">(</span>value&nbsp;T<span class="golang-brace">)</span>&nbsp;*node[T]&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;&node[T]<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Value:&nbsp;value,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-control-keyword">type</span>&nbsp;LinkedList[T&nbsp;<span class="golang-variable-type">any</span>]&nbsp;<span class="golang-control-keyword">struct</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;head&nbsp;*node[T]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;tail&nbsp;*node[T]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;size&nbsp;<span class="golang-variable-type">int</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;NewLinkedList[T&nbsp;<span class="golang-variable-type">any</span>]<span class="golang-brace">()</span>&nbsp;*LinkedList[T]&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;&LinkedList[T]<span class="golang-brace">{}</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-brace">(</span>l&nbsp;*LinkedList[T]<span class="golang-brace">)</span>&nbsp;<span class="golang-function">Push</span><span class="golang-brace">(</span>value&nbsp;T<span class="golang-brace">)</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;n&nbsp;:=&nbsp;<span class="golang-function">newNode</span><span class="golang-brace">(</span>value<span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;l.size++<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;l.head&nbsp;==&nbsp;nil&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.head&nbsp;=&nbsp;n<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.tail&nbsp;=&nbsp;n<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;n.Previous&nbsp;=&nbsp;l.tail<br>
+&nbsp;&nbsp;&nbsp;&nbsp;l.tail.Next&nbsp;=&nbsp;n<br>
+&nbsp;&nbsp;&nbsp;&nbsp;l.tail&nbsp;=&nbsp;n<br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-brace">(</span>l&nbsp;*LinkedList[T]<span class="golang-brace">)</span>&nbsp;<span class="golang-function">PushToFront</span><span class="golang-brace">(</span>value&nbsp;T<span class="golang-brace">)</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;n&nbsp;:=&nbsp;<span class="golang-function">newNode</span><span class="golang-brace">(</span>value<span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;l.size++<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;l.head&nbsp;==&nbsp;nil&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.head&nbsp;=&nbsp;n<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.tail&nbsp;=&nbsp;n<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;l.head.Previous&nbsp;=&nbsp;n<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n.Next&nbsp;=&nbsp;l.head<br>
+&nbsp;&nbsp;&nbsp;&nbsp;l.head&nbsp;=&nbsp;n<br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-brace">(</span>l&nbsp;*LinkedList[T]<span class="golang-brace">)</span>&nbsp;<span class="golang-function">Pop</span><span class="golang-brace">()</span>&nbsp;T&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">var</span>&nbsp;out&nbsp;T<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;l.tail&nbsp;==&nbsp;nil&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;out<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;out&nbsp;=&nbsp;l.tail.Value<br>
+&nbsp;&nbsp;&nbsp;&nbsp;l.tail&nbsp;=&nbsp;l.tail.Previous<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;l.tail&nbsp;!=&nbsp;nil&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.tail.Next&nbsp;=&nbsp;nil<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;l.size--<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;out<br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-brace">(</span>l&nbsp;*LinkedList[T]<span class="golang-brace">)</span>&nbsp;<span class="golang-function">PopFront</span><span class="golang-brace">()</span>&nbsp;T&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">var</span>&nbsp;out&nbsp;T<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;l.head&nbsp;==&nbsp;nil&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;out<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;l.size--<br>
+&nbsp;&nbsp;&nbsp;&nbsp;out&nbsp;=&nbsp;l.head.Value<br>
+&nbsp;&nbsp;&nbsp;&nbsp;l.head&nbsp;=&nbsp;l.head.Next<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;l.head&nbsp;!=&nbsp;nil&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l.head.Previous&nbsp;=&nbsp;nil<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;out<br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-brace">(</span>l&nbsp;*LinkedList[T]<span class="golang-brace">)</span>&nbsp;<span class="golang-function">Size</span><span class="golang-brace">()</span>&nbsp;<span class="golang-variable-type">int</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;l.size<br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-brace">(</span>l&nbsp;*LinkedList[T]<span class="golang-brace">)</span>&nbsp;<span class="golang-function">Peek</span><span class="golang-brace">()</span>&nbsp;T&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;l.tail&nbsp;==&nbsp;nil&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">var</span>&nbsp;out&nbsp;T<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;out<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;l.tail.Value<br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-brace">(</span>l&nbsp;*LinkedList[T]<span class="golang-brace">)</span>&nbsp;<span class="golang-function">PeekFront</span><span class="golang-brace">()</span>&nbsp;T&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;l.head&nbsp;==&nbsp;nil&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">var</span>&nbsp;out&nbsp;T<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;out<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;l.head.Value<br>
+<span class="golang-brace">}</span><br>
+
+</div>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="/algorithms/merge/" title="Merge Sort">
+        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-30 00:00:00 &#43;0000 UTC">
+                March 30, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/algorithms/queue/" title="Queue">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

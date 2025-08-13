@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/version-control/" title="">
+                Version Control</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/code-quality/" title="">
+                Code Quality</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/separation-of-duties/" title="">
+                Separation of Duties</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/iac/" title="">
+                Configuration Management</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/cicd/" title="">
+                CICD</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/testing/" title="">
+                Testing</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/environment-parity/" title="">
+                Environment Parity</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/probes-and-signals/" title="">
+                Application States and Signals</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/boot-and-shutdown/" title="">
+                Boot and Shutdown Times</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/stateless/" title="">
+                Stateless</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/deployment-patterns/" title="">
+                Deployment Patterns</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/availability/" title="">
+                High Availability</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/load-balancing/" title="">
+                Load Balancing</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/reliability/monitoring/" title="">
+                Monitoring</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/security/" title="">
+                Security</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/documentation/" title="">
+                Documentation</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow"><a class="tocmenu arrow" href="/reliability/load-balancing/"
+                                title="Load Balancing">
+                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" /></a><a class="tocmenu arrow" href="/reliability/" title="Reliable Software Systems">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                        <a class="tocmenu arrow" href="/reliability/security/"
+                                title="Security"><img src="/icons/arrow-right-circle-white.png"
+                                        class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#system-monitors">System Monitors</a></li>
+    <li><a href="#application-events">Application Events</a>
+      <ul>
+        <li><a href="#tags-or-attributes">Tags or Attributes</a></li>
+        <li><a href="#suggested-tags">Suggested Tags</a></li>
+      </ul>
+    </li>
+    <li><a href="#application-performance-metrics">Application Performance Metrics</a></li>
+    <li><a href="#traces">Traces</a></li>
+    <li><a href="#logs">Logs</a></li>
+    <li><a href="#alerting">Alerting</a></li>
+  </ul>
+</nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/reliability/" class="breadcrumbs">/Reliability</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Monitoring</h1>
+<p>A robust software system should have ample monitors in place.
+Metrics should be exported to a separate system such as:</p>
+<ul>
+<li>DataDog</li>
+<li>NewRelic</li>
+<li>Prometheus and Grafana</li>
+<li>OpenTSDB</li>
+</ul>
+<h1 id="system-monitors">System Monitors</h1>
+<p>Metrics should be collected for basic system metrics like CPU, memory, network traffic,
+and disk utilization.  This applies to nodes, virtual machines, pods, and containers
+in the cluster.</p>
+<h1 id="application-events">Application Events</h1>
+<p>These are more like primitives for monitoring, meaning they do not hold aggregate data
+for time periods.  They could also be called transactions.  An example of an application event is:</p>
+<ul>
+<li>A web server receives an HTTP request.</li>
+<li>A data processing server reads a record from a streaming service like Kafka, SQS, or Kinesis.</li>
+<li>A Kubernetes operator synchronizes a resource.</li>
+</ul>
+<h2 id="tags-or-attributes">Tags or Attributes</h2>
+<p>Typically during an application event, you want to capture certain details.  For example, the
+request method is &ldquo;GET&rdquo; or &ldquo;POST&rdquo;, the response time was 100 milliseconds, or that the user
+calling the service is &ldquo;David&rdquo;.  These are attributes or tags that are associated with the event.</p>
+<p>Application events should include ample tags or attributes so that troubleshooting later is possible.
+Nothing is more annoying than when a user wants to know why something failed, but you just cannot
+separate that data in your dashboards, and hence it is impossible to answer them.</p>
+<p>One common practice is to combine attributes into one, for example, &ldquo;cluster&rdquo; could be the key,
+and it is set to &ldquo;qa-east&rdquo;.  Here the value is representing two facts simultaneously.  I generally
+discourage this practice, because it can complicate how we write queries later.  If you want
+to see metrics on all of the QA clusters together, writing that as a query is more complicated now.</p>
+<p>For some metrics systems, the number of keys and values may be limited.  So for example, having
+a key for request ID would be a bad idea, it would always be unique and certainly have more than
+a few hundred values.  In this case, either make that value a metric by itself, assign it to
+a bucket, or don&rsquo;t include that attribute.</p>
+<h2 id="suggested-tags">Suggested Tags</h2>
+<p>When it comes to tagging, you should ask yourself how you might troubleshoot things later, what
+fields would you want to filter on?  Here are some recommended attributes:</p>
+<ul>
+<li>response code</li>
+<li>environment</li>
+<li>region</li>
+<li>availability zone</li>
+<li>user ID</li>
+<li>host names</li>
+<li>query parameters</li>
+<li>input or path parameters</li>
+<li>container name</li>
+<li>version of the application server</li>
+<li>values of any critical variables</li>
+</ul>
+<h1 id="application-performance-metrics">Application Performance Metrics</h1>
+<p>Application performance metrics are aggregates of events that happened over an interval of time.
+Most time series databases have some logic to combine these gradually as metrics get older.</p>
+<p>One common practice is to have application servers expose an endpoint for metrics to be
+collected from, in the Prometheus format.  This is a recommended practice, because these
+metrics could be used for scaling later.</p>
+<h1 id="traces">Traces</h1>
+<p>For critical systems in production, being able to determine how long each transaction took
+can be crucial for troubleshooting.  This is called tracing.  HTTP requests are a perfect
+example, if there are three steps in handling the request, the trace would capture how long
+each step took, and it would display this information in a burndown chart.</p>
+<p>Traces are vital when it is discovered that a particular event is taking a very long time
+to execute.  You need to be able to identify the culprit.  Without traces you may waste
+time trying to solve the wrong problem.</p>
+<h1 id="logs">Logs</h1>
+<p>An old-school practice is to have your application write logs to a file on the disk of the
+current server.  The problem with this pattern is:</p>
+<ul>
+<li>Now you must have a hard disk on the server.</li>
+<li>What if that server crashes?  You would lose the logs.</li>
+<li>It can run out of disk space, which leads to errors and crashing servers.</li>
+</ul>
+<p>Libraries like log4j would even manage zipping and rotating these log files for users.  That
+is truly not part of the main responsibility of that server, but it is consuming CPU cycles
+none the less, and hence jeopardizing performance of its core functions.  Having applications
+write logs to file should not be done.</p>
+<p>The better practice is to ship them off to an external service.  This aligns with a 12-factor
+app principle, that logs should be treated as streams of events.  Typically applications just
+write to standard output now, and that is forwarded to a service like FluentD.  FluentD
+is able to add tags to logs, and filter them too, but within limits.  It is able to down-sample
+the logs as well, but I would only consider that if the number of log records is getting
+very high and impacting the performance of FluentD, Splunk, or ELK.</p>
+<p>Generally you should add ample tags or attributes to your log records, as if they were metrics.
+Hence logs are often written as json records, so that they can easily be ingested, indexed,
+processed, and queried on later.
+Usually there is no limit on the number of possible values of an attribute key, but there may
+be a limit to the number of attributes.</p>
+<p>Examples of log aggregation services are ELK and Splunk.</p>
+<h1 id="alerting">Alerting</h1>
+<p>Critical systems in production should have alerts created for them.  These might send text
+messages to engineers, slack messages, emails, or even phone calls.  Alerts might be sent
+to PagerDuty, so that the person on-call can rotate on a schedule.</p>
+<p>Ambitious new engineers might put alerts on everything that might be wrong.  The reasoning
+is that they will treat metrics and alerts as their system&rsquo;s &ldquo;validation&rdquo;.  There are
+several problems with this practice:</p>
+<ul>
+<li>Alert fatigue is a serious problem.  If engineers are getting paged frequently, then eventually they
+will just ignore the alerts.  If you are going to send an alert, make sure that <em>it is a serious issue</em>.</li>
+<li>As engineers develop changes, the expected value of metrics changes too.  This is especially
+true during maintenance windows.</li>
+</ul>
+<p>My advice is: be aggressive with dashboard creation, but conservative with alerting.
+Sometimes more custom logic is used too:</p>
+<ul>
+<li>For the QA environment, don&rsquo;t send alerts on nights or weekends.</li>
+<li>Alerts could have priorities assigned to them.</li>
+<li>For certain problems, only send an email or slack message.</li>
+</ul>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="/reliability/load-balancing/" title="Load Balancing">
+        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-22 00:00:00 &#43;0000 UTC">
+                March 22, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/reliability/security/" title="Security">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

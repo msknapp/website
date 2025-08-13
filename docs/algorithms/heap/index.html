@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/binary-search/" title="">
+                Binary Search</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/bubble/" title="">
+                Bubble Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/insertion/" title="">
+                Insertion Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/selection/" title="">
+                Selection Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/quick/" title="">
+                Quick Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/merge/" title="">
+                Merge Sort</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/linked-list/" title="">
+                Linked List</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/queue/" title="">
+                Queue</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/stack/" title="">
+                Stack</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/set/" title="">
+                Set</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/algorithms/heap/" title="">
+                Heap Datastructure</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/avl/" title="">
+                AVL Tree</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/radix/" title="">
+                Radix</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/algorithms/unfinished/" title="">
+                More Algorithms</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow"><a class="tocmenu arrow" href="/algorithms/set/"
+                                title="Set">
+                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" /></a><a class="tocmenu arrow" href="/algorithms/" title="Algorithms">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                        <a class="tocmenu" href="/tech/"><img src="/icons/arrow-right-circle-white.png"
+                                        class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#example">Example</a></li>
+  </ul>
+</nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/algorithms/" class="breadcrumbs">/Algorithms</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Heap Datastructure</h1>
+<p>The heap datastructure is a clever design that makes an array behave like a binary
+tree, and the root of the tree will always be the min or max value.</p>
+<p>For any index <code>i</code> in the heap:</p>
+<ul>
+<li>its left child will be at <code>2*i</code></li>
+<li>its right child will be at <code>2*i + 1</code></li>
+<li>its children will always be greater or lesser than the current node.</li>
+</ul>
+<h1 id="example">Example</h1>
+<div class="golang-code">
+    
+<span class="golang-top-level-keyword">package</span>&nbsp;misspos<br>
+<br>
+<span class="golang-control-keyword">type</span>&nbsp;heap&nbsp;<span class="golang-control-keyword">struct</span>&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;data&nbsp;&nbsp;[]<span class="golang-variable-type">int</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;index&nbsp;<span class="golang-variable-type">int</span><br>
+}<br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;NewHeap(n&nbsp;<span class="golang-variable-type">int</span>)&nbsp;*heap&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;&heap{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data:&nbsp;make([]<span class="golang-variable-type">int</span>,&nbsp;n),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}<br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;(h&nbsp;*heap)&nbsp;Empty()&nbsp;<span class="golang-variable-type">bool</span>&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;h.index&nbsp;<&nbsp;1<br>
+}<br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;(h&nbsp;*heap)&nbsp;Add(x&nbsp;<span class="golang-variable-type">int</span>)&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;h.data[h.index]&nbsp;=&nbsp;x<br>
+&nbsp;&nbsp;&nbsp;&nbsp;h.climb(h.index)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;h.index++<br>
+}<br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;(h&nbsp;*heap)&nbsp;Peek()&nbsp;<span class="golang-variable-type">int</span>&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;h.data[0]<br>
+}<br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;(h&nbsp;*heap)&nbsp;Pop()&nbsp;<span class="golang-variable-type">int</span>&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-variable">v</span>&nbsp;:=&nbsp;h.data[0]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;h.data[0]&nbsp;=&nbsp;0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;h.lift()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;h.index--<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;v<br>
+}<br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;(h&nbsp;*heap)&nbsp;climb(i&nbsp;<span class="golang-variable-type">int</span>)&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-variable">p</span>&nbsp;:=&nbsp;(i&nbsp;-&nbsp;1)&nbsp;/&nbsp;2<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">for</span>&nbsp;i&nbsp;>&nbsp;0&nbsp;&&&nbsp;h.data[p]&nbsp;>&nbsp;h.data[i]&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h.data[p],&nbsp;h.data[i]&nbsp;=&nbsp;h.data[i],&nbsp;h.data[p]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-variable">i</span>&nbsp;=&nbsp;p<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-variable">p</span>&nbsp;=&nbsp;(i&nbsp;-&nbsp;1)&nbsp;/&nbsp;2<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}<br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;(h&nbsp;*heap)&nbsp;lift()&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">for</span>&nbsp;<span class="golang-variable">i</span>&nbsp;:=&nbsp;0;&nbsp;i&nbsp;<&nbsp;len(h.data);&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-variable">j</span>&nbsp;:=&nbsp;2*i&nbsp;+&nbsp;1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;j&nbsp;>=&nbsp;h.index&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;i&nbsp;<&nbsp;h.index-1&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h.data[i],&nbsp;h.data[h.index-1]&nbsp;=&nbsp;h.data[h.index-1],&nbsp;h.data[i]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h.climb(i)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">break</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;j+1&nbsp;<&nbsp;h.index&nbsp;&&&nbsp;h.data[j]&nbsp;>&nbsp;h.data[j+1]&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;j++<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h.data[i],&nbsp;h.data[j]&nbsp;=&nbsp;h.data[j],&nbsp;h.data[i]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-variable">i</span>&nbsp;=&nbsp;j<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}<br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;FirstMissing(x&nbsp;[]<span class="golang-variable-type">int</span>)&nbsp;<span class="golang-variable-type">int</span>&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-variable">h</span>&nbsp;:=&nbsp;NewHeap(len(x))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-variable">missing</span>&nbsp;:=&nbsp;1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">for</span>&nbsp;_,&nbsp;<span class="golang-variable">v</span>&nbsp;:=&nbsp;<span class="golang-control-keyword">range</span>&nbsp;x&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;v&nbsp;<&nbsp;missing&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">continue</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">if</span>&nbsp;v&nbsp;>&nbsp;missing&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h.Add(v)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">continue</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;missing&nbsp;+=&nbsp;1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">for</span>&nbsp;!h.Empty()&nbsp;&&&nbsp;missing&nbsp;>=&nbsp;h.Peek()&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-variable">missing</span>&nbsp;=&nbsp;h.Pop()&nbsp;+&nbsp;1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">return</span>&nbsp;missing<br>
+}<br>
+
+
+
+</div>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="/algorithms/set/" title="Set">
+        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-23 00:00:00 &#43;0000 UTC">
+                March 23, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/tech/">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

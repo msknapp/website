@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/kiss/" title="How to keep your code simple">
+                KISS and YAGNI</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/dry/" title="">
+                Don&#39;t Repeat Yourself</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/defensive/" title="Making your code defensive.">
+                Defensive Programming</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/single-responsibility/" title="The importance of single responsibility.">
+                Single Responsibility Principle</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/open-closed/" title="">
+                Open Closed Principle</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/substitution/" title="">
+                Substitution</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/segregation/" title="explaining the interface segregation principle">
+                Interface Segregation Principle</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/testing/" title="The importance of software testing.">
+                Software Testing</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/configuration/" title="">
+                Configuration Levels</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/quality/" title="Assessing code quality.">
+                Judging Quality</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/stereotypes/" title="">
+                Class Stereotypes</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/ybyo/" title="">
+                You Build You Own</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/principles/globals/" title="">
+                Globals</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/optimization/" title="">
+                Premature Optimization</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/reinvent/" title="">
+                Don&#39;t Reinvent the Wheel</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow"><a class="tocmenu arrow" href="/principles/ybyo/"
+                                title="You Build You Own">
+                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" /></a><a class="tocmenu arrow" href="/principles/" title="Software Development Principles">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                        <a class="tocmenu arrow" href="/principles/optimization/"
+                                title="Premature Optimization"><img src="/icons/arrow-right-circle-white.png"
+                                        class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#assumptions">Assumptions</a></li>
+    <li><a href="#global-services">Global Services</a></li>
+    <li><a href="#singletons">Singletons</a></li>
+    <li><a href="#environment-variables">Environment Variables</a></li>
+    <li><a href="#when-safe">When Safe</a></li>
+    <li><a href="#advice">Advice</a></li>
+  </ul>
+</nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/principles/" class="breadcrumbs">/Principles</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Avoid Globals</h1>
+<p>Global variables are associated with the current process.  If they are constants,
+like the value of Pi, that should be perfectly fine to keep as a global.  However,
+new developers often make far more variables into globals than should be.  This
+is due to their simplicity, because developers don&rsquo;t need to worry about passing
+the variable around in function calls, or adding it as an object field.</p>
+<h1 id="assumptions">Assumptions</h1>
+<p>Globals imply a few assumptions:</p>
+<ul>
+<li>This variable will be the same for all code that uses it.</li>
+<li>The variable will not be updated by any code that has access to it.  Or, the
+update will be appropriate for all code that uses it.</li>
+<li>If it is updated, then either one thread uses it, or it&rsquo;s updated in a thread
+safe/atomic manner.</li>
+</ul>
+<p>Far more often than first expected, the above assumptions become wrong over time.
+This is especially true for unit tests, because they often cover edge cases and
+mis-configuration.</p>
+<p>Unit tests might be run in sequence or in parallel.  The order that they are run
+in should not be assumed to be constant.  Upgrading the test library or framework
+could very easily change the order that they are run in.</p>
+<p>So if one unit test updates a global, and is also responsible for setting it back
+to its original value when it is done, that is a very unreliable design.  If
+other tests also rely on that global, it is likely that they will break
+periodically and randomly.  When this happens, the developer is often very
+confused and frustrated, because they didn&rsquo;t even change the code that is
+related to the failure.</p>
+<p>Alternatively, the enginer might try adding some kind of global synchronization
+lock to protect access to the global.  This makes the code extra complicated,
+tougher to maintain, and also slower.  It would degrade the performance and
+introduce a bottleneck in the code.  It would be more confusing to other
+engineers.</p>
+<h1 id="global-services">Global Services</h1>
+<p>An engineer might think, it is safe to use a global variable</p>
+<h1 id="singletons">Singletons</h1>
+<p>The singleton design pattern was very popular in the past.  It is effectively
+using a global service.  Usually that service is immutable once it is built, so
+engineers might think it is safe.  However, it still makes it difficult to
+write and manage unit tests, which should test edge cases and different
+configurations of the service.  For this reason, I generally discourage the
+use of singletons, because they are globals.</p>
+<h1 id="environment-variables">Environment Variables</h1>
+<p>Environment variables are visible to an entire process, and mutable, hence they
+are effectively globals.  They suffer from all the problems with globals
+listed above.  So I generally discourage using environment variables more
+than necessary.</p>
+<h1 id="when-safe">When Safe</h1>
+<p>Globals are usually safe to use when:</p>
+<ul>
+<li>They are relatively primitive.  Strings, integers, floats, etc.  Might be
+safe globals, while things like Clients or API Server classes should <em>not</em>
+be globals.</li>
+<li>They represent fundamental constants like the value of Pi.</li>
+<li>They would really never be mutable or updated at runtime, even in edge
+case unit tests, or different clusters or environments.</li>
+<li>They are only used to avoid duplicating a string or key in your code, like
+if an error message or a log statement is using a format pattern.</li>
+<li>They are relatively private in nature, there are few objects that could
+even observe the global.</li>
+</ul>
+<h1 id="advice">Advice</h1>
+<p>For all the above reasons, globals should generally be avoided.  If a class, service, or
+object relies on global data, it is better to make that a field in the
+object, and have the value passed as a constructor argument.  You might be
+concerned that this will result in having many constructor arguments, and forcing you
+into using a builder or factory.  Usually there is a way to logically group
+the variables into fewer objects.  That might also imply that your service
+has too many concerns in its scope.</p>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="/principles/ybyo/" title="You Build You Own">
+        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-26 00:00:00 &#43;0000 UTC">
+                March 26, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/principles/optimization/" title="Premature Optimization">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

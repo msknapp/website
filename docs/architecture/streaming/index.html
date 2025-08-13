@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/architecture/managed-services/" title="">
+                Managed Services</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/architecture/loose-coupling/" title="">
+                Loose Coupling</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/architecture/databases/" title="">
+                Data Storage</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/architecture/streaming/" title="">
+                Streaming</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/architecture/batch/" title="">
+                Batch Processing</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/architecture/loose-ends/" title="">
+                Loose Ends</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow"><a class="tocmenu arrow" href="/architecture/databases/"
+                                title="Data Storage">
+                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" /></a><a class="tocmenu arrow" href="/architecture/" title="Architecture">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                        <a class="tocmenu arrow" href="/architecture/batch/"
+                                title="Batch Processing"><img src="/icons/arrow-right-circle-white.png"
+                                        class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#loose-coupling">Loose Coupling</a></li>
+    <li><a href="#when-to-use-streaming">When to Use Streaming</a></li>
+  </ul>
+</nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/architecture/" class="breadcrumbs">/Architecture</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Streaming</h1>
+<p>New engineers might feel like throwing all processing into their monolithic web server.
+This doesn&rsquo;t scale well:</p>
+<ul>
+<li>Web servers typically need to respond in a reasonable timeout.
+<ul>
+<li>Ideally four seconds should be the limit, but ten seconds may do.</li>
+<li>If it takes more than ten seconds, that could impact the scaling operations of the app.</li>
+</ul>
+</li>
+<li>The extra processing might prevent the server from responding promptly to other
+requests.  It is vulnerable to a denial of service attack because of this.</li>
+</ul>
+<p>Hence, eventually we need to separate processing from the request, so that the
+web server&rsquo;s availability and response time are not jeopardized.  The server then
+accepts the request and simply throws it onto a queue for later processing, by a
+separate service.</p>
+<p>That brings us to streaming, which acts as the queue for these asynchronous
+transactions.  Examples are Kafka, Kinesis, SQS, JMS (RabbitMQ), etc.</p>
+<h1 id="loose-coupling">Loose Coupling</h1>
+<p>There is a second benefit of streaming, when you separate the data processing
+from the web server, it becomes de-coupled.  You can update either one without
+changing the other.  That makes the system easier to maintain.</p>
+<p>They can also scale independently.  You could have the processors use more
+CPU or memory than the web servers.</p>
+<p>Lastly, you get an extra layer of security.  The processors can run with
+tighter fire-walls and network controls than the web server.  For instance,
+they might have no or reduced access to the internet.</p>
+<h1 id="when-to-use-streaming">When to Use Streaming</h1>
+<p>Generally, you should consider stream processing when:</p>
+<ul>
+<li>A request could take more than a few seconds to process.</li>
+<li>These requests could happen frequently.</li>
+<li>There can be spikes in traffic, where many of these requests arrive in
+a short time frame.</li>
+<li>You want to be able to update the processor logic separately from
+the web server or the queue.</li>
+<li>The web server and the transaction processing have different resource needs
+and scaling needs.</li>
+<li>You want stricter isolation of the processing for security reasons.</li>
+</ul>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="/architecture/databases/" title="Data Storage">
+        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-24 00:00:00 &#43;0000 UTC">
+                March 24, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/architecture/batch/" title="Batch Processing">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

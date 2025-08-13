@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/reliability/version-control/" title="">
+                Version Control</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/code-quality/" title="">
+                Code Quality</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/separation-of-duties/" title="">
+                Separation of Duties</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/iac/" title="">
+                Configuration Management</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/cicd/" title="">
+                CICD</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/testing/" title="">
+                Testing</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/environment-parity/" title="">
+                Environment Parity</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/probes-and-signals/" title="">
+                Application States and Signals</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/boot-and-shutdown/" title="">
+                Boot and Shutdown Times</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/stateless/" title="">
+                Stateless</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/deployment-patterns/" title="">
+                Deployment Patterns</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/availability/" title="">
+                High Availability</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/load-balancing/" title="">
+                Load Balancing</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/monitoring/" title="">
+                Monitoring</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/security/" title="">
+                Security</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/documentation/" title="">
+                Documentation</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow">
+                        <a class="tocmenu arrow" href="..">
+                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" />
+                        </a><a class="tocmenu arrow" href="/reliability/" title="Reliable Software Systems">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                        <a class="tocmenu arrow" href="/reliability/code-quality/"
+                                title="Code Quality"><img src="/icons/arrow-right-circle-white.png"
+                                        class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#tags-and-releases">Tags and Releases</a>
+      <ul>
+        <li><a href="#releases-versus-tags">Releases versus Tags</a></li>
+        <li><a href="#semantic-versioning">Semantic Versioning</a></li>
+        <li><a href="#rollback-plans">Rollback Plans</a></li>
+      </ul>
+    </li>
+    <li><a href="#artifact-management">Artifact Management</a></li>
+  </ul>
+</nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/reliability/" class="breadcrumbs">/Reliability</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Version Control</h1>
+<p>The code in your environment should always be in some kind of version control.  Git is by
+far the most common version control software in use today, because it has a powerful
+branching feature and is open source.</p>
+<p>It&rsquo;s not just code that should be version controlled, but configuration too.  This permits
+a git-ops CICD pattern.  It also makes it possible to troubleshoot issues in your clusters
+later.  Frequently, we need to look back in time to understand why a failure occurred, in
+a post mortem.  You need to be able to identify <em>what code</em> was running at the time.</p>
+<h1 id="tags-and-releases">Tags and Releases</h1>
+<p>The code you run in a cluster should never be linked to a certain branch of your git repository,
+but instead, it should always be tied to a tag or release of the code.  Tags or releases,
+once made, should never change.  The reason is that, by using tags, you can be absolutely
+sure about what code is running in the environment.  If you use a branch, then it is
+difficult to be certain what code is running, because branches can change over time.</p>
+<p>When it comes time to conduct a post-mortem, if you did not use tags or releases in your
+cluster, you will regret it.  It will be difficult to be 100% certain about what code
+was running.</p>
+<h2 id="releases-versus-tags">Releases versus Tags</h2>
+<p>Releases add extra metadata to git tags.  They are not necessary to use, but they can add
+value.  You can upload binaries or other artifacts for a release, but that is not
+possible with a tag alone.  Releases are more important if you intend on distributing
+executables from Github instead of Artifactory or Nexus.</p>
+<h2 id="semantic-versioning">Semantic Versioning</h2>
+<p>The version you assign to tags or releases means something.  In semantic versioning,
+you have:</p>
+<ul>
+<li>major version</li>
+<li>minor version</li>
+<li>patch version</li>
+</ul>
+<p>These get concatenated, like <code>v1.2.3</code>.  Each major version greater than 0 implies that
+it is not backwards compatible with previous versions.  <code>1</code> is the exception, because
+major version <code>0</code> is considered to be in flux or unstable, version <code>1</code> may or may
+not be backwards compatible with <code>0</code>.</p>
+<p>A minor version is backwards compatible, but adds new features or capabilities.</p>
+<p>A patch version increment usually means that bugs or insignificant issues are being fixed.
+Users should not notice a difference.</p>
+<p>Typically, git tags for Golang projects include a <code>v</code> prefix.  Docker images usually
+do not have a <code>v</code> prefix.</p>
+<p>Creating temporary or experimental tags is encouraged, but they should be distinguished from
+more stable tags by having some kind of extra suffix.  My habit is to append a hyphen,
+my initials, and then a number.  That way, other engineers will know where the tag came from.</p>
+<h2 id="rollback-plans">Rollback Plans</h2>
+<p>You should never deploy a change to production without also having a plan to roll back the
+change.  The plan should be documented or obvious.  The rollback plan must also be tested
+if it is a manual procedure.</p>
+<p>Typically releases are made using a CICD pipeline, and they simply state that the cluster
+should now synchronize itself with a certain tag or release of the infrastructure code.
+This pattern is highly effective because rollback is made obvious, all you do is run
+the same CICD pipeline again, but with the previous tag.</p>
+<h1 id="artifact-management">Artifact Management</h1>
+<p>Your project artifacts (executables, jars, docker images, etc.) should be stored in a
+reliable repository.  Artifactory is distributed and replicated, making it highly
+available and reliable.</p>
+<p>If a Docker image uses an application version that does not match the image&rsquo;s version, then
+a label should be added to the image with the application version.  Ideally, the docker
+image tag, the application version, and the github tag should all match, because that
+makes it much easier to perform root-cause-analysis after incidents occur.</p>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="..">
+        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-22 00:00:00 &#43;0000 UTC">
+                March 22, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/reliability/code-quality/" title="Code Quality">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

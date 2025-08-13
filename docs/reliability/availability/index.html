@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/version-control/" title="">
+                Version Control</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/code-quality/" title="">
+                Code Quality</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/separation-of-duties/" title="">
+                Separation of Duties</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/iac/" title="">
+                Configuration Management</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/cicd/" title="">
+                CICD</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/testing/" title="">
+                Testing</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/environment-parity/" title="">
+                Environment Parity</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/probes-and-signals/" title="">
+                Application States and Signals</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/boot-and-shutdown/" title="">
+                Boot and Shutdown Times</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/stateless/" title="">
+                Stateless</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/deployment-patterns/" title="">
+                Deployment Patterns</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/reliability/availability/" title="">
+                High Availability</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/load-balancing/" title="">
+                Load Balancing</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/monitoring/" title="">
+                Monitoring</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/security/" title="">
+                Security</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/reliability/documentation/" title="">
+                Documentation</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow"><a class="tocmenu arrow" href="/reliability/deployment-patterns/"
+                                title="Deployment Patterns">
+                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" /></a><a class="tocmenu arrow" href="/reliability/" title="Reliable Software Systems">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                        <a class="tocmenu arrow" href="/reliability/load-balancing/"
+                                title="Load Balancing"><img src="/icons/arrow-right-circle-white.png"
+                                        class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#auto-scaling">Auto Scaling</a></li>
+    <li><a href="#replication">Replication</a></li>
+    <li><a href="#multi-region">Multi-Region</a>
+      <ul>
+        <li><a href="#activepassive">Active/Passive</a></li>
+        <li><a href="#activeactive">Active/Active</a></li>
+        <li><a href="#active-and-active">Active &ldquo;and&rdquo; Active</a></li>
+        <li><a href="#synchronization">Synchronization</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/reliability/" class="breadcrumbs">/Reliability</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">High Availability</h1>
+<h1 id="auto-scaling">Auto Scaling</h1>
+<p>Robust system architectures always include some kind of auto-scaler. Essentially
+the service will add more instances or replicas when the load on the system increases,
+and may remove instances when the load drops.</p>
+<p>There are several kinds of auto-scaling available:</p>
+<ul>
+<li>Virtual Machine, node auto-scaling.  For example, Amazon Auto-Scaling Groups (ASGs)</li>
+<li>In Kubernetes, Horizontal Pod Autoscalers (HPA) can scale based on CPU or memory</li>
+<li>Cluster autoscalers in Kubernetes can scale up the entire cluster.</li>
+</ul>
+<h1 id="replication">Replication</h1>
+<p>If your service is mission critical, then there should be more than one replica of
+the service.  Ideally it should be stateless, so new replicas can come and go safely
+without needing to re-shard data.  Prefer to use well established data storage
+software for your state, like Redis, Postgres, DynamoDB, MongoDB, Cassandra, etc.</p>
+<h1 id="multi-region">Multi-Region</h1>
+<p>Cloud services tend to be split into regions, each region is far enough from
+other regions that it should not be impacted by world events happening in
+one of them.  They tend to be countries or states apart, with hundreds of
+miles between them.  For example, if an earthquake brought down a west
+region, the east region is probably unaffected, and will continue functioning.</p>
+<p>Availability Zones are within a region, there tends to be several of them.
+Availability zones are separated enough that they don&rsquo;t depend on the same
+power source.  Hence a power outage in one is unlikely to also affect another.</p>
+<p>Availability Zones have high bandwidth between them, so the network speed is
+quite fast.  Between regions though, the latency of requests could be significant.
+It could even make atomic transactions across regions slow enough that they
+are impractical to use.</p>
+<p>Important applications should always be replicated across availability zones.
+This tends to not be a problem.</p>
+<p>Mission critical applications should also be replicated to more than one region,
+and that is where things get complicated.  There are several patterns to consider.</p>
+<h2 id="activepassive">Active/Passive</h2>
+<p>One region is on and serving all requests.  A different region is on and
+ready to serve requests, but is not receiving any traffic.</p>
+<h2 id="activeactive">Active/Active</h2>
+<p>All/both regions are on and serving all requests.  Any single request is sent
+to both regions via mirroring.</p>
+<h2 id="active-and-active">Active &ldquo;and&rdquo; Active</h2>
+<p>All/both regions are on and serving at least some requests.  Any single request is
+sent to a single region for processing.  The region selected might be based on latency
+between the host and client.</p>
+<h2 id="synchronization">Synchronization</h2>
+<p>When services are replicated across regions, a new problem arises: keeping the
+regions in sync with each other.  This tends to be more challenging than it sounds.</p>
+<p>As a rule of thumb, there should be only a single source of truth for information.
+For example, we could use a DynamoDB global table to store state.  Only one region
+would be able to update it though, otherwise the consistency guarantees fall apart.</p>
+<p>Along the same lines, your application servers should be stateless, then there is
+no need to worry about synchronizing their runtime state across regions.</p>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="/reliability/deployment-patterns/" title="Deployment Patterns">
+        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-22 00:00:00 &#43;0000 UTC">
+                March 22, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/reliability/load-balancing/" title="Load Balancing">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

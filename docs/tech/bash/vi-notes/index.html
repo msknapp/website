@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/golang/" title="">
+                Golang</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/golang-recipes/" title="">
+                Golang Recipes</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/golang-gotchas/" title="">
+                Golang Gotchas</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/java/" title="java programming language.">
+                Java</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/tech/bash/" title="">
+                Bash</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/javascript-language/" title="javascript programming">
+                Javascript</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/languages/" title="my description.">
+                Software Languages</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/api/" title="">
+                API Development</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow"><a class="tocmenu arrow" href="/tech/bash/cut/"
+                                title="Cut">
+                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" /></a><a class="tocmenu arrow" href="/tech/bash/" title="Bash">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                        <a class="tocmenu" href="/tech/javascript-language/"><img src="/icons/arrow-right-circle-white.png"
+                                        class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#review-of-vi-commands">Review of vi Commands</a>
+      <ul>
+        <li><a href="#special-commands">Special Commands</a></li>
+        <li><a href="#motions">Motions</a></li>
+      </ul>
+    </li>
+    <li><a href="#less-important-shortcuts">Less Important Shortcuts</a></li>
+    <li><a href="#indent-a-bunch-of-lines">Indent a Bunch of Lines</a></li>
+    <li><a href="#append-to-a-bunch-of-lines">Append to a Bunch of Lines</a></li>
+    <li><a href="#copy-a-line">Copy a Line</a></li>
+    <li><a href="#cut-a-line">Cut a Line</a></li>
+  </ul>
+</nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/tech/" class="breadcrumbs">/Tech</a></li>
+        <li class="breadcrumbs"><a href="/tech/bash/" class="breadcrumbs">/Bash</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Vi Notes</h1>
+<h1 id="review-of-vi-commands">Review of vi Commands</h1>
+<ul>
+<li>&lsquo;a&rsquo; will go into insert mode, but one character after the curser, it&rsquo;s great for appending to the end of a line.</li>
+<li>&lsquo;o&rsquo; will go into insert mode, but it automatically inserts a new line beneath the cursor, and moves the cursor there.</li>
+<li>&rsquo;d$&rsquo; will delete to the end of the line</li>
+<li>&lsquo;dw&rsquo; will delete to the end of the current word.</li>
+<li>&lsquo;0&rsquo; will move the cursor to the start of the current line.</li>
+<li>&lsquo;$&rsquo; will move the cursor to the end of the current line.</li>
+<li>&lsquo;u&rsquo; will undo the last operation.</li>
+<li>&lsquo;ctrl+r&rsquo; will redo.</li>
+<li>&lsquo;p&rsquo; will paste what you recently deleted or yanked.</li>
+<li>&lsquo;v&rsquo; is for visual mode, it lets you highlight things for future actions.</li>
+<li>&lsquo;y&rsquo; is for &ldquo;yanking&rdquo; (copying) text.</li>
+<li>&lsquo;yw&rsquo; will yank one word.  likewise, you can combine it with counts and motions.</li>
+<li>&lsquo;yy&rsquo; will copy the current line.</li>
+<li>&lsquo;dd&rsquo; will delete the current line (you can paste it later with p, so this is effectively a &lsquo;cut&rsquo; operation).</li>
+<li>&lsquo;/&rsquo; lets you search</li>
+<li>&lsquo;?&rsquo; lets you search in reverse.</li>
+<li>&lsquo;gg&rsquo; moves to the start of the file.</li>
+<li>&lsquo;G&rsquo; moves to the end of the file.</li>
+<li>&lsquo;dG&rsquo; deletes everything from the cursor to the end of the file.</li>
+<li>&lsquo;dgg&rsquo; deletes everything from the start of the file to the cursor.</li>
+<li>&lsquo;ctrl+g&rsquo; will show you the current line number, and percent through the file.</li>
+<li>&lsquo;A&rsquo; appends at the end of the line.  Useful since I frequently do this.</li>
+<li>&lsquo;I&rsquo; inserts at the start of the line.</li>
+</ul>
+<h2 id="special-commands">Special Commands</h2>
+<ul>
+<li>&ldquo;:set nu&rdquo; shows line numbers</li>
+<li>&ldquo;:set nonu&rdquo; hides line numbers</li>
+<li>&ldquo;:split <!-- raw HTML omitted -->&rdquo; splits the editor into two windows, and shows the other file in one of them.</li>
+<li>&ldquo;ctrl-w ctrl-w&rdquo; will switch between open windows. You can even have more than two.</li>
+</ul>
+<h2 id="motions">Motions</h2>
+<ul>
+<li>&ldquo;0&rdquo; start of line</li>
+<li>&ldquo;$&rdquo; end of line</li>
+<li>&ldquo;w&rdquo; a &lsquo;word&rsquo;, moves to the start of a future word.</li>
+<li>&ldquo;e&rdquo; an &rsquo;end&rsquo;, moves to the end of a future word.</li>
+<li>&ldquo;b&rdquo; backwards one word, moves to the start of a word.</li>
+<li>&ldquo;G&rdquo; end of the file.</li>
+<li>&ldquo;gg&rdquo; start of the file.</li>
+</ul>
+<h1 id="less-important-shortcuts">Less Important Shortcuts</h1>
+<ul>
+<li>&lsquo;x&rsquo; will delete the character under the cursor, without being in any mode. easily worked around by using the delete character instead.</li>
+<li>&lsquo;r&rsquo; will let you replace the single character under the cursor, without being in any mode. easily worked around by using &lsquo;i&rsquo; to insert text.</li>
+<li>&lsquo;c&rsquo; let&rsquo;s you &ldquo;change&rdquo; things, it takes a motion.  It spares you from typing one extra key.</li>
+</ul>
+<h1 id="indent-a-bunch-of-lines">Indent a Bunch of Lines</h1>
+<ol>
+<li>Go to the first line</li>
+<li>ctrl+v</li>
+<li>move up/down to the last/first line.</li>
+<li>type shift + &lsquo;i&rsquo;</li>
+<li>type in your prefix</li>
+<li>hit escape</li>
+</ol>
+<h1 id="append-to-a-bunch-of-lines">Append to a Bunch of Lines</h1>
+<ol>
+<li>Go to the first line</li>
+<li>ctrl + v &ndash;&gt; it&rsquo;s important to use &lsquo;ctrl&rsquo; here, not just &lsquo;v&rsquo;!</li>
+<li>move up/down to the last/first line</li>
+<li>type End or $ to extend selection to the end of the lines</li>
+<li>type shift + &lsquo;a&rsquo; to append</li>
+<li>type the suffix</li>
+<li>hit escape</li>
+</ol>
+<h1 id="copy-a-line">Copy a Line</h1>
+<ol>
+<li>go to the line</li>
+<li>type &lsquo;yy&rsquo; (yank yank)</li>
+<li>go where you want to insert it</li>
+<li>type p</li>
+</ol>
+<h1 id="cut-a-line">Cut a Line</h1>
+<ol>
+<li>go to the line</li>
+<li>type &lsquo;dd&rsquo; (delete delete, it actually copies the line into memory)</li>
+<li>go where you want to insert it</li>
+<li>type p</li>
+</ol>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="/tech/bash/cut/" title="Cut">
+        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-14 00:00:00 &#43;0000 UTC">
+                March 14, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/tech/javascript-language/">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

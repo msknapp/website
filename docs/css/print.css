@@ -1,0 +1,43 @@
+aside {
+    display: none;
+}
+
+.rightcolumn {
+    display: none;
+}
+
+div.sitenav {
+    display: none;
+}
+
+div.breadcrumbs {
+    display: none;
+}
+
+main {
+    font-size: 12px;
+}
+
+footer {
+    display: none;
+}
+
+hr.footerline {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+p.job {
+    font-size: 14px;
+}

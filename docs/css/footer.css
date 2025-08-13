@@ -1,0 +1,48 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.footermiddle {
+    text-align: center;
+    line-height: 1.4;
+}
+
+a.footerprevious {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+a.footernext {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+img.arrow {
+    width: 24px;
+}
+
+a.arrow {
+    text-decoration: none;
+}
+
+img.footerarrow {
+    padding-top: 5px;
+    width: 24px;
+}
+
+div.lastmod {
+    text-align: center;
+}
+
+hr.footerline {
+    border: 1px solid black;
+}
+
+span.footerlinktext {
+    vertical-align: top;
+    font-size: 25px;
+}

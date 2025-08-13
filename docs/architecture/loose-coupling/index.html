@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/architecture/managed-services/" title="">
+                Managed Services</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/architecture/loose-coupling/" title="">
+                Loose Coupling</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/architecture/databases/" title="">
+                Data Storage</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/architecture/streaming/" title="">
+                Streaming</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/architecture/batch/" title="">
+                Batch Processing</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/architecture/loose-ends/" title="">
+                Loose Ends</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow"><a class="tocmenu arrow" href="/architecture/managed-services/"
+                                title="Managed Services">
+                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" /></a><a class="tocmenu arrow" href="/architecture/" title="Architecture">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                        <a class="tocmenu arrow" href="/architecture/databases/"
+                                title="Data Storage"><img src="/icons/arrow-right-circle-white.png"
+                                        class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#monoliths">Monoliths</a></li>
+    <li><a href="#backwards-compatibility">Backwards Compatibility</a></li>
+    <li><a href="#how-to-split-services">How to Split Services</a></li>
+    <li><a href="#re-factoring-a-monolith-to-micro-services">Re-Factoring a Monolith to Micro-Services</a></li>
+  </ul>
+</nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/architecture/" class="breadcrumbs">/Architecture</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Loose Coupling</h1>
+<p>The linux motto is:</p>
+<pre tabindex="0"><code>Do one thing, and do it very well.
+</code></pre><p>Likewise, there is a software principle of &ldquo;Segregation of Responsibilities&rdquo; which can also be
+extended to microservices.</p>
+<p>Essentially, system components should:</p>
+<ul>
+<li>Be responsible for one small and simple function, not many.</li>
+<li>Have well documented contracts for how they interact with external services.  For example, they should
+have a Swagger API with ample documentation about the inputs and outputs of each of their endpoints.
+They should have schemas that explain the input and output record formats.</li>
+<li>Keep their APIs and contracts as minimal as possible.  This aligns with the &ldquo;keep it simple stupid&rdquo;
+(KISS) principle of software development.  Schemas should not contain fields that are not used.
+Schemas of inputs and outputs should be small.  Service endpoints should be few, or labelled as
+unstable, experimental, or beta endpoints.</li>
+<li>Make very few assumptions about how their peers are operating.  For example, they should not assume
+that a separate service is using a certain naming convention for resources it creates.</li>
+<li>Be backwards compatible with older versions of peer micro-services.  This is critical, because
+<em>you do not want to be forced to upgrade or rollback more than one service at a time in your system.</em></li>
+</ul>
+<h1 id="monoliths">Monoliths</h1>
+<p>Often times when software systems are being developed, engineers tend to throw all functions into a
+single API server.  That is because:</p>
+<ul>
+<li>It already compiles and has a CICD pipeline.</li>
+<li>They are already familiar with it.</li>
+<li>Setting up network connections and security between services is scary and confusing.</li>
+<li>They don&rsquo;t want to think about what should happen if one of them is unavailable.</li>
+<li>They think that making a separate application or service will over-complicate their cluster and
+make it more difficult to maintain.</li>
+</ul>
+<p>Eventually the source code of that API server is over 10k lines long, nobody understands all of it,
+and any kind of update is extremely risky.  If an engineer wants to make an update to one feature,
+they are also jeopardizing a dozen others at the same time.  Incidents and roll-backs are bound
+to occur.</p>
+<p>Having worked in complex systems for years, I consider the notion that &ldquo;more distinct services is
+more difficult to maintain&rdquo; as simply <strong>wrong.</strong>  In my experience, having more system components,
+that are each simpler, tends to be far easier to maintain than a monolith.
+That is because you can upgrade each individual component separately, and test them separately.
+Go ahead and separate things, you won&rsquo;t regret it.</p>
+<h1 id="backwards-compatibility">Backwards Compatibility</h1>
+<p>We said earlier that applications should be backwards compatible, but what does that really mean?</p>
+<ul>
+<li>If an object schema has changed, the service endpoint should accept either the old or the
+new schema.  It should not fail if it encounters an object using an older schema.</li>
+<li>Endpoints should not change the schema they return when an application is updated.
+Instead, endpoints should have a version in their path, so clients can start using the newer
+version when they are ready.  Endpoints should not be removed until it has been proven they
+are not needed for a long period, like months.</li>
+<li>If the service depends on an external API, it should be able to function with older versions
+of that external API.  That way, if the external service is rolled back, the current one
+does not need to also roll back.</li>
+</ul>
+<p>If you find yourself in a situation where updating or rolling back one service or table forces
+you to also update or roll back others, then you have a &ldquo;tightly coupled&rdquo; system that is
+more difficult to maintain than it needs to be.</p>
+<h1 id="how-to-split-services">How to Split Services</h1>
+<p>There are two ways that you might think about splitting up a service:</p>
+<ul>
+<li>By Function: You would split up a monolith into micro-services, where each is concerned with just
+one common functionality or resource.  For example, with a news site, one micro-service handles
+requests from customers to get news pages.  A separate micro-service could handle requests from
+article publishers to create or update news articles.  Another example: One microservice
+handles CRUD operations on table A, and another handles CRUD on table B.</li>
+<li>By Concern or Technology: You split the monolith into micro-services, where each deals with
+a common concern among all endpoints, like querying, filtering, authorization, monitors, or
+integration with a database.  For example, you could have one micro-service that handles all
+data queries, another that handles data updates, and yet another that handles data validation.</li>
+</ul>
+<p>Generally speaking, it is better to split up a monolith by functionality, not technology.  There
+could be an exception to this rule if the micro-services follow a configuration driven development
+strategy, whereby they have no built-in schemas, and their logic is controlled by expressions in
+configuration files.</p>
+<h1 id="re-factoring-a-monolith-to-micro-services">Re-Factoring a Monolith to Micro-Services</h1>
+<p>When a team decides that a monolith application needs to be split up, they are forced to consider
+how.  If the team decides to re-create the entire monolith as distinct micro-services before
+switching:</p>
+<ul>
+<li>That involves a lot of risk.  Rolling back means shifting everything back to the monolith.</li>
+<li>That will take a huge deal of time.  Stakeholders will often become impatient and unsatisfied
+with the seemingly slow progress of the team.</li>
+</ul>
+<p>Instead, it is better to split out just a few features at a time, in a more piece-wise manner.
+Pick one or two vital functions in the monolith, write a new micro-service app for them, and
+then carefully integrate those into the system.  You will have more gradual improvements,
+which is in line with the Agile methodology.</p>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="/architecture/managed-services/" title="Managed Services">
+        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-23 00:00:00 &#43;0000 UTC">
+                March 23, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/architecture/databases/" title="Data Storage">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

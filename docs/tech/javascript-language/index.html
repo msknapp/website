@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/golang/" title="">
+                Golang</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/golang-recipes/" title="">
+                Golang Recipes</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/golang-gotchas/" title="">
+                Golang Gotchas</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/java/" title="java programming language.">
+                Java</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/bash/" title="">
+                Bash</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/tech/javascript-language/" title="javascript programming">
+                Javascript</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/languages/" title="my description.">
+                Software Languages</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/api/" title="">
+                API Development</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow"><a class="tocmenu arrow" href="/tech/" title="Software Engineering">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                        <a class="tocmenu arrow" href="/tech/languages/"
+                                title="Software Languages"><img src="/icons/arrow-right-circle-white.png"
+                                        class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents"></nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/tech/" class="breadcrumbs">/Tech</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Javascript</h1>
+<ul>
+<li>output with <code>console.log()</code></li>
+<li>semicolons are recommended but optional.</li>
+<li>comment syntax is normal <code>//</code> or <code>/*  */</code></li>
+<li>Uses <code>{ }</code> for code blocks.</li>
+<li>has &ldquo;number&rdquo; types, does not separate integers from floats.<br>
+So &ldquo;//&rdquo; is not integer division (Python), it is a comment.</li>
+<li>has &ldquo;boolean&rdquo; and &ldquo;string&rdquo;.  No byte or rune type exists.</li>
+<li>has arrays.  &ldquo;object&rdquo; is their catch-all dictionary and class type.</li>
+<li>double or single quotes can be used to define strings.</li>
+<li>uses &ldquo;=&rdquo; for definition, never &ldquo;:=&rdquo; (golang, c?)</li>
+<li>uses standard <code>if (...) {...} else if (...) {...} else {...}</code> format.</li>
+<li>Has a switch statement, cases need a break statement or consecutive blocks run,
+format: switch (&hellip;) { case 0: &hellip;; break; case 1: &hellip;; break; default: &hellip;; }
+switch checks types too, like ===, so the type must also match.</li>
+<li>for loops should include &ldquo;let&rdquo; in first part.  for (let x=0;x &lt; 3; x++) {&hellip;;}</li>
+<li>for loops support &ldquo;in&rdquo; syntax, and can work on arrays or objects (dicts),
+but the order is not preserved.  for (let x in arg) {&hellip;; }
+arr.forEach, Array.forEach, preserve order.</li>
+<li>for of loops are similar.  for (let x of arg) {&hellip;;}</li>
+<li>supports while and do while loops</li>
+<li>you can treat defined or undefined vars as truthy or falsy.
+the number 0, and empty strings are considered falsy.  &ldquo;undefined&rdquo; is falsy.
+null is falsy.  NaN is falsy.  The string &ldquo;false&rdquo; is truthy because it is not empty.
+What about empty arrays and objects?</li>
+<li>use ?? for defaulting vars.  Example, if x is undefined, y = x ?? &ldquo;z&rdquo;; will make y = &ldquo;z&rdquo;
+it&rsquo;s called nullish coalescing.  Works for null and undefined.  Empty strings, and zeros
+might still get used.</li>
+<li>You can use &ldquo;?.&rdquo; to avoid NPEs.  <code>a?.b?.c</code></li>
+<li>javascript is flexible with args to functions.  You could call a function with
+more or less args than expected.</li>
+<li>variable names can have &ldquo;$&rdquo; and &ldquo;_&rdquo;.  Can&rsquo;t start with digit.
+conventionally uses lower camelcase.  Hyphens can&rsquo;t be used in var names.
+Note: upper camelcase is called Pascal case.
+Capitalization does not change visibility like golang.</li>
+<li>Use &ldquo;const&rdquo; for variables that should not change.  Use &ldquo;var&rdquo; when it can
+change and must run in older browsers.  Use &ldquo;let&rdquo; when it can change.
+<ul>
+<li>&ldquo;var&rdquo; can be re-declared later, &ldquo;let&rdquo; cannot.</li>
+<li>&ldquo;var&rdquo; can even be re-declared with a different type.</li>
+<li>&ldquo;var&rdquo; can&rsquo;t have block scope, &ldquo;let&rdquo; and &ldquo;const&rdquo; are block scoped.</li>
+<li>&ldquo;let&rdquo; variables can be re-declared in sub-blocks.</li>
+</ul>
+</li>
+<li>can use let to declare multiple variables, separated by commas.</li>
+<li>don&rsquo;t need to initialize the variables.  &ldquo;let x;&rdquo; is fine.</li>
+<li>private variables/functions don&rsquo;t exist but _ prefixes are used as a convention.</li>
+<li>$ is often used to indicate the main or primary function.</li>
+<li>&ldquo;hoisting&rdquo; means that variable declarations automatically move to the top of code,
+or top of their scopes/blocks.  &ldquo;let&rdquo; variables can&rsquo;t be initialized and hoisted.</li>
+<li>const means the variable cannot be re-assigned, but its contents can change.</li>
+<li>supports &ldquo;**&rdquo; exponentiation, &ldquo;++&rdquo; and &ldquo;&ndash;&rdquo;, and &ldquo;+=&rdquo;, &ldquo;*=&rdquo; etc.</li>
+<li>supports ternary operator ?</li>
+<li>&ldquo;===&rdquo; and &ldquo;!==&rdquo; check the types of variables too.</li>
+<li>check types with &ldquo;typeof(x)&rdquo; or &ldquo;x.instanceof(object)&rdquo; or similar.</li>
+<li>supports bitwise operators &amp; | ~ ^ &laquo; etc.</li>
+<li>does implicit casting, like adding numbers and strings converts all numbers to strings.</li>
+<li>arrays use normal bracket notation: [1, &ldquo;2&rdquo;, false, etc.] (json)</li>
+<li>objects use {} notation, properties are separated with colons (json)</li>
+<li>&ldquo;undefined&rdquo; is a type.  new Object() is equivalent to {}
+object key names don&rsquo;t need to be quoted when declared in the literal syntax.</li>
+<li>objects can have new properties, and even methods, added at any time.</li>
+<li>You can reference object properties with either the dot notation or index style,
+obj.prop or obj[&ldquo;prop&rdquo;] work.</li>
+<li>objects get methods as if they are variables with function values.</li>
+<li>supports the &ldquo;this&rdquo; keyword.</li>
+<li>&ldquo;this&rdquo; from code not owned by an object refers to the &ldquo;global&rdquo; object.  Set &ldquo;use strict&rdquo; to
+make it be undefined instead.</li>
+<li>strings length is a property not a method, and not a function you call on it.
+myString.length is right.</li>
+<li>=== will always be false for objects.</li>
+<li>&ldquo;string&rdquo; is a built-in primitive, &ldquo;String&rdquo; is an object declared with &ldquo;new&rdquo;, and is not
+recommended for use, it&rsquo;s not the same type as string.</li>
+<li>supports string interpolation with back-ticks, it can refer to variables and other expressions
+within back-ticks.</li>
+<li>100 / &ldquo;10&rdquo; produces 10.  It automatically casts strings to numbers if needed.</li>
+<li>NaN and Infinity are special numbers supported.</li>
+<li>arrays can be declared with [] or new Array().  You don&rsquo;t need to declare their size, even
+when assigning items to an index.  typeof for arrays returns object.  Arrays have a
+forEach method/function.  Use Array.isArray to check its type.  or x instanceof Array.</li>
+<li>arrays support &ldquo;push&rdquo;.  You can assign to an index beyond its length, the gap is filled with undefined.</li>
+<li>arrays support &ldquo;pop&rdquo; or &ldquo;shift&rdquo;, removing the first item.  Using &ldquo;delete&rdquo; results in undefined holes.</li>
+<li>arrays support functional programming, or streaming methods.</li>
+<li>supports break and continue with labels.  labels are followed with colons.  Can escape blocks
+that are not even loops.</li>
+<li>typeof new Date() - returns &ldquo;object&rdquo;</li>
+<li>typeof null - returns &ldquo;object&rdquo;</li>
+<li>null == undefined - is true.  They differ by their type only.  null is an object, undefined is not.</li>
+<li>numbers to strings: (3).toString() or String(3)</li>
+<li>strings to numbers: Number(&ldquo;3&rdquo;) works.  Number(&quot;&quot;) returns 0.  Number(&ldquo;x&rdquo;) returns NaN.</li>
+<li>supports try {&hellip;;} catch (err) {&hellip;;} finally {&hellip;;}</li>
+<li>you can use throw, its arg can be a string, number, boolean, or object.</li>
+<li>lambda methods are supported, called &ldquo;arrow functions&rdquo;, () =&gt; { &hellip;; return &hellip;; },
+shorter syntaxes are allowed too: () =&gt; 3</li>
+</ul>
+<p>Classes:</p>
+<ul>
+<li>use &ldquo;class&rdquo; keyword, capitalize them, have &ldquo;constructor&rdquo; method.  Don&rsquo;t need to
+use object syntax where a var name refers to a function.  Can declare methods directly.</li>
+<li>not an object, is a template for one.</li>
+<li>use the new keyword to create them, calling its constructor automatically.</li>
+<li>supports inheritance with the extends keyword, and can refer to super constructor.</li>
+<li>supports special &ldquo;get&rdquo; and &ldquo;set&rdquo; methods, so properties can actually call methods.</li>
+<li>class declarations are not hoisted, you cannot refer to them before they are defined
+in the code.</li>
+<li>get and set can also be used in object definitions.</li>
+<li>supports the static keyword so your class can have static functions.</li>
+</ul>
+<p>Functions:</p>
+<ul>
+<li>can define with function keyword, or as an expression.
+<ul>
+<li>when defined as an expression, they will never be hoisted.  Also they must be
+followed with a semi-colon.</li>
+</ul>
+</li>
+<li>functions can have properties and methods, so they are actually like objects.</li>
+<li>typeof will return &ldquo;function&rdquo;.</li>
+<li>supports arrow functions: const x = (arg) =&gt; &ldquo;foo&rdquo;
+curly braces, and return statements, are only needed if there are multiple statements.
+<ul>
+<li>arrow functions are never hoisted, and they cannot use &ldquo;this&rdquo;</li>
+</ul>
+</li>
+<li>you can call functions with fewer arguments than parameters, the missing ones are undefined.
+then the code could check for this and set a default value.</li>
+<li>you can establish defaults for parameters using &ldquo;=&rdquo;.</li>
+<li>You can use &ldquo;&hellip;&rdquo; before an arg, as the last parameter.  It is passed as an array.</li>
+<li>you can call functions with more arguments than parameters.  The extra args don&rsquo;t get assigned
+to any local variables, but they are reachable with a special &ldquo;arguments&rdquo; object that all
+functions have.  No error is thrown if a function is called with excess arguments.
+&ldquo;arguments&rdquo; is an array, it has a length property.</li>
+<li>arguments that are not objects are always passed by value, changing them will not change higher scope values.
+objects passed to functions can be mutated.</li>
+<li>functions declared at the code root become methods of the &ldquo;window&rdquo; object.</li>
+<li>if you preceed a function call with &ldquo;new&rdquo;, then it is treated as a constructor and actually
+returns an object.  The return statement is implicit and not needed.  Use &ldquo;this&rdquo; to assign properties.</li>
+<li>for events, &ldquo;this&rdquo; refers to the html element that had the event.</li>
+<li>functions can be nested within functions, this enables having closures.  functions can refer
+to variables in their parent scopes.  Closures effectively let us have private variables.</li>
+</ul>
+<p>Strict Mode:</p>
+<ul>
+<li>&ldquo;use strict&rdquo; goes at top of code, or at top of function block.</li>
+<li>variables must be declared before used, or else an error is thrown.</li>
+<li>enforces a lot of other things too.</li>
+</ul>
+<p>Special Objects:</p>
+<ul>
+<li>new Set([&hellip;])</li>
+<li>new Map([ [&ldquo;key&rdquo;, value], &hellip; ]) - retains order of keys.</li>
+</ul>
+<p>Web Objects:</p>
+<ul>
+<li>console - a log</li>
+<li>document - the web page</li>
+<li>window</li>
+</ul>
+<p>Events: always lowercase and starting with &ldquo;on&rdquo;, are bound to html elements.</p>
+<p>Special Property Attributes:</p>
+<ul>
+<li>enumerable</li>
+<li>configurable</li>
+<li>writable</li>
+</ul>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <div></div>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-14 00:00:00 &#43;0000 UTC">
+                March 14, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/tech/languages/" title="Software Languages">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

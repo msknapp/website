@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/architecture/managed-services/" title="">
+                Managed Services</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/architecture/loose-coupling/" title="">
+                Loose Coupling</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/architecture/databases/" title="">
+                Data Storage</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/architecture/streaming/" title="">
+                Streaming</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/architecture/batch/" title="">
+                Batch Processing</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/architecture/loose-ends/" title="">
+                Loose Ends</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow">
+                        <a class="tocmenu arrow" href="..">
+                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" />
+                        </a><a class="tocmenu arrow" href="/architecture/" title="Architecture">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                        <a class="tocmenu arrow" href="/architecture/streaming/"
+                                title="Streaming"><img src="/icons/arrow-right-circle-white.png"
+                                        class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#choosing-data-storage">Choosing Data Storage</a>
+      <ul>
+        <li><a href="#number-of-requests">Number of Requests</a></li>
+        <li><a href="#data-volume">Data Volume</a></li>
+        <li><a href="#response-latency-and-throughput">Response Latency and Throughput</a></li>
+        <li><a href="#query-modes">Query Modes</a>
+          <ul>
+            <li><a href="#random-access">Random Access</a></li>
+            <li><a href="#analytical-queries">Analytical Queries</a></li>
+            <li><a href="#batch-processing">Batch Processing.</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#acid">ACID</a></li>
+    <li><a href="#cap-theorem">CAP Theorem</a>
+      <ul>
+        <li><a href="#relational-databases">Relational Databases</a></li>
+        <li><a href="#consistent-nosql-stores">Consistent NoSQL Stores</a></li>
+        <li><a href="#eventually-consistent-nosql-stores">Eventually Consistent NoSQL Stores</a></li>
+      </ul>
+    </li>
+    <li><a href="#data-store-types">Data Store Types</a>
+      <ul>
+        <li><a href="#cache">Cache</a></li>
+        <li><a href="#timeseries">TimeSeries</a></li>
+        <li><a href="#search">Search</a></li>
+        <li><a href="#graph">Graph</a></li>
+        <li><a href="#quorums">Quorums</a></li>
+        <li><a href="#relational">Relational</a></li>
+        <li><a href="#document">Document</a></li>
+        <li><a href="#big-tables">Big Tables</a></li>
+        <li><a href="#warehouses">WareHouses</a></li>
+        <li><a href="#eventually-consistent">Eventually Consistent</a></li>
+        <li><a href="#data-lakes">Data Lakes</a></li>
+      </ul>
+    </li>
+    <li><a href="#recovery">Recovery</a></li>
+  </ul>
+</nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/architecture/" class="breadcrumbs">/Architecture</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Data Storage</h1>
+<p>Earlier we said that to have a scaleable system, you should prefer to have
+stateless applications.  Obviously you <em>need</em> to have data <em>somewhere</em>, and
+that will also need to be scaleable.  That brings us to databases.</p>
+<p>There are several ways to classify data storage technologies:</p>
+<ul>
+<li>Filesystem</li>
+<li>Object storage</li>
+<li>Data lakes</li>
+<li>Caches, key-value stores</li>
+<li>Relational (RDBMS), SQL</li>
+<li>NoSQL
+<ul>
+<li>columnar</li>
+<li>document</li>
+<li>consistent</li>
+<li>responsive</li>
+</ul>
+</li>
+<li>Data WareHouses</li>
+<li>Time Series</li>
+<li>Geospatial Information Systems</li>
+</ul>
+<h1 id="choosing-data-storage">Choosing Data Storage</h1>
+<p>When it comes time to choose what tech should serve as your database, consider
+the following:</p>
+<ul>
+<li>How many requests do you expect over time?</li>
+<li>How much data is there to store?</li>
+<li>How fast of a response do you need?</li>
+<li>How will the data be queried?</li>
+<li>Is eventual consistency acceptable?</li>
+<li>Does your data have a strict schema?</li>
+</ul>
+<h2 id="number-of-requests">Number of Requests</h2>
+<p>If your data store will rarely receive requests, then a serverless solution will
+probably serve your needs while costing far less than running a database instance.
+In AWS, DynamoDB can satisfy the needs here, it is serverless.  If you have a
+Dynamo table with no data and no transactions, it costs nothing.</p>
+<p>The only exception might be if you have strictly relational data and you want
+transactional guarantees that it will be consistent.  Dynamo is a NoSQL store,
+so it cannot perform transactions.  Keep in mind that in NoSQL stores can always
+choose to just keep all information in a single record, even if it has some
+redundancy.</p>
+<h2 id="data-volume">Data Volume</h2>
+<p>Relational databases tend to have the most features, but they may not scale as
+well as NoSQL stores.  Somewhere between 10GB and 100GB, you might want to consider
+switching to a NoSQL datastore.  These can be sharded, partitioned, and hence
+parallelized between multiple servers.</p>
+<ul>
+<li>data replication
+<ul>
+<li>RTO</li>
+<li>RPO</li>
+</ul>
+</li>
+</ul>
+<h2 id="response-latency-and-throughput">Response Latency and Throughput</h2>
+<p>If your database needs to support <em>very</em> fast reads and writes, or <em>very</em> high
+throughput, then an in-memory data store is required.  Redis and Memcached are
+the most common options here.</p>
+<p>Using in-memory storage can be much more expensive than disk storage, but can
+respond much faster.  These are usually chosen for data caches.  Redis can
+also be configured as a least recently used (LRU) cache, whereby the items
+that are queried the least tend to get purged, and the most frequently used
+items tend to stay in memory.</p>
+<p>If you need a very large cache, there are services that can manage sharding
+Redis or Memcached separately.</p>
+<p>Note that other databases often have some cache support too.</p>
+<h2 id="query-modes">Query Modes</h2>
+<p>There are several patterns by which data can be queried, and these suggest
+a certain database type.</p>
+<h3 id="random-access">Random Access</h3>
+<p>If the most frequent access pattern is random reads of single records, this
+lends itself to relational databases, or NoSQL data stores, which excel in
+looking up single records.</p>
+<h3 id="analytical-queries">Analytical Queries</h3>
+<p>In this case, large scale trends and aggregations are the most common way
+that data is queried.  For example, you want to answer business questions
+like, what percent of the users come from each region.</p>
+<p>For this data access pattern, Data Warehouses tend to be the answer.
+Amazon Redshift, or SnowFlake are good examples.  They store data in
+columnar data files, which make them perform much better with queries.
+They also are more efficiently stored.</p>
+<h3 id="batch-processing">Batch Processing.</h3>
+<p>In this case, the entire table tends to be accessed and processed in
+one large batch job.  For this, a distributed data lake or data store
+tends to be the best answer.  S3, HDFS, or Minio are good examples.
+Data locality can also help speed up the processing.</p>
+<h1 id="acid">ACID</h1>
+<p>The acronym &ldquo;ACID&rdquo; describes transactions and consistency guarantees in a relational database.
+It stands for:</p>
+<ul>
+<li>Atomic: all of the transaction or none of the transaction occurs</li>
+<li>Consistent: Readers will not be given stale values.</li>
+<li>Isolated: While the transaction is being processed, concurrent queries will not see partial updates.
+Also called Serializable.</li>
+<li>Durable: The changes will survive a crash.</li>
+</ul>
+<h1 id="cap-theorem">CAP Theorem</h1>
+<p>The CAP theorem states there is a relationship between these three aspects
+of databases:</p>
+<ul>
+<li>Consistency (also called Linearizable)</li>
+<li>Availability</li>
+<li>Partitionability (also called sharding)</li>
+</ul>
+<p>Specifically, a database can only guarantee two of the three aspects, because
+there will always be a possibility of network failures between nodes.</p>
+<p>A data-store is consistent if a read operation cannot return a stale value,
+nor a new value that has not been committed.  Consistency does not require
+the full ACID compliance that relational databases offer.  It only
+requires that the datastore is guaranteed to return the latest current
+value in any query.</p>
+<p>A data-store is available if it responds to requests within a reasonable
+time.  Availability here is not concerned with the possibility that
+a replica could crash.  This might be due to the fact that many relational
+databases also support having a hot backup standing by.  The aspect
+of availability is more concerned with slow network connections between
+nodes.  If the network is too slow, the database will either need to
+respond with what it knows (which might be stale data), or wait long
+enough that it times out (which means it is not available).</p>
+<p>A data-store is tolerant of partitions if replicas can be made of the
+service and they can inter-operate.  All the database operations can
+still function in the presence of these partitions.</p>
+<h2 id="relational-databases">Relational Databases</h2>
+<p>Relational databases can achieve these aspects:</p>
+<ul>
+<li>Consistency: They are able to support ACID transactions, guaranteeing they will
+return the correct value.</li>
+<li>Availability: Since they are hosted by single machines, they can also respond
+promptly to requests.  They will not be waiting for network connections
+because they hold all of the information locally.</li>
+</ul>
+<p>They cannot <em>practically</em> be partitioned among multiple nodes.  There are projects
+which have <strong>sharded</strong> relational databases among multiple nodes, effectively
+partitioning them, but some capabilities are impossible to retain like this.
+For instance, keeping foreign keys between tables is no longer possible to
+guarantee.</p>
+<h2 id="consistent-nosql-stores">Consistent NoSQL Stores</h2>
+<p>These databases achieve the following:</p>
+<ul>
+<li>Partition Tolerance: The data is sharded among multiple nodes, and can be
+re-balanced as needed.</li>
+<li>Consistency: These databases achieve consistency using a quorum strategy.
+They could use ZooKeeper, etcd, or have a quorum built-in to their source
+code.</li>
+</ul>
+<p>Availability is not guaranteed.  If nodes in the quorum crash and are
+unavailable, you can reach a point where reads cannot respond in time, because
+they are waiting for information from a crashed node.</p>
+<h2 id="eventually-consistent-nosql-stores">Eventually Consistent NoSQL Stores</h2>
+<p>These databases achieve the following:</p>
+<ul>
+<li>Partition Tolerance: The data is sharded among multiple nodes, and can be
+re-balanced as needed.</li>
+<li>Availability: Nodes may attempt to check with peers for the most recent
+information, but within a time limit.  It may return stale data.</li>
+</ul>
+<p>Consistency is not guaranteed because the data can be stale.</p>
+<h1 id="data-store-types">Data Store Types</h1>
+<p>The types of databases can often fit into several categories.</p>
+<h2 id="cache">Cache</h2>
+<p>These concern themselves simply with having the fastest response time
+possible.  They usually retain all information in memory to achieve this.</p>
+<p>Examples:</p>
+<ul>
+<li>memcached: a simple key-value store</li>
+<li>Redis: Holds a lot more features and special data types than mem-cached.</li>
+</ul>
+<h2 id="timeseries">TimeSeries</h2>
+<p>These store data in a special format that makes it easy to query for
+information over a time frame.  They are usually used for metrics and
+monitoring.</p>
+<p>Examples:</p>
+<ul>
+<li>Prometheus</li>
+<li></li>
+</ul>
+<h2 id="search">Search</h2>
+<p>These are designed to make searching text documents easy and efficient,
+even in the presence of imperfect terms.</p>
+<p>Examples:</p>
+<ul>
+<li>Solr, Lucene</li>
+</ul>
+<h2 id="graph">Graph</h2>
+<p>These are specially designed for storing graph data, edges and vertices.
+They make is easy to perform a variety of graph queries against them.</p>
+<p>Example:</p>
+<ul>
+<li>Neo</li>
+</ul>
+<h2 id="quorums">Quorums</h2>
+<p>These are designed to help other applications synchronize with each other.
+Keeping multiple nodes in sync is a very challenging problem to solve in its
+own right, so using a Quorum can make that easier.</p>
+<p>Examples:</p>
+<ul>
+<li>ZooKeeper</li>
+<li>etcd</li>
+</ul>
+<h2 id="relational">Relational</h2>
+<p>These run on a single server, and are able to support very complex queries,
+including SQL queries.  They tend not to scale very easily.  Many of them
+support read-replicas.</p>
+<p>Examples:</p>
+<ul>
+<li>SQL Server: for Microsoft fans, and integrating with other Microsoft products.</li>
+<li>MySQL, MariaDB: Open source, GPL licensed, easier to use than others.</li>
+<li>Postgres: Open source, considered more full featured and performant than others.</li>
+<li>Oracle: The most powerful database but is closed source and is not free.</li>
+</ul>
+<h2 id="document">Document</h2>
+<p>These specialize in storing &ldquo;documents&rdquo; which are generic objects that can have
+nested information and lists.  The schema is not rigidly enforced, and they
+support queries on fields that might not even exist on all records.  Documents
+are usually conveyed as JSON.</p>
+<p>Examples:</p>
+<ul>
+<li>MongoDB</li>
+<li>DynamoDB</li>
+</ul>
+<p>Note that some relational databases also support these, but it&rsquo;s not their main feature.
+Most document oriented datastores are NoSQL and partitioned.</p>
+<h2 id="big-tables">Big Tables</h2>
+<p>These are able to hold tables of data, with rigid schemas, among partitioned nodes.
+Hence these scale very well, but they cannot perform ACID compliant transactions.
+They cannot provide foreign key restrictions.  They do not support SQL queries,
+nor joins.</p>
+<p>Examples:</p>
+<ul>
+<li>Cassandra</li>
+<li>HBase</li>
+<li>Accumulo</li>
+<li>BigTable</li>
+</ul>
+<h2 id="warehouses">WareHouses</h2>
+<p>These are designed more for queries about trends over the entire dataset.  The
+data is structured and pre-processed.  Often the data is stored in a column-oriented
+format like Parquet.  Avro is row oriented so woudln&rsquo;t be used.</p>
+<p>Examples:</p>
+<ul>
+<li>Redshift</li>
+<li>SnowFlake</li>
+</ul>
+<h2 id="eventually-consistent">Eventually Consistent</h2>
+<p>These databases do not guarantee read operations will be accurate.  Usually this is
+so they can respond faster.</p>
+<p>Examples:</p>
+<ul>
+<li>Cassandra</li>
+</ul>
+<p>They tend to be used when the consequences of stale information are low.</p>
+<h2 id="data-lakes">Data Lakes</h2>
+<p>These are more like very large file systems in the cloud.  They are also called
+&ldquo;Object Stores&rdquo;.  The data they hold <em>may</em> be raw, unprocessed.</p>
+<p>Examples:</p>
+<ul>
+<li>S3</li>
+<li>Minio</li>
+<li>HDFS</li>
+</ul>
+<h1 id="recovery">Recovery</h1>
+<p>Recovery Time Objective is the maximum amount of time that may elapse when an
+incident occurs before the system is operational again.</p>
+<p>Recovery Point Objective is the maximum amount of time that may elapse where
+data is lost.  It is like the interval that database backups are taken.</p>
+<p>As each gets shorter, the cost to support it gets exponentially greater.</p>
+<p>Achieving a short RTO means you have some kind of automated recovery, or
+the engineers must be very fast to respond when paged.</p>
+<p>Achiving a short RP means database backups must be taken more often, and
+stored in a very highly reliable data store, like a data lake.  When backed
+up, they may be kept as deltas, change logs, write-ahead logs, or similar.
+It&rsquo;s stored in a way that it can be recovered, but is not easily queried
+directly.</p>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="..">
+        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-23 00:00:00 &#43;0000 UTC">
+                March 23, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/architecture/streaming/" title="Streaming">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

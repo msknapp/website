@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/kiss/" title="How to keep your code simple">
+                KISS and YAGNI</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/dry/" title="">
+                Don&#39;t Repeat Yourself</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/defensive/" title="Making your code defensive.">
+                Defensive Programming</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/single-responsibility/" title="The importance of single responsibility.">
+                Single Responsibility Principle</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/open-closed/" title="">
+                Open Closed Principle</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/substitution/" title="">
+                Substitution</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/segregation/" title="explaining the interface segregation principle">
+                Interface Segregation Principle</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/testing/" title="The importance of software testing.">
+                Software Testing</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/configuration/" title="">
+                Configuration Levels</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/quality/" title="Assessing code quality.">
+                Judging Quality</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/principles/stereotypes/" title="">
+                Class Stereotypes</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/ybyo/" title="">
+                You Build You Own</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/globals/" title="">
+                Globals</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/optimization/" title="">
+                Premature Optimization</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/principles/reinvent/" title="">
+                Don&#39;t Reinvent the Wheel</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow"><a class="tocmenu arrow" href="/principles/quality/"
+                                title="Judging Quality">
+                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" /></a><a class="tocmenu arrow" href="/principles/" title="Software Development Principles">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                        <a class="tocmenu arrow" href="/principles/ybyo/"
+                                title="You Build You Own"><img src="/icons/arrow-right-circle-white.png"
+                                        class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#lifecycles">LifeCycles</a></li>
+    <li><a href="#domain">Domain</a>
+      <ul>
+        <li><a href="#fluent">Fluent</a></li>
+        <li><a href="#builder">Builder</a></li>
+        <li><a href="#factory">Factory</a></li>
+      </ul>
+    </li>
+    <li><a href="#service">Service</a></li>
+    <li><a href="#configuration">Configuration</a></li>
+    <li><a href="#bootstrap">Bootstrap</a></li>
+    <li><a href="#package-dependency-tree">Package Dependency Tree</a></li>
+  </ul>
+</nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/principles/" class="breadcrumbs">/Principles</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Class Stereotypes</h1>
+<p>After writing enough code, and dealing with performance issues and bugs, engineers
+gradually adopt certain patterns of writing code, and they might not even overtly
+realize they are doing this.  These patterns work, which is why we use them.</p>
+<h1 id="lifecycles">LifeCycles</h1>
+<p>The pattern used for a class often depends greatly on its life-cycle.  If a class
+will live for the entire life of the process, you might design it differently than
+a class that is created and destroyed with every single request.</p>
+<h1 id="domain">Domain</h1>
+<p>Domain classes simply hold the state of something.  They usually have little
+business logic in them, or very trivial business logic.  Making them immutable
+could result in a safer application with fewer bugs, or it could just
+complicate things and reduce performance.  It depends on the situation.</p>
+<h2 id="fluent">Fluent</h2>
+<p>A fluent class is one that is mutable, and its setter methods all return the
+current instance, so that they can be chained together.  Unlike the builder pattern,
+these do not build separate instances.</p>
+<p>Their advantages are:</p>
+<ul>
+<li>They are very easily understood and worked with by fellow developers.</li>
+<li>They can easily have very many fields that need to be set.</li>
+</ul>
+<p>They have the usual disadvantages of mutable objects, thread safety concerns,
+garbage collection, performance impacts, etc.
+The pros and cons should be evaluated for the current problem, sometimes fluent
+classes are great, sometimes not.</p>
+<h2 id="builder">Builder</h2>
+<p>A builder is a class that is mutable, and is responsible for creating instances
+of another class.  Usually what it builds is immutable once made.  Builders
+tend to be used when the object being built has many parameters.  Somewhere
+between five and seven parameters is when a builder might be useful.  If
+the object being created has fewer parameters, then using an immutable constructor
+is a better idea.  Usually the methods of the builder are designed for
+chaining.  So the return value of the setters is the builder itself.</p>
+<p>Some advantages of builders:</p>
+<ul>
+<li>You can validate the inputs before the product is built.
+Hence a builder can provide some consistency guarantees for its output.</li>
+<li>You can easily assign default values.</li>
+<li>When an engineer reads how the builder is used, it is intuitive and easily understood.
+This is because of the fluent style chaining of its setters.</li>
+</ul>
+<p>Some disadvantages of builders:</p>
+<ul>
+<li>They add to code complexity.</li>
+<li>They also need to be tested.</li>
+<li>It takes a bit more time to write them.</li>
+<li>They result in creating more objects than necessary, which in turn leads to more
+garbage build-up on the heap, and that can degrade the application&rsquo;s performance.</li>
+</ul>
+<p>Builders tend to be created per request.  Values are unlikely to be re-used.</p>
+<h2 id="factory">Factory</h2>
+<p>A factory is similar to a builder, but with a few exceptions:</p>
+<ul>
+<li>It tends to be long lived itself.  It is created at bootstrap, not per request.</li>
+<li>Its values tend to change rarely or never.</li>
+<li>It is more likely to have static or global variables.</li>
+</ul>
+<p>The way I like to remember this is that real-world factories tend to stay in
+operation longer than the employees (the builders) working in them.</p>
+<h1 id="service">Service</h1>
+<p>Classes that are services tend to be created when the process boots, and live
+for as long as the process is running.  Their fields usually do not change throughout
+the life of the application.  The one exception is if their values are tied to
+a configuration that could be updated from outside the application.</p>
+<p>For extra safety, they <em>might</em> be made immutable, but it is not strictly necessary.</p>
+<h1 id="configuration">Configuration</h1>
+<p>An effective coding pattern is to have a set of mutable classes that represent the application&rsquo;s
+configuration.  This means a separate configuration file can be written in a common
+format like yaml, json, toml, or a simple properties file.  Then, at boot time, the
+file can be unmarshaled directly into these configuration classes.</p>
+<p>There are also libraries that help with this by adding logic to:</p>
+<ul>
+<li>Validate the configuration, requiring values to be consistent.</li>
+<li>Automatically re-load the configuration on a schedule.</li>
+<li>Apply default values to missing fields in the configuration.</li>
+<li>Merge the configuration from different sources, like environment variables,
+multiple config files, and command line arguments.</li>
+</ul>
+<p>These configuration classes tend to have all public fields and are mutable.</p>
+<p>Generally your service classes should not have direct dependencies or knowledge of
+these configuration classes, because they are mutable.  Also, the configuration
+classes are likely to change more often.</p>
+<p>Instead, the service classes could have references to the configuration variables
+that they need or depend upon.  If the reference is not atomic, that field could
+be changed to a &ldquo;supplier&rdquo; type of class or function.</p>
+<h1 id="bootstrap">Bootstrap</h1>
+<p>A bootstrap class or package is responsible for wiring together the high level
+service that represents the application.  It usually has access to all of the
+configuration and service class packages.  Frameworks like Spring or J2EE serve
+the &ldquo;bootstrapping&rdquo; function too.  They support &ldquo;dependency injection&rdquo;, which
+means it is easy to change the application&rsquo;s behavior without re-building it.</p>
+<p><strong>My personal opinion:</strong> Spring adds more complexity and problems than writing your
+own bootstrapper class.  If you write your own bootstrapper, you will have far
+more control over how things are wired, and it will be much easier to troubleshoot
+and fix later.  I have only tried Spring core though, and it was
+many years ago, maybe Spring Boot is better, I don&rsquo;t know.</p>
+<h1 id="package-dependency-tree">Package Dependency Tree</h1>
+<p>In languages like Golang, there must not be a circular dependency in packages.
+In other words, if package A depends on something in package B, then nothing in
+package B can depend on anything in package A.</p>
+<p>For this reason it&rsquo;s best to establish a convention for dependency order.</p>
+<ul>
+<li>Packages for domain objects should have few or no dependencies on higher level logic.</li>
+<li>Business Logic packages may depend on domain objects.</li>
+<li>Service classes and packages may depend on domain or business logic packages.</li>
+<li>configuration classes and packages may depend on domain or business logic packages.</li>
+<li>Bootstrap packages may depend on all of the above.</li>
+</ul>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="/principles/quality/" title="Judging Quality">
+        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-24 00:00:00 &#43;0000 UTC">
+                March 24, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/principles/ybyo/" title="You Build You Own">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

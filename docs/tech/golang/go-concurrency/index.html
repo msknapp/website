@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/tech/golang/" title="">
+                Golang</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/golang-recipes/" title="">
+                Golang Recipes</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/golang-gotchas/" title="">
+                Golang Gotchas</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/java/" title="java programming language.">
+                Java</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/bash/" title="">
+                Bash</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/javascript-language/" title="javascript programming">
+                Javascript</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/languages/" title="my description.">
+                Software Languages</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/api/" title="">
+                API Development</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow">
+                        <a class="tocmenu arrow" href="..">
+                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" />
+                        </a><a class="tocmenu arrow" href="/tech/golang/" title="Golang">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                        <a class="tocmenu arrow" href="/tech/golang/vscode-shortcuts/"
+                                title="VSCode Shortcuts"><img src="/icons/arrow-right-circle-white.png"
+                                        class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#summary-notes">Summary Notes</a></li>
+    <li><a href="#sync-package">Sync Package</a></li>
+  </ul>
+</nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/tech/" class="breadcrumbs">/Tech</a></li>
+        <li class="breadcrumbs"><a href="/tech/golang/" class="breadcrumbs">/Golang</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Golang Concurrency</h1>
+<h1 id="summary-notes">Summary Notes</h1>
+<ul>
+<li>use &ldquo;go&rdquo; keyword to make a function run in parallel.</li>
+<li>When main completes, it will not wait for other goroutines to finish,
+the program stops.</li>
+<li>channels allow communication between goroutines.  <code>make(chan &lt;type&gt;[, capacity])</code>
+Also just declaring a channel makes it.
+<ul>
+<li><code>make(chan &lt;type&gt;)</code></li>
+<li>by default, it is bi-directional, and blocking.  Sending to a channel will
+suspend the current goroutine until something reads from the channel.</li>
+<li>these are also called &ldquo;unbuffered&rdquo; or &ldquo;synchronous&rdquo; channels.</li>
+</ul>
+</li>
+<li>write to channel: <code>ch &lt;- v</code></li>
+<li>read from channel: <code>v &lt;- ch</code></li>
+<li>read but discard from channel: <code>&lt;- ch</code></li>
+<li>deadlock is possible if all goroutines are asleep.  It can happen if the
+send and receive operations are not equal in number.</li>
+<li>Channels can be cast, even implicitly, to send-only or receive only channels:
+<ul>
+<li>send-only: <code>chan&lt;- &lt;type&gt;</code></li>
+<li>read-only: <code>&lt;-chan &lt;type&gt;</code></li>
+<li>read-only channels cannot be closed, only the write channels can be closed.</li>
+</ul>
+</li>
+<li>when a channel is closed, it can still be read from.</li>
+<li>unbuffered channels have nowhere to store their data.</li>
+<li>buffered channels will not block when written to, unless they are full.<br>
+They are made by giving a capacity to the make command:
+<ul>
+<li><code>make(chan &lt;type&gt;, &lt;capacity&gt;)</code></li>
+<li>example: <code>make(chan int, 3)</code></li>
+</ul>
+</li>
+<li>for loops can read from channels: <code>for x := range ch {...}</code></li>
+<li>the &ldquo;cap&rdquo; function can determine the capacity of a channel.  Likewise, &ldquo;len&rdquo;
+can determine how many items are waiting in it.</li>
+<li>they do not recommend using a channel as a queue data type, except when used
+with multiple goroutines.  Use a slice as a queue instead.</li>
+</ul>
+<h1 id="sync-package">Sync Package</h1>
+<ul>
+<li>WaitGroup makes a routine pause until other coroutines have finished.
+<ul>
+<li>
+<pre tabindex="0"><code>wg := new(sync.WaitGroup)
+wg.Add(2)
+</code></pre></li>
+<li>in other goroutines, they call <code>wg.Done()</code> when they are finished.
+Typically using defer.</li>
+</ul>
+</li>
+</ul>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="..">
+        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-14 00:00:00 &#43;0000 UTC">
+                March 14, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/tech/golang/vscode-shortcuts/" title="VSCode Shortcuts">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

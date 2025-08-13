@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/blog/helm-or-operator/" title="">
+                Helm Chart or Operator</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/blog/operators/" title="">
+                Writing Effective Operators</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/blog/authorization/" title="Common pitfalls people make when adding authorization to their apps.">
+                Authorization Architecture Mistakes</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/blog/reorg/" title="">
+                Is It Time To Reorg</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow"><a class="tocmenu arrow" href="/blog/helm-or-operator/"
+                                title="Helm Chart or Operator">
+                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" /></a><a class="tocmenu arrow" href="/blog/" title="Blog">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                        <a class="tocmenu arrow" href="/blog/authorization/"
+                                title="Authorization Architecture Mistakes"><img src="/icons/arrow-right-circle-white.png"
+                                        class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#checking-for-sync-status">Checking for Sync Status</a></li>
+    <li><a href="#chaining">Chaining</a></li>
+    <li><a href="#schema-changes">Schema Changes</a></li>
+    <li><a href="#multi-cluster-synchronization">Multi-Cluster Synchronization</a></li>
+    <li><a href="#custom-resources-or-databases">Custom Resources or Databases</a></li>
+  </ul>
+</nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/blog/" class="breadcrumbs">/Blog</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Writing Effective Operators</h1>
+<p>The fundamental way operators work is really quite trivial: if a change is made to one
+custom resource, then react by updating other resources.  It sounds so simple, but in
+practice, it tends to get quite complicated.</p>
+<p>Here are some guidelines to follow that should make it easier to maintain your operators:</p>
+<ul>
+<li>Prefer to keep their scope limited, so they are simple.</li>
+<li>Avoid having operators manage other Kubernetes resources, these are easily managed from
+Helm charts instead, with a few exceptions.  Helm charts tend to be more powerful than
+operators when it comes to managing other Kubernetes resources.  One exception is if you
+need this capability to be shared with other teams, or to react to an external state.</li>
+<li>Avoid having an operator manage more than one downstream resource.  Keeping it transactional
+and consistent gets quite complicated.</li>
+<li>Keep the schemas of the resources simple, don&rsquo;t add fields that you expect will be used
+<em>eventually</em>.  The schemas should ideally not cover unrelated, independent concerns.  If
+it does, that might be an opportunity to split the operator up, along with its custom resources.</li>
+<li>Annotate schema fields with their validation expressions.</li>
+<li>Avoid having a single operator manage more than one custom resource.</li>
+<li>Prefer to have the operator use templates to construct downstream resources.  These
+templates should be possible to change from outside the application, like from a
+configuration file.  Usually templates give the engineers far more controls over how
+resources are created than a configuration file.</li>
+<li>The operator should have no assumptions about naming conventions or labels coded into it,
+these conventions should either be set in configuration, or avoided completely.</li>
+<li>If the operator fails to sync a resource, don&rsquo;t retry that for at least a few seconds,
+maybe minutes later.</li>
+<li>The operator should update the status of the custom resource it monitors.  Include
+vital information about downstream resources it created, such as their identifiers.</li>
+<li>The operator should make no assumptions about the current state of downstream resources.
+It should not assume that the status listed in the upstream custom resource is accurate.
+It must check the actual state of downstream resources and see if it is in sync.</li>
+</ul>
+<h1 id="checking-for-sync-status">Checking for Sync Status</h1>
+<p>In Golang, maps have a random order for keys.  That means if you try to compare the desired
+state with the actual state of a golang object, it may wrongly consider them different.</p>
+<p>To work around this issue, I recommend the following:</p>
+<ul>
+<li>The operator should create a specification for its downstream resource, and this spec
+should be a text document created from a template.</li>
+<li>The downstream specification should be hashed (security is not a concern her), with
+MD5, SHA1, or SHA256 for example.</li>
+<li>The hash should be assigned as an annotation or label on the Kubernetes resource
+that it creates.</li>
+<li>Then, the operator can compare the hash of the desired state with the hash annotation
+on the real downstream resource.  If they are the same then there is nothing to
+synchronize.</li>
+</ul>
+<h1 id="chaining">Chaining</h1>
+<p>It&rsquo;s common to have operators form a chain, where one of them creates a resource that
+another operator will react to.  This is a form of loose coupling and is effective and
+encouraged.  It means that you can update these stages separately.</p>
+<h1 id="schema-changes">Schema Changes</h1>
+<p>With Kubernetes operators, schemas present a significant challenge.  The Kubernetes API server
+will only store one version of a schema.  So if you remove a field in v2, and make that
+the stored version, then all existing resources permanently lose that information.  If you
+add a new field, and it is required, then you must assign defaults to all existing resources
+before you update the operator.  It might be necessary to run a migration script in this process.</p>
+<p>Kubernetes schemas are represented by Golang structs.  If you have multiple versions of a
+Kubernetes resource, the operator&rsquo;s code needs to have sufficient structs to represent
+either of them.  That makes the code excessively complex and redundant.  Operators make
+it difficult for engineers to follow the DRY principle in their code.</p>
+<p>If you update a schema without changing its version, that could result in having an
+operator that is not backwards compatible, and impossible to roll back.</p>
+<p>Before updating an operator or changing its schemas, you should collect a backup of all
+existing resources, because it may be impossible to recover them later if you don&rsquo;t.</p>
+<h1 id="multi-cluster-synchronization">Multi-Cluster Synchronization</h1>
+<p>A common problem is that operators run in multiple distinct Kubernetes clusters, but they
+are attempting to control a common global resource.  They may clobber each other&rsquo;s work,
+and that can result in crashes or failures.</p>
+<p>There are a few ways to cope with this problem:</p>
+<ul>
+<li>One controller could be active, and the other passive.  This can be decided with a lock
+in etcd or ZooKeeper.  Another effective pattern is to have them query for a DNS host, one
+that is latency or failover based.  If the host IP of the DNS record points to the current
+cluster, then that controller is active and may proceed.  Otherwise the controller is
+passively waiting for the moment that the other cluster goes down so that it can take over.</li>
+<li>A global lock could be utilized in DynamoDB.</li>
+</ul>
+<h1 id="custom-resources-or-databases">Custom Resources or Databases</h1>
+<p>Teams might choose not to store configuration data in a real database, but instead to
+just have Kubernetes custom resources.  This can work so long as there are not many of
+these resources.  There are a few problems with this approach:</p>
+<ul>
+<li>Keeping the resources in sync across clusters or regions can be very difficult.</li>
+<li>The Kubernetes API server and etcd are not nearly as capable as most relational databases.</li>
+<li>The SDKs for interacting with Kubernetes are much more difficult to use than the SDKs
+for most databases.</li>
+<li>It is not easy to perform complex queries like joins, groups, or aggregation.  These need
+to be written into the code, and that is error prone.  The Kubernetes API server and
+etcd do not support SQL queries out of the box.</li>
+<li>It can be more difficult to produce dashboards around Kubernetes resources than database
+records.</li>
+<li>Now all the code that accesses these custom resources needs to have Kubernetes service
+accounts setup and granted access to them.</li>
+</ul>
+<p>For these reasons, I recommend having a global datastore be the official source of truth.
+Kubernetes custom resources should aspire to be in sync with that source of truth, not
+the other way around.</p>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="/blog/helm-or-operator/" title="Helm Chart or Operator">
+        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-23 00:00:00 &#43;0000 UTC">
+                March 23, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/blog/authorization/" title="Authorization Architecture Mistakes">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

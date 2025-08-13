@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Golang on Michael Knapp&#39;s Home Page</title>
+    <link>/tech/golang/</link>
+    <description>Recent content in Golang on Michael Knapp&#39;s Home Page</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>2023 Michael Knapp</copyright>
+    <lastBuildDate>Wed, 29 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tech/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Golang Concurrency</title>
+      <link>/tech/golang/go-concurrency/</link>
+      <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang/go-concurrency/</guid>
+      <description>How to write concurrent golang programs.</description>
+    </item>
+    <item>
+      <title>VSCode Shortcuts</title>
+      <link>/tech/golang/vscode-shortcuts/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang/vscode-shortcuts/</guid>
+      <description>Keyboard hotkeys for VSCode that are useful for golang programming.</description>
+    </item>
+    <item>
+      <title>Web Assembly (Go)</title>
+      <link>/tech/golang/wasm/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/tech/golang/wasm/</guid>
+      <description>A brief summary of how to use web assembly with Golang.</description>
+    </item>
+  </channel>
+</rss>

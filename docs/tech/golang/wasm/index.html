@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/tech/golang/" title="">
+                Golang</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/golang-recipes/" title="">
+                Golang Recipes</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/golang-gotchas/" title="">
+                Golang Gotchas</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/java/" title="java programming language.">
+                Java</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/bash/" title="">
+                Bash</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/javascript-language/" title="javascript programming">
+                Javascript</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/languages/" title="my description.">
+                Software Languages</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/api/" title="">
+                API Development</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow"><a class="tocmenu arrow" href="/tech/golang/vscode-shortcuts/"
+                                title="VSCode Shortcuts">
+                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" /></a><a class="tocmenu arrow" href="/tech/golang/" title="Golang">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#write-main">Write Main</a></li>
+    <li><a href="#build-wasm">Build WASM</a></li>
+    <li><a href="#update-web-page">Update Web Page</a></li>
+  </ul>
+</nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/tech/" class="breadcrumbs">/Tech</a></li>
+        <li class="breadcrumbs"><a href="/tech/golang/" class="breadcrumbs">/Golang</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Web Assembly (Go)</h1>
+<p>This contains a very brief summary of the steps to make and use a Golang Web Assembly artifact.</p>
+<h1 id="write-main">Write Main</h1>
+<p>The main class/package needs to use the syscall/js package, and never stop.  Use this main class as an example:</p>
+<pre tabindex="0"><code>package main
+
+import (
+    &#34;strconv&#34;
+    &#34;syscall/js&#34;
+)
+
+func main() {
+    // Add functions as needed.
+    js.Global().Set(&#34;myFunction&#34;, myFunction())
+
+    // Prevent the program from stopping.
+    &lt;-make(chan bool)
+}
+
+func myFunction() js.Func {  
+    return js.FuncOf(func(this js.Value, args []js.Value) any {
+        if len(args) != 1 {
+            return &#34;Invalid no of arguments passed&#34;
+        }
+        input := args[0].String()
+
+        // Incorporate business logic here.
+        // You can call on functions in other packages too.
+        output := input
+
+        return output
+    })
+}
+</code></pre><p>You should also follow the usual steps of creating a golang module and adding dependencies to it as needed.</p>
+<h1 id="build-wasm">Build WASM</h1>
+<ol>
+<li>Compile with <code>GOOS=js GOARCH=wasm go build -o app.wasm wasm/main.go</code></li>
+<li>Copy the artifact somewhere into your website&rsquo;s static content.</li>
+<li>Copy the Golang wasm javascript glue somewhere into your website&rsquo;s static content: <code>cp &quot;$(go env GOROOT)/misc/wasm/wasm_exec.js&quot; /path/to/website/static</code></li>
+</ol>
+<h1 id="update-web-page">Update Web Page</h1>
+<p>Copy this into your html head section:</p>
+<pre tabindex="0"><code>&lt;script src=&#34;wasm_exec.js&#34;&gt;&lt;/script&gt;
+&lt;script&gt;
+    const go = new Go();
+    WebAssembly.instantiateStreaming(fetch(&#34;app.wasm&#34;), go.importObject).then((result) =&gt; {
+        go.run(result.instance);
+    });
+&lt;/script&gt;
+</code></pre><p>In your page&rsquo;s html and javascript, update the code to utilize the functions that your wasm application defined.</p>
+<p>For more information, refer to <a href="https://golangbot.com/webassembly-using-go/">Golang Bot&rsquo;s Web Assembly Using Go</a>.</p>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="/tech/golang/vscode-shortcuts/" title="VSCode Shortcuts">
+        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-29 00:00:00 &#43;0000 UTC">
+                March 29, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <div></div>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

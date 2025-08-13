@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/golang/" title="">
+                Golang</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/golang-recipes/" title="">
+                Golang Recipes</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/golang-gotchas/" title="">
+                Golang Gotchas</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/java/" title="java programming language.">
+                Java</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/bash/" title="">
+                Bash</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/javascript-language/" title="javascript programming">
+                Javascript</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/tech/languages/" title="my description.">
+                Software Languages</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/api/" title="">
+                API Development</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow"><a class="tocmenu arrow" href="/tech/javascript-language/"
+                                title="Javascript">
+                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" /></a><a class="tocmenu arrow" href="/tech/" title="Software Engineering">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                        <a class="tocmenu" href="/blog/"><img src="/icons/arrow-right-circle-white.png"
+                                        class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#operators">Operators</a></li>
+    <li><a href="#types">Types</a></li>
+    <li><a href="#generics">Generics</a></li>
+    <li><a href="#loops">Loops</a></li>
+    <li><a href="#code-structure">Code Structure</a></li>
+    <li><a href="#lambda-functions">Lambda Functions</a></li>
+    <li><a href="#switch-statements">Switch Statements</a></li>
+    <li><a href="#constants">Constants</a></li>
+    <li><a href="#objects-classes">Objects, Classes</a></li>
+    <li><a href="#variable-protections">Variable Protections</a></li>
+    <li><a href="#comments">Comments</a></li>
+    <li><a href="#compilation">Compilation</a></li>
+    <li><a href="#garbage-collection">Garbage Collection</a></li>
+    <li><a href="#use-of-pointers-passing-by-value-or-reference">Use of Pointers, Passing by Value or Reference</a></li>
+    <li><a href="#pre-processing">Pre-processing</a></li>
+    <li><a href="#hoisting-code-order-requirements-finding-code">Hoisting, Code order requirements, finding code</a></li>
+    <li><a href="#declaring-variables">Declaring Variables</a></li>
+    <li><a href="#naming-conventions">Naming Conventions</a></li>
+    <li><a href="#strings">Strings</a></li>
+    <li><a href="#associative-arrays">Associative Arrays</a></li>
+    <li><a href="#regular-expressions">Regular Expressions</a></li>
+    <li><a href="#keywords-not-and-or">Keywords not, and, or</a></li>
+    <li><a href="#functional-programming-patterns">Functional Programming Patterns</a></li>
+    <li><a href="#null-type">Null Type</a></li>
+    <li><a href="#what-is-considered-falsy">What is considered falsy</a></li>
+    <li><a href="#boolean-types">Boolean Types</a></li>
+    <li><a href="#declaring-functions">Declaring Functions</a></li>
+    <li><a href="#arrays">Arrays</a></li>
+    <li><a href="#code-structuring">Code Structuring</a></li>
+    <li><a href="#calling-package-functions">Calling Package Functions</a></li>
+    <li><a href="#instantiation">Instantiation</a></li>
+    <li><a href="#support-for-default-arguments-or-function-overloading">Support for Default Arguments, or function overloading</a></li>
+    <li><a href="#exceptions-errors-try-catch">Exceptions, Errors, try catch</a></li>
+    <li><a href="#scope-rules">Scope Rules</a></li>
+  </ul>
+</nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/tech/" class="breadcrumbs">/Tech</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Software Languages</h1>
+<p>This attempts to document languages not as how they work individually, but instead as how they
+deviate from a standard core programming language.  It starts with the most common language
+features and functionality, and then shows how certain languages differ.</p>
+<p>We should consider the following languagese: C, C++, java, javascript, python, typescript, golang, bash, Ruby, Rust</p>
+<h1 id="operators">Operators</h1>
+<ul>
+<li>almost all languages have very similar operators.</li>
+<li>comparison: &lt;, &gt;, &lt;=, &gt;=, ==, !=, etc.
+<ul>
+<li>in C, C++, these return ints, not a boolean.</li>
+<li>In Python, it also supports the &ldquo;is&rdquo; and &ldquo;not&rdquo; keywords.</li>
+<li>In javascript, it also support ===, and !==, which is checking the
+type of object as well.</li>
+</ul>
+</li>
+<li>Assignment:
+<ul>
+<li>most languages support +=, -=, *=, /=, %=, |=, ^=, ~=, etc.</li>
+</ul>
+</li>
+<li>Increment, decrement:
+<ul>
+<li>almost all languages support ++ and &ndash; for incrementing/decrementing integers.</li>
+<li>python is the exception, it does not support ++ or &ndash;, it supports += and -= though.</li>
+<li>all support += and -=</li>
+</ul>
+</li>
+</ul>
+<h1 id="types">Types</h1>
+<ul>
+<li>the way types are handled is split along patterns:</li>
+<li>statically typed languages:
+<ul>
+<li>C, C++, java, golang, Rust</li>
+<li>optionally typed: Scala, Kotlin, Python, Typescript.</li>
+<li>Split by two patterns, types before or after variable names:
+<ul>
+<li>types before variables and functions are used in C, C++, java</li>
+<li>types after variables are used in Python (unenforced), Typescript, Golang, Rust, and Scala.
+<ul>
+<li>delimited with a colon: Scala, Rust, Python, Typescript</li>
+<li>delimited with a space: Golang</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>dynamically typed languages:
+<ul>
+<li>javascript (but Typescript adds types)</li>
+<li>python (python supports type declarations but does not enforce them).</li>
+<li>these do not declare the types of variables, and usually they can be re-assigned
+to completely different types.</li>
+</ul>
+</li>
+</ul>
+<h1 id="generics">Generics</h1>
+<ul>
+<li>Using &lt;&gt;: java, Rust,</li>
+<li>Using []: Scala, Golang</li>
+<li>Unsupported: older Golang, C, C++</li>
+</ul>
+<h1 id="loops">Loops</h1>
+<ul>
+<li>all languages support keywords &ldquo;for&rdquo;.
+<ul>
+<li>standard for loop: for (exp0; exp1; exp2) {&hellip;}
+is supported by most languages, with some deviations:
+<ul>
+<li>golang does not require the parentheses.</li>
+<li>python does not support that format.</li>
+</ul>
+</li>
+<li>python standard for loop: for x in range(n): &hellip;</li>
+</ul>
+</li>
+<li>almost all languages support a lowercase &ldquo;break&rdquo; or &ldquo;continue&rdquo;.</li>
+<li>only golang does not support &ldquo;while&rdquo;, it uses for as its while loop.</li>
+<li>for with collections is supported in most languages:
+<ul>
+<li>java: for (int x : coll) {&hellip;;}</li>
+<li>Python: for x in arr:&hellip;</li>
+<li>golang: for index, x := range coll {&hellip;}</li>
+<li>C, C++: unsure.</li>
+<li>javascript: for (let x in coll) {&hellip;;}
+for (let x of coll) {&hellip;;}
+<ul>
+<li>&ldquo;in&rdquo; iterates over indexes.</li>
+<li>&ldquo;of&rdquo; iterates over values.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="code-structure">Code Structure</h1>
+<ul>
+<li>Most languages use squirrel brackets to establish blocks.  Python and F# deviate
+from this, using indentation instead.</li>
+<li>Semicolons are:
+<ul>
+<li>required in C, C++, java, Rust</li>
+<li>recommended in javascript and typescript</li>
+<li>allowed in Golang</li>
+<li>not used in Python, Scala, F#, Ruby</li>
+</ul>
+</li>
+</ul>
+<h1 id="lambda-functions">Lambda Functions</h1>
+<ul>
+<li>Almost all languages allow functions to be first class citizens, objects, so they can
+be assigned to variables and passed around.  Older versions of java (&lt; 1.8) did not.</li>
+<li>Some support a short-hand form of functions, lambda expressions:
+<ul>
+<li>java: () -&gt; {&hellip;;}</li>
+<li>Python:</li>
+<li>javascript, scala: () =&gt; {&hellip;}</li>
+<li></li>
+</ul>
+</li>
+</ul>
+<h1 id="switch-statements">Switch Statements</h1>
+<ul>
+<li>most languages support the standard:
+switch (expr) { case 0: &hellip;; break; case 1: &hellip;; break; default: &hellip;; }</li>
+<li>some minor deviations:
+<ul>
+<li>golang doesn&rsquo;t require the parentheses, nor semicolons.</li>
+<li>some languages don&rsquo;t require the &ldquo;break&rdquo; statements, but most do.</li>
+</ul>
+</li>
+<li>Ruby uses &ldquo;case&rdquo;, &ldquo;when&rdquo;, and &ldquo;end&rdquo;.  Break is not needed.</li>
+<li>Base uses &ldquo;case&rdquo; and &ldquo;esac&rdquo;, conditions are string patterns followed by &ldquo;)&rdquo;, and need &ldquo;;;&rdquo; to close them.</li>
+<li>Python does not have a switch statement, you can use if, elif, else instead.</li>
+</ul>
+<h1 id="constants">Constants</h1>
+<ul>
+<li>In C, C++, javascript, golang: const keyword prefix</li>
+<li>In java, scala, groovy, jython, jruby, etc.: final keyword prefix.  Allowed in arguments too.</li>
+<li>In python, bash: not supported.</li>
+</ul>
+<h1 id="objects-classes">Objects, Classes</h1>
+<ul>
+<li>not supported in C, but you can use structs as args in functions.</li>
+</ul>
+<h1 id="variable-protections">Variable Protections</h1>
+<ul>
+<li>Most languages support them in some manner.</li>
+<li>Python does not enforce them, they are accomplished by the convention of prefixing
+variables with underscores.</li>
+<li>Javascript also has weak enforcement, using underscores to indicate a private field.</li>
+<li>Rust supports &ldquo;pub&rdquo; instead of public.  It tends to be very terse.</li>
+</ul>
+<h1 id="comments">Comments</h1>
+<ul>
+<li>fall into two categories:
+<ul>
+<li>Using &ldquo;//&rdquo; and &ldquo;/*  */&rdquo;: C, C++, java, javascript, typescript, Golang, F#, most squirrel bracket languages.</li>
+<li>Using &ldquo;#&rdquo;: Python, bash.</li>
+</ul>
+</li>
+</ul>
+<h1 id="compilation">Compilation</h1>
+<ul>
+<li>System Languages: Compiles to OS bytecode: C, C++, Golang, Rust,</li>
+<li>Compiles to a virtual runtime bytecode: java, scala, groovy, jython, jruby,
+<ul>
+<li>most system languages can also be compiled into the WASM format.</li>
+</ul>
+</li>
+<li>Interpreted or Scripted Languages: Python, Ruby, javascript, Lua, bash</li>
+</ul>
+<h1 id="garbage-collection">Garbage Collection</h1>
+<ul>
+<li>Falls into two categories:
+<ul>
+<li>manually done: C, C++</li>
+<li>Garbage collected: everything else.</li>
+</ul>
+</li>
+</ul>
+<h1 id="use-of-pointers-passing-by-value-or-reference">Use of Pointers, Passing by Value or Reference</h1>
+<ul>
+<li>C, C++, Golang, and Rust support pointers.  So you have explicit control over
+passing things by value or by reference.
+<ul>
+<li>Use &ldquo;&amp;&rdquo; to get the memory address of a variable, which is a pointer.</li>
+<li>C, C++, pointer types: <!-- raw HTML omitted -->* <!-- raw HTML omitted -->
+or: <!-- raw HTML omitted --> *<!-- raw HTML omitted --></li>
+<li>Golang pointer types: *<!-- raw HTML omitted --></li>
+<li>de-reference a pointer variable, in all languages: *<!-- raw HTML omitted --></li>
+</ul>
+</li>
+<li>In java, primitives are always passed by value, and objects are always passed by reference.</li>
+<li>In most scripting languages, passing by reference is normal.</li>
+</ul>
+<h1 id="pre-processing">Pre-processing</h1>
+<ul>
+<li>C, C++ support pre-processors, other languages do not typically use that.</li>
+</ul>
+<h1 id="hoisting-code-order-requirements-finding-code">Hoisting, Code order requirements, finding code</h1>
+<ul>
+<li>In C and C++, the compiler is not intelligent enough to use code before it has been declared.
+You must declare a definition of variables and functions before they are referred to.
+This is why you need to #include the header files from imports.</li>
+<li>In almost everything else, the compiler is able to find and use code as it is called, even if
+its definition comes later in the file or in a completely different file.</li>
+</ul>
+<h1 id="declaring-variables">Declaring Variables</h1>
+<ul>
+<li>Without initialization:
+<ul>
+<li>C, C++, java: <!-- raw HTML omitted --> <!-- raw HTML omitted -->;</li>
+<li>Go: &lt;var|const&gt; <!-- raw HTML omitted --> <!-- raw HTML omitted -->;</li>
+<li>Rust:</li>
+<li></li>
+</ul>
+</li>
+</ul>
+<h1 id="naming-conventions">Naming Conventions</h1>
+<ul>
+<li>Variables:
+<ul>
+<li>C, C++, java, Golang: lowerCamelCase</li>
+<li>Python: snake_case</li>
+</ul>
+</li>
+<li>Functions:
+<ul>
+<li>C, C++, java: lowerCamelCase</li>
+<li>Go:
+<ul>
+<li>public: UpperCamelCase</li>
+<li>private: lowerCamelCase</li>
+</ul>
+</li>
+<li>Python: snake_case</li>
+</ul>
+</li>
+<li>Packages, modules, directories&hellip;</li>
+</ul>
+<h1 id="strings">Strings</h1>
+<ul>
+<li>Single quotes are characters: C, C++, java, Golang</li>
+<li>double quotes are strings in every language.</li>
+<li>single quotes are also strings: Python, Ruby, bash, javascript, typescript</li>
+<li>interpolated strings:
+<ul>
+<li>java: more recently supported with triple back-ticks</li>
+<li>scala: supported with pipes and triple quotes.</li>
+</ul>
+</li>
+<li>are primitives: in golang</li>
+<li>are objects: in java and all higher level (scripted) languages.</li>
+<li>C, C++ don&rsquo;t have a string type, you must use arrays of characters: char s[] = &ldquo;foo&rdquo;;
+can still use double-quotes though, and don&rsquo;t need to declare the size.
+hence it is mutable.  They end with \0, the null terminating character.  That counts
+toward its size.</li>
+<li>in languages where strings are objects, they tend to have a lot of methods built in.
+In other languages, string functions tend to be in a separate package, like &ldquo;strings&rdquo; (golang),
+or in #include &lt;string.h&gt; in C, C++</li>
+</ul>
+<h1 id="associative-arrays">Associative Arrays</h1>
+<ul>
+<li>aka dict, maps, hashes.</li>
+<li>Golang: x := map[string]string{&ldquo;foo&rdquo;: &ldquo;bar&rdquo;}</li>
+<li>C, C++:</li>
+<li>java: Map&lt;String, String&gt; x = new HashMap&lt;&gt;();</li>
+<li>ruby: x = {&lsquo;a&rsquo; =&gt; &lsquo;x&rsquo;, &lsquo;b&rsquo; =&gt; &lsquo;y&rsquo;}</li>
+</ul>
+<h1 id="regular-expressions">Regular Expressions</h1>
+<ul>
+<li>Using the /&hellip;/ syntax: javascript, ruby,</li>
+<li>Other languages have a class for it.</li>
+</ul>
+<h1 id="keywords-not-and-or">Keywords not, and, or</h1>
+<ul>
+<li>supported in Python, Ruby,</li>
+</ul>
+<h1 id="functional-programming-patterns">Functional Programming Patterns</h1>
+<ul>
+<li>supported in java &gt; 8</li>
+<li>Python has some support with lambdas.</li>
+<li>Golang has limited support.</li>
+<li>Scala, Haskell, Kotlin, Ruby all have very strong support for functional programming techniques.</li>
+<li>Javascript has decent support, has the forEach method.</li>
+</ul>
+<h1 id="null-type">Null Type</h1>
+<ul>
+<li>In Golang, Ruby: nil</li>
+<li>In java, C, C++, javascript: null</li>
+<li>Javascript also supports &ldquo;undefined&rdquo;</li>
+</ul>
+<h1 id="what-is-considered-falsy">What is considered falsy</h1>
+<ul>
+<li>Javascript is flexible: undefined, null, empty strings, 0, false</li>
+<li>Python is the only language that uses capitals for their boolean types: True, False</li>
+<li>C, C++, the expression must produce 0 or an integer that is not 0</li>
+<li>Java: the expression must produce a boolean</li>
+</ul>
+<h1 id="boolean-types">Boolean Types</h1>
+<ul>
+<li>Java: boolean</li>
+<li>Golang: bool</li>
+<li>C, C++: no built-in type, &lt;stdbool.h&gt; adds the type but it&rsquo;s actually an int 0 or 1.</li>
+<li>Python: bool, True or False</li>
+</ul>
+<h1 id="declaring-functions">Declaring Functions</h1>
+<ul>
+<li>javascript: function name() {&hellip;;}</li>
+<li>java: [private|public|protected] [static] [synchronized] &lt;type|void&gt; name() {&hellip;;}</li>
+<li>C, C++: &lt;type|void&gt; name() {&hellip;;}</li>
+<li>golang: func name() [type] {&hellip;}</li>
+<li>Rust: fn name() {&hellip;}</li>
+<li>Python: def name():</li>
+<li>Ruby: def name
+or: def name( args )</li>
+<li>bash: function name {&hellip;}
+or name() {&hellip;}</li>
+</ul>
+<h1 id="arrays">Arrays</h1>
+<ul>
+<li>C, C++: int x[] = {1, 2, 3};</li>
+<li>java: int[] x = {1, 2, 3};</li>
+<li>golang:
+<ul>
+<li>array: var [size]int x</li>
+<li>slice: []int x = {1, 2, 3}</li>
+</ul>
+</li>
+<li>python: x = [1, 2, 3]</li>
+<li>rust: let mut arr: [i32, 3] = [0; 3];</li>
+<li>javascript: const x = [1, 2, 3];</li>
+<li>in practically every language, array members are accessed like: arrName[i]</li>
+<li>Array Literals:
+<ul>
+<li>declared with {}: C, C++, java</li>
+<li>declared with []: Python, javascript</li>
+</ul>
+</li>
+<li>Constant Size:
+<ul>
+<li>C, C++, Golang, Rust, java, most system languages.</li>
+</ul>
+</li>
+<li>Dynamic size:
+<ul>
+<li>Golang slices, Python lists, java collections like Lists.</li>
+<li>In javascript you can assign to indexes outside its current range and it just extends
+to meet it.</li>
+</ul>
+</li>
+</ul>
+<h1 id="code-structuring">Code Structuring</h1>
+<ul>
+<li>There are three patterns:
+<ul>
+<li>Squirrel bracket blocks: most languages</li>
+<li>Indentation: Python, F#
+<ul>
+<li>Tends to use four spaces as indentation.</li>
+</ul>
+</li>
+<li>Token based: Ruby, Bash
+<ul>
+<li>blocks end when a token is reached like &ldquo;end&rdquo;, &ldquo;fi&rdquo;, &ldquo;done&rdquo;, &ldquo;esac&rdquo;, etc.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="calling-package-functions">Calling Package Functions</h1>
+<ul>
+<li>Ruby, C, C++: <!-- raw HTML omitted -->::<!-- raw HTML omitted --></li>
+<li>Python: <!-- raw HTML omitted -->.<!-- raw HTML omitted -->  (depends on the import statement used)</li>
+<li>Java: not possible, must refer to the class&rsquo;s static functions.</li>
+</ul>
+<h1 id="instantiation">Instantiation</h1>
+<ul>
+<li>Using &ldquo;new&rdquo; keyword: java, C, C++, Go (optional, type is in parens)</li>
+<li>Using static type&rsquo;s new function: Ruby</li>
+<li>Using type&rsquo;s name: Python, javascript
+<ul>
+<li>implies there can only be one constructor.  These languages tend to support
+optional arguments with defaults for functions/methods.</li>
+</ul>
+</li>
+</ul>
+<h1 id="support-for-default-arguments-or-function-overloading">Support for Default Arguments, or function overloading</h1>
+<ul>
+<li>java: functions can be declared multiple times with different parameters.</li>
+<li>Python, javascript: functions can be declared with default values for parameters.</li>
+</ul>
+<h1 id="exceptions-errors-try-catch">Exceptions, Errors, try catch</h1>
+<ul>
+<li>Golang methods return errors, which can be ignored or re-thrown.
+It also supports panic, and try catch</li>
+<li>java, supports checked or unchecked exceptions.  functions can declare they throw
+some exceptions.  Supports try catch finally.  Supports try with resources.</li>
+<li>Python: errors are always unchecked.  Supports try and catch.</li>
+</ul>
+<h1 id="scope-rules">Scope Rules</h1>
+<ul>
+<li>most languages say a variable exists within its code block, class, or globally.</li>
+<li>javascript allows &ldquo;var&rdquo; variables to exist after their block finishes.</li>
+<li>Python and bash also allow their variables to exist after their block finishes.</li>
+</ul>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="/tech/javascript-language/" title="Javascript">
+        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-14 00:00:00 &#43;0000 UTC">
+                March 14, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/blog/">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

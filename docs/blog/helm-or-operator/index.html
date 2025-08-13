@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/blog/helm-or-operator/" title="">
+                Helm Chart or Operator</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/blog/operators/" title="">
+                Writing Effective Operators</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/blog/authorization/" title="Common pitfalls people make when adding authorization to their apps.">
+                Authorization Architecture Mistakes</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/blog/reorg/" title="">
+                Is It Time To Reorg</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow">
+                        <a class="tocmenu arrow" href="..">
+                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" />
+                        </a><a class="tocmenu arrow" href="/blog/" title="Blog">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                        <a class="tocmenu arrow" href="/blog/operators/"
+                                title="Writing Effective Operators"><img src="/icons/arrow-right-circle-white.png"
+                                        class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents">
+  <ul>
+    <li><a href="#external-resources">External Resources</a></li>
+    <li><a href="#reacting-to-lifecycle-events">Reacting to Lifecycle events</a></li>
+    <li><a href="#reuse">Reuse</a></li>
+    <li><a href="#ease-of-creation">Ease of Creation</a></li>
+    <li><a href="#ability-to-change">Ability to Change</a></li>
+    <li><a href="#loose-coupling">Loose Coupling</a></li>
+    <li><a href="#some-examples">Some Examples</a>
+      <ul>
+        <li><a href="#creation-of-lambdas">Creation of Lambdas</a></li>
+        <li><a href="#creation-of-a-deployment">Creation of a Deployment</a></li>
+        <li><a href="#creation-of-lambdas-and-a-deployment">Creation of Lambdas and a Deployment</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/blog/" class="breadcrumbs">/Blog</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Helm Chart or Operator</h1>
+<p>If you are trying to customize your own Kubernetes cluster, you may eventually be
+faced with the choice between writing your own operator, or writing a helm chart.</p>
+<p>Having worked with Kubernetes for years, and writing several operators, I can
+verify that <em>it is tough!</em>  The concept sounds simple and brilliant, but in practice
+it has been consistently challenging to get right and test too.  Updating
+operators can also be a significant problem.</p>
+<p>I will discuss the pros and cons of each approach below.</p>
+<h1 id="external-resources">External Resources</h1>
+<p>Kubernetes operators are able to manage resources external from the cluster they
+are running in.  To do the same thing with a Helm chart, you would need to create
+a job or deployment running a script.  It would certainly not be ideal.</p>
+<p>If you need to manage a resource external from the cluster, an operator is
+the ideal solution.</p>
+<h1 id="reacting-to-lifecycle-events">Reacting to Lifecycle events</h1>
+<p>Kubernetes operators can listen to external events and automatically be triggered
+to run a task.  With Helm charts, this might not be possible.</p>
+<p>However, in my experience, it is rare that you have a situation like this.</p>
+<p>Let&rsquo;s give an example.  Your company has an enterprise wide service, which reports
+if it is in a &ldquo;stable&rdquo; period.  During that time, certain processes must not run.
+An operator could listen to that API and react to it.  For a Helm chart to do
+the same thing, you would need to add a job or deployment running a script or
+application with the logic.  It would be ugly.</p>
+<h1 id="reuse">Reuse</h1>
+<p>Helm charts can be re-used, but the author needs to keep other use cases in mind.
+That is often not the case.  Usually there are many variables in a Helm chart,
+and new engineers would be confused by them.</p>
+<p>Operators are easier to re-use among many people than helm charts.</p>
+<h1 id="ease-of-creation">Ease of Creation</h1>
+<p>Writing operators involves programming and testing.  It can be very time consuming.
+Helm charts only need some templates to be written.  It is far easier to create
+Helm charts than operators.</p>
+<h1 id="ability-to-change">Ability to Change</h1>
+<p>Since operators involve writing code, they tend to be far more difficult to change
+or update than Helm charts.  They require having thorough unit tests.  Operators
+also have rigid object schemas built into them.  When you want to change the
+schema, it can be a major hassle.</p>
+<p>Helm charts, on the other hand, are <strong>very</strong> easy to change or update, with little
+fuss.  Adding new controls to them tends to be much easier than updating an operator.</p>
+<h1 id="loose-coupling">Loose Coupling</h1>
+<p>Helm charts tend to be far more loosely coupled from services around them than
+operators.  This means over time, they are easier to maintain.</p>
+<h1 id="some-examples">Some Examples</h1>
+<p>Let&rsquo;s consider some example scenarios</p>
+<h2 id="creation-of-lambdas">Creation of Lambdas</h2>
+<p>Let&rsquo;s say you need AWS Lambda functions to be created at will.  Since this is a
+service external to the cluster, writing an operator is a better option than
+some very odd Helm chart.</p>
+<h2 id="creation-of-a-deployment">Creation of a Deployment</h2>
+<p>Let&rsquo;s say you need a Kubernetes Deployment, Service, PDB, and HPA to all be created
+in response to the creation of a custom resource.  You <em>can</em> do this with an
+operator.  The advantages you get here are:</p>
+<ul>
+<li>it would be easy to hand this operator to other teams and expect them to use it.</li>
+<li>the operator could react to external events.</li>
+</ul>
+<p>However, in my experience, it is a much better idea to use a Helm chart in this
+scenario, because all of the resources being created are internal to the cluster.</p>
+<p>If you go the route of writing an operator, what tends to happen is engineers
+code in the resource schemas.  Then, if they decide to change them later, they
+need to update their code, their unit tests, and go through the entire testing
+and deployment process.  This is a slow iteration process and will result in
+unproductive teams.</p>
+<p>A keen developer might decide to just use golang templates in the operator,
+which get used to generate the other resources.  Congratulations!  You just
+invented a much weaker and brittler version of Helm.</p>
+<p>That is why I recommend using Helm charts for creation of Kubernetes resources
+within the current cluster.</p>
+<h2 id="creation-of-lambdas-and-a-deployment">Creation of Lambdas and a Deployment</h2>
+<p>In this scenario, some event happens and the system must create one external
+resource (Lambda), and one internal resource (a Kubernetes Deployment).</p>
+<p>You could write one operator to handle both, but what will you do later, when
+it&rsquo;s decided that a Kubernetes Service is also needed?  Update the operator?
+Or decide to just make a Helm chart for that?</p>
+<p>In this scenario, I recommend writing one operator specifically for the
+single external resource, and one Helm chart that wraps everything together.</p>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="..">
+        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-22 00:00:00 &#43;0000 UTC">
+                March 22, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <a class="footernext" href="/blog/operators/" title="Writing Effective Operators">
+        <span class="footerlinktext">next </span>
+        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>

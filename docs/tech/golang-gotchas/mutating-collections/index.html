@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Michael Knapp&#39;s Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio site for Michael Knapp">
+    <meta name="keywords" content="golang resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/listnav.css" />
+    <link rel="stylesheet" href="/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="/css/sitenav.css" />
+    <link rel="stylesheet" href="/css/sectionmenu.css" />
+    <link rel="stylesheet" href="/css/tocmenu.css" />
+
+    <link rel="stylesheet" media="print" href="/css/print.css" />
+</head>
+
+<body><div class="sitenav">
+    <h2 class="sitenav">Sections</h2>
+    <nav class="sitenav">
+        <ul>
+            <li class="sitenav ">
+                <a class="sitenav " href="/"><img src="/icons/house.png"
+                        width="20px" /></a>
+            </li>
+            
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/principles/" title="my description.">
+                    Principles</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/reliability/" title="robust software system design">
+                    Reliability</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/architecture/" title="robust software system design">
+                    Architecture</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/algorithms/" title="Software algorithms.">
+                    Algorithms</a>
+            </li>
+            <li class="sitenav currentsection">
+                <a class="sitenav currentsection"
+                    href="/tech/" title="Notes about software engineering.">
+                    Tech</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/blog/" title="A blog on software engineering.">
+                    Blog</a>
+            </li>
+            <li class="sitenav">
+                <a class="sitenav"
+                    href="/cheat-sheets/" title="Software engineering cheat sheets.">
+                    Cheat Sheets</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="body"><aside>
+    <h2 class="sectionmenu">Pages</h2>
+    <ul class="sectionmenu">
+        
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/golang/" title="">
+                Golang</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/golang-recipes/" title="">
+                Golang Recipes</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu currentpage"
+                href="/tech/golang-gotchas/" title="">
+                Golang Gotchas</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/java/" title="java programming language.">
+                Java</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/bash/" title="">
+                Bash</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/javascript-language/" title="javascript programming">
+                Javascript</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/languages/" title="my description.">
+                Software Languages</a>
+        </li>
+        <li class="sectionmenu">
+            <a class="sectionmenu"
+                href="/tech/api/" title="">
+                API Development</a>
+        </li>
+    </ul>
+</aside><div class="rightcolumn">
+        <div class="rightcontent">
+                <div class="tocmenu arrow"><a class="tocmenu arrow" href="/tech/golang-gotchas/iterating-over-values/"
+                                title="Iterating Over Values">
+                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" /></a><a class="tocmenu arrow" href="/tech/golang-gotchas/" title="Golang Gotchas">
+                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                </div>
+                <hr class="tocmenu">
+                <p class="tocmenu">Table of Contents:</p><nav id="TableOfContents"></nav>
+        </div>
+</div>
+        <div class="middlecolumn"><div class="breadcrumbs">
+    <h2 class="breadcrumbs">BreadCrumbs</h2>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs"><a href="/" class="breadcrumbs">/Michael Knapp&#39;s Home Page</a></li>
+        <li class="breadcrumbs"><a href="/tech/" class="breadcrumbs">/Tech</a></li>
+        <li class="breadcrumbs"><a href="/tech/golang-gotchas/" class="breadcrumbs">/Golang Gotchas</a></li>
+    </ul>
+</div>
+            <article>
+                <main>
+                    <h1 class="title">Mutating Collections</h1>
+<div class="golang-code">
+    
+<span class="golang-top-level-keyword">package</span>&nbsp;main<br>
+<br>
+<span class="golang-top-level-keyword">import</span>&nbsp;<span class="golang-brace">(</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;"fmt"<br>
+<span class="golang-brace">)</span><br>
+<br>
+<span class="code-comment">//&nbsp;PrintSlice&nbsp;will&nbsp;print&nbsp;all&nbsp;the&nbsp;values&nbsp;of&nbsp;the&nbsp;slice&nbsp;to&nbsp;standard&nbsp;output.</span><br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-function">PrintSlice</span><span class="golang-brace">(</span>x&nbsp;[]<span class="golang-variable-type">int</span><span class="golang-brace">)</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-control-keyword">for</span>&nbsp;_,&nbsp;y&nbsp;:=&nbsp;<span class="golang-control-keyword">range</span>&nbsp;x&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">fmt.Printf</span><span class="golang-brace">(</span>"%d,&nbsp;",&nbsp;y<span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-brace">}</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">fmt.Println</span><span class="golang-brace">(</span>"\n----"<span class="golang-brace">)</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="code-comment">//&nbsp;Add&nbsp;attempts&nbsp;to&nbsp;append&nbsp;a&nbsp;value&nbsp;to&nbsp;the&nbsp;slice.</span><br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-function">Add</span><span class="golang-brace">(</span>x&nbsp;[]<span class="golang-variable-type">int</span>,&nbsp;y&nbsp;<span class="golang-variable-type">int</span><span class="golang-brace">)</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;=&nbsp;<span class="golang-function">append</span><span class="golang-brace">(</span>x,&nbsp;y<span class="golang-brace">)</span><br>
+<span class="golang-brace">}</span><br>
+<br>
+<span class="golang-top-level-keyword">func</span>&nbsp;<span class="golang-function">main</span><span class="golang-brace">()</span>&nbsp;<span class="golang-brace">{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;:=&nbsp;[]<span class="golang-variable-type">int</span><span class="golang-brace">{</span><span class="golang-primitive-value">1</span><span class="golang-brace">}</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">Add</span><span class="golang-brace">(</span>x,&nbsp;<span class="golang-primitive-value">2</span><span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">PrintSlice</span><span class="golang-brace">(</span>x<span class="golang-brace">)</span><br>
+<br>
+<span class="code-comment">&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;expand&nbsp;the&nbsp;slice&nbsp;to&nbsp;its&nbsp;full&nbsp;capacity.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;=&nbsp;x[:<span class="golang-function">cap</span><span class="golang-brace">(</span>x<span class="golang-brace">)</span>]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">PrintSlice</span><span class="golang-brace">(</span>x<span class="golang-brace">)</span><br>
+<br>
+<span class="code-comment">&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;restart,&nbsp;this&nbsp;time&nbsp;using&nbsp;make&nbsp;and&nbsp;a&nbsp;pre-chosen&nbsp;capacity.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;=&nbsp;<span class="golang-function">make</span><span class="golang-brace">(</span>[]<span class="golang-variable-type">int</span>,&nbsp;<span class="golang-primitive-value">0</span>,&nbsp;<span class="golang-primitive-value">2</span><span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;=&nbsp;<span class="golang-function">append</span><span class="golang-brace">(</span>x,&nbsp;<span class="golang-primitive-value">1</span><span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">Add</span><span class="golang-brace">(</span>x,&nbsp;<span class="golang-primitive-value">2</span><span class="golang-brace">)</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">PrintSlice</span><span class="golang-brace">(</span>x<span class="golang-brace">)</span><br>
+<br>
+<span class="code-comment">&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;expand&nbsp;the&nbsp;slice&nbsp;to&nbsp;its&nbsp;full&nbsp;capacity.</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;=&nbsp;x[:<span class="golang-function">cap</span><span class="golang-brace">(</span>x<span class="golang-brace">)</span>]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="golang-function">PrintSlice</span><span class="golang-brace">(</span>x<span class="golang-brace">)</span><br>
+<span class="golang-brace">}</span><br>
+
+</div>
+<p>Prints:</p>
+<pre tabindex="0"><code>1, 
+----
+1, 
+----
+1, 
+----
+1, 2, 
+</code></pre><p>What on earth is going on here?</p>
+<p>So a slice in Golang is actually a pointer to an array with a fixed size.  The slice records a virtual
+start and end index of the array.  The array has a fixed size.</p>
+<p>When you have a slice append a value, the behavior depends on if the underlying array is large
+enough to accept the new value.</p>
+<p>When the &ldquo;append&rdquo; operation is called, and the underlying array lacks the capacity for a new item:</p>
+<ul>
+<li>It creates a new array, with a larger capacity</li>
+<li>Then it copies all values from the old array to the new one</li>
+<li>Then it inserts the new value that was just appended.</li>
+<li>Then it has the slice point to that new array.</li>
+</ul>
+<p>When a slice is passed to a function, you are passing the slice by value, which means it is copied in,
+<em>but</em> the slice itself holds a pointer (reference) to the underlying array.  So this means the
+operations performed by the called function may or may not be visible to higher functions.</p>
+<p>Operations visible to higher code on the stack:</p>
+<ul>
+<li>altering a value in the slice</li>
+</ul>
+<p>Not visible:</p>
+<ul>
+<li>appending a value</li>
+</ul>
+<p>So let&rsquo;s step through the example.</p>
+<p><strong>Step 1</strong></p>
+<pre tabindex="0"><code>x := []int{1}
+Add(x, 2)
+</code></pre><p>When the &ldquo;Add&rdquo; function is called, it tries to append to the slice it has.  The underlying
+array of the slice is fixed to size 1, so the append operation creates a new array with
+at least a capacity of 2, and adds the new value.  This only altered the slice that is
+known inside the &ldquo;Add&rdquo; function, which was a copy.  Consequently, higher functions have
+no insight into the change made by the &ldquo;Add&rdquo; function, and it effectively does nothing.</p>
+<p><strong>Step 2</strong></p>
+<pre tabindex="0"><code>x = x[:cap(x)]
+</code></pre><p>In the main function, the slice &ldquo;x&rdquo; was actually unaltered by the &ldquo;Add&rdquo; function, so its
+local x still has a capacity of just 1.  Expanding it here does nothing, the change
+made by the &ldquo;Add&rdquo; function before was made to a copy of the underlying array.</p>
+<p><strong>Step 3</strong></p>
+<pre tabindex="0"><code>x = make([]int, 0, 2)
+x = append(x, 1)
+Add(x, 2)
+</code></pre><p>This time, we make a slice whose underlying array has a capacity of 2.  In the local
+main function, we append the first value, and this alters the slice.  Essentially,
+the slice x holds a start index of 0, and an end index of 1.</p>
+<p>When the Add method is called, it receives a copy of the slice x, and this copy
+holds a pointer to the underlying array of size 2.  Since the underlying array has
+a capacity exceeding the length of the slice, the append operation in Add does not
+need to make a new copy of the array.  It simply sets the value of the next item
+in the underlying array, adds one to the length of its local slice, and returns.</p>
+<p>However, the Add function had a <em>copy</em> of the slice, so the calling main code
+was not affected by this.  main still has a slice that considers its length to
+be just 1, but it does point to the same underlying array.</p>
+<p><strong>Step 4</strong></p>
+<pre tabindex="0"><code>x = x[:cap(x)]
+</code></pre><p>This time, the change made by the Add function becomes visible, because it altered
+the underlying array of x.  The full capacity of the slice was 2 from the start,
+so when the main code expands the length of the slice x, it actually sees the
+change made by the Add method before.</p>
+
+
+                </main>
+            </article><hr class="footerline">
+<footer>
+    <a class="footerprevious" href="/tech/golang-gotchas/iterating-over-values/" title="Iterating Over Values">
+        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+            previous</span></a>
+    <div class="footermiddle">
+        <div class="lastmod">Last Modified: <time datetime="2023-03-31 00:00:00 &#43;0000 UTC">
+                March 31, 2023</time></div>
+        <b>&#169; 2023 Michael Knapp</b>
+    </div>
+    <div></div>
+</footer>
+        </div>
+    </div>
+</body>
+
+</html>
