@@ -8,3 +8,4 @@ copyright = "2023 Michael Knapp"
 [params]
   description = "Portfolio site for Michael Knapp"
   keywords = "golang resume"
+  root = "/website"

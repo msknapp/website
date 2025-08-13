@@ -4,6 +4,7 @@ description: Michael Knapp's home page contains ample notes on software engineer
 summary: Notes on software engineering.
 lastmod: 2023-03-14
 date: 2023-03-14
+Root: /website
 tags:
 - software
 - resume

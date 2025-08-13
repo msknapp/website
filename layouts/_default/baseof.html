@@ -7,16 +7,16 @@
     <meta name="description" content="{{ .Site.Params.Description }}">
     <meta name="keywords" content="{{ .Site.Params.Keywords }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/site.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/content.css">
-    <link rel="stylesheet" href="/css/listnav.css" />
-    <link rel="stylesheet" href="/css/breadcrumbs.css" />
-    <link rel="stylesheet" href="/css/sitenav.css" />
-    <link rel="stylesheet" href="/css/sectionmenu.css" />
-    <link rel="stylesheet" href="/css/tocmenu.css" />
+    <link rel="stylesheet" href="{{ .Site.Params.Root }}/css/site.css">
+    <link rel="stylesheet" href="{{ .Site.Params.Root }}/css/footer.css">
+    <link rel="stylesheet" href="{{ .Site.Params.Root }}/css/content.css">
+    <link rel="stylesheet" href="{{ .Site.Params.Root }}/css/listnav.css" />
+    <link rel="stylesheet" href="{{ .Site.Params.Root }}/css/breadcrumbs.css" />
+    <link rel="stylesheet" href="{{ .Site.Params.Root }}/css/sitenav.css" />
+    <link rel="stylesheet" href="{{ .Site.Params.Root }}/css/sectionmenu.css" />
+    <link rel="stylesheet" href="{{ .Site.Params.Root }}/css/tocmenu.css" />
 
-    <link rel="stylesheet" media="print" href="/css/print.css" />
+    <link rel="stylesheet" media="print" href="{{ .Site.Params.Root }}/css/print.css" />
     {{- block "wasm-head" . }}
 
     {{- end }}

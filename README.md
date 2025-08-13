@@ -1,8 +1,15 @@
 
 # How to Build
+
+## For Public Website
+
 * build the static site: `hugo`
 * test locally: `hugo serve -p 8080`
   * then just open: `http://localhost:8080/`
+
+## For Github Pages
+
+* `hugo -d docs -b https://msknapp.github.io/website/`
 
 # How to Publish
 

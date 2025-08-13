@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cheat Sheets on Michael Knapp&#39;s Home Page</title>
-    <link>/cheat-sheets/</link>
+    <link>msknapp.github.io/website/cheat-sheets/</link>
     <description>Recent content in Cheat Sheets on Michael Knapp&#39;s Home Page</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>2023 Michael Knapp</copyright>
     <lastBuildDate>Fri, 24 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/cheat-sheets/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="msknapp.github.io/website/cheat-sheets/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Golang</title>
-      <link>/cheat-sheets/golang/</link>
+      <link>msknapp.github.io/website/cheat-sheets/golang/</link>
       <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>/cheat-sheets/golang/</guid>
+      <guid>msknapp.github.io/website/cheat-sheets/golang/</guid>
       <description>cheat sheet for Golang.</description>
     </item>
     <item>
       <title>Python</title>
-      <link>/cheat-sheets/python/</link>
+      <link>msknapp.github.io/website/cheat-sheets/python/</link>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>/cheat-sheets/python/</guid>
+      <guid>msknapp.github.io/website/cheat-sheets/python/</guid>
       <description>Cheat sheet for programming in Python.</description>
     </item>
     <item>
       <title>Java</title>
-      <link>/cheat-sheets/java/</link>
+      <link>msknapp.github.io/website/cheat-sheets/java/</link>
       <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>/cheat-sheets/java/</guid>
+      <guid>msknapp.github.io/website/cheat-sheets/java/</guid>
       <description>cheat sheet for java.</description>
     </item>
     <item>
       <title>Bash</title>
-      <link>/cheat-sheets/bash/</link>
+      <link>msknapp.github.io/website/cheat-sheets/bash/</link>
       <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>/cheat-sheets/bash/</guid>
+      <guid>msknapp.github.io/website/cheat-sheets/bash/</guid>
       <description>cheat sheet for Bash scripting.</description>
     </item>
     <item>
       <title>Go Templates</title>
-      <link>/cheat-sheets/go-templates/</link>
+      <link>msknapp.github.io/website/cheat-sheets/go-templates/</link>
       <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>/cheat-sheets/go-templates/</guid>
+      <guid>msknapp.github.io/website/cheat-sheets/go-templates/</guid>
       <description>cheat sheet for writing Golang templates.</description>
     </item>
   </channel>

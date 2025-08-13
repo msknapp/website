@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Golang Gotchas on Michael Knapp&#39;s Home Page</title>
-    <link>/tech/golang-gotchas/</link>
+    <link>msknapp.github.io/website/tech/golang-gotchas/</link>
     <description>Recent content in Golang Gotchas on Michael Knapp&#39;s Home Page</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>2023 Michael Knapp</copyright>
     <lastBuildDate>Fri, 31 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tech/golang-gotchas/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="msknapp.github.io/website/tech/golang-gotchas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Checking for Nil</title>
-      <link>/tech/golang-gotchas/check-nil/</link>
+      <link>msknapp.github.io/website/tech/golang-gotchas/check-nil/</link>
       <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>/tech/golang-gotchas/check-nil/</guid>
+      <guid>msknapp.github.io/website/tech/golang-gotchas/check-nil/</guid>
       <description>Programmers get baffled when a variable is considered not nil and then promptly panics because it is nil.</description>
     </item>
     <item>
       <title>Iterating Over Values</title>
-      <link>/tech/golang-gotchas/iterating-over-values/</link>
+      <link>msknapp.github.io/website/tech/golang-gotchas/iterating-over-values/</link>
       <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>/tech/golang-gotchas/iterating-over-values/</guid>
+      <guid>msknapp.github.io/website/tech/golang-gotchas/iterating-over-values/</guid>
       <description>Iterating over values can lead to surprising results.</description>
     </item>
     <item>
       <title>Mutating Collections</title>
-      <link>/tech/golang-gotchas/mutating-collections/</link>
+      <link>msknapp.github.io/website/tech/golang-gotchas/mutating-collections/</link>
       <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>/tech/golang-gotchas/mutating-collections/</guid>
+      <guid>msknapp.github.io/website/tech/golang-gotchas/mutating-collections/</guid>
       <description>You might be surprised by the results of a function mutating a collection.</description>
     </item>
   </channel>

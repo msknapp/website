@@ -2,109 +2,109 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Algorithms on Michael Knapp&#39;s Home Page</title>
-    <link>/algorithms/</link>
+    <link>msknapp.github.io/website/algorithms/</link>
     <description>Recent content in Algorithms on Michael Knapp&#39;s Home Page</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>2023 Michael Knapp</copyright>
     <lastBuildDate>Thu, 30 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="msknapp.github.io/website/algorithms/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Binary Search</title>
-      <link>/algorithms/binary-search/</link>
+      <link>msknapp.github.io/website/algorithms/binary-search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/algorithms/binary-search/</guid>
+      <guid>msknapp.github.io/website/algorithms/binary-search/</guid>
       <description>How to use the binary search algorithm.</description>
     </item>
     <item>
       <title>Bubble Sort</title>
-      <link>/algorithms/bubble/</link>
+      <link>msknapp.github.io/website/algorithms/bubble/</link>
       <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>/algorithms/bubble/</guid>
+      <guid>msknapp.github.io/website/algorithms/bubble/</guid>
       <description>How the bubble sort works</description>
     </item>
     <item>
       <title>Insertion Sort</title>
-      <link>/algorithms/insertion/</link>
+      <link>msknapp.github.io/website/algorithms/insertion/</link>
       <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>/algorithms/insertion/</guid>
+      <guid>msknapp.github.io/website/algorithms/insertion/</guid>
       <description>How the insertion sort works</description>
     </item>
     <item>
       <title>Selection Sort</title>
-      <link>/algorithms/selection/</link>
+      <link>msknapp.github.io/website/algorithms/selection/</link>
       <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>/algorithms/selection/</guid>
+      <guid>msknapp.github.io/website/algorithms/selection/</guid>
       <description>How the selection sort works</description>
     </item>
     <item>
       <title>Quick Sort</title>
-      <link>/algorithms/quick/</link>
+      <link>msknapp.github.io/website/algorithms/quick/</link>
       <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>/algorithms/quick/</guid>
+      <guid>msknapp.github.io/website/algorithms/quick/</guid>
       <description>How the quick sort works</description>
     </item>
     <item>
       <title>Merge Sort</title>
-      <link>/algorithms/merge/</link>
+      <link>msknapp.github.io/website/algorithms/merge/</link>
       <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>/algorithms/merge/</guid>
+      <guid>msknapp.github.io/website/algorithms/merge/</guid>
       <description>How the merge sort works</description>
     </item>
     <item>
       <title>Linked List</title>
-      <link>/algorithms/linked-list/</link>
+      <link>msknapp.github.io/website/algorithms/linked-list/</link>
       <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>/algorithms/linked-list/</guid>
+      <guid>msknapp.github.io/website/algorithms/linked-list/</guid>
       <description>Use a linked list for O(1) append, push, or pop operations.</description>
     </item>
     <item>
       <title>Queue</title>
-      <link>/algorithms/queue/</link>
+      <link>msknapp.github.io/website/algorithms/queue/</link>
       <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>/algorithms/queue/</guid>
+      <guid>msknapp.github.io/website/algorithms/queue/</guid>
       <description>Use queues for faster push and pop operations.</description>
     </item>
     <item>
       <title>Stack</title>
-      <link>/algorithms/stack/</link>
+      <link>msknapp.github.io/website/algorithms/stack/</link>
       <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>/algorithms/stack/</guid>
+      <guid>msknapp.github.io/website/algorithms/stack/</guid>
       <description>Use a stack for LIFO operations.</description>
     </item>
     <item>
       <title>Set</title>
-      <link>/algorithms/set/</link>
+      <link>msknapp.github.io/website/algorithms/set/</link>
       <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>/algorithms/set/</guid>
+      <guid>msknapp.github.io/website/algorithms/set/</guid>
       <description>Use a set to quickly check for existence.</description>
     </item>
     <item>
       <title>Heap Datastructure</title>
-      <link>/algorithms/heap/</link>
+      <link>msknapp.github.io/website/algorithms/heap/</link>
       <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>/algorithms/heap/</guid>
+      <guid>msknapp.github.io/website/algorithms/heap/</guid>
       <description>The heap structure explained.</description>
     </item>
     <item>
       <title>AVL Tree</title>
-      <link>/algorithms/avl/</link>
+      <link>msknapp.github.io/website/algorithms/avl/</link>
       <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>/algorithms/avl/</guid>
+      <guid>msknapp.github.io/website/algorithms/avl/</guid>
       <description>A binary search tree that stays balanced.</description>
     </item>
     <item>
       <title>Radix</title>
-      <link>/algorithms/radix/</link>
+      <link>msknapp.github.io/website/algorithms/radix/</link>
       <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>/algorithms/radix/</guid>
+      <guid>msknapp.github.io/website/algorithms/radix/</guid>
       <description>The radix tree</description>
     </item>
     <item>
       <title>More Algorithms</title>
-      <link>/algorithms/unfinished/</link>
+      <link>msknapp.github.io/website/algorithms/unfinished/</link>
       <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>/algorithms/unfinished/</guid>
+      <guid>msknapp.github.io/website/algorithms/unfinished/</guid>
       <description>Algorithms to cover later.</description>
     </item>
   </channel>

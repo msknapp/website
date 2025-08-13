@@ -2,324 +2,324 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/algorithms/binary-search/</loc>
+    <loc>msknapp.github.io/website/algorithms/binary-search/</loc>
   </url><url>
-    <loc>/tech/golang-gotchas/check-nil/</loc>
+    <loc>msknapp.github.io/website/tech/golang-gotchas/check-nil/</loc>
     <lastmod>2023-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/golang-recipes/basics/</loc>
+    <loc>msknapp.github.io/website/tech/golang-recipes/basics/</loc>
     <lastmod>2023-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/golang/</loc>
+    <loc>msknapp.github.io/website/tech/golang/</loc>
     <lastmod>2023-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/applications/golang-to-html/</loc>
+    <loc>msknapp.github.io/website/applications/golang-to-html/</loc>
     <lastmod>2023-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/cheat-sheets/golang/</loc>
+    <loc>msknapp.github.io/website/cheat-sheets/golang/</loc>
     <lastmod>2023-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/helm-or-operator/</loc>
+    <loc>msknapp.github.io/website/blog/helm-or-operator/</loc>
     <lastmod>2023-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/architecture/managed-services/</loc>
+    <loc>msknapp.github.io/website/architecture/managed-services/</loc>
     <lastmod>2023-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/reliability/version-control/</loc>
+    <loc>msknapp.github.io/website/reliability/version-control/</loc>
     <lastmod>2023-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/algorithms/bubble/</loc>
+    <loc>msknapp.github.io/website/algorithms/bubble/</loc>
     <lastmod>2023-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/principles/</loc>
+    <loc>msknapp.github.io/website/principles/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/principles/kiss/</loc>
+    <loc>msknapp.github.io/website/principles/kiss/</loc>
   </url><url>
-    <loc>/tech/golang-recipes/types/</loc>
+    <loc>msknapp.github.io/website/tech/golang-recipes/types/</loc>
     <lastmod>2023-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/golang-recipes/</loc>
+    <loc>msknapp.github.io/website/tech/golang-recipes/</loc>
     <lastmod>2023-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/applications/python-to-html/</loc>
+    <loc>msknapp.github.io/website/applications/python-to-html/</loc>
     <lastmod>2023-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/principles/dry/</loc>
+    <loc>msknapp.github.io/website/principles/dry/</loc>
     <lastmod>2023-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/architecture/loose-coupling/</loc>
+    <loc>msknapp.github.io/website/architecture/loose-coupling/</loc>
     <lastmod>2023-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/operators/</loc>
+    <loc>msknapp.github.io/website/blog/operators/</loc>
     <lastmod>2023-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/reliability/code-quality/</loc>
+    <loc>msknapp.github.io/website/reliability/code-quality/</loc>
     <lastmod>2023-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/algorithms/insertion/</loc>
+    <loc>msknapp.github.io/website/algorithms/insertion/</loc>
     <lastmod>2023-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/golang/go-concurrency/</loc>
+    <loc>msknapp.github.io/website/tech/golang/go-concurrency/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/cheat-sheets/python/</loc>
+    <loc>msknapp.github.io/website/cheat-sheets/python/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/reliability/</loc>
+    <loc>msknapp.github.io/website/reliability/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/bash/sudo/</loc>
+    <loc>msknapp.github.io/website/tech/bash/sudo/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/golang-gotchas/</loc>
+    <loc>msknapp.github.io/website/tech/golang-gotchas/</loc>
     <lastmod>2023-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/golang-gotchas/iterating-over-values/</loc>
+    <loc>msknapp.github.io/website/tech/golang-gotchas/iterating-over-values/</loc>
     <lastmod>2023-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/golang-gotchas/mutating-collections/</loc>
+    <loc>msknapp.github.io/website/tech/golang-gotchas/mutating-collections/</loc>
     <lastmod>2023-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/golang-recipes/sorting/</loc>
+    <loc>msknapp.github.io/website/tech/golang-recipes/sorting/</loc>
     <lastmod>2023-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/applications/java-to-html/</loc>
+    <loc>msknapp.github.io/website/applications/java-to-html/</loc>
     <lastmod>2023-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/cheat-sheets/java/</loc>
+    <loc>msknapp.github.io/website/cheat-sheets/java/</loc>
     <lastmod>2023-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/architecture/databases/</loc>
+    <loc>msknapp.github.io/website/architecture/databases/</loc>
     <lastmod>2023-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/reliability/separation-of-duties/</loc>
+    <loc>msknapp.github.io/website/reliability/separation-of-duties/</loc>
     <lastmod>2023-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/algorithms/selection/</loc>
+    <loc>msknapp.github.io/website/algorithms/selection/</loc>
     <lastmod>2023-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/authorization/</loc>
+    <loc>msknapp.github.io/website/blog/authorization/</loc>
     <lastmod>2023-03-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/architecture/</loc>
+    <loc>msknapp.github.io/website/architecture/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/bash/ubuntu-shortcuts/</loc>
+    <loc>msknapp.github.io/website/tech/bash/ubuntu-shortcuts/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/golang/vscode-shortcuts/</loc>
+    <loc>msknapp.github.io/website/tech/golang/vscode-shortcuts/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/bash/cut/</loc>
+    <loc>msknapp.github.io/website/tech/bash/cut/</loc>
   </url><url>
-    <loc>/principles/defensive/</loc>
+    <loc>msknapp.github.io/website/principles/defensive/</loc>
   </url><url>
-    <loc>/tech/golang-recipes/files/</loc>
+    <loc>msknapp.github.io/website/tech/golang-recipes/files/</loc>
     <lastmod>2023-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/cheat-sheets/bash/</loc>
+    <loc>msknapp.github.io/website/cheat-sheets/bash/</loc>
     <lastmod>2023-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/architecture/streaming/</loc>
+    <loc>msknapp.github.io/website/architecture/streaming/</loc>
     <lastmod>2023-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/reliability/iac/</loc>
+    <loc>msknapp.github.io/website/reliability/iac/</loc>
     <lastmod>2023-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/algorithms/quick/</loc>
+    <loc>msknapp.github.io/website/algorithms/quick/</loc>
     <lastmod>2023-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/algorithms/</loc>
+    <loc>msknapp.github.io/website/algorithms/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/java/</loc>
+    <loc>msknapp.github.io/website/tech/java/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/principles/single-responsibility/</loc>
+    <loc>msknapp.github.io/website/principles/single-responsibility/</loc>
   </url><url>
-    <loc>/tech/golang-recipes/tests/</loc>
+    <loc>msknapp.github.io/website/tech/golang-recipes/tests/</loc>
     <lastmod>2023-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/architecture/batch/</loc>
+    <loc>msknapp.github.io/website/architecture/batch/</loc>
     <lastmod>2023-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/cheat-sheets/go-templates/</loc>
+    <loc>msknapp.github.io/website/cheat-sheets/go-templates/</loc>
     <lastmod>2023-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/reliability/cicd/</loc>
+    <loc>msknapp.github.io/website/reliability/cicd/</loc>
     <lastmod>2023-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/algorithms/merge/</loc>
+    <loc>msknapp.github.io/website/algorithms/merge/</loc>
     <lastmod>2023-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/reorg/</loc>
+    <loc>msknapp.github.io/website/blog/reorg/</loc>
     <lastmod>2023-03-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/principles/open-closed/</loc>
+    <loc>msknapp.github.io/website/principles/open-closed/</loc>
     <lastmod>2023-03-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/applications/</loc>
+    <loc>msknapp.github.io/website/applications/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/bash/</loc>
+    <loc>msknapp.github.io/website/tech/bash/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/algorithms/linked-list/</loc>
+    <loc>msknapp.github.io/website/algorithms/linked-list/</loc>
     <lastmod>2023-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/principles/substitution/</loc>
+    <loc>msknapp.github.io/website/principles/substitution/</loc>
     <lastmod>2023-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/reliability/testing/</loc>
+    <loc>msknapp.github.io/website/reliability/testing/</loc>
     <lastmod>2023-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/javascript-language/</loc>
+    <loc>msknapp.github.io/website/tech/javascript-language/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/</loc>
+    <loc>msknapp.github.io/website/tech/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/bash/vi-notes/</loc>
+    <loc>msknapp.github.io/website/tech/bash/vi-notes/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/principles/segregation/</loc>
+    <loc>msknapp.github.io/website/principles/segregation/</loc>
   </url><url>
-    <loc>/algorithms/queue/</loc>
+    <loc>msknapp.github.io/website/algorithms/queue/</loc>
     <lastmod>2023-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/reliability/environment-parity/</loc>
+    <loc>msknapp.github.io/website/reliability/environment-parity/</loc>
     <lastmod>2023-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/languages/</loc>
+    <loc>msknapp.github.io/website/tech/languages/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/algorithms/stack/</loc>
+    <loc>msknapp.github.io/website/algorithms/stack/</loc>
     <lastmod>2023-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/principles/testing/</loc>
+    <loc>msknapp.github.io/website/principles/testing/</loc>
   </url><url>
-    <loc>/tech/golang-recipes/errors-and-panics/</loc>
+    <loc>msknapp.github.io/website/tech/golang-recipes/errors-and-panics/</loc>
     <lastmod>2023-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/algorithms/set/</loc>
+    <loc>msknapp.github.io/website/algorithms/set/</loc>
     <lastmod>2023-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/principles/configuration/</loc>
+    <loc>msknapp.github.io/website/principles/configuration/</loc>
     <lastmod>2023-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/reliability/probes-and-signals/</loc>
+    <loc>msknapp.github.io/website/reliability/probes-and-signals/</loc>
     <lastmod>2023-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/principles/quality/</loc>
+    <loc>msknapp.github.io/website/principles/quality/</loc>
     <lastmod>2023-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/</loc>
+    <loc>msknapp.github.io/website/blog/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/golang-recipes/collections/</loc>
+    <loc>msknapp.github.io/website/tech/golang-recipes/collections/</loc>
     <lastmod>2023-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/reliability/boot-and-shutdown/</loc>
+    <loc>msknapp.github.io/website/reliability/boot-and-shutdown/</loc>
     <lastmod>2023-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/algorithms/heap/</loc>
+    <loc>msknapp.github.io/website/algorithms/heap/</loc>
     <lastmod>2023-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/reliability/stateless/</loc>
+    <loc>msknapp.github.io/website/reliability/stateless/</loc>
     <lastmod>2023-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/cheat-sheets/</loc>
+    <loc>msknapp.github.io/website/cheat-sheets/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/reliability/deployment-patterns/</loc>
+    <loc>msknapp.github.io/website/reliability/deployment-patterns/</loc>
     <lastmod>2023-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/reliability/availability/</loc>
+    <loc>msknapp.github.io/website/reliability/availability/</loc>
     <lastmod>2023-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/reliability/load-balancing/</loc>
+    <loc>msknapp.github.io/website/reliability/load-balancing/</loc>
     <lastmod>2023-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/reliability/monitoring/</loc>
+    <loc>msknapp.github.io/website/reliability/monitoring/</loc>
     <lastmod>2023-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/reliability/security/</loc>
+    <loc>msknapp.github.io/website/reliability/security/</loc>
     <lastmod>2023-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/principles/stereotypes/</loc>
+    <loc>msknapp.github.io/website/principles/stereotypes/</loc>
     <lastmod>2023-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/principles/ybyo/</loc>
+    <loc>msknapp.github.io/website/principles/ybyo/</loc>
     <lastmod>2023-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/algorithms/avl/</loc>
+    <loc>msknapp.github.io/website/algorithms/avl/</loc>
     <lastmod>2023-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/algorithms/radix/</loc>
+    <loc>msknapp.github.io/website/algorithms/radix/</loc>
     <lastmod>2023-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/principles/globals/</loc>
+    <loc>msknapp.github.io/website/principles/globals/</loc>
     <lastmod>2023-03-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/principles/optimization/</loc>
+    <loc>msknapp.github.io/website/principles/optimization/</loc>
     <lastmod>2023-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/golang/wasm/</loc>
+    <loc>msknapp.github.io/website/tech/golang/wasm/</loc>
     <lastmod>2023-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/data/kafka/</loc>
+    <loc>msknapp.github.io/website/tech/data/kafka/</loc>
     <lastmod>2023-03-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/principles/reinvent/</loc>
+    <loc>msknapp.github.io/website/principles/reinvent/</loc>
     <lastmod>2023-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/api/</loc>
+    <loc>msknapp.github.io/website/tech/api/</loc>
     <lastmod>2023-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/reliability/documentation/</loc>
+    <loc>msknapp.github.io/website/reliability/documentation/</loc>
     <lastmod>2023-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/resume/</loc>
+    <loc>msknapp.github.io/website/resume/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/golang-recipes/unfinished/</loc>
+    <loc>msknapp.github.io/website/tech/golang-recipes/unfinished/</loc>
     <lastmod>2023-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/algorithms/unfinished/</loc>
+    <loc>msknapp.github.io/website/algorithms/unfinished/</loc>
     <lastmod>2023-03-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/architecture/loose-ends/</loc>
+    <loc>msknapp.github.io/website/architecture/loose-ends/</loc>
     <lastmod>2023-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/about-me/</loc>
+    <loc>msknapp.github.io/website/about-me/</loc>
     <lastmod>2023-03-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>msknapp.github.io/website/categories/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/java/classpath/</loc>
+    <loc>msknapp.github.io/website/tech/java/classpath/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/languages/</loc>
+    <loc>msknapp.github.io/website/categories/languages/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tech/java/maven/</loc>
+    <loc>msknapp.github.io/website/tech/java/maven/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>msknapp.github.io/website/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/python/</loc>
+    <loc>msknapp.github.io/website/tags/python/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/resume/</loc>
+    <loc>msknapp.github.io/website/tags/resume/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/software/</loc>
+    <loc>msknapp.github.io/website/tags/software/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>msknapp.github.io/website/tags/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url>
 </urlset>

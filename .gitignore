@@ -4,4 +4,5 @@ tmp/
 temp/
 .vscode/
 
+public/
 coverage.out
