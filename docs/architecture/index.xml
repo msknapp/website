@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Architecture on Michael Knapp&#39;s Home Page</title>
-    <link>msknapp.github.io/website/architecture/</link>
+    <link>/website/architecture/</link>
     <description>Recent content in Architecture on Michael Knapp&#39;s Home Page</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>2023 Michael Knapp</copyright>
     <lastBuildDate>Fri, 24 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="msknapp.github.io/website/architecture/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/website/architecture/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Managed Services</title>
-      <link>msknapp.github.io/website/architecture/managed-services/</link>
+      <link>/website/architecture/managed-services/</link>
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/architecture/managed-services/</guid>
+      <guid>/website/architecture/managed-services/</guid>
       <description>You should choose between serverless, managed, and custom solutions depending on your system&amp;rsquo;s usage.</description>
     </item>
     <item>
       <title>Loose Coupling</title>
-      <link>msknapp.github.io/website/architecture/loose-coupling/</link>
+      <link>/website/architecture/loose-coupling/</link>
       <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/architecture/loose-coupling/</guid>
+      <guid>/website/architecture/loose-coupling/</guid>
       <description>Microservices in the system should make few assumptions about peers, and have limited scopes.  They must be backwards compatible.</description>
     </item>
     <item>
       <title>Data Storage</title>
-      <link>msknapp.github.io/website/architecture/databases/</link>
+      <link>/website/architecture/databases/</link>
       <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/architecture/databases/</guid>
+      <guid>/website/architecture/databases/</guid>
       <description>You should choose the right data storage system depending on the system requirements.</description>
     </item>
     <item>
       <title>Streaming</title>
-      <link>msknapp.github.io/website/architecture/streaming/</link>
+      <link>/website/architecture/streaming/</link>
       <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/architecture/streaming/</guid>
+      <guid>/website/architecture/streaming/</guid>
       <description>Add stream processing for async needs.</description>
     </item>
     <item>
       <title>Batch Processing</title>
-      <link>msknapp.github.io/website/architecture/batch/</link>
+      <link>/website/architecture/batch/</link>
       <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/architecture/batch/</guid>
+      <guid>/website/architecture/batch/</guid>
       <description>Add batch processing for big data.</description>
     </item>
     <item>
       <title>Loose Ends</title>
-      <link>msknapp.github.io/website/architecture/loose-ends/</link>
+      <link>/website/architecture/loose-ends/</link>
       <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/architecture/loose-ends/</guid>
+      <guid>/website/architecture/loose-ends/</guid>
       <description>Things not previously covered.</description>
     </item>
   </channel>

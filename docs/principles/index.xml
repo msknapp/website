@@ -2,116 +2,116 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software Development Principles on Michael Knapp&#39;s Home Page</title>
-    <link>msknapp.github.io/website/principles/</link>
+    <link>/website/principles/</link>
     <description>Recent content in Software Development Principles on Michael Knapp&#39;s Home Page</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>2023 Michael Knapp</copyright>
     <lastBuildDate>Wed, 29 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="msknapp.github.io/website/principles/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/website/principles/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>KISS and YAGNI</title>
-      <link>msknapp.github.io/website/principles/kiss/</link>
+      <link>/website/principles/kiss/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/principles/kiss/</guid>
+      <guid>/website/principles/kiss/</guid>
       <description>Prefer to keep your code as simple as possible.</description>
     </item>
     <item>
       <title>Don&#39;t Repeat Yourself</title>
-      <link>msknapp.github.io/website/principles/dry/</link>
+      <link>/website/principles/dry/</link>
       <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/principles/dry/</guid>
+      <guid>/website/principles/dry/</guid>
       <description>Minimize the code duplication.</description>
     </item>
     <item>
       <title>Defensive Programming</title>
-      <link>msknapp.github.io/website/principles/defensive/</link>
+      <link>/website/principles/defensive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/principles/defensive/</guid>
+      <guid>/website/principles/defensive/</guid>
       <description>Carefully consider the trade-offs of defensive programming patterns.</description>
     </item>
     <item>
       <title>Single Responsibility Principle</title>
-      <link>msknapp.github.io/website/principles/single-responsibility/</link>
+      <link>/website/principles/single-responsibility/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/principles/single-responsibility/</guid>
+      <guid>/website/principles/single-responsibility/</guid>
       <description>Software components and classes should not be responsible for many concerns.</description>
     </item>
     <item>
       <title>Open Closed Principle</title>
-      <link>msknapp.github.io/website/principles/open-closed/</link>
+      <link>/website/principles/open-closed/</link>
       <pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/principles/open-closed/</guid>
+      <guid>/website/principles/open-closed/</guid>
       <description>Design software classes and components to be easily extended but rarely modified.</description>
     </item>
     <item>
       <title>Substitution</title>
-      <link>msknapp.github.io/website/principles/substitution/</link>
+      <link>/website/principles/substitution/</link>
       <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/principles/substitution/</guid>
+      <guid>/website/principles/substitution/</guid>
       <description>Your code should be loosely coupled using abstractions, interfaces, and similar substitution principles.</description>
     </item>
     <item>
       <title>Interface Segregation Principle</title>
-      <link>msknapp.github.io/website/principles/segregation/</link>
+      <link>/website/principles/segregation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/principles/segregation/</guid>
+      <guid>/website/principles/segregation/</guid>
       <description>Function arguments should be minimal interfaces.</description>
     </item>
     <item>
       <title>Software Testing</title>
-      <link>msknapp.github.io/website/principles/testing/</link>
+      <link>/website/principles/testing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/principles/testing/</guid>
+      <guid>/website/principles/testing/</guid>
       <description>Your software should have ample automated tests across the board.</description>
     </item>
     <item>
       <title>Configuration Levels</title>
-      <link>msknapp.github.io/website/principles/configuration/</link>
+      <link>/website/principles/configuration/</link>
       <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/principles/configuration/</guid>
+      <guid>/website/principles/configuration/</guid>
       <description>You should have ample controls over your code from configuration using expressions, templates, and scripts.</description>
     </item>
     <item>
       <title>Judging Quality</title>
-      <link>msknapp.github.io/website/principles/quality/</link>
+      <link>/website/principles/quality/</link>
       <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/principles/quality/</guid>
+      <guid>/website/principles/quality/</guid>
       <description>You should routinely use automated tools to assess your code quality.</description>
     </item>
     <item>
       <title>Class Stereotypes</title>
-      <link>msknapp.github.io/website/principles/stereotypes/</link>
+      <link>/website/principles/stereotypes/</link>
       <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/principles/stereotypes/</guid>
+      <guid>/website/principles/stereotypes/</guid>
       <description>Design your classes to follow effective patterns or stereotypes.</description>
     </item>
     <item>
       <title>You Build You Own</title>
-      <link>msknapp.github.io/website/principles/ybyo/</link>
+      <link>/website/principles/ybyo/</link>
       <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/principles/ybyo/</guid>
+      <guid>/website/principles/ybyo/</guid>
       <description>Software developers should also be on the hook to support their applications.</description>
     </item>
     <item>
       <title>Avoid Globals</title>
-      <link>msknapp.github.io/website/principles/globals/</link>
+      <link>/website/principles/globals/</link>
       <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/principles/globals/</guid>
+      <guid>/website/principles/globals/</guid>
       <description>Global variables create problems, you should avoid using them.</description>
     </item>
     <item>
       <title>Premature Optimization</title>
-      <link>msknapp.github.io/website/principles/optimization/</link>
+      <link>/website/principles/optimization/</link>
       <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/principles/optimization/</guid>
+      <guid>/website/principles/optimization/</guid>
       <description>Avoid optimizing code before proving it is necessary.</description>
     </item>
     <item>
       <title>Don&#39;t Reinvent the Wheel</title>
-      <link>msknapp.github.io/website/principles/reinvent/</link>
+      <link>/website/principles/reinvent/</link>
       <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/principles/reinvent/</guid>
+      <guid>/website/principles/reinvent/</guid>
       <description>Avoid duplication of efforts by leveraging open source.</description>
     </item>
   </channel>

@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software Engineering on Michael Knapp&#39;s Home Page</title>
-    <link>msknapp.github.io/website/tech/</link>
+    <link>/website/tech/</link>
     <description>Recent content in Software Engineering on Michael Knapp&#39;s Home Page</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>2023 Michael Knapp</copyright>
     <lastBuildDate>Wed, 29 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="msknapp.github.io/website/tech/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/website/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Javascript</title>
-      <link>msknapp.github.io/website/tech/javascript-language/</link>
+      <link>/website/tech/javascript-language/</link>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/tech/javascript-language/</guid>
+      <guid>/website/tech/javascript-language/</guid>
       <description>Notes about the javascript programming language.</description>
     </item>
     <item>
       <title>Software Languages</title>
-      <link>msknapp.github.io/website/tech/languages/</link>
+      <link>/website/tech/languages/</link>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/tech/languages/</guid>
+      <guid>/website/tech/languages/</guid>
       <description>A comparison of programming language syntaxes and features.</description>
     </item>
     <item>
       <title>API Development</title>
-      <link>msknapp.github.io/website/tech/api/</link>
+      <link>/website/tech/api/</link>
       <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/tech/api/</guid>
+      <guid>/website/tech/api/</guid>
       <description>Writing effective and maintainable APIs.</description>
     </item>
   </channel>

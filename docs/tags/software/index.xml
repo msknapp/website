@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software on Michael Knapp&#39;s Home Page</title>
-    <link>msknapp.github.io/website/tags/software/</link>
+    <link>/website/tags/software/</link>
     <description>Recent content in Software on Michael Knapp&#39;s Home Page</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>2023 Michael Knapp</copyright>
     <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="msknapp.github.io/website/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/website/tags/software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Michael Knapp&#39;s Home Page</title>
-      <link>msknapp.github.io/website/</link>
+      <link>/website/</link>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>msknapp.github.io/website/</guid>
+      <guid>/website/</guid>
       <description>Notes on software engineering.</description>
     </item>
   </channel>
