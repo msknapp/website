@@ -3,7 +3,7 @@
     <nav class="sitenav">
         <ul>
             <li class="sitenav {{ if .IsHome }}currentsection{{ end }}">
-                <a class="sitenav {{ if .IsHome }}currentsection{{ end }}" href="/"><img src="/icons/house.png"
+                <a class="sitenav {{ if .IsHome }}currentsection{{ end }}" href="/"><img src="{{ .Site.Params.Root }}/icons/house.png"
                         width="20px" /></a>
             </li>
             {{ range $x := .Site.Sections }}

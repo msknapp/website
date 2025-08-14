@@ -1,15 +1,19 @@
+[Docs Site](https://msknapp.github.com/website)
 
 # How to Build
 
 ## For Public Website
 
+* In config.toml, set the parameter "root" to an empty string or remove it.
 * build the static site: `hugo`
 * test locally: `hugo serve -p 8080`
   * then just open: `http://localhost:8080/`
 
 ## For Github Pages
 
-* `hugo -d docs -b https://msknapp.github.io/website/`
+* `hugo -d docs -b /website/`
+* Note: the config.toml file has a parameter called "root", which prefixes all URLs.
+  This must match the repository name.
 
 # How to Publish
 
@@ -32,7 +36,6 @@ In AWS, the site is made public by these settings.
   * In 'properties', static website hosting is enabled.
 * In Route53, 'msknapp.com' is an A record that is an alias pointing to 
   value: 's3-website-us-east-1.amazonaws.com.' and record name 'msknapp.com'
-  
 
 # Problems
 

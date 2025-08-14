@@ -3,23 +3,23 @@
                 <div class="tocmenu arrow">
                         {{- if .Params.prevlink }}
                         <a class="tocmenu arrow" href="{{ .Params.prevlink }}">
-                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" />
+                                <img src="{{ .Site.Params.Root }}/icons/arrow-left-circle-white.png" class="tocmenu arrow" />
                         </a>
                         {{- else if .NextInSection -}}
                         <a class="tocmenu arrow" href="{{ .NextInSection.Permalink }}"
                                 title="{{ .NextInSection.Title }}">
-                                <img src="/icons/arrow-left-circle-white.png" class="tocmenu arrow" /></a>
+                                <img src="{{ .Site.Params.Root  }}/icons/arrow-left-circle-white.png" class="tocmenu arrow" /></a>
                         {{- end -}}
                         {{- if .Parent -}}
                         <a class="tocmenu arrow" href="{{ .Parent.Permalink }}" title="{{ .Parent.Title }}">
-                                <img src="/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
+                                <img src="{{ .Site.Params.Root  }}/icons/arrow-up-circle-white.png" class="tocmenu arrow" /></a>
                         {{- end }}
                         {{- if .Params.nextlink }}
-                        <a class="tocmenu" href="{{ .Params.nextlink }}"><img src="/icons/arrow-right-circle-white.png"
+                        <a class="tocmenu" href="{{ .Params.nextlink }}"><img src="{{ .Site.Params.Root  }}/icons/arrow-right-circle-white.png"
                                         class="tocmenu arrow" /></a>
                         {{- else if .PrevInSection }}
                         <a class="tocmenu arrow" href="{{ .PrevInSection.Permalink }}"
-                                title="{{ .PrevInSection.Title }}"><img src="/icons/arrow-right-circle-white.png"
+                                title="{{ .PrevInSection.Title }}"><img src="{{ .Site.Params.Root  }}/icons/arrow-right-circle-white.png"
                                         class="tocmenu arrow" /></a>
                         {{- end }}
                 </div>

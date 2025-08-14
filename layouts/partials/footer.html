@@ -2,11 +2,11 @@
 <footer>
     {{- if .Params.prevlink }}
     <a class="footerprevious" href="{{ .Params.prevlink }}">
-        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+        <img src="{{ .Params.root }}/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
             previous</span></a>
     {{- else if .NextInSection }}
     <a class="footerprevious" href="{{ .NextInSection.Permalink }}" title="{{ .NextInSection.Title }}">
-        <img src="/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
+        <img src="{{ .Params.root }}/icons/arrow-left-circle-black.png" class="footerarrow arrow" /><span class="footerlinktext">
             previous</span></a>
     {{- else }}
     <div></div>
@@ -21,12 +21,12 @@
     {{- if .Params.nextlink }}
     <a class="footernext" href="{{ .Params.nextlink }}">
         <span class="footerlinktext">next </span>
-        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+        <img src="{{ .Params.root }}/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
 
     {{- else if .PrevInSection }}
     <a class="footernext" href="{{ .PrevInSection.Permalink }}" title="{{ .PrevInSection.Title }}">
         <span class="footerlinktext">next </span>
-        <img src="/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
+        <img src="{{ .Params.root }}/icons/arrow-right-circle-black.png" class="footerarrow arrow" /></a>
     {{- else }}
     <div></div>
     {{- end }}
